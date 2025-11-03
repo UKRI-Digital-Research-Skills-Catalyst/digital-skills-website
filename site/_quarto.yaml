@@ -1,0 +1,15 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "CSV Search Demo"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+
+format:
+  html:
+    theme: cosmo
+    code-fold: true
