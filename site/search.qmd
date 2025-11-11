@@ -1,0 +1,65 @@
+---
+title: "CSV Search Tool"
+format:
+  html:
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+---
+
+A very simple test CSV filtering site
+
+```{ojs}
+course_data = FileAttachment("courses.csv").csv({typed: true})
+
+access_modes = ["auditory", "tactile", "textual", "visual"]
+default_access_modes = ["textual"]
+audiences = ["Undergraduate student", "Postgraduate taught student", "Postgraduate research student", "researcher", "clinician", "engineer", "trainer", "industry", "public sector", "Research Software Engineer", "Bioinformatican", "Open Research Specialist"]
+default_audience = "Undergraduate student"
+educational_levels = ["level1", "level2", "level3", "level4", "level5"]
+default_educational_level = ["level1"]
+resource_types = ["onlineCourse", "onlineWorkshop", "course", "workshop"]
+default_resource_type = ["onlineCourse"]
+```
+
+```{ojs}
+//| panel: input
+viewof search_terms = Inputs.text({label: "Search"})
+```
+
+```{ojs}
+//| panel: input
+viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: default_access_modes})
+viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: default_audience})
+viewof selected_educational_level = Inputs.checkbox(educational_levels, {label: "Level", value: default_educational_level})
+viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: default_resource_type})
+```
+
+```{ojs}
+course_filtered = course_data.filter(row => 
+    row.audience.includes(selected_audience) &&
+    selected_access_mode.includes(row.accessMode) &&
+    selected_educational_level.includes(row.educationalLevel) &&
+    selected_resource_type.includes(row.learningResourceType)
+)
+```
+
+### Results
+
+```{ojs}
+html`${course_filtered.map(row => html`
+  <section style="border:1px solid #ddd; border-radius:8px; padding:1em; margin:1em 0;">
+    <h3 style="margin-top:0;">
+        <a href=${row.url}>${row.headline}</a>
+    </h3>
+    <p>${row.description}</p>
+  </section>
+`)}`
+```
+
+### All Courses
+
+```{ojs}
+Inputs.table(course_data)
+```

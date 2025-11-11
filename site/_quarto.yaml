@@ -3,12 +3,15 @@ project:
   output-dir: _site
 
 website:
-  title: "CSV Search Demo"
+  title: "UKRI Digital Research Skills Catalyst"
   navbar:
     left:
-      - text: "Home"
-        href: index.qmd
-
+      - href: index.qmd
+        text: Home
+      - href: search.qmd
+        text: Search
+      - href: about.qmd
+        text: About
 format:
   html:
     theme: cosmo
