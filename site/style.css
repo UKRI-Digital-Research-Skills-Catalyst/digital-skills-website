@@ -1,0 +1,15 @@
+/* styles.css */
+h1 {
+  color: darkslateblue;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.3em;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #fafafa;
+}
+
+.navbar {
+  background-color: #D0D0D0;
+}

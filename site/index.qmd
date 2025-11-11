@@ -25,11 +25,15 @@ default_resource_type = ["onlineCourse"]
 
 ```{ojs}
 //| panel: input
+viewof search_terms = Inputs.text({label: "Search"})
+```
+
+```{ojs}
+//| panel: input
 viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: default_access_modes})
 viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: default_audience})
 viewof selected_educational_level = Inputs.checkbox(educational_levels, {label: "Level", value: default_educational_level})
 viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: default_resource_type})
-viewof search_terms = Inputs.text({label: "Search"})
 ```
 
 ```{ojs}

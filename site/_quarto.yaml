@@ -12,4 +12,5 @@ website:
 format:
   html:
     theme: cosmo
+    css: style.css
     code-fold: true
