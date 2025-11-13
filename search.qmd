@@ -15,7 +15,7 @@ course_data = FileAttachment("courses.csv").csv({typed: true})
 
 access_modes = ["auditory", "tactile", "textual", "visual"]
 default_access_modes = ["textual"]
-audiences = ["Undergraduate student", "Postgraduate taught student", "Postgraduate research student", "researcher", "clinician", "engineer", "trainer", "industry", "public sector", "Research Software Engineer", "Bioinformatican", "Open Research Specialist"]
+audiences = ["Undergraduate student", "Postgraduate taught student", "Postgraduate research student", "researcher", "clinician", "engineer", "trainer", "industry", "public sector",  "Research Software Engineer", "Bioinformatican", "Open Research Specialist", "Research skills educator"]
 default_audience = "Undergraduate student"
 educational_levels = ["level1", "level2", "level3", "level4", "level5"]
 default_educational_level = ["level1"]
