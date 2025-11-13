@@ -6,7 +6,7 @@ title: "UKRI Digital Research Skills Catalyst"
 
 ## Project history and funding
 
-Led by Professor Emma Rand at the University of York, the Catalyst Project was developed in response to the UKRI Digital Research Infrastructure Programme funding call.
+Led by the awesome Professor Emma Rand at the University of York, the Catalyst Project was developed in response to the UKRI Digital Research Infrastructure Programme funding call.
 It brings together seven university partners in a collaborative effort to centralise high-quality training materials for researchers and innovators. 
 
 The project builds on resources created by Data Science in Healthcare & Biosciences (DaSH), which developed training materials and hosted events between 2021 and 2023 to upskill health and bioscience researchers in data management and analysis.
