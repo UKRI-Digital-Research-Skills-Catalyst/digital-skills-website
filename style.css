@@ -11,5 +11,9 @@ body {
 }
 
 .navbar {
-  background-color: #D0D0D0;
+  background-color: #2C373A;
+}
+
+.navbar a {
+  color: #FFFFFF;
 }
