@@ -1,5 +1,9 @@
 ---
 title: "About"
+format:
+  html:
+    css: style.css
+    body-classes: index
 ---
 The UKRI Digital Research Skills Catalyst connects researchers and innovators across the UK with cutting-edge digital training training opportunities and sector expertise to power their professional growth.
 Researchers training needs are supported at a practical level, through the provision of the following features: 

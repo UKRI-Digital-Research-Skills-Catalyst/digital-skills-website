@@ -9,7 +9,7 @@ h2 {
   border-bottom: none;
 }
 
-body.index {
+body.search {
   font-family: "Inter", sans-serif;
   background-color: #FAFBFB;
 }
@@ -41,47 +41,51 @@ body.index {
   color: #000;
 }
 
-body.index main {
+body.search main {
   max-width: 1200px;
   margin 0 auto;
 }
 
-body.index .content {
+body.search .content {
   margin: 0 auto;
   position: relative;
-  background-color: #0A2441;
-  color: #FFF;
+  background-color: #FFF;
+  color: #000;
   padding: 25px 50px;
   border-radius: 10px;
   overflow: hidden;
 }
 
-body.index .content::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("assets/binary.png");
-  background-repeat: repeat;
-  background-position: right top;
-  background-size: 96px 96px;
-  filter: invert(1);
-  opacity: 0.2;
-}
-
-body.index .content::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(
-    to bottom left,
-    rgba(10, 36, 65, 0) 0%,
-    rgba(10, 36, 65, 1) 40%
-  );
-}
-
-body.index .content > * {
+body.search .content > * {
   position: relative;
   z-index: 1;
+}
+
+body.search .cell.panel-input.card {
+  background: #F8F9FA;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 0;
+}
+
+body.search .cell.panel-input.card + details {
+  background: #F8F9FA;
+  border: 1px solid #ddd;
+  border-top: 0;
+  border-radius: 0 0 8px 8px;
+  margin-top: -0.25em;
+  padding: 0 1em 1em;
+}
+
+body.search .cell.panel-input.card + details > summary {
+  padding: 0.5em 0;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+body.search .cell.panel-input.card + details .cell {
+  margin-top: 0.5em;
 }
 
 #quarto-container {

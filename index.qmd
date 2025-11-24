@@ -1,5 +1,9 @@
 ---
 title: "UKRI Digital Research Skills Catalyst"
+format:
+  html:
+    css: style.css
+    body-classes: index
 ---
 
 **Unlock your potential with the UKRI Digital Research Skills Catalyst – the national hub for researcher and innovator development.**

@@ -4,8 +4,10 @@ format:
   html:
     toc: false
     echo: false
+    css: search-style.css
     keep-hidden: true
     code-tools: false
+    body-classes: search
 ---
 
 ```{ojs}
