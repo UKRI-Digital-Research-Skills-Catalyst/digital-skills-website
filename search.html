@@ -108,9 +108,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="search-style.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed search fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -173,20 +174,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>A very simple test CSV filtering site</p>
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Code</summary>
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="14" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 13;"><span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>course_data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"courses.csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span>
 <span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>access_modes <span class="op">=</span> [<span class="st">"auditory"</span><span class="op">,</span> <span class="st">"tactile"</span><span class="op">,</span> <span class="st">"textual"</span><span class="op">,</span> <span class="st">"visual"</span>]</span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>default_access_modes <span class="op">=</span> [<span class="st">"textual"</span>]</span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>audiences <span class="op">=</span> [<span class="st">"Undergraduate student"</span><span class="op">,</span> <span class="st">"Postgraduate taught student"</span><span class="op">,</span> <span class="st">"Postgraduate research student"</span><span class="op">,</span> <span class="st">"researcher"</span><span class="op">,</span> <span class="st">"clinician"</span><span class="op">,</span> <span class="st">"engineer"</span><span class="op">,</span> <span class="st">"trainer"</span><span class="op">,</span> <span class="st">"industry"</span><span class="op">,</span> <span class="st">"public sector"</span><span class="op">,</span>  <span class="st">"Research Software Engineer"</span><span class="op">,</span> <span class="st">"Bioinformatican"</span><span class="op">,</span> <span class="st">"Open Research Specialist"</span><span class="op">,</span> <span class="st">"Research skills educator"</span>]</span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>default_audience <span class="op">=</span> <span class="st">"Undergraduate student"</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>default_access_modes <span class="op">=</span> []</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>audiences <span class="op">=</span> [<span class="st">"Bioinformatician"</span><span class="op">,</span> <span class="st">"Clinician"</span><span class="op">,</span> <span class="st">"Engineer"</span><span class="op">,</span> <span class="st">"Industry"</span><span class="op">,</span> <span class="st">"Open Research Specialist"</span><span class="op">,</span> <span class="st">"Postgraduate taught student"</span><span class="op">,</span> <span class="st">"Postgraduate research student"</span><span class="op">,</span> <span class="st">"Public sector"</span><span class="op">,</span> <span class="st">"Researcher"</span><span class="op">,</span> <span class="st">"Research Software Engineer"</span><span class="op">,</span> <span class="st">"Research skills educator"</span><span class="op">,</span> <span class="st">"Trainer"</span><span class="op">,</span> <span class="st">"Undergraduate student"</span><span class="op">,</span> <span class="kw">null</span>]</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>default_audience <span class="op">=</span> <span class="kw">null</span></span>
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>educational_levels <span class="op">=</span> [<span class="st">"level1"</span><span class="op">,</span> <span class="st">"level2"</span><span class="op">,</span> <span class="st">"level3"</span><span class="op">,</span> <span class="st">"level4"</span><span class="op">,</span> <span class="st">"level5"</span>]</span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>default_educational_level <span class="op">=</span> [<span class="st">"level1"</span>]</span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>resource_types <span class="op">=</span> [<span class="st">"onlineCourse"</span><span class="op">,</span> <span class="st">"onlineWorkshop"</span><span class="op">,</span> <span class="st">"course"</span><span class="op">,</span> <span class="st">"workshop"</span>]</span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>default_resource_type <span class="op">=</span> [<span class="st">"onlineCourse"</span>]</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>default_educational_level <span class="op">=</span> []</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>resource_types <span class="op">=</span> [<span class="st">"course"</span><span class="op">,</span> <span class="st">"onlineCourse"</span><span class="op">,</span> <span class="st">"onlineWorkshop"</span><span class="op">,</span> <span class="st">"workshop"</span><span class="op">,</span> <span class="kw">null</span>]</span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>default_resource_type <span class="op">=</span> <span class="kw">null</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -255,21 +255,35 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell panel-input card bg-light p-2">
 <details class="code-fold hidden">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="27" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 26;"><span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>viewof search_terms <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">text</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Search"</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="28" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 27;"><span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>viewof search_terms <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">text</span>({<span class="dt">label</span><span class="op">:</span> <span class="st">"Search"</span>})</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>search_query <span class="op">=</span> (search_terms <span class="op">??</span> <span class="st">""</span>)<span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">.</span><span class="fu">trim</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
-<div id="ojs-cell-2" data-nodetype="declaration">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="declaration">
 
 </div>
 </div>
 </div>
-<div class="cell panel-input card bg-light p-2">
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<details>
+<summary>
+Advanced search
+</summary>
+<div class="cell">
 <details class="code-fold hidden">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="33" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 32;"><span id="cb3-33"><a href="#cb3-33" aria-hidden="true" tabindex="-1"></a>viewof selected_access_mode <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(access_modes<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Access mode"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> default_access_modes})</span>
-<span id="cb3-34"><a href="#cb3-34" aria-hidden="true" tabindex="-1"></a>viewof selected_audience <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(audiences<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Audience"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> default_audience})</span>
-<span id="cb3-35"><a href="#cb3-35" aria-hidden="true" tabindex="-1"></a>viewof selected_educational_level <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(educational_levels<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Level"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> default_educational_level})</span>
-<span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>viewof selected_resource_type <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(resource_types<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Type"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> default_resource_type})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="36" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 35;"><span id="cb3-36"><a href="#cb3-36" aria-hidden="true" tabindex="-1"></a>viewof selected_access_mode <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(access_modes<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Access mode"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> default_access_modes})</span>
+<span id="cb3-37"><a href="#cb3-37" aria-hidden="true" tabindex="-1"></a>viewof selected_audience <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(audiences<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Audience"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> default_audience})</span>
+<span id="cb3-38"><a href="#cb3-38" aria-hidden="true" tabindex="-1"></a>viewof selected_educational_level <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(educational_levels<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Level"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> default_educational_level})</span>
+<span id="cb3-39"><a href="#cb3-39" aria-hidden="true" tabindex="-1"></a>viewof selected_resource_type <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(resource_types<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Type"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> default_resource_type})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div>
@@ -300,15 +314,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
+</details>
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="39" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 38;"><span id="cb4-39"><a href="#cb4-39" aria-hidden="true" tabindex="-1"></a>course_filtered <span class="op">=</span> course_data<span class="op">.</span><span class="fu">filter</span>(row <span class="kw">=&gt;</span> </span>
-<span id="cb4-40"><a href="#cb4-40" aria-hidden="true" tabindex="-1"></a>    row<span class="op">.</span><span class="at">audience</span><span class="op">.</span><span class="fu">includes</span>(selected_audience) <span class="op">&amp;&amp;</span></span>
-<span id="cb4-41"><a href="#cb4-41" aria-hidden="true" tabindex="-1"></a>    selected_access_mode<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">accessMode</span>) <span class="op">&amp;&amp;</span></span>
-<span id="cb4-42"><a href="#cb4-42" aria-hidden="true" tabindex="-1"></a>    selected_educational_level<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">educationalLevel</span>) <span class="op">&amp;&amp;</span></span>
-<span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>    selected_resource_type<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">learningResourceType</span>)</span>
-<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="43" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 42;"><span id="cb4-43"><a href="#cb4-43" aria-hidden="true" tabindex="-1"></a>course_filtered <span class="op">=</span></span>
+<span id="cb4-44"><a href="#cb4-44" aria-hidden="true" tabindex="-1"></a>  (</span>
+<span id="cb4-45"><a href="#cb4-45" aria-hidden="true" tabindex="-1"></a>    (<span class="op">!</span>selected_audience) <span class="op">&amp;&amp;</span></span>
+<span id="cb4-46"><a href="#cb4-46" aria-hidden="true" tabindex="-1"></a>    (selected_access_mode <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb4-47"><a href="#cb4-47" aria-hidden="true" tabindex="-1"></a>    (selected_educational_level <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb4-48"><a href="#cb4-48" aria-hidden="true" tabindex="-1"></a>    (selected_resource_type <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb4-49"><a href="#cb4-49" aria-hidden="true" tabindex="-1"></a>    (<span class="op">!</span>search_query)</span>
+<span id="cb4-50"><a href="#cb4-50" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb4-51"><a href="#cb4-51" aria-hidden="true" tabindex="-1"></a>  <span class="op">?</span> course_data<span class="op">.</span><span class="fu">filter</span>(row <span class="kw">=&gt;</span> row<span class="op">.</span><span class="at">featured</span> <span class="op">===</span> <span class="st">"yes"</span>)</span>
+<span id="cb4-52"><a href="#cb4-52" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span> course_data<span class="op">.</span><span class="fu">filter</span>(row <span class="kw">=&gt;</span></span>
+<span id="cb4-53"><a href="#cb4-53" aria-hidden="true" tabindex="-1"></a>      <span class="co">// audience</span></span>
+<span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>      (<span class="op">!</span>selected_audience <span class="op">||</span> row<span class="op">.</span><span class="at">audience</span><span class="op">.</span><span class="fu">includes</span>(selected_audience)) <span class="op">&amp;&amp;</span></span>
+<span id="cb4-55"><a href="#cb4-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-56"><a href="#cb4-56" aria-hidden="true" tabindex="-1"></a>      <span class="co">// access mode</span></span>
+<span id="cb4-57"><a href="#cb4-57" aria-hidden="true" tabindex="-1"></a>      ((selected_access_mode <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span></span>
+<span id="cb4-58"><a href="#cb4-58" aria-hidden="true" tabindex="-1"></a>        (selected_access_mode <span class="op">??</span> [])<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">accessMode</span>)) <span class="op">&amp;&amp;</span></span>
+<span id="cb4-59"><a href="#cb4-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-60"><a href="#cb4-60" aria-hidden="true" tabindex="-1"></a>      <span class="co">// educational level</span></span>
+<span id="cb4-61"><a href="#cb4-61" aria-hidden="true" tabindex="-1"></a>      ((selected_educational_level <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span></span>
+<span id="cb4-62"><a href="#cb4-62" aria-hidden="true" tabindex="-1"></a>        (selected_educational_level <span class="op">??</span> [])<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">educationalLevel</span>)) <span class="op">&amp;&amp;</span></span>
+<span id="cb4-63"><a href="#cb4-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-64"><a href="#cb4-64" aria-hidden="true" tabindex="-1"></a>      <span class="co">// resource type</span></span>
+<span id="cb4-65"><a href="#cb4-65" aria-hidden="true" tabindex="-1"></a>      ((selected_resource_type <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span></span>
+<span id="cb4-66"><a href="#cb4-66" aria-hidden="true" tabindex="-1"></a>        (selected_resource_type <span class="op">??</span> [])<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">learningResourceType</span>)) <span class="op">&amp;&amp;</span></span>
+<span id="cb4-67"><a href="#cb4-67" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-68"><a href="#cb4-68" aria-hidden="true" tabindex="-1"></a>      <span class="co">// search</span></span>
+<span id="cb4-69"><a href="#cb4-69" aria-hidden="true" tabindex="-1"></a>      (<span class="op">!</span>search_query <span class="op">||</span></span>
+<span id="cb4-70"><a href="#cb4-70" aria-hidden="true" tabindex="-1"></a>        row<span class="op">.</span><span class="at">headline</span><span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">.</span><span class="fu">includes</span>(search_query))</span>
+<span id="cb4-71"><a href="#cb4-71" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-4" data-nodetype="declaration">
@@ -321,31 +359,17 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="cell">
 <details class="code-fold hidden">
 <summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="50" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 49;"><span id="cb5-50"><a href="#cb5-50" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>course_filtered<span class="op">.</span><span class="fu">map</span>(row <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`</span></span>
-<span id="cb5-51"><a href="#cb5-51" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;section style="border:1px solid #ddd; border-radius:8px; padding:1em; margin:1em 0;"&gt;</span></span>
-<span id="cb5-52"><a href="#cb5-52" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;h3 style="margin-top:0;"&gt;</span></span>
-<span id="cb5-53"><a href="#cb5-53" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;a href=</span><span class="sc">${</span>row<span class="op">.</span><span class="at">url</span><span class="sc">}</span><span class="vs">&gt;</span><span class="sc">${</span>row<span class="op">.</span><span class="at">headline</span><span class="sc">}</span><span class="vs">&lt;/a&gt;</span></span>
-<span id="cb5-54"><a href="#cb5-54" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/h3&gt;</span></span>
-<span id="cb5-55"><a href="#cb5-55" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;p&gt;</span><span class="sc">${</span>row<span class="op">.</span><span class="at">description</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
-<span id="cb5-56"><a href="#cb5-56" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/section&gt;</span></span>
-<span id="cb5-57"><a href="#cb5-57" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span>)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="77" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 76;"><span id="cb5-77"><a href="#cb5-77" aria-hidden="true" tabindex="-1"></a><span class="fu">html</span><span class="vs">`</span><span class="sc">${</span>course_filtered<span class="op">.</span><span class="fu">map</span>(row <span class="kw">=&gt;</span> <span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb5-78"><a href="#cb5-78" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;section style="border:1px solid #ddd; border-radius:8px; padding:1em; margin:1em 0;"&gt;</span></span>
+<span id="cb5-79"><a href="#cb5-79" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;h3 style="margin-top:0;"&gt;</span></span>
+<span id="cb5-80"><a href="#cb5-80" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;a href=</span><span class="sc">${</span>row<span class="op">.</span><span class="at">url</span><span class="sc">}</span><span class="vs">&gt;</span><span class="sc">${</span>row<span class="op">.</span><span class="at">headline</span><span class="sc">}</span><span class="vs">&lt;/a&gt;</span></span>
+<span id="cb5-81"><a href="#cb5-81" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;/h3&gt;</span></span>
+<span id="cb5-82"><a href="#cb5-82" aria-hidden="true" tabindex="-1"></a><span class="vs">    &lt;p&gt;</span><span class="sc">${</span>row<span class="op">.</span><span class="at">description</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb5-83"><a href="#cb5-83" aria-hidden="true" tabindex="-1"></a><span class="vs">  &lt;/section&gt;</span></span>
+<span id="cb5-84"><a href="#cb5-84" aria-hidden="true" tabindex="-1"></a><span class="vs">`</span>)<span class="sc">}</span><span class="vs">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output cell-output-display">
 <div id="ojs-cell-5" data-nodetype="expression">
-
-</div>
-</div>
-</div>
-</section>
-<section id="all-courses" class="level3">
-<h3 class="anchored" data-anchor-id="all-courses">All Courses</h3>
-<div class="cell">
-<details class="code-fold hidden">
-<summary>Code</summary>
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="63" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 62;"><span id="cb6-63"><a href="#cb6-63" aria-hidden="true" tabindex="-1"></a>Inputs<span class="op">.</span><span class="fu">table</span>(course_data)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</details>
-<div class="cell-output cell-output-display">
-<div id="ojs-cell-6" data-nodetype="expression">
 
 </div>
 </div>
@@ -356,7 +380,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </main> <!-- /main -->
 <script type="ojs-module-contents">
-eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImNvdXJzZV9kYXRhID0gRmlsZUF0dGFjaG1lbnQoXCJjb3Vyc2VzLmNzdlwiKS5jc3Yoe3R5cGVkOiB0cnVlfSlcblxuYWNjZXNzX21vZGVzID0gW1wiYXVkaXRvcnlcIiwgXCJ0YWN0aWxlXCIsIFwidGV4dHVhbFwiLCBcInZpc3VhbFwiXVxuZGVmYXVsdF9hY2Nlc3NfbW9kZXMgPSBbXCJ0ZXh0dWFsXCJdXG5hdWRpZW5jZXMgPSBbXCJVbmRlcmdyYWR1YXRlIHN0dWRlbnRcIiwgXCJQb3N0Z3JhZHVhdGUgdGF1Z2h0IHN0dWRlbnRcIiwgXCJQb3N0Z3JhZHVhdGUgcmVzZWFyY2ggc3R1ZGVudFwiLCBcInJlc2VhcmNoZXJcIiwgXCJjbGluaWNpYW5cIiwgXCJlbmdpbmVlclwiLCBcInRyYWluZXJcIiwgXCJpbmR1c3RyeVwiLCBcInB1YmxpYyBzZWN0b3JcIiwgIFwiUmVzZWFyY2ggU29mdHdhcmUgRW5naW5lZXJcIiwgXCJCaW9pbmZvcm1hdGljYW5cIiwgXCJPcGVuIFJlc2VhcmNoIFNwZWNpYWxpc3RcIiwgXCJSZXNlYXJjaCBza2lsbHMgZWR1Y2F0b3JcIl1cbmRlZmF1bHRfYXVkaWVuY2UgPSBcIlVuZGVyZ3JhZHVhdGUgc3R1ZGVudFwiXG5lZHVjYXRpb25hbF9sZXZlbHMgPSBbXCJsZXZlbDFcIiwgXCJsZXZlbDJcIiwgXCJsZXZlbDNcIiwgXCJsZXZlbDRcIiwgXCJsZXZlbDVcIl1cbmRlZmF1bHRfZWR1Y2F0aW9uYWxfbGV2ZWwgPSBbXCJsZXZlbDFcIl1cbnJlc291cmNlX3R5cGVzID0gW1wib25saW5lQ291cnNlXCIsIFwib25saW5lV29ya3Nob3BcIiwgXCJjb3Vyc2VcIiwgXCJ3b3Jrc2hvcFwiXVxuZGVmYXVsdF9yZXNvdXJjZV90eXBlID0gW1wib25saW5lQ291cnNlXCJdXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ2aWV3b2Ygc2VhcmNoX3Rlcm1zID0gSW5wdXRzLnRleHQoe2xhYmVsOiBcIlNlYXJjaFwifSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6InZpZXdvZiBzZWxlY3RlZF9hY2Nlc3NfbW9kZSA9IElucHV0cy5jaGVja2JveChhY2Nlc3NfbW9kZXMsIHtsYWJlbDogXCJBY2Nlc3MgbW9kZVwiLCB2YWx1ZTogZGVmYXVsdF9hY2Nlc3NfbW9kZXN9KVxudmlld29mIHNlbGVjdGVkX2F1ZGllbmNlID0gSW5wdXRzLnNlbGVjdChhdWRpZW5jZXMsIHtsYWJlbDogXCJBdWRpZW5jZVwiLCB2YWx1ZTogZGVmYXVsdF9hdWRpZW5jZX0pXG52aWV3b2Ygc2VsZWN0ZWRfZWR1Y2F0aW9uYWxfbGV2ZWwgPSBJbnB1dHMuY2hlY2tib3goZWR1Y2F0aW9uYWxfbGV2ZWxzLCB7bGFiZWw6IFwiTGV2ZWxcIiwgdmFsdWU6IGRlZmF1bHRfZWR1Y2F0aW9uYWxfbGV2ZWx9KVxudmlld29mIHNlbGVjdGVkX3Jlc291cmNlX3R5cGUgPSBJbnB1dHMuc2VsZWN0KHJlc291cmNlX3R5cGVzLCB7bGFiZWw6IFwiVHlwZVwiLCB2YWx1ZTogZGVmYXVsdF9yZXNvdXJjZV90eXBlfSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNCIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImNvdXJzZV9maWx0ZXJlZCA9IGNvdXJzZV9kYXRhLmZpbHRlcihyb3cgPT4gXG4gICAgcm93LmF1ZGllbmNlLmluY2x1ZGVzKHNlbGVjdGVkX2F1ZGllbmNlKSAmJlxuICAgIHNlbGVjdGVkX2FjY2Vzc19tb2RlLmluY2x1ZGVzKHJvdy5hY2Nlc3NNb2RlKSAmJlxuICAgIHNlbGVjdGVkX2VkdWNhdGlvbmFsX2xldmVsLmluY2x1ZGVzKHJvdy5lZHVjYXRpb25hbExldmVsKSAmJlxuICAgIHNlbGVjdGVkX3Jlc291cmNlX3R5cGUuaW5jbHVkZXMocm93LmxlYXJuaW5nUmVzb3VyY2VUeXBlKVxuKVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC01IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiaHRtbGAke2NvdXJzZV9maWx0ZXJlZC5tYXAocm93ID0+IGh0bWxgXG4gIDxzZWN0aW9uIHN0eWxlPVwiYm9yZGVyOjFweCBzb2xpZCAjZGRkOyBib3JkZXItcmFkaXVzOjhweDsgcGFkZGluZzoxZW07IG1hcmdpbjoxZW0gMDtcIj5cbiAgICA8aDMgc3R5bGU9XCJtYXJnaW4tdG9wOjA7XCI+XG4gICAgICAgIDxhIGhyZWY9JHtyb3cudXJsfT4ke3Jvdy5oZWFkbGluZX08L2E+XG4gICAgPC9oMz5cbiAgICA8cD4ke3Jvdy5kZXNjcmlwdGlvbn08L3A+XG4gIDwvc2VjdGlvbj5cbmApfWBcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNiIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6IklucHV0cy50YWJsZShjb3Vyc2VfZGF0YSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VhcmNoX3Rlcm1zJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkX2FjY2Vzc19tb2RlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkX2F1ZGllbmNlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkX2VkdWNhdGlvbmFsX2xldmVsJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkX3Jlc291cmNlX3R5cGUnKSJ9XX0=
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6ImNvdXJzZV9kYXRhID0gRmlsZUF0dGFjaG1lbnQoXCJjb3Vyc2VzLmNzdlwiKS5jc3Yoe3R5cGVkOiB0cnVlfSlcblxuYWNjZXNzX21vZGVzID0gW1wiYXVkaXRvcnlcIiwgXCJ0YWN0aWxlXCIsIFwidGV4dHVhbFwiLCBcInZpc3VhbFwiXVxuZGVmYXVsdF9hY2Nlc3NfbW9kZXMgPSBbXVxuYXVkaWVuY2VzID0gW1wiQmlvaW5mb3JtYXRpY2lhblwiLCBcIkNsaW5pY2lhblwiLCBcIkVuZ2luZWVyXCIsIFwiSW5kdXN0cnlcIiwgXCJPcGVuIFJlc2VhcmNoIFNwZWNpYWxpc3RcIiwgXCJQb3N0Z3JhZHVhdGUgdGF1Z2h0IHN0dWRlbnRcIiwgXCJQb3N0Z3JhZHVhdGUgcmVzZWFyY2ggc3R1ZGVudFwiLCBcIlB1YmxpYyBzZWN0b3JcIiwgXCJSZXNlYXJjaGVyXCIsIFwiUmVzZWFyY2ggU29mdHdhcmUgRW5naW5lZXJcIiwgXCJSZXNlYXJjaCBza2lsbHMgZWR1Y2F0b3JcIiwgXCJUcmFpbmVyXCIsIFwiVW5kZXJncmFkdWF0ZSBzdHVkZW50XCIsIG51bGxdXG5kZWZhdWx0X2F1ZGllbmNlID0gbnVsbFxuZWR1Y2F0aW9uYWxfbGV2ZWxzID0gW1wibGV2ZWwxXCIsIFwibGV2ZWwyXCIsIFwibGV2ZWwzXCIsIFwibGV2ZWw0XCIsIFwibGV2ZWw1XCJdXG5kZWZhdWx0X2VkdWNhdGlvbmFsX2xldmVsID0gW11cbnJlc291cmNlX3R5cGVzID0gW1wiY291cnNlXCIsIFwib25saW5lQ291cnNlXCIsIFwib25saW5lV29ya3Nob3BcIiwgXCJ3b3Jrc2hvcFwiLCBudWxsXVxuZGVmYXVsdF9yZXNvdXJjZV90eXBlID0gbnVsbFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0yIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHNlYXJjaF90ZXJtcyA9IElucHV0cy50ZXh0KHtsYWJlbDogXCJTZWFyY2hcIn0pXG5zZWFyY2hfcXVlcnkgPSAoc2VhcmNoX3Rlcm1zID8/IFwiXCIpLnRvTG93ZXJDYXNlKCkudHJpbSgpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTMiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ2aWV3b2Ygc2VsZWN0ZWRfYWNjZXNzX21vZGUgPSBJbnB1dHMuY2hlY2tib3goYWNjZXNzX21vZGVzLCB7bGFiZWw6IFwiQWNjZXNzIG1vZGVcIiwgdmFsdWU6IGRlZmF1bHRfYWNjZXNzX21vZGVzfSlcbnZpZXdvZiBzZWxlY3RlZF9hdWRpZW5jZSA9IElucHV0cy5zZWxlY3QoYXVkaWVuY2VzLCB7bGFiZWw6IFwiQXVkaWVuY2VcIiwgdmFsdWU6IGRlZmF1bHRfYXVkaWVuY2V9KVxudmlld29mIHNlbGVjdGVkX2VkdWNhdGlvbmFsX2xldmVsID0gSW5wdXRzLmNoZWNrYm94KGVkdWNhdGlvbmFsX2xldmVscywge2xhYmVsOiBcIkxldmVsXCIsIHZhbHVlOiBkZWZhdWx0X2VkdWNhdGlvbmFsX2xldmVsfSlcbnZpZXdvZiBzZWxlY3RlZF9yZXNvdXJjZV90eXBlID0gSW5wdXRzLnNlbGVjdChyZXNvdXJjZV90eXBlcywge2xhYmVsOiBcIlR5cGVcIiwgdmFsdWU6IGRlZmF1bHRfcmVzb3VyY2VfdHlwZX0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJjb3Vyc2VfZmlsdGVyZWQgPVxuICAoXG4gICAgKCFzZWxlY3RlZF9hdWRpZW5jZSkgJiZcbiAgICAoc2VsZWN0ZWRfYWNjZXNzX21vZGUgPz8gW10pLmxlbmd0aCA9PT0gMCAmJlxuICAgIChzZWxlY3RlZF9lZHVjYXRpb25hbF9sZXZlbCA/PyBbXSkubGVuZ3RoID09PSAwICYmXG4gICAgKHNlbGVjdGVkX3Jlc291cmNlX3R5cGUgPz8gW10pLmxlbmd0aCA9PT0gMCAmJlxuICAgICghc2VhcmNoX3F1ZXJ5KVxuICApXG4gID8gY291cnNlX2RhdGEuZmlsdGVyKHJvdyA9PiByb3cuZmVhdHVyZWQgPT09IFwieWVzXCIpXG4gIDogY291cnNlX2RhdGEuZmlsdGVyKHJvdyA9PlxuICAgICAgLy8gYXVkaWVuY2VcbiAgICAgICghc2VsZWN0ZWRfYXVkaWVuY2UgfHwgcm93LmF1ZGllbmNlLmluY2x1ZGVzKHNlbGVjdGVkX2F1ZGllbmNlKSkgJiZcblxuICAgICAgLy8gYWNjZXNzIG1vZGVcbiAgICAgICgoc2VsZWN0ZWRfYWNjZXNzX21vZGUgPz8gW10pLmxlbmd0aCA9PT0gMCB8fFxuICAgICAgICAoc2VsZWN0ZWRfYWNjZXNzX21vZGUgPz8gW10pLmluY2x1ZGVzKHJvdy5hY2Nlc3NNb2RlKSkgJiZcblxuICAgICAgLy8gZWR1Y2F0aW9uYWwgbGV2ZWxcbiAgICAgICgoc2VsZWN0ZWRfZWR1Y2F0aW9uYWxfbGV2ZWwgPz8gW10pLmxlbmd0aCA9PT0gMCB8fFxuICAgICAgICAoc2VsZWN0ZWRfZWR1Y2F0aW9uYWxfbGV2ZWwgPz8gW10pLmluY2x1ZGVzKHJvdy5lZHVjYXRpb25hbExldmVsKSkgJiZcblxuICAgICAgLy8gcmVzb3VyY2UgdHlwZVxuICAgICAgKChzZWxlY3RlZF9yZXNvdXJjZV90eXBlID8/IFtdKS5sZW5ndGggPT09IDAgfHxcbiAgICAgICAgKHNlbGVjdGVkX3Jlc291cmNlX3R5cGUgPz8gW10pLmluY2x1ZGVzKHJvdy5sZWFybmluZ1Jlc291cmNlVHlwZSkpICYmXG5cbiAgICAgIC8vIHNlYXJjaFxuICAgICAgKCFzZWFyY2hfcXVlcnkgfHxcbiAgICAgICAgcm93LmhlYWRsaW5lLnRvTG93ZXJDYXNlKCkuaW5jbHVkZXMoc2VhcmNoX3F1ZXJ5KSlcbiAgICApXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJodG1sYCR7Y291cnNlX2ZpbHRlcmVkLm1hcChyb3cgPT4gaHRtbGBcbiAgPHNlY3Rpb24gc3R5bGU9XCJib3JkZXI6MXB4IHNvbGlkICNkZGQ7IGJvcmRlci1yYWRpdXM6OHB4OyBwYWRkaW5nOjFlbTsgbWFyZ2luOjFlbSAwO1wiPlxuICAgIDxoMyBzdHlsZT1cIm1hcmdpbi10b3A6MDtcIj5cbiAgICAgICAgPGEgaHJlZj0ke3Jvdy51cmx9PiR7cm93LmhlYWRsaW5lfTwvYT5cbiAgICA8L2gzPlxuICAgIDxwPiR7cm93LmRlc2NyaXB0aW9ufTwvcD5cbiAgPC9zZWN0aW9uPlxuYCl9YFxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWFyY2hfdGVybXMnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRfYWNjZXNzX21vZGUnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRfYXVkaWVuY2UnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRfZWR1Y2F0aW9uYWxfbGV2ZWwnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRfcmVzb3VyY2VfdHlwZScpIn1dfQ==
 </script>
 <script type="module">
 if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
