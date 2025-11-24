@@ -8,41 +8,66 @@ format:
     code-tools: false
 ---
 
-A very simple test CSV filtering site
-
 ```{ojs}
 course_data = FileAttachment("courses.csv").csv({typed: true})
 
 access_modes = ["auditory", "tactile", "textual", "visual"]
-default_access_modes = ["textual"]
-audiences = ["Undergraduate student", "Postgraduate taught student", "Postgraduate research student", "researcher", "clinician", "engineer", "trainer", "industry", "public sector",  "Research Software Engineer", "Bioinformatican", "Open Research Specialist", "Research skills educator"]
-default_audience = "Undergraduate student"
+default_access_modes = []
+audiences = ["Bioinformatician", "Clinician", "Engineer", "Industry", "Open Research Specialist", "Postgraduate taught student", "Postgraduate research student", "Public sector", "Researcher", "Research Software Engineer", "Research skills educator", "Trainer", "Undergraduate student", null]
+default_audience = null
 educational_levels = ["level1", "level2", "level3", "level4", "level5"]
-default_educational_level = ["level1"]
-resource_types = ["onlineCourse", "onlineWorkshop", "course", "workshop"]
-default_resource_type = ["onlineCourse"]
+default_educational_level = []
+resource_types = ["course", "onlineCourse", "onlineWorkshop", "workshop", null]
+default_resource_type = null
 ```
 
 ```{ojs}
 //| panel: input
 viewof search_terms = Inputs.text({label: "Search"})
+search_query = (search_terms ?? "").toLowerCase().trim()
 ```
 
+<details>
+<summary>Advanced search</summary>
+
 ```{ojs}
-//| panel: input
 viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: default_access_modes})
 viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: default_audience})
 viewof selected_educational_level = Inputs.checkbox(educational_levels, {label: "Level", value: default_educational_level})
 viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: default_resource_type})
 ```
+</details>
 
 ```{ojs}
-course_filtered = course_data.filter(row => 
-    row.audience.includes(selected_audience) &&
-    selected_access_mode.includes(row.accessMode) &&
-    selected_educational_level.includes(row.educationalLevel) &&
-    selected_resource_type.includes(row.learningResourceType)
-)
+course_filtered =
+  (
+    (!selected_audience) &&
+    (selected_access_mode ?? []).length === 0 &&
+    (selected_educational_level ?? []).length === 0 &&
+    (selected_resource_type ?? []).length === 0 &&
+    (!search_query)
+  )
+  ? course_data.filter(row => row.featured === "yes")
+  : course_data.filter(row =>
+      // audience
+      (!selected_audience || row.audience.includes(selected_audience)) &&
+
+      // access mode
+      ((selected_access_mode ?? []).length === 0 ||
+        (selected_access_mode ?? []).includes(row.accessMode)) &&
+
+      // educational level
+      ((selected_educational_level ?? []).length === 0 ||
+        (selected_educational_level ?? []).includes(row.educationalLevel)) &&
+
+      // resource type
+      ((selected_resource_type ?? []).length === 0 ||
+        (selected_resource_type ?? []).includes(row.learningResourceType)) &&
+
+      // search
+      (!search_query ||
+        row.headline.toLowerCase().includes(search_query))
+    )
 ```
 
 ### Results
@@ -58,8 +83,3 @@ html`${course_filtered.map(row => html`
 `)}`
 ```
 
-### All Courses
-
-```{ojs}
-Inputs.table(course_data)
-```
