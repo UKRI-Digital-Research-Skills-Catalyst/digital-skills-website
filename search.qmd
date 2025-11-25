@@ -1,5 +1,5 @@
 ---
-title: "CSV Search Tool"
+title: ""
 format:
   html:
     toc: false
@@ -24,13 +24,17 @@ default_resource_type = null
 ```
 
 ```{ojs}
-//| panel: input
-viewof search_terms = Inputs.text({label: "Search"})
 search_query = (search_terms ?? "").toLowerCase().trim()
 ```
 
+```{ojs}
+//| panel: input
+viewof search_terms = Inputs.text({placeholder: "Type to search..."})
+```
+
+
 <details>
-<summary>Advanced search</summary>
+<summary>Advanced search&hellip;</summary>
 
 ```{ojs}
 viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: default_access_modes})
@@ -72,16 +76,23 @@ course_filtered =
     )
 ```
 
-### Results
-
 ```{ojs}
-html`${course_filtered.map(row => html`
-  <section style="border:1px solid #ddd; border-radius:8px; padding:1em; margin:1em 0;">
-    <h3 style="margin-top:0;">
-        <a href=${row.url}>${row.headline}</a>
-    </h3>
-    <p>${row.description}</p>
-  </section>
-`)}`
+html`${
+  course_filtered.length === 0
+  ? html`
+    <div class="course-data-empty">
+      <p>No results</p>
+    </div>
+  `
+  : course_filtered.map(row => 
+  html`
+    <div class="${row.featured === "yes" ? "course-data featured" : "course-data"}">
+      <h3>
+          <a href=${row.url}>${row.headline}</a>
+      </h3>
+      <p>${row.description}</p>
+    </div>
+  `
+  )
+}`
 ```
-
