@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>UKRI Digital Research Skills Catalyst</title>
+<title>Welcome to the UKRI Digital Research Skills Catalyst</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -40,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-0b37c64f34216b628666a8dac638b53b.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-de420133dc6abbb434cf5f42490c41f3.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,23 +103,25 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script type="module" src="site_libs/quarto-ojs/quarto-ojs-runtime.js"></script>
+<link href="site_libs/quarto-ojs/quarto-ojs.css" rel="stylesheet">
 
 
 <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="nav-fixed index fullcontent quarto-light">
+<body class="nav-fixed search fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">UKRI Digital Research Skills Catalyst</span>
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <img src="./assets/ukri-drsc-logo-transparent.png" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo light-content">
+    <img src="./assets/ukri-drsc-logo-transparent.png" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo dark-content">
     </a>
   </div>
-            <div id="quarto-search" class="" title="Search"></div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -95,12 +132,20 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./search.html"> 
-<span class="menu-text">Search</span></a>
+    <a class="nav-link" href="./consult.html"> 
+<span class="menu-text">Consult an Expert</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./news.html"> 
+<span class="menu-text">News &amp; Events</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
 <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./contact.html"> 
+<span class="menu-text">Contact</span></a>
   </li>  
 </ul>
           </div> <!-- /navcollapse -->
@@ -119,7 +164,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">UKRI Digital Research Skills Catalyst</h1>
+<h1 class="title">Welcome to the UKRI Digital Research Skills Catalyst</h1>
 </div>
 
 
@@ -136,17 +181,332 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Unlock your potential with the UKRI Digital Research Skills Catalyst – the national hub for researcher and innovator development.</strong></p>
-<section id="project-history-and-funding" class="level2">
-<h2 class="anchored" data-anchor-id="project-history-and-funding">Project history and funding</h2>
-<p>Led by Professor Emma Rand at the University of York, the Catalyst Project was developed in response to the UKRI Digital Research Infrastructure Programme funding call. It brings together seven university partners in a collaborative effort to centralise high-quality training materials for researchers and innovators.</p>
-<p>The project builds on resources created by Data Science in Healthcare &amp; Biosciences (DaSH), which developed training materials and hosted events between 2021 and 2023 to upskill health and bioscience researchers in data management and analysis. The Catalyst now centralises access to materials from seven of the nine DaSH projects, creating a single hub for researchers to access these resources.</p>
-<p>While originally focused on health and bioscience researchers, the Catalyst aims to reach a broader audience. Its digital research skills training resources are also highly relevant for researchers in arts and humanities, sciences, and social sciences, providing opportunities to enhance digital expertise across disciplines.</p>
+<div class="hero">
+<h2 class="anchored">
+A national hub for researcher and innovator development.
+</h2>
+<p>Boost your digital research skills, accelerate your research impact—discover 80+ learning resources, events, and expert-led training in one central hub with the UKRI Digital Research Skills Catalyst. Find out more <a href="./about.html">here</a>.</p>
+</div>
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb1" data-startfrom="19" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 18;"><span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a><span class="co">// Load the course data from CSV</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>course_data <span class="op">=</span> <span class="fu">FileAttachment</span>(<span class="st">"https://docs.google.com/spreadsheets/d/e/2PACX-1vRSrvsfFfVwokza_WP9JIzd4Wfg6OKPBJcwelLTqYn1SgigZXnfcU6_apN5gWTMF79n4CRQFNOJ5w6M/pub?gid=1012757406&amp;single=true&amp;output=csv"</span>)<span class="op">.</span><span class="fu">csv</span>({<span class="dt">typed</span><span class="op">:</span> <span class="kw">true</span>})</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a><span class="co">// course_data = FileAttachment("assets/courses.csv").csv({typed: true})</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb2" data-startfrom="27" data-source-offset="-60"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 26;"><span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a><span class="kw">function</span> <span class="fu">csv_column_set</span>(ds<span class="op">,</span> col<span class="op">,</span> inject_null) {</span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="kw">let</span> all_values <span class="op">=</span> ds<span class="op">.</span><span class="fu">flatMap</span>(d <span class="kw">=&gt;</span></span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>    d[col]</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>      <span class="op">?</span> d[col]<span class="op">.</span><span class="fu">split</span>(<span class="st">","</span>)<span class="op">.</span><span class="fu">map</span>(s <span class="kw">=&gt;</span> s<span class="op">.</span><span class="fu">trim</span>())</span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>      <span class="op">:</span> []</span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  )<span class="op">;</span></span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  all_values <span class="op">=</span> <span class="bu">Array</span><span class="op">.</span><span class="fu">from</span>(<span class="kw">new</span> <span class="bu">Set</span>(all_values))<span class="op">.</span><span class="fu">sort</span>()</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span>(inject_null) {</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>    all_values<span class="op">.</span><span class="fu">unshift</span>(<span class="kw">null</span>)</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> all_values</span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>audiences <span class="op">=</span> <span class="fu">csv_column_set</span>(course_data<span class="op">,</span> <span class="st">"audience"</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a>access_modes <span class="op">=</span> <span class="fu">csv_column_set</span>(course_data<span class="op">,</span> <span class="st">"accessMode"</span><span class="op">,</span> <span class="kw">false</span>)<span class="op">;</span></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>education_levels <span class="op">=</span> <span class="fu">csv_column_set</span>(course_data<span class="op">,</span> <span class="st">"educationalLevel"</span><span class="op">,</span> <span class="kw">false</span>)<span class="op">;</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>resource_types <span class="op">=</span> <span class="fu">csv_column_set</span>(course_data<span class="op">,</span> <span class="st">"learningResourceType"</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>providers <span class="op">=</span> <span class="fu">csv_column_set</span>(course_data<span class="op">,</span> <span class="st">"provider"</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a>times <span class="op">=</span> <span class="fu">csv_column_set</span>(course_data<span class="op">,</span> <span class="st">"timeRequired"</span><span class="op">,</span> <span class="kw">true</span>)<span class="op">;</span></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a>keywords <span class="op">=</span> <span class="fu">csv_column_set</span>(course_data<span class="op">,</span> <span class="st">"keywords"</span><span class="op">,</span> <span class="kw">false</span>)<span class="op">;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-5" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-6" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-2-8" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb3" data-startfrom="48" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 47;"><span id="cb3-48"><a href="#cb3-48" aria-hidden="true" tabindex="-1"></a><span class="co">// Trim the search query</span></span>
+<span id="cb3-49"><a href="#cb3-49" aria-hidden="true" tabindex="-1"></a>search_query <span class="op">=</span> (search_terms <span class="op">??</span> <span class="st">""</span>)<span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">.</span><span class="fu">trim</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="primary-search">
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb4" data-startfrom="54" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 53;"><span id="cb4-54"><a href="#cb4-54" aria-hidden="true" tabindex="-1"></a>viewof search_terms <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">text</span>({<span class="dt">placeholder</span><span class="op">:</span> <span class="st">"Search Training Resources..."</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div id="primary-filters" style="display: none;">
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb5" data-startfrom="60" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 59;"><span id="cb5-60"><a href="#cb5-60" aria-hidden="true" tabindex="-1"></a>viewof selected_audience <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(audiences<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Audience"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})</span>
+<span id="cb5-61"><a href="#cb5-61" aria-hidden="true" tabindex="-1"></a>viewof selected_educational_level <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(education_levels<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Level"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> []})</span>
+<span id="cb5-62"><a href="#cb5-62" aria-hidden="true" tabindex="-1"></a>viewof selected_resource_type <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(resource_types<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Type"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-5-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="primary-filter-toggle">
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb6" data-startfrom="67" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 66;"><span id="cb6-67"><a href="#cb6-67" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb6-68"><a href="#cb6-68" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> toggleLink <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">createElement</span>(<span class="st">"a"</span>)<span class="op">;</span></span>
+<span id="cb6-69"><a href="#cb6-69" aria-hidden="true" tabindex="-1"></a>  toggleLink<span class="op">.</span><span class="at">href</span> <span class="op">=</span> <span class="st">"#"</span><span class="op">;</span></span>
+<span id="cb6-70"><a href="#cb6-70" aria-hidden="true" tabindex="-1"></a>  toggleLink<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"show filters"</span><span class="op">;</span></span>
+<span id="cb6-71"><a href="#cb6-71" aria-hidden="true" tabindex="-1"></a>  toggleLink<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">"click"</span><span class="op">,</span> (<span class="bu">event</span>) <span class="kw">=&gt;</span> {</span>
+<span id="cb6-72"><a href="#cb6-72" aria-hidden="true" tabindex="-1"></a>    <span class="bu">event</span><span class="op">.</span><span class="fu">preventDefault</span>()<span class="op">;</span></span>
+<span id="cb6-73"><a href="#cb6-73" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> filter_div <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"primary-filters"</span>)<span class="op">;</span></span>
+<span id="cb6-74"><a href="#cb6-74" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (filter_div<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">===</span> <span class="st">"none"</span>) {</span>
+<span id="cb6-75"><a href="#cb6-75" aria-hidden="true" tabindex="-1"></a>      toggleLink<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"hide filters"</span><span class="op">;</span></span>
+<span id="cb6-76"><a href="#cb6-76" aria-hidden="true" tabindex="-1"></a>      filter_div<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">"block"</span></span>
+<span id="cb6-77"><a href="#cb6-77" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb6-78"><a href="#cb6-78" aria-hidden="true" tabindex="-1"></a>      toggleLink<span class="op">.</span><span class="at">textContent</span> <span class="op">=</span> <span class="st">"show filters"</span><span class="op">;</span></span>
+<span id="cb6-79"><a href="#cb6-79" aria-hidden="true" tabindex="-1"></a>      filter_div<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">display</span> <span class="op">=</span> <span class="st">"none"</span></span>
+<span id="cb6-80"><a href="#cb6-80" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb6-81"><a href="#cb6-81" aria-hidden="true" tabindex="-1"></a>  })<span class="op">;</span></span>
+<span id="cb6-82"><a href="#cb6-82" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> toggleLink<span class="op">;</span></span>
+<span id="cb6-83"><a href="#cb6-83" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-6" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell">
+<details class="code-fold hidden">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb7" data-startfrom="90" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 89;"><span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a><span class="co">// Perform the filtering:</span></span>
+<span id="cb7-91"><a href="#cb7-91" aria-hidden="true" tabindex="-1"></a>course_filtered <span class="op">=</span></span>
+<span id="cb7-92"><a href="#cb7-92" aria-hidden="true" tabindex="-1"></a>  (</span>
+<span id="cb7-93"><a href="#cb7-93" aria-hidden="true" tabindex="-1"></a>    (<span class="op">!</span>selected_audience) <span class="op">&amp;&amp;</span></span>
+<span id="cb7-94"><a href="#cb7-94" aria-hidden="true" tabindex="-1"></a>    (selected_access_mode <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb7-95"><a href="#cb7-95" aria-hidden="true" tabindex="-1"></a>    (selected_educational_level <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb7-96"><a href="#cb7-96" aria-hidden="true" tabindex="-1"></a>    (selected_resource_type <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb7-97"><a href="#cb7-97" aria-hidden="true" tabindex="-1"></a>    (selected_time <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb7-98"><a href="#cb7-98" aria-hidden="true" tabindex="-1"></a>    (selected_provider <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb7-99"><a href="#cb7-99" aria-hidden="true" tabindex="-1"></a>    (selected_keywords <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">&amp;&amp;</span></span>
+<span id="cb7-100"><a href="#cb7-100" aria-hidden="true" tabindex="-1"></a>    (<span class="op">!</span>search_query)</span>
+<span id="cb7-101"><a href="#cb7-101" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb7-102"><a href="#cb7-102" aria-hidden="true" tabindex="-1"></a>  <span class="op">?</span> course_data<span class="op">.</span><span class="fu">filter</span>(row <span class="kw">=&gt;</span> row<span class="op">.</span><span class="at">featured</span> <span class="op">===</span> <span class="st">"yes"</span>)</span>
+<span id="cb7-103"><a href="#cb7-103" aria-hidden="true" tabindex="-1"></a>  <span class="op">:</span> course_data<span class="op">.</span><span class="fu">filter</span>(row <span class="kw">=&gt;</span></span>
+<span id="cb7-104"><a href="#cb7-104" aria-hidden="true" tabindex="-1"></a>      <span class="co">// audience</span></span>
+<span id="cb7-105"><a href="#cb7-105" aria-hidden="true" tabindex="-1"></a>      (<span class="op">!</span>selected_audience <span class="op">||</span> <span class="op">!</span>row<span class="op">.</span><span class="at">audience</span> <span class="op">||</span> row<span class="op">.</span><span class="at">audience</span><span class="op">.</span><span class="fu">includes</span>(selected_audience)) <span class="op">&amp;&amp;</span></span>
+<span id="cb7-106"><a href="#cb7-106" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-107"><a href="#cb7-107" aria-hidden="true" tabindex="-1"></a>      <span class="co">// access mode</span></span>
+<span id="cb7-108"><a href="#cb7-108" aria-hidden="true" tabindex="-1"></a>      ((selected_access_mode <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span> (selected_access_mode <span class="op">??</span> [])<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">accessMode</span>)) <span class="op">&amp;&amp;</span></span>
+<span id="cb7-109"><a href="#cb7-109" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-110"><a href="#cb7-110" aria-hidden="true" tabindex="-1"></a>      <span class="co">// educational level</span></span>
+<span id="cb7-111"><a href="#cb7-111" aria-hidden="true" tabindex="-1"></a>      ((selected_educational_level <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span> (selected_educational_level <span class="op">??</span> [])<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">educationalLevel</span>)) <span class="op">&amp;&amp;</span></span>
+<span id="cb7-112"><a href="#cb7-112" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-113"><a href="#cb7-113" aria-hidden="true" tabindex="-1"></a>      <span class="co">// resource type</span></span>
+<span id="cb7-114"><a href="#cb7-114" aria-hidden="true" tabindex="-1"></a>      ((selected_resource_type <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span> (selected_resource_type <span class="op">??</span> [])<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">learningResourceType</span>)) <span class="op">&amp;&amp;</span></span>
+<span id="cb7-115"><a href="#cb7-115" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb7-116"><a href="#cb7-116" aria-hidden="true" tabindex="-1"></a>      <span class="co">// time</span></span>
+<span id="cb7-117"><a href="#cb7-117" aria-hidden="true" tabindex="-1"></a>      ((selected_time <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span> (selected_time <span class="op">??</span> [])<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">timeRequired</span>)) <span class="op">&amp;&amp;</span></span>
+<span id="cb7-118"><a href="#cb7-118" aria-hidden="true" tabindex="-1"></a>      <span class="co">// provider</span></span>
+<span id="cb7-119"><a href="#cb7-119" aria-hidden="true" tabindex="-1"></a>      ((selected_provider <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span> (selected_provider <span class="op">??</span> [])<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">provider</span>)) <span class="op">&amp;&amp;</span></span>
+<span id="cb7-120"><a href="#cb7-120" aria-hidden="true" tabindex="-1"></a>      <span class="co">// keywords</span></span>
+<span id="cb7-121"><a href="#cb7-121" aria-hidden="true" tabindex="-1"></a>      ((selected_keywords <span class="op">??</span> [])<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span> <span class="op">||</span> (selected_keywords <span class="op">??</span> [])<span class="op">.</span><span class="fu">includes</span>(row<span class="op">.</span><span class="at">keywords</span>)) <span class="op">&amp;&amp;</span></span>
+<span id="cb7-122"><a href="#cb7-122" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-123"><a href="#cb7-123" aria-hidden="true" tabindex="-1"></a>      <span class="co">// search</span></span>
+<span id="cb7-124"><a href="#cb7-124" aria-hidden="true" tabindex="-1"></a>      (<span class="op">!</span>search_query <span class="op">||</span></span>
+<span id="cb7-125"><a href="#cb7-125" aria-hidden="true" tabindex="-1"></a>        row<span class="op">.</span><span class="at">headline</span><span class="op">.</span><span class="fu">toLowerCase</span>()<span class="op">.</span><span class="fu">includes</span>(search_query))</span>
+<span id="cb7-126"><a href="#cb7-126" aria-hidden="true" tabindex="-1"></a>    )</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-7" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div id="primary-search-results">
+<div class="panel-grid layout-sidebar ms-md-0 layout-sidebar-right">
+<div class="panel-fill panel-grid g-col-24 g-col-lg-17 pt-3 pt-lg-0">
+<div class="g-col-24">
+<div class="cell panel-fill">
+<details class="code-fold hidden">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb8" data-startfrom="132" data-source-offset="0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 131;"><span id="cb8-132"><a href="#cb8-132" aria-hidden="true" tabindex="-1"></a>{</span>
+<span id="cb8-133"><a href="#cb8-133" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> search_results <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"primary-search-results"</span>)<span class="op">;</span></span>
+<span id="cb8-134"><a href="#cb8-134" aria-hidden="true" tabindex="-1"></a>  <span class="kw">const</span> empty_results <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">"empty-primary-search-results"</span>)<span class="op">;</span></span>
+<span id="cb8-135"><a href="#cb8-135" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (course_filtered<span class="op">.</span><span class="at">length</span> <span class="op">===</span> <span class="dv">0</span>) {</span>
+<span id="cb8-136"><a href="#cb8-136" aria-hidden="true" tabindex="-1"></a>    <span class="co">// search_results.style.display = "none"</span></span>
+<span id="cb8-137"><a href="#cb8-137" aria-hidden="true" tabindex="-1"></a>    <span class="co">// empty_results.style.display = "block"</span></span>
+<span id="cb8-138"><a href="#cb8-138" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb8-139"><a href="#cb8-139" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;div class="course-data-empty"&gt;</span></span>
+<span id="cb8-140"><a href="#cb8-140" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;p&gt;No results to display&lt;/p&gt;</span></span>
+<span id="cb8-141"><a href="#cb8-141" aria-hidden="true" tabindex="-1"></a><span class="vs">      &lt;/div&gt;</span></span>
+<span id="cb8-142"><a href="#cb8-142" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span></span>
+<span id="cb8-143"><a href="#cb8-143" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb8-144"><a href="#cb8-144" aria-hidden="true" tabindex="-1"></a>    <span class="co">// search_results.style.display = "block"</span></span>
+<span id="cb8-145"><a href="#cb8-145" aria-hidden="true" tabindex="-1"></a>    <span class="co">// empty_results.style.display = "none"</span></span>
+<span id="cb8-146"><a href="#cb8-146" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> <span class="fu">html</span><span class="vs">`</span></span>
+<span id="cb8-147"><a href="#cb8-147" aria-hidden="true" tabindex="-1"></a><span class="vs">      </span><span class="sc">${</span>course_filtered<span class="op">.</span><span class="fu">map</span>(row <span class="kw">=&gt;</span> <span class="fu">html</span> <span class="vs">`</span></span>
+<span id="cb8-148"><a href="#cb8-148" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;div class="</span><span class="sc">${</span>row<span class="op">.</span><span class="at">featured</span> <span class="op">===</span> <span class="st">"yes"</span> <span class="op">?</span> <span class="st">"course-data featured"</span> <span class="op">:</span> <span class="st">"course-data"</span><span class="sc">}</span><span class="vs">"&gt;</span></span>
+<span id="cb8-149"><a href="#cb8-149" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;h3&gt;</span></span>
+<span id="cb8-150"><a href="#cb8-150" aria-hidden="true" tabindex="-1"></a><span class="vs">              &lt;a href=</span><span class="sc">${</span>row<span class="op">.</span><span class="at">url</span><span class="sc">}</span><span class="vs">&gt;</span><span class="sc">${</span>row<span class="op">.</span><span class="at">headline</span><span class="sc">}</span><span class="vs">&lt;/a&gt;</span></span>
+<span id="cb8-151"><a href="#cb8-151" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;/h3&gt;</span></span>
+<span id="cb8-152"><a href="#cb8-152" aria-hidden="true" tabindex="-1"></a><span class="vs">          &lt;p&gt;</span><span class="sc">${</span>row<span class="op">.</span><span class="at">description</span><span class="sc">}</span><span class="vs">&lt;/p&gt;</span></span>
+<span id="cb8-153"><a href="#cb8-153" aria-hidden="true" tabindex="-1"></a><span class="vs">        &lt;/div&gt;</span></span>
+<span id="cb8-154"><a href="#cb8-154" aria-hidden="true" tabindex="-1"></a><span class="vs">    `</span>)<span class="sc">}</span><span class="vs">`</span></span>
+<span id="cb8-155"><a href="#cb8-155" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb8-156"><a href="#cb8-156" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div id="ojs-cell-8" data-nodetype="expression">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="cell panel-sidebar card bg-light p-2 g-col-24 g-col-lg-7">
+<details class="code-fold hidden">
+<summary>Code</summary>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code hidden" id="cb9" data-startfrom="162" data-source-offset="-0"><pre class="sourceCode js code-with-copy"><code class="sourceCode javascript" style="counter-reset: source-line 161;"><span id="cb9-162"><a href="#cb9-162" aria-hidden="true" tabindex="-1"></a>viewof selected_time <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(times<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Time Required"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})</span>
+<span id="cb9-163"><a href="#cb9-163" aria-hidden="true" tabindex="-1"></a>viewof selected_provider <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(providers<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Provider"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> <span class="kw">null</span>})</span>
+<span id="cb9-164"><a href="#cb9-164" aria-hidden="true" tabindex="-1"></a>viewof selected_access_mode <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">checkbox</span>(access_modes<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Access mode"</span><span class="op">,</span> <span class="dt">value</span><span class="op">:</span> []})</span>
+<span id="cb9-165"><a href="#cb9-165" aria-hidden="true" tabindex="-1"></a>viewof selected_keywords <span class="op">=</span> Inputs<span class="op">.</span><span class="fu">select</span>(keywords<span class="op">,</span> {<span class="dt">label</span><span class="op">:</span> <span class="st">"Keywords"</span><span class="op">,</span> <span class="dt">multiple</span><span class="op">:</span> <span class="kw">true</span>})</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</details>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-9-1" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-9-2" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-9-3" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+<div class="cell-output cell-output-display">
+<div>
+<div id="ojs-cell-9-4" data-nodetype="declaration">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
 
 
-</section>
 
 </main> <!-- /main -->
+<script type="ojs-module-contents">
+eyJjb250ZW50cyI6W3sibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtMSIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIExvYWQgdGhlIGNvdXJzZSBkYXRhIGZyb20gQ1NWXG5jb3Vyc2VfZGF0YSA9IEZpbGVBdHRhY2htZW50KFwiaHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vc3ByZWFkc2hlZXRzL2QvZS8yUEFDWC0xdlJTcnZzZkZmVndva3phX1dQOUpJemQ0V2ZnNk9LUEJKY3dlbExUcVluMVNnaWdaWG5mY1U2X2FwTjVnV1RNRjc5bjRDUlFGTk9KNXc2TS9wdWI/Z2lkPTEwMTI3NTc0MDYmc2luZ2xlPXRydWUmb3V0cHV0PWNzdlwiKS5jc3Yoe3R5cGVkOiB0cnVlfSlcbi8vIGNvdXJzZV9kYXRhID0gRmlsZUF0dGFjaG1lbnQoXCJhc3NldHMvY291cnNlcy5jc3ZcIikuY3N2KHt0eXBlZDogdHJ1ZX0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTIiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiIvLyBQdWxsIG91dCB0aGUgdmFsaWQgY29sdW1uIHZhbHVlcyBmcm9tIHRoZSBjb21wbGV0ZSBkYXRhOlxuZnVuY3Rpb24gY3N2X2NvbHVtbl9zZXQoZHMsIGNvbCwgaW5qZWN0X251bGwpIHtcbiAgbGV0IGFsbF92YWx1ZXMgPSBkcy5mbGF0TWFwKGQgPT5cbiAgICBkW2NvbF1cbiAgICAgID8gZFtjb2xdLnNwbGl0KFwiLFwiKS5tYXAocyA9PiBzLnRyaW0oKSlcbiAgICAgIDogW11cbiAgKTtcbiAgYWxsX3ZhbHVlcyA9IEFycmF5LmZyb20obmV3IFNldChhbGxfdmFsdWVzKSkuc29ydCgpXG4gIGlmKGluamVjdF9udWxsKSB7XG4gICAgYWxsX3ZhbHVlcy51bnNoaWZ0KG51bGwpXG4gIH1cbiAgcmV0dXJuIGFsbF92YWx1ZXNcbn1cbmF1ZGllbmNlcyA9IGNzdl9jb2x1bW5fc2V0KGNvdXJzZV9kYXRhLCBcImF1ZGllbmNlXCIsIHRydWUpO1xuYWNjZXNzX21vZGVzID0gY3N2X2NvbHVtbl9zZXQoY291cnNlX2RhdGEsIFwiYWNjZXNzTW9kZVwiLCBmYWxzZSk7XG5lZHVjYXRpb25fbGV2ZWxzID0gY3N2X2NvbHVtbl9zZXQoY291cnNlX2RhdGEsIFwiZWR1Y2F0aW9uYWxMZXZlbFwiLCBmYWxzZSk7XG5yZXNvdXJjZV90eXBlcyA9IGNzdl9jb2x1bW5fc2V0KGNvdXJzZV9kYXRhLCBcImxlYXJuaW5nUmVzb3VyY2VUeXBlXCIsIHRydWUpO1xucHJvdmlkZXJzID0gY3N2X2NvbHVtbl9zZXQoY291cnNlX2RhdGEsIFwicHJvdmlkZXJcIiwgdHJ1ZSk7XG50aW1lcyA9IGNzdl9jb2x1bW5fc2V0KGNvdXJzZV9kYXRhLCBcInRpbWVSZXF1aXJlZFwiLCB0cnVlKTtcbmtleXdvcmRzID0gY3N2X2NvbHVtbl9zZXQoY291cnNlX2RhdGEsIFwia2V5d29yZHNcIiwgZmFsc2UpO1xuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC0zIiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoiLy8gVHJpbSB0aGUgc2VhcmNoIHF1ZXJ5XG5zZWFyY2hfcXVlcnkgPSAoc2VhcmNoX3Rlcm1zID8/IFwiXCIpLnRvTG93ZXJDYXNlKCkudHJpbSgpXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTQiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ2aWV3b2Ygc2VhcmNoX3Rlcm1zID0gSW5wdXRzLnRleHQoe3BsYWNlaG9sZGVyOiBcIlNlYXJjaCBUcmFpbmluZyBSZXNvdXJjZXMuLi5cIn0pXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTUiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ2aWV3b2Ygc2VsZWN0ZWRfYXVkaWVuY2UgPSBJbnB1dHMuc2VsZWN0KGF1ZGllbmNlcywge2xhYmVsOiBcIkF1ZGllbmNlXCIsIHZhbHVlOiBudWxsfSlcbnZpZXdvZiBzZWxlY3RlZF9lZHVjYXRpb25hbF9sZXZlbCA9IElucHV0cy5jaGVja2JveChlZHVjYXRpb25fbGV2ZWxzLCB7bGFiZWw6IFwiTGV2ZWxcIiwgdmFsdWU6IFtdfSlcbnZpZXdvZiBzZWxlY3RlZF9yZXNvdXJjZV90eXBlID0gSW5wdXRzLnNlbGVjdChyZXNvdXJjZV90eXBlcywge2xhYmVsOiBcIlR5cGVcIiwgdmFsdWU6IG51bGx9KVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC02IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoie1xuICBjb25zdCB0b2dnbGVMaW5rID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudChcImFcIik7XG4gIHRvZ2dsZUxpbmsuaHJlZiA9IFwiI1wiO1xuICB0b2dnbGVMaW5rLnRleHRDb250ZW50ID0gXCJzaG93IGZpbHRlcnNcIjtcbiAgdG9nZ2xlTGluay5hZGRFdmVudExpc3RlbmVyKFwiY2xpY2tcIiwgKGV2ZW50KSA9PiB7XG4gICAgZXZlbnQucHJldmVudERlZmF1bHQoKTtcbiAgICBjb25zdCBmaWx0ZXJfZGl2ID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJwcmltYXJ5LWZpbHRlcnNcIik7XG4gICAgaWYgKGZpbHRlcl9kaXYuc3R5bGUuZGlzcGxheSA9PT0gXCJub25lXCIpIHtcbiAgICAgIHRvZ2dsZUxpbmsudGV4dENvbnRlbnQgPSBcImhpZGUgZmlsdGVyc1wiO1xuICAgICAgZmlsdGVyX2Rpdi5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiXG4gICAgfSBlbHNlIHtcbiAgICAgIHRvZ2dsZUxpbmsudGV4dENvbnRlbnQgPSBcInNob3cgZmlsdGVyc1wiO1xuICAgICAgZmlsdGVyX2Rpdi5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCJcbiAgICB9XG4gIH0pO1xuICByZXR1cm4gdG9nZ2xlTGluaztcbn1cbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldCIsImNlbGxOYW1lIjoib2pzLWNlbGwtNyIsImlubGluZSI6ZmFsc2UsInNvdXJjZSI6Ii8vIFBlcmZvcm0gdGhlIGZpbHRlcmluZzpcbmNvdXJzZV9maWx0ZXJlZCA9XG4gIChcbiAgICAoIXNlbGVjdGVkX2F1ZGllbmNlKSAmJlxuICAgIChzZWxlY3RlZF9hY2Nlc3NfbW9kZSA/PyBbXSkubGVuZ3RoID09PSAwICYmXG4gICAgKHNlbGVjdGVkX2VkdWNhdGlvbmFsX2xldmVsID8/IFtdKS5sZW5ndGggPT09IDAgJiZcbiAgICAoc2VsZWN0ZWRfcmVzb3VyY2VfdHlwZSA/PyBbXSkubGVuZ3RoID09PSAwICYmXG4gICAgKHNlbGVjdGVkX3RpbWUgPz8gW10pLmxlbmd0aCA9PT0gMCAmJlxuICAgIChzZWxlY3RlZF9wcm92aWRlciA/PyBbXSkubGVuZ3RoID09PSAwICYmXG4gICAgKHNlbGVjdGVkX2tleXdvcmRzID8/IFtdKS5sZW5ndGggPT09IDAgJiZcbiAgICAoIXNlYXJjaF9xdWVyeSlcbiAgKVxuICA/IGNvdXJzZV9kYXRhLmZpbHRlcihyb3cgPT4gcm93LmZlYXR1cmVkID09PSBcInllc1wiKVxuICA6IGNvdXJzZV9kYXRhLmZpbHRlcihyb3cgPT5cbiAgICAgIC8vIGF1ZGllbmNlXG4gICAgICAoIXNlbGVjdGVkX2F1ZGllbmNlIHx8ICFyb3cuYXVkaWVuY2UgfHwgcm93LmF1ZGllbmNlLmluY2x1ZGVzKHNlbGVjdGVkX2F1ZGllbmNlKSkgJiZcblxuICAgICAgLy8gYWNjZXNzIG1vZGVcbiAgICAgICgoc2VsZWN0ZWRfYWNjZXNzX21vZGUgPz8gW10pLmxlbmd0aCA9PT0gMCB8fCAoc2VsZWN0ZWRfYWNjZXNzX21vZGUgPz8gW10pLmluY2x1ZGVzKHJvdy5hY2Nlc3NNb2RlKSkgJiZcblxuICAgICAgLy8gZWR1Y2F0aW9uYWwgbGV2ZWxcbiAgICAgICgoc2VsZWN0ZWRfZWR1Y2F0aW9uYWxfbGV2ZWwgPz8gW10pLmxlbmd0aCA9PT0gMCB8fCAoc2VsZWN0ZWRfZWR1Y2F0aW9uYWxfbGV2ZWwgPz8gW10pLmluY2x1ZGVzKHJvdy5lZHVjYXRpb25hbExldmVsKSkgJiZcblxuICAgICAgLy8gcmVzb3VyY2UgdHlwZVxuICAgICAgKChzZWxlY3RlZF9yZXNvdXJjZV90eXBlID8/IFtdKS5sZW5ndGggPT09IDAgfHwgKHNlbGVjdGVkX3Jlc291cmNlX3R5cGUgPz8gW10pLmluY2x1ZGVzKHJvdy5sZWFybmluZ1Jlc291cmNlVHlwZSkpICYmXG4gICAgICBcbiAgICAgIC8vIHRpbWVcbiAgICAgICgoc2VsZWN0ZWRfdGltZSA/PyBbXSkubGVuZ3RoID09PSAwIHx8IChzZWxlY3RlZF90aW1lID8/IFtdKS5pbmNsdWRlcyhyb3cudGltZVJlcXVpcmVkKSkgJiZcbiAgICAgIC8vIHByb3ZpZGVyXG4gICAgICAoKHNlbGVjdGVkX3Byb3ZpZGVyID8/IFtdKS5sZW5ndGggPT09IDAgfHwgKHNlbGVjdGVkX3Byb3ZpZGVyID8/IFtdKS5pbmNsdWRlcyhyb3cucHJvdmlkZXIpKSAmJlxuICAgICAgLy8ga2V5d29yZHNcbiAgICAgICgoc2VsZWN0ZWRfa2V5d29yZHMgPz8gW10pLmxlbmd0aCA9PT0gMCB8fCAoc2VsZWN0ZWRfa2V5d29yZHMgPz8gW10pLmluY2x1ZGVzKHJvdy5rZXl3b3JkcykpICYmXG5cbiAgICAgIC8vIHNlYXJjaFxuICAgICAgKCFzZWFyY2hfcXVlcnkgfHxcbiAgICAgICAgcm93LmhlYWRsaW5lLnRvTG93ZXJDYXNlKCkuaW5jbHVkZXMoc2VhcmNoX3F1ZXJ5KSlcbiAgICApXG4ifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXQiLCJjZWxsTmFtZSI6Im9qcy1jZWxsLTgiLCJpbmxpbmUiOmZhbHNlLCJzb3VyY2UiOiJ7XG4gIGNvbnN0IHNlYXJjaF9yZXN1bHRzID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJwcmltYXJ5LXNlYXJjaC1yZXN1bHRzXCIpO1xuICBjb25zdCBlbXB0eV9yZXN1bHRzID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoXCJlbXB0eS1wcmltYXJ5LXNlYXJjaC1yZXN1bHRzXCIpO1xuICBpZiAoY291cnNlX2ZpbHRlcmVkLmxlbmd0aCA9PT0gMCkge1xuICAgIC8vIHNlYXJjaF9yZXN1bHRzLnN0eWxlLmRpc3BsYXkgPSBcIm5vbmVcIlxuICAgIC8vIGVtcHR5X3Jlc3VsdHMuc3R5bGUuZGlzcGxheSA9IFwiYmxvY2tcIlxuICAgIHJldHVybiBodG1sYFxuICAgICAgPGRpdiBjbGFzcz1cImNvdXJzZS1kYXRhLWVtcHR5XCI+XG4gICAgICAgIDxwPk5vIHJlc3VsdHMgdG8gZGlzcGxheTwvcD5cbiAgICAgIDwvZGl2PlxuICAgIGBcbiAgfSBlbHNlIHtcbiAgICAvLyBzZWFyY2hfcmVzdWx0cy5zdHlsZS5kaXNwbGF5ID0gXCJibG9ja1wiXG4gICAgLy8gZW1wdHlfcmVzdWx0cy5zdHlsZS5kaXNwbGF5ID0gXCJub25lXCJcbiAgICByZXR1cm4gaHRtbGBcbiAgICAgICR7Y291cnNlX2ZpbHRlcmVkLm1hcChyb3cgPT4gaHRtbCBgXG4gICAgICAgIDxkaXYgY2xhc3M9XCIke3Jvdy5mZWF0dXJlZCA9PT0gXCJ5ZXNcIiA/IFwiY291cnNlLWRhdGEgZmVhdHVyZWRcIiA6IFwiY291cnNlLWRhdGFcIn1cIj5cbiAgICAgICAgICA8aDM+XG4gICAgICAgICAgICAgIDxhIGhyZWY9JHtyb3cudXJsfT4ke3Jvdy5oZWFkbGluZX08L2E+XG4gICAgICAgICAgPC9oMz5cbiAgICAgICAgICA8cD4ke3Jvdy5kZXNjcmlwdGlvbn08L3A+XG4gICAgICAgIDwvZGl2PlxuICAgIGApfWBcbiAgfVxufVxuIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0IiwiY2VsbE5hbWUiOiJvanMtY2VsbC05IiwiaW5saW5lIjpmYWxzZSwic291cmNlIjoidmlld29mIHNlbGVjdGVkX3RpbWUgPSBJbnB1dHMuc2VsZWN0KHRpbWVzLCB7bGFiZWw6IFwiVGltZSBSZXF1aXJlZFwiLCB2YWx1ZTogbnVsbH0pXG52aWV3b2Ygc2VsZWN0ZWRfcHJvdmlkZXIgPSBJbnB1dHMuc2VsZWN0KHByb3ZpZGVycywge2xhYmVsOiBcIlByb3ZpZGVyXCIsIHZhbHVlOiBudWxsfSlcbnZpZXdvZiBzZWxlY3RlZF9hY2Nlc3NfbW9kZSA9IElucHV0cy5jaGVja2JveChhY2Nlc3NfbW9kZXMsIHtsYWJlbDogXCJBY2Nlc3MgbW9kZVwiLCB2YWx1ZTogW119KVxudmlld29mIHNlbGVjdGVkX2tleXdvcmRzID0gSW5wdXRzLnNlbGVjdChrZXl3b3Jkcywge2xhYmVsOiBcIktleXdvcmRzXCIsIG11bHRpcGxlOiB0cnVlfSlcbiJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VhcmNoX3Rlcm1zJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkX2F1ZGllbmNlJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkX2VkdWNhdGlvbmFsX2xldmVsJykifSx7Im1ldGhvZE5hbWUiOiJpbnRlcnByZXRRdWlldCIsInNvdXJjZSI6InNoaW55SW5wdXQoJ3NlbGVjdGVkX3Jlc291cmNlX3R5cGUnKSJ9LHsibWV0aG9kTmFtZSI6ImludGVycHJldFF1aWV0Iiwic291cmNlIjoic2hpbnlJbnB1dCgnc2VsZWN0ZWRfdGltZScpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZF9wcm92aWRlcicpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZF9hY2Nlc3NfbW9kZScpIn0seyJtZXRob2ROYW1lIjoiaW50ZXJwcmV0UXVpZXQiLCJzb3VyY2UiOiJzaGlueUlucHV0KCdzZWxlY3RlZF9rZXl3b3JkcycpIn1dfQ==
+</script>
+<script type="module">
+if (window.location.protocol === "file:") { alert("The OJS runtime does not work with file:// URLs. Please use a web server to view this document."); }
+window._ojs.paths.runtimeToDoc = "../..";
+window._ojs.paths.runtimeToRoot = "../..";
+window._ojs.paths.docToRoot = "";
+window._ojs.selfContained = false;
+window._ojs.runtime.interpretFromScriptTags();
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -548,6 +908,53 @@ ul.task-list li input[type="checkbox"] {
   });
   </script>
 </div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item">
+    <a class="nav-link" href="https://fusion-cdt.ac.uk/about/contact/">
+<p>contact</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./#">
+<p>funding</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./#">
+<p>funding</p>
+</a>
+  </li>  
+    <li class="nav-item">
+    <a class="nav-link" href="./#">
+<p>funding</p>
+</a>
+  </li>  
+</ul>
+    </div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://uk.linkedin.com/company/ukri-digital-research-skills-catalyst">
+      <i class="bi bi-linkedin" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://bsky.app/profile/ukriskillscatalyst.bsky.social">
+      <i class="bi bi-bluesky" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
 
 
 
