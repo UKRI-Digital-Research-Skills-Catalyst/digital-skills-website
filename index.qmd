@@ -1,5 +1,6 @@
 ---
 title: "Welcome to the UKRI Digital Research Skills Catalyst"
+jupyter: python3
 format:
   html:
     toc: false
@@ -16,10 +17,15 @@ format:
 Boost your digital research skills, accelerate your research impact—discover 80+ learning resources, events, and expert-led training in one central hub with the UKRI Digital Research Skills Catalyst. Find out more [here](./about.qmd).
 :::
 
+```{python}
+#| cache: true
+import pandas as pd
+course_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRSrvsfFfVwokza_WP9JIzd4Wfg6OKPBJcwelLTqYn1SgigZXnfcU6_apN5gWTMF79n4CRQFNOJ5w6M/pub?gid=1012757406&single=true&output=csv")
+ojs_define(course_data_cached = course_data_cached)
+```
+
 ```{ojs}
-// Load the course data from CSV
-course_data = FileAttachment("https://docs.google.com/spreadsheets/d/e/2PACX-1vRSrvsfFfVwokza_WP9JIzd4Wfg6OKPBJcwelLTqYn1SgigZXnfcU6_apN5gWTMF79n4CRQFNOJ5w6M/pub?gid=1012757406&single=true&output=csv").csv({typed: true})
-// course_data = FileAttachment("assets/courses.csv").csv({typed: true})
+course_data = transpose(course_data_cached)
 ```
 
 ```{ojs}
@@ -165,3 +171,4 @@ viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode
 viewof selected_keywords = Inputs.select(keywords, {label: "Keywords", multiple: true})
 ```
 :::
+
