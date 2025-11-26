@@ -169,6 +169,7 @@ viewof selected_time = Inputs.select(times, {label: "Time Required", value: null
 viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
 viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: []})
 viewof selected_keywords = Inputs.select(keywords, {label: "Keywords", multiple: true})
+
+viewof reset_filters = Inputs.button("reset filters")
 ```
 :::
-
