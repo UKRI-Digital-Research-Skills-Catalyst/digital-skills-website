@@ -1,20 +1,167 @@
 ---
-title: "UKRI Digital Research Skills Catalyst"
+title: "Welcome to the UKRI Digital Research Skills Catalyst"
 format:
   html:
+    toc: false
+    echo: false
     css: style.css
-    body-classes: index
+    keep-hidden: true
+    code-tools: false
+    body-classes: search
 ---
 
-**Unlock your potential with the UKRI Digital Research Skills Catalyst – the national hub for researcher and innovator development.**
+::: {.hero}
+<h2>A national hub for researcher and innovator development.</h2>
 
-## Project history and funding
+Boost your digital research skills, accelerate your research impact—discover 80+ learning resources, events, and expert-led training in one central hub with the UKRI Digital Research Skills Catalyst. Find out more [here](./about.qmd).
+:::
 
-Led by Professor Emma Rand at the University of York, the Catalyst Project was developed in response to the UKRI Digital Research Infrastructure Programme funding call.
-It brings together seven university partners in a collaborative effort to centralise high-quality training materials for researchers and innovators. 
+```{ojs}
+// Load the course data from CSV
+course_data = FileAttachment("https://docs.google.com/spreadsheets/d/e/2PACX-1vRSrvsfFfVwokza_WP9JIzd4Wfg6OKPBJcwelLTqYn1SgigZXnfcU6_apN5gWTMF79n4CRQFNOJ5w6M/pub?gid=1012757406&single=true&output=csv").csv({typed: true})
+// course_data = FileAttachment("assets/courses.csv").csv({typed: true})
+```
 
-The project builds on resources created by Data Science in Healthcare & Biosciences (DaSH), which developed training materials and hosted events between 2021 and 2023 to upskill health and bioscience researchers in data management and analysis.
-The Catalyst now centralises access to materials from seven of the nine DaSH projects, creating a single hub for researchers to access these resources.
+```{ojs}
+// Pull out the valid column values from the complete data:
+function csv_column_set(ds, col, inject_null) {
+  let all_values = ds.flatMap(d =>
+    d[col]
+      ? d[col].split(",").map(s => s.trim())
+      : []
+  );
+  all_values = Array.from(new Set(all_values)).sort()
+  if(inject_null) {
+    all_values.unshift(null)
+  }
+  return all_values
+}
+audiences = csv_column_set(course_data, "audience", true);
+access_modes = csv_column_set(course_data, "accessMode", false);
+education_levels = csv_column_set(course_data, "educationalLevel", false);
+resource_types = csv_column_set(course_data, "learningResourceType", true);
+providers = csv_column_set(course_data, "provider", true);
+times = csv_column_set(course_data, "timeRequired", true);
+keywords = csv_column_set(course_data, "keywords", false);
+```
 
-While originally focused on health and bioscience researchers, the Catalyst aims to reach a broader audience.
-Its digital research skills training resources are also highly relevant for researchers in arts and humanities, sciences, and social sciences, providing opportunities to enhance digital expertise across disciplines.
+```{ojs}
+// Trim the search query
+search_query = (search_terms ?? "").toLowerCase().trim()
+```
+
+::: {.primary-search}
+```{ojs}
+viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
+```
+
+::: {#primary-filters style="display: none;"}
+```{ojs}
+viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: null})
+viewof selected_educational_level = Inputs.checkbox(education_levels, {label: "Level", value: []})
+viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: null})
+```
+:::
+
+::: {.primary-filter-toggle}
+```{ojs}
+{
+  const toggleLink = document.createElement("a");
+  toggleLink.href = "#";
+  toggleLink.textContent = "show filters";
+  toggleLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    const filter_div = document.getElementById("primary-filters");
+    if (filter_div.style.display === "none") {
+      toggleLink.textContent = "hide filters";
+      filter_div.style.display = "block"
+    } else {
+      toggleLink.textContent = "show filters";
+      filter_div.style.display = "none"
+    }
+  });
+  return toggleLink;
+}
+```
+:::
+
+:::
+
+```{ojs}
+// Perform the filtering:
+course_filtered =
+  (
+    (!selected_audience) &&
+    (selected_access_mode ?? []).length === 0 &&
+    (selected_educational_level ?? []).length === 0 &&
+    (selected_resource_type ?? []).length === 0 &&
+    (selected_time ?? []).length === 0 &&
+    (selected_provider ?? []).length === 0 &&
+    (selected_keywords ?? []).length === 0 &&
+    (!search_query)
+  )
+  ? course_data.filter(row => row.featured === "yes")
+  : course_data.filter(row =>
+      // audience
+      (!selected_audience || !row.audience || row.audience.includes(selected_audience)) &&
+
+      // access mode
+      ((selected_access_mode ?? []).length === 0 || (selected_access_mode ?? []).includes(row.accessMode)) &&
+
+      // educational level
+      ((selected_educational_level ?? []).length === 0 || (selected_educational_level ?? []).includes(row.educationalLevel)) &&
+
+      // resource type
+      ((selected_resource_type ?? []).length === 0 || (selected_resource_type ?? []).includes(row.learningResourceType)) &&
+      
+      // time
+      ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.timeRequired)) &&
+      // provider
+      ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
+      // keywords
+      ((selected_keywords ?? []).length === 0 || (selected_keywords ?? []).includes(row.keywords)) &&
+
+      // search
+      (!search_query ||
+        row.headline.toLowerCase().includes(search_query))
+    )
+```
+
+::: {#primary-search-results}
+```{ojs}
+//| panel: fill
+{
+  const search_results = document.getElementById("primary-search-results");
+  const empty_results = document.getElementById("empty-primary-search-results");
+  if (course_filtered.length === 0) {
+    // search_results.style.display = "none"
+    // empty_results.style.display = "block"
+    return html`
+      <div class="course-data-empty">
+        <p>No results to display</p>
+      </div>
+    `
+  } else {
+    // search_results.style.display = "block"
+    // empty_results.style.display = "none"
+    return html`
+      ${course_filtered.map(row => html `
+        <div class="${row.featured === "yes" ? "course-data featured" : "course-data"}">
+          <h3>
+              <a href=${row.url}>${row.headline}</a>
+          </h3>
+          <p>${row.description}</p>
+        </div>
+    `)}`
+  }
+}
+```
+
+```{ojs}
+//| panel: sidebar
+viewof selected_time = Inputs.select(times, {label: "Time Required", value: null})
+viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
+viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: []})
+viewof selected_keywords = Inputs.select(keywords, {label: "Keywords", multiple: true})
+```
+:::

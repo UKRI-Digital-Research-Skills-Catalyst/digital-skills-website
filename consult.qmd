@@ -1,0 +1,24 @@
+---
+title: "Consult an Expert"
+format:
+  html:
+    css: style.css
+---
+
+::: {.hero}
+Need help tackling an analytical problem? Troubleshooting your code? Need guidance on where to learn a new skill?
+
+Consult an Expert and have a short 1:1 session for help, advice, or signposting in the right direction funded entirely by the UKRI Digital Research Infrastructure Programme.
+:::
+
+Our Digital Research Specialists from across UKRI funded organisations have expertise across a whole range of topics:
+
+* Health + Bioscience IDEAS: Medical image acquisition, analysis, and management
+* Innovation Scholars: Big data skills and 'omics for health sciences
+* Cloud-SPAN: High Performance Computing for 'omics
+* Elixir UK: Data stewardship
+* Learn2Discover: Machine learning for health & biosciences
+* Ed-DaSH: Data science and statistics
+* Data CAMMP: Robotics for plant phenotyping
+
+This service is fully funded by the UKRI Digital Research Infrastructure [grantcode] award, covering the usual consultancy cost of £44/hr to make it free for you to use.

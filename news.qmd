@@ -1,0 +1,12 @@
+---
+title: "News &amp; Events"
+format:
+  html:
+    css: style.css
+---
+
+::: {.hero}
+Stay up to date with the latest training opportunities, conferences, and developments across our community.
+
+This page highlights upcoming workshops and key announcements designed to support professional growth, collaboration, and innovation in the research world. 
+:::

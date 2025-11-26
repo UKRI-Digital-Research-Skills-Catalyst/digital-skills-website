@@ -3,11 +3,84 @@ title: "About"
 format:
   html:
     css: style.css
-    body-classes: index
 ---
-The UKRI Digital Research Skills Catalyst connects researchers and innovators across the UK with cutting-edge digital training training opportunities and sector expertise to power their professional growth.
+
+::: {.hero}
+The UKRI Digital Research Skills Catalyst connects researchers and innovators across the UK with cutting-edge training opportunities and sector expertise to power their professional growth.
 Researchers training needs are supported at a practical level, through the provision of the following features: 
 
-- Learning portal - a wide selection of high quality learning resources are hosted in a centralised hub
-- Consultation service - guidance from digital research specialists
-- Workshops and events - occasional online and in-person events to facilitate networking and address training needs
+* A searchable Learning portal to high quality resources developed through UKRI funding
+* Consultation service - access guidance from digital research specialists
+* Workshops and events - occasional online and in-person events to facilitate networking and address training needs
+
+:::
+
+<h2>Consultancy service</h2>
+
+We are pleased to offer a consultancy service where online sessions can be booked with our Digital Research Specialists. Our experts provide tailored support to help you overcome challenges and enhance your research at any stage of your project.
+
+Whether you need assistance with troubleshooting code, tackling analytical problems, or seeking general guidance and advice, our specialists are here to help.
+
+Our consultancy service covers a broad range of research needs, including:
+
+* Experimental design
+* Data processing and management
+* Data analysis and interpretation
+* Medical image acquisition, analysis, and management
+* Big data skills and ‘omics for health sciences
+* High Performance Computing for ‘omics
+* Data stewardship
+* Machine learning for health & biosciences
+* Data science and statistics
+* Robotics for plant phenotyping
+
+Book a session today and get the expert support you need to move your research forward with confidence.
+
+For further details on the service please visit [Consult an Expert](./consult.qmd).
+
+<h2>Events and bespoke training service</h2>
+
+Training events are offered on an ad-hoc basis, both online and in person.
+These engaging sessions are offered at a reduced rate or completely free of charge, led by experienced instructors who are passionate about sharing their knowledge.
+We’re committed to creating a welcoming and accessible learning space for everyone in the research community.
+Scholarships are available to support travel and care costs, helping to ensure that everyone can participate.
+Wherever possible, sessions will be delivered online to maximise accessibility.
+
+A full-day training conference, AI Readiness in the Biosciences, will take place on Friday 4th September 2026 in York.
+Attendance is free, and bursaries are available to support travel and care costs.
+
+For further details visit [News and Events](./news.qml).
+
+<h2>Bespoke training</h2>
+
+If your team or organisation requires a bespoke training session on one of the topics detailed in our learning portal please get in touch.
+A tailored course to suit your team’s learning needs and budget can be organised.
+Please note this option is only available for the courses indicated in the [learning portal](./index.qmd).
+
+For further details on the service please visit the [Learning Portal](./index.qmd).
+
+<h2>Project history and funding</h2>
+
+Led by Professor Emma Rand at the University of York, the Catalyst Project was developed in response to the UKRI Digital Research Infrastructure Programme funding call.
+It brings together seven university partners in a collaborative effort to centralise high-quality training materials for researchers and innovators. 
+
+The project builds on resources created by Data Science in Healthcare & Biosciences (DaSH), which developed training materials and hosted events between 2021 and 2023 to upskill health and bioscience researchers in data management and analysis.
+The Catalyst now centralises access to materials from seven of the nine DaSH projects, creating a single hub for researchers to access these resources.
+
+The project originally focussed on health and bioscience researchers, the Catalyst aims to reach a broader audience.
+Its digital research skills training resources are also highly relevant for researchers in arts and humanities, sciences, and social sciences, providing opportunities to enhance digital expertise across disciplines.
+
+| Project | Research theme | Institution | Lead
+|---------|----------------|-------------|-----
+| [Health and Bioscience IDEAS](https://healthbioscienceideas.github.io/) | Medical image acquisition, analysis, management | University College London | David Cash
+| [Data Campp](https://www.nottingham.ac.uk/research/groups/cvl/projects/data-cammp/data-cammp.aspx) | Robotics for plant phenotyping | University of Nottingham, University of Lincoln | Andrew French, Elizabeth Sklar
+| [ELIXIR-UK: FAIR data stewardship training](https://elixiruknode.org/activities/fellowship/) | Data Stewardship in Life Sciences | University of Bradford, Cardiff University | Krzysztof Poterlowicz
+| [Enabling the big data revolution](https://innovationscholars.er.kcl.ac.uk/training/) | Health data science and omics | King’s College London | Rebecca Oakey
+| [Learn to Discover (L2D)](https://learntodiscover.ai/) | Data science and ML for health and bioscience | University College London | Geraint Thomas
+| [Cloud-SPAN](https://cloud-span.york.ac.uk/) | Cloud High-Performance Computing for Environmental ‘omics | University of York and Software, Sustainability Institute | Emma Rand, James Chong
+| [Ed-DaSH](https://edcarp.github.io/Ed-DaSH/) | Data science training for bioscience and health | University of Edinburgh | Giacomo Peru
+
+: The Seven DaSH projects contributing data to this project {.striped}
+
+The Catalyst Project is funded by UKRI Digital Research Infrastructure Programme from October 2024 to March 2027.
+Project reference: TBC.
