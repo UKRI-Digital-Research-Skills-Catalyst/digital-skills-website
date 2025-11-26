@@ -134,6 +134,7 @@ course_filtered =
 ```
 
 ::: {#primary-search-results}
+
 ```{ojs}
 //| panel: fill
 {
@@ -169,6 +170,29 @@ viewof selected_time = Inputs.select(times, {label: "Time Required", value: null
 viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
 viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: []})
 viewof selected_keywords = Inputs.select(keywords, {label: "Keywords", multiple: true})
+
+viewof reset_filters = Inputs.button("reset filters")
 ```
 :::
 
+```{ojs}
+//| output: false
+// The reset code.
+{
+  reset_filters; // This updates whenever the reset button fires.
+  function resetInput(view, value) {
+    const el = view.querySelector("select, input");
+    if (!el) return;
+    el.value = value;
+    view.value = value;
+    el.dispatchEvent(new Event("input", { bubbles: true }));
+  }
+  resetInput(viewof selected_audience, null);
+  resetInput(viewof selected_educational_level, []);
+  resetInput(viewof selected_resource_type, null);
+  resetInput(viewof selected_time, null);
+  resetInput(viewof selected_provider, null);
+  resetInput(viewof selected_access_mode, []);
+  resetInput(viewof selected_keywords, []);
+}
+```
