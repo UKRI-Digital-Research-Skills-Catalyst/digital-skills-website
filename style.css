@@ -102,6 +102,17 @@ h2 {
   padding: 1em;
 }
 
+#primary-search-results div.panel-sidebar button {
+  border: 1px solid #DDD9E2;
+  background: white;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  margin: 5px;
+  width: 100%;
+  font-size: 0.75em;
+}
+
 .primary-search-results {
   border: 1px solid #DDD9E2;
   /* border-radius: 8px; */
@@ -115,6 +126,7 @@ h2 {
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
+  margin: 5px;
 }
 
 /* The Course data block */
