@@ -64,8 +64,13 @@ viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
 ::: {#primary-filters style="display: none;"}
 ```{ojs}
 viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: null})
-viewof selected_educational_level = Inputs.checkbox(education_levels, {label: "Level", value: []})
+viewof selected_educational_level = Inputs.checkbox(education_levels, {label: "Level", value: education_levels})
 viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: null})
+viewof selected_time = Inputs.select(times, {label: "Time Required", value: null})
+// viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
+// viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: []})
+// viewof selected_keywords = Inputs.select(keywords, {label: "Keywords", multiple: true})
+viewof reset_filters = Inputs.button("reset filters")
 ```
 :::
 
@@ -98,12 +103,12 @@ viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", va
 course_filtered =
   (
     (!selected_audience) &&
-    (selected_access_mode ?? []).length === 0 &&
+    // (selected_access_mode ?? []).length === 0 &&
     (selected_educational_level ?? []).length === 0 &&
     (selected_resource_type ?? []).length === 0 &&
     (selected_time ?? []).length === 0 &&
-    (selected_provider ?? []).length === 0 &&
-    (selected_keywords ?? []).length === 0 &&
+    // (selected_provider ?? []).length === 0 &&
+    // (selected_keywords ?? []).length === 0 &&
     (!search_query)
   )
   ? course_data.filter(row => row.featured === "yes")
@@ -111,8 +116,8 @@ course_filtered =
       // audience
       (!selected_audience || !row.audience || row.audience.includes(selected_audience)) &&
 
-      // access mode
-      ((selected_access_mode ?? []).length === 0 || (selected_access_mode ?? []).includes(row.accessMode)) &&
+      // // access mode
+      // ((selected_access_mode ?? []).length === 0 || (selected_access_mode ?? []).includes(row.accessMode)) &&
 
       // educational level
       ((selected_educational_level ?? []).length === 0 || (selected_educational_level ?? []).includes(row.educationalLevel)) &&
@@ -122,10 +127,10 @@ course_filtered =
       
       // time
       ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.timeRequired)) &&
-      // provider
-      ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
+      // // provider
+      // ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
       // keywords
-      ((selected_keywords ?? []).length === 0 || (selected_keywords ?? []).includes(row.keywords)) &&
+      // ((selected_keywords ?? []).length === 0 || (selected_keywords ?? []).includes(row.keywords)) &&
 
       // search
       (!search_query ||
@@ -141,37 +146,41 @@ course_filtered =
   const search_results = document.getElementById("primary-search-results");
   const empty_results = document.getElementById("empty-primary-search-results");
   if (course_filtered.length === 0) {
-    // search_results.style.display = "none"
-    // empty_results.style.display = "block"
     return html`
       <div class="course-data-empty">
         <p>No results to display</p>
       </div>
     `
   } else {
-    // search_results.style.display = "block"
-    // empty_results.style.display = "none"
     return html`
-      ${course_filtered.map(row => html `
-        <div class="${row.featured === "yes" ? "course-data featured" : "course-data"}">
+      ${course_filtered.map((row, row_index) => html `
+        <div class="${row.featured === "yes" ? "course-data featured" : "course-data"}" id="course_data_${row_index}">
           <h3>
               <a href=${row.url}>${row.headline}</a>
           </h3>
           <p>${row.description}</p>
+          <input type="checkbox" class="toggle-state" id="toggle-state-${row_index}">
+          <label for="toggle-state-${row_index}" class="toggle-button"></label>
+          <div class="course-data-extras" id="course_data_extras_${row_index}">
+            <table>
+              <tr>
+                <th scope="row">Pre-requisites</th>
+                <td>${row.competencyRequired}</td>
+              </tr>
+              <tr>
+                <th scope="row">Teaches</th>
+                <td>${row.teaches}</td>
+              </tr>
+              <tr>
+                <th scope="row">Provider</th>
+                <td>${row.projectFunding}</td>
+              </tr>
+            </table>
+          </div>
         </div>
     `)}`
   }
 }
-```
-
-```{ojs}
-//| panel: sidebar
-viewof selected_time = Inputs.select(times, {label: "Time Required", value: null})
-viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
-viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: []})
-viewof selected_keywords = Inputs.select(keywords, {label: "Keywords", multiple: true})
-
-viewof reset_filters = Inputs.button("reset filters")
 ```
 :::
 
@@ -191,8 +200,8 @@ viewof reset_filters = Inputs.button("reset filters")
   resetInput(viewof selected_educational_level, []);
   resetInput(viewof selected_resource_type, null);
   resetInput(viewof selected_time, null);
-  resetInput(viewof selected_provider, null);
-  resetInput(viewof selected_access_mode, []);
-  resetInput(viewof selected_keywords, []);
+  // resetInput(viewof selected_provider, null);
+  // resetInput(viewof selected_access_mode, []);
+  // resetInput(viewof selected_keywords, []);
 }
 ```
