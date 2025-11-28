@@ -40,6 +40,7 @@ website:
         href: https://bsky.app/profile/ukriskillscatalyst.bsky.social
 format:
   html:
+    page-layout: full
     theme: cosmo
     css: style.css
     code-fold: true

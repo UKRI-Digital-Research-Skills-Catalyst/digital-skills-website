@@ -8,7 +8,7 @@
 
 h1 {
   font-size: 2em;
-  color: #58579B;
+  color: #2E2D62;
   text-align: center;
 }
 
@@ -29,40 +29,11 @@ h2 {
   border-radius: 8px;
 }
 
-/* .hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("assets/binary.png");
-  background-repeat: repeat;
-  background-position: right top;
-  background-size: 96px 96px;
-  filter: invert(1);
-  opacity: 0.2;
-} */
-
-/* .hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: linear-gradient(
-    to bottom left,
-    rgba(46, 45, 98, 0) 0%,
-    rgba(46, 45, 98, 1) 40%
-  );
-} */
-
 .hero h2 {
   font-size: 1.25em;
 }
 
-/* .hero > * {
-  position: relative;
-  z-index: 1;
-} */
-
 /* The Search functionality on the main page */
-
 .primary-search {
   background: #F5F3EF;
   border: 1px solid #DDD9E2;
@@ -102,7 +73,7 @@ h2 {
   padding: 1em;
 }
 
-#primary-search-results div.panel-sidebar button {
+#primary-filters button {
   border: 1px solid #DDD9E2;
   background: white;
   border-radius: 6px;
@@ -130,25 +101,57 @@ h2 {
 }
 
 /* The Course data block */
-
 div.course-data {
   width: 100%;
   border: 1px solid #DDD9E2;
   background: #F5F3EF;
-  border-radius: 4px;
+  border-radius: 0;
   padding: 1em 1em 0 1em;
   margin: 1em 0;
   font-size: 0.8rem;
 }
 
 div.featured {
-  background: #E0F1FA;
+  border-left: 5px solid #29A69D;
+  position: relative;
+}
+
+.featured::after {
+  content: "featured"; 
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #29A69D;
+  font-size: 1em;
+  line-height: 1;
 }
 
 div.course-data h3,a {
   font-size: 1rem;
   margin-top: 0;
   font-weight: bold;
+}
+
+div.course-data div.course-data-extras {
+  display: none;
+  width: 100%;
+  font-size: 0.75rem;
+}
+
+.course-data-extras table {
+  width: 100%;
+  background: #F5F3EF !important;
+}
+
+.course-data-extras table tr th, td {
+  border-bottom: 1px solid #DDD9E2;
+}
+
+.course-data-extras table tr:last-child th, .course-data-extras table tr:last-child td {
+    border-bottom: none;
+}
+.course-data-extras table tr th {
+  width: 10em;
 }
 
 div.course-data-empty {
@@ -161,4 +164,26 @@ div.course-data-empty {
 div.course-data-empty p {
   text-align: center;
   color: #0A2441;
+}
+
+div.course-data .toggle-state {
+  display: none;
+}
+
+div.course-data .toggle-button {
+  width: 100%;
+  color: #9088A4;
+  text-align: right;
+  font-size: 0.75em;
+}
+
+div.course-data .toggle-state:checked ~ .toggle-button::after {
+content: "collapse details";
+}
+div.course-data .toggle-button::after {
+  content: "expand details";
+}
+
+div.course-data .toggle-state:checked ~ .course-data-extras {
+  display: block;
 }
