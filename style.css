@@ -148,7 +148,7 @@ div.course-data div.course-data-extras {
 }
 
 .course-data-extras table tr:last-child th, .course-data-extras table tr:last-child td {
-    border-bottom: none;
+  border-bottom: none;
 }
 .course-data-extras table tr th {
   width: 10em;
@@ -186,4 +186,17 @@ div.course-data .toggle-button::after {
 
 div.course-data .toggle-state:checked ~ .course-data-extras {
   display: block;
+}
+
+div.news {
+  margin: 1em auto;
+  background: #F5F3EF;
+  border: 1px solid #DDD9E2;
+  border-radius: 8px;
+  padding: 0 1em;
+}
+
+div.news h2 {
+  font-size: 1.25em;
+  color: #2E2D62;
 }

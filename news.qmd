@@ -10,3 +10,19 @@ Stay up to date with the latest training opportunities, conferences, and develop
 
 This page highlights upcoming workshops and key announcements designed to support professional growth, collaboration, and innovation in the research world. 
 :::
+
+::: {.news}
+<h2>Launch of the Learning Portal</h2>
+We’re excited to announce the launch of our new Learning Portal — a hub for accessing training materials, event information, and community resources.
+:::
+
+::: {.news}
+<h2>Training Conference Highlights</h2>
+Catch up on insights, discussions, and key takeaways from our latest Training Conference.
+:::
+
+::: {.news}
+<h2>Spotlight on DaSH Partner</h2>
+Discover how our DaSH partner is advancing data-driven science and contributing to collaborative training initiatives.
+:::
+
