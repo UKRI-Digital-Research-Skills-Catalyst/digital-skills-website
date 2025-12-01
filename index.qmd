@@ -1,5 +1,6 @@
 ---
 title: "Welcome to the UKRI Digital Research Skills Catalyst"
+subtitle: "A national hub for researcher and innovator development."
 jupyter: python3
 format:
   html:
@@ -9,13 +10,11 @@ format:
     keep-hidden: true
     code-tools: false
     body-classes: search
+    template-partials: 
+      - _partials/title-block.html
 ---
 
-::: {.hero}
-<h2>A national hub for researcher and innovator development.</h2>
-
 Boost your digital research skills, accelerate your research impact—discover 80+ learning resources, events, and expert-led training in one central hub with the UKRI Digital Research Skills Catalyst. Find out more [here](./about.qmd).
-:::
 
 ```{python}
 #| cache: true
@@ -67,7 +66,7 @@ viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: n
 viewof selected_educational_level = Inputs.checkbox(education_levels, {label: "Level", value: education_levels})
 viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: null})
 viewof selected_time = Inputs.select(times, {label: "Time Required", value: null})
-// viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
+viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
 // viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: []})
 // viewof selected_keywords = Inputs.select(keywords, {label: "Keywords", multiple: true})
 viewof reset_filters = Inputs.button("reset filters")
@@ -107,7 +106,7 @@ course_filtered =
     (selected_educational_level ?? []).length === 0 &&
     (selected_resource_type ?? []).length === 0 &&
     (selected_time ?? []).length === 0 &&
-    // (selected_provider ?? []).length === 0 &&
+    (selected_provider ?? []).length === 0 &&
     // (selected_keywords ?? []).length === 0 &&
     (!search_query)
   )
@@ -127,8 +126,8 @@ course_filtered =
       
       // time
       ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.timeRequired)) &&
-      // // provider
-      // ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
+      // provider
+      ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
       // keywords
       // ((selected_keywords ?? []).length === 0 || (selected_keywords ?? []).includes(row.keywords)) &&
 
@@ -157,7 +156,11 @@ course_filtered =
     `
   } else {
     return html`
-      ${course_filtered.map((row, row_index) => html `
+      ${course_filtered.slice().sort((a, b) => {
+        if(a.featured === "yes" && b.featured === "no") return -1;
+        if(a.featured === "no" && b.featured === "yes") return 1;
+        return 0;
+      }).map((row, row_index) => html `
         <div class="${row.featured === "yes" ? "course-data featured" : "course-data"}" id="course_data_${row_index}">
           <h3>
               <a href=${row.url}>${row.headline}</a>
@@ -204,7 +207,7 @@ course_filtered =
   resetInput(viewof selected_educational_level, []);
   resetInput(viewof selected_resource_type, null);
   resetInput(viewof selected_time, null);
-  // resetInput(viewof selected_provider, null);
+  resetInput(viewof selected_provider, null);
   // resetInput(viewof selected_access_mode, []);
   // resetInput(viewof selected_keywords, []);
 }

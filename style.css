@@ -18,8 +18,20 @@ h2 {
   margin: 1em 0;
 }
 
+div.index-header {
+  border: 1px dotted red;
+}
+
+header#title-block-header {
+  display: block;
+  border: 1px dotted orange;
+}
+
+h1.title {
+}
+
 /* The Hero section */
-.hero {
+/* .hero {
   margin: 1em auto;
   position: relative;
   background-color: #E0F1FA;
@@ -31,7 +43,7 @@ h2 {
 
 .hero h2 {
   font-size: 1.25em;
-}
+} */
 
 /* The Search functionality on the main page */
 .primary-search {
