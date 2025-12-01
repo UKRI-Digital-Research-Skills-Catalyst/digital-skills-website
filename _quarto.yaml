@@ -28,9 +28,11 @@ website:
       - text: contact
         href: https://fusion-cdt.ac.uk/about/contact/
       - text: accessibility
-        href: "#"
-      - text: privacy &amp; cookies
-        href: "#"
+        href: "https://www.york.ac.uk/about/legal-statements/accessibility/"
+      - text: privacy
+        href: "https://www.york.ac.uk/about/legal-statements/#privacy"
+      - text: cookies
+        href: "https://www.york.ac.uk/about/legal-statements/cookies/"
       - text: funding
         href: "#"
     right:

@@ -134,7 +134,11 @@ course_filtered =
 
       // search
       (!search_query ||
-        row.headline.toLowerCase().includes(search_query))
+        row.headline.toLowerCase().includes(search_query) ||
+        (row.description  && row.description.includes(search_query)) ||
+        (row.projectFunding  && row.projectFunding.includes(search_query)) ||
+        (row.identifier  && row.identifier.includes(search_query))
+      )
     )
 ```
 
@@ -204,4 +208,9 @@ course_filtered =
   // resetInput(viewof selected_access_mode, []);
   // resetInput(viewof selected_keywords, []);
 }
+```
+
+```{ojs}
+//| eval: false
+Inputs.table(course_data)
 ```
