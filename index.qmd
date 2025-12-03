@@ -9,26 +9,29 @@ format:
     css: style.css
     keep-hidden: true
     code-tools: false
-    body-classes: search
-    template-partials: 
-      - _partials/title-block.html
 ---
 
 Boost your digital research skills, accelerate your research impact—discover 80+ learning resources, events, and expert-led training in one central hub with the UKRI Digital Research Skills Catalyst. Find out more [here](./about.qmd).
 
 ```{python}
 #| cache: true
+# This cell loads the CSV data directly from the Google sheet via its published CSV-specific URL.
+# We need to load in Python, as OJS doesn't have a caching system.
+# Once loaded, we "publish" the variable globally to OJS.
 import pandas as pd
 course_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRSrvsfFfVwokza_WP9JIzd4Wfg6OKPBJcwelLTqYn1SgigZXnfcU6_apN5gWTMF79n4CRQFNOJ5w6M/pub?gid=1012757406&single=true&output=csv")
 ojs_define(course_data_cached = course_data_cached)
 ```
 
 ```{ojs}
+// This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order
 course_data = transpose(course_data_cached)
 ```
 
 ```{ojs}
-// Pull out the valid column values from the complete data:
+// This cell defines the possible values we can use to populate the filter dropdowns.#
+// We do this by pulling out all options for specific columns from the course_data object, splitting on commas, and sorting.
+// The `csv_column_set` function simplifies this process.
 function csv_column_set(ds, col, inject_null) {
   let all_values = ds.flatMap(d =>
     d[col]
@@ -55,33 +58,37 @@ keywords = csv_column_set(course_data, "keywords", false);
 search_query = (search_terms ?? "").toLowerCase().trim()
 ```
 
-::: {.primary-search}
+:::{.primary-search}
 ```{ojs}
+// The main search box.
 viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
 ```
 
-::: {#primary-filters style="display: none;"}
+::: {#search-filters style="display: none;"}
 ```{ojs}
+// This cell holds all of the search filters that can refine the currently found courses.
+// The reset button allows a quick way to re-set the default values.
+// The action cell is at the bottom and does not generate any output.
 viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: null})
 viewof selected_educational_level = Inputs.checkbox(education_levels, {label: "Level", value: education_levels})
 viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: null})
 viewof selected_time = Inputs.select(times, {label: "Time Required", value: null})
 viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
-// viewof selected_access_mode = Inputs.checkbox(access_modes, {label: "Access mode", value: []})
-// viewof selected_keywords = Inputs.select(keywords, {label: "Keywords", multiple: true})
 viewof reset_filters = Inputs.button("reset filters")
 ```
 :::
 
-::: {.primary-filter-toggle}
+::: {.search-filter-toggle}
 ```{ojs}
+// This cell implements a show/hide button for extra filters.
+// This works via a JavaScript function that finds and toggles the div display style.
 {
   const toggleLink = document.createElement("a");
   toggleLink.href = "#";
   toggleLink.textContent = "show filters";
   toggleLink.addEventListener("click", (event) => {
     event.preventDefault();
-    const filter_div = document.getElementById("primary-filters");
+    const filter_div = document.getElementById("search-filters");
     if (filter_div.style.display === "none") {
       toggleLink.textContent = "hide filters";
       filter_div.style.display = "block"
@@ -98,39 +105,29 @@ viewof reset_filters = Inputs.button("reset filters")
 :::
 
 ```{ojs}
-// Perform the filtering:
+// Performs filtering of the complete (`course_data`) data into the filtered (`course_filtered`) set.
+// If there is no search, and nothing has been selected in the filters then we return everything.
 course_filtered =
   (
     (!selected_audience) &&
-    // (selected_access_mode ?? []).length === 0 &&
     (selected_educational_level ?? []).length === 0 &&
     (selected_resource_type ?? []).length === 0 &&
     (selected_time ?? []).length === 0 &&
     (selected_provider ?? []).length === 0 &&
-    // (selected_keywords ?? []).length === 0 &&
     (!search_query)
   )
-  ? course_data.filter(row => row.featured === "yes")
+  ? course_data.filter(row => row)
   : course_data.filter(row =>
       // audience
       (!selected_audience || !row.audience || row.audience.includes(selected_audience)) &&
-
-      // // access mode
-      // ((selected_access_mode ?? []).length === 0 || (selected_access_mode ?? []).includes(row.accessMode)) &&
-
       // educational level
       ((selected_educational_level ?? []).length === 0 || (selected_educational_level ?? []).includes(row.educationalLevel)) &&
-
       // resource type
       ((selected_resource_type ?? []).length === 0 || (selected_resource_type ?? []).includes(row.learningResourceType)) &&
-      
       // time
       ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.timeRequired)) &&
       // provider
       ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
-      // keywords
-      // ((selected_keywords ?? []).length === 0 || (selected_keywords ?? []).includes(row.keywords)) &&
-
       // search
       (!search_query ||
         row.headline.toLowerCase().includes(search_query) ||
@@ -144,7 +141,9 @@ course_filtered =
 ::: {#primary-search-results}
 
 ```{ojs}
-//| panel: fill
+// This cell iterates through the the filtered course results, and builds the displayed output.
+// If there are no selected results, we show a placeholder <div>.
+// All filtered courses are displayed, sorted first by `featured` status then in the CSV file order.
 {
   const search_results = document.getElementById("primary-search-results");
   const empty_results = document.getElementById("empty-primary-search-results");
@@ -193,7 +192,7 @@ course_filtered =
 
 ```{ojs}
 //| output: false
-// The reset code.
+// This cell fires whenever the "reset filters" button is pressed.
 {
   reset_filters; // This updates whenever the reset button fires.
   function resetInput(view, value) {
@@ -208,12 +207,11 @@ course_filtered =
   resetInput(viewof selected_resource_type, null);
   resetInput(viewof selected_time, null);
   resetInput(viewof selected_provider, null);
-  // resetInput(viewof selected_access_mode, []);
-  // resetInput(viewof selected_keywords, []);
 }
 ```
 
 ```{ojs}
 //| eval: false
+// This cell displays a table of all `course_data` for debugging only.
 Inputs.table(course_data)
 ```

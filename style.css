@@ -18,74 +18,74 @@ h2 {
   margin: 1em 0;
 }
 
-div.index-header {
-  border: 1px dotted red;
-}
-
 header#title-block-header {
   display: block;
-  border: 1px dotted orange;
-}
-
-h1.title {
-}
-
-/* The Hero section */
-/* .hero {
-  margin: 1em auto;
-  position: relative;
-  background-color: #E0F1FA;
-  border: 1px solid #29A69D;
-  color: #2E2D62;
-  padding: 1em;
+  background-color: #2E2D62;
   border-radius: 8px;
+  margin: 0 0 1em 0;
+  padding: 0.25em;
 }
 
-.hero h2 {
-  font-size: 1.25em;
-} */
+header#title-block-header h1 {
+  font-size: 2em;
+  color: #F5F3EF;
+  text-align: center;
+}
 
-/* The Search functionality on the main page */
+header#title-block-header p.subtitle {
+  font-size: 1.25em;
+  color: #F5F3EF;
+  text-align: center;
+}
+
+/***********************************
+The Main index page search box
+***********************************/
+
 .primary-search {
   background: #F5F3EF;
   border: 1px solid #DDD9E2;
   border-radius: 8px;
-  margin: 0;
   padding: 0.25em;
 }
 
-/* This keeps the main search box 100% */
-.primary-search div.cell div form {
-  width: 100%;
+/* This is necessary to override the standard form width */
+.primary-search form {
+  width: 100% !important;
 }
 
-#primary-filters {
+.primary-search input[type="text"] {
+  border: 1px solid #DDD9E2;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  margin: 5px;
+}
+
+.primary-search input[type="text"]::placeholder {
+  color: #DDD9E2;
+  opacity: 1;
+}
+
+#search-filters {
   margin: 0;
   padding: 1em;
   font-size: small;
 }
 
-.primary-filter-toggle div.cell {
+.search-filter-toggle div.cell {
   width: 100%;
   text-align: center;
   font-size: tiny;
 }
 
-.primary-filter-toggle div.cell a {
+.search-filter-toggle div.cell a {
   color: #9088A4;
   font-size: 0.75em;
   text-decoration: none;
 }
 
-#primary-search-results div.panel-sidebar {
-  background: #F5F3EF !important;
-  border: 1px solid #DDD9E2;
-  border-radius: 8px;
-  margin: 1em 0 0 0;
-  padding: 1em;
-}
-
-#primary-filters button {
+#search-filters button {
   border: 1px solid #DDD9E2;
   background: white;
   border-radius: 6px;
@@ -96,6 +96,10 @@ h1.title {
   font-size: 0.75em;
 }
 
+/***********************************
+The Main index page search results
+***********************************/
+
 .primary-search-results {
   border: 1px solid #DDD9E2;
   /* border-radius: 8px; */
@@ -104,12 +108,9 @@ h1.title {
   padding: 1em;
 }
 
-.observablehq input[type="text"] {
-  border: 1px solid #DDD9E2;
-  border-radius: 6px;
-  padding: 6px;
-  box-shadow: none;
-  margin: 5px;
+.observablehq {
+  display: block !important;
+  grid-template-columns: none !important;
 }
 
 /* The Course data block */
@@ -119,26 +120,12 @@ div.course-data {
   background: #F5F3EF;
   border-radius: 0;
   padding: 1em 1em 0 1em;
-  margin: 1em 0;
+  margin: 1em auto;
   font-size: 0.8rem;
 }
 
-div.featured {
-  border-left: 5px solid #29A69D;
-  position: relative;
-}
-
-.featured::after {
-  content: "featured"; 
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  color: #29A69D;
-  font-size: 1em;
-  line-height: 1;
-}
-
 div.course-data h3,a {
+  color: #2E2D62;
   font-size: 1rem;
   margin-top: 0;
   font-weight: bold;
@@ -166,18 +153,6 @@ div.course-data div.course-data-extras {
   width: 10em;
 }
 
-div.course-data-empty {
-  width: 100%;
-  border: none;
-  padding:1em;
-  margin:1em 0;
-}
-
-div.course-data-empty p {
-  text-align: center;
-  color: #0A2441;
-}
-
 div.course-data .toggle-state {
   display: none;
 }
@@ -200,6 +175,45 @@ div.course-data .toggle-state:checked ~ .course-data-extras {
   display: block;
 }
 
+/***********************************
+Extra featured course decoration
+***********************************/
+
+div.featured {
+  border-left: 5px solid #29A69D;
+  position: relative;
+}
+
+.featured::after {
+  content: "featured"; 
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #29A69D;
+  font-size: 1em;
+  line-height: 1;
+}
+
+/***********************************
+"Empty selection" formatting
+***********************************/
+
+div.course-data-empty {
+  width: 100%;
+  border: none;
+  padding:1em;
+  margin:1em 0;
+}
+
+div.course-data-empty p {
+  text-align: center;
+  color: #0A2441;
+}
+
+/***********************************
+News div formatting
+***********************************/
+
 div.news {
   margin: 1em auto;
   background: #F5F3EF;
@@ -212,3 +226,4 @@ div.news h2 {
   font-size: 1.25em;
   color: #2E2D62;
 }
+
