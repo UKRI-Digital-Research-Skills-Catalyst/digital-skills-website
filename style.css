@@ -124,7 +124,7 @@ div.course-data {
   font-size: 0.8rem;
 }
 
-div.course-data h3,a {
+div.course-data h3, div.course-data a {
   color: #2E2D62;
   font-size: 1rem;
   margin-top: 0;
