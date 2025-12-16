@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4690a3ddcde68fcbfe3727ff945e31b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-429517226d61b1ac229baa08f875832e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,8 +81,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/ukri-drsc-logo-transparent.png" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo light-content">
-    <img src="./assets/ukri-drsc-logo-transparent.png" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo dark-content">
+    <img src="./assets/ukri-drsc-logo-transparent.svg" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo light-content">
+    <img src="./assets/ukri-drsc-logo-transparent.svg" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -153,6 +153,16 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </div>
 <h2 class="anchored">
+Learning portal
+</h2>
+<p>The learning portal has 80+ learning resources, providing a centralised and easily accessible hub to accelerate learning for UK based researchers and innovators. Designed to save time and enhance the user’s learning experience, the portal allows users to quickly locate resources tailored to their expertise, research area, and preferred study mode. Current training resources focus on building digital research skills for bioscientists and health professionals, with plans to expand the offering with additional materials in the future.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/learning-portal.svg" title="The learning portal" class="img-fluid figure-img" width="500"></p>
+<figcaption><a href="./index.html">Explore the learning portal</a></figcaption>
+</figure>
+</div>
+<h2 class="anchored">
 Consultancy service
 </h2>
 <p>We are pleased to offer a consultancy service where online sessions can be booked with our Digital Research Specialists. Our experts provide tailored support to help you overcome challenges and enhance your research at any stage of your project.</p>
@@ -170,13 +180,18 @@ Consultancy service
 <li>Data science and statistics</li>
 <li>Robotics for plant phenotyping</li>
 </ul>
-<p>Book a session today and get the expert support you need to move your research forward with confidence.</p>
-<p>For further details on the service please visit <a href="./consult.html">Consult an Expert</a>.</p>
+<p>Book a session today and get the expert support you need to move your research forward with confidence. For further details on the service please visit <a href="./consult.html">Consult an Expert</a>.</p>
 <h2 class="anchored">
 Events and bespoke training service
 </h2>
 <p>Training events are offered on an ad-hoc basis, both online and in person. These engaging sessions are offered at a reduced rate or completely free of charge, led by experienced instructors who are passionate about sharing their knowledge. We’re committed to creating a welcoming and accessible learning space for everyone in the research community. Scholarships are available to support travel and care costs, helping to ensure that everyone can participate. Wherever possible, sessions will be delivered online to maximise accessibility.</p>
 <p>A full-day training conference, AI Readiness in the Biosciences, will take place on Friday 4th September 2026 in York. Attendance is free, and bursaries are available to support travel and care costs.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/ai-training.png" title="AI readiness in the Biosciences" class="img-fluid figure-img" width="250"></p>
+<figcaption>AI readiness in the Biosciences</figcaption>
+</figure>
+</div>
 <p>For further details visit <a href="./news.qml">News and Events</a>.</p>
 <h2 class="anchored">
 Bespoke training
@@ -189,6 +204,12 @@ Project history and funding
 <p>Led by Professor Emma Rand at the University of York, the Catalyst Project was developed in response to the UKRI Digital Research Infrastructure Programme funding call. It brings together seven university partners in a collaborative effort to centralise high-quality training materials for researchers and innovators.</p>
 <p>The project builds on resources created by Data Science in Healthcare &amp; Biosciences (DaSH), which developed training materials and hosted events between 2021 and 2023 to upskill health and bioscience researchers in data management and analysis. The Catalyst now centralises access to materials from seven of the nine DaSH projects, creating a single hub for researchers to access these resources.</p>
 <p>The project originally focussed on health and bioscience researchers, the Catalyst aims to reach a broader audience. Its digital research skills training resources are also highly relevant for researchers in arts and humanities, sciences, and social sciences, providing opportunities to enhance digital expertise across disciplines.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="./assets/project-history.png" title="History of the project" class="img-fluid figure-img" width="250"></p>
+<figcaption>Project history</figcaption>
+</figure>
+</div>
 <table class="table-striped caption-top table">
 <caption>The Seven DaSH projects contributing data to this project</caption>
 <thead>
@@ -322,7 +343,7 @@ Project history and funding
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/UKRI-Digital-Research-Skills-Catalyst\.github\.io\/digital-skills-website\/");
+        var filterRegex = new RegExp("^(?:http:|https:)\/\/3mmarand\.github\.io\/R4BABS");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -336,6 +357,11 @@ Project history and funding
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -655,7 +681,7 @@ Project history and funding
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://fusion-cdt.ac.uk/about/contact/">
+    <a class="nav-link" href="./contact.html">
 <p>contact</p>
 </a>
   </li>  

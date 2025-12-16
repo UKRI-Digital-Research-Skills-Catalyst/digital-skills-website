@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4690a3ddcde68fcbfe3727ff945e31b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-429517226d61b1ac229baa08f875832e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,8 +81,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/ukri-drsc-logo-transparent.png" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo light-content">
-    <img src="./assets/ukri-drsc-logo-transparent.png" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo dark-content">
+    <img src="./assets/ukri-drsc-logo-transparent.svg" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo light-content">
+    <img src="./assets/ukri-drsc-logo-transparent.svg" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -159,6 +159,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Data CAMMP: Robotics for plant phenotyping</li>
 </ul>
 <p>This service is fully funded by the UKRI Digital Research Infrastructure [grantcode] award, covering the usual consultancy cost of £44/hr to make it free for you to use.</p>
+<p>Use the <a href="https://forms.gle/KRpJXckLwEMY83q49">booking form</a> to request a session.</p>
 
 
 
@@ -236,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/UKRI-Digital-Research-Skills-Catalyst\.github\.io\/digital-skills-website\/");
+        var filterRegex = new RegExp("^(?:http:|https:)\/\/3mmarand\.github\.io\/R4BABS");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -250,6 +251,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -569,7 +575,7 @@ ul.task-list li input[type="checkbox"] {
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://fusion-cdt.ac.uk/about/contact/">
+    <a class="nav-link" href="./contact.html">
 <p>contact</p>
 </a>
   </li>  

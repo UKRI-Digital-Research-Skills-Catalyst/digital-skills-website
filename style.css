@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+.navbar-brand img {
+  max-height: 80px;
+  width: 250px;
+}
+
 h1 {
   font-size: 2em;
   color: #2E2D62;
@@ -18,17 +23,50 @@ h2 {
   margin: 1em 0;
 }
 
+/***********************************
+Move the burger menu to the right
+***********************************/
+
+/* .navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+} */
+
+/* .navbar-brand-container {
+  order: 0; 
+  margin-right: auto;
+  border: 1px solid pink;
+} */
+
+/* .navbar-toggler {
+  order: 9999;
+  margin-left: auto;
+  border: 1px solid green;
+} */
+
+/***********************************
+The main block headers
+***********************************/
+
+#quarto-document-content {
+  /* Removes the extra margin above the full-width header */
+  margin-top: 0;
+}
+
 header#title-block-header {
   display: block;
   background-color: #2E2D62;
-  border-radius: 8px;
-  margin: 0 0 1em 0;
-  padding: 0.25em;
+  /* border-radius: 8px; */
+  /* Set L & R margins to -1.5em to make this full-width as ordered.*/
+  margin: 0 -1.5em 1em -1.5em;
+  padding: 4em;
 }
 
 header#title-block-header h1 {
   font-size: 2em;
-  color: #F5F3EF;
+  /* color: #F5F3EF; */
+  color: white;
   text-align: center;
 }
 
@@ -43,19 +81,32 @@ The Main index page search box
 ***********************************/
 
 .primary-search {
+  background: #2E2D62;
+  padding: 2em;
+  margin: 0 -1.5em 0 -1.5em;
+  color: #2E2D62;
+}
+
+/*
+.primary-search {
   background: #F5F3EF;
   border: 1px solid #DDD9E2;
   border-radius: 8px;
   padding: 0.25em;
 }
+*/
 
 /* This is necessary to override the standard form width */
 .primary-search form {
   width: 100% !important;
 }
 
+.primary-search label {
+    color: white;
+}
+
 .primary-search input[type="text"] {
-  border: 1px solid #DDD9E2;
+  border: 1px solid #29A69D;
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
@@ -63,7 +114,8 @@ The Main index page search box
 }
 
 .primary-search input[type="text"]::placeholder {
-  color: #DDD9E2;
+  /* color: #DDD9E2; */
+  color: color-mix(in srgb, #2E2D62, white 75%);
   opacity: 1;
 }
 
@@ -80,14 +132,14 @@ The Main index page search box
 }
 
 .search-filter-toggle div.cell a {
-  color: #9088A4;
+  color: white;
   font-size: 0.75em;
   text-decoration: none;
 }
 
 #search-filters button {
-  border: 1px solid #DDD9E2;
-  background: white;
+  border: 1px solid white;
+  background: color-mix(in srgb, #2E2D62, white 25%);
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
@@ -137,22 +189,6 @@ div.course-data div.course-data-extras {
   font-size: 0.75rem;
 }
 
-.course-data-extras table {
-  width: 100%;
-  background: #F5F3EF !important;
-}
-
-.course-data-extras table tr th, td {
-  border-bottom: 1px solid #DDD9E2;
-}
-
-.course-data-extras table tr:last-child th, .course-data-extras table tr:last-child td {
-  border-bottom: none;
-}
-.course-data-extras table tr th {
-  width: 10em;
-}
-
 div.course-data .toggle-state {
   display: none;
 }
@@ -175,6 +211,7 @@ div.course-data .toggle-state:checked ~ .course-data-extras {
   display: block;
 }
 
+
 /***********************************
 Extra featured course decoration
 ***********************************/
@@ -191,7 +228,60 @@ div.featured {
   right: 10px;
   color: #29A69D;
   font-size: 1em;
+  font-weight: bold;
   line-height: 1;
+}
+
+/***********************************
+Specific course data tables
+***********************************/
+
+.course-data-extras table {
+  width: 100%;
+  background: #F5F3EF !important;
+}
+
+.course-data-extras table tr th, td {
+  border-bottom: 1px solid #DDD9E2;
+}
+
+.course-data-extras table tr:last-child th, .course-data-extras table tr:last-child td {
+  border-bottom: none;
+}
+.course-data-extras table tr th {
+  width: 10em;
+}
+
+/***********************************
+Specific extra information "chips"
+***********************************/
+
+div.course-data-extras p {
+  width: fit-content;
+  padding: 0 5px;
+  border-radius: 1em;
+  margin: 0.25em 0;
+}
+
+div.course-data-extras td {
+  /* border: 1px dotted red; */
+  padding: 0.25em 0;
+  margin: 0;
+}
+
+td.pre-reqs p {
+  border: 1px solid #FA6862;
+  background: color-mix(in srgb, #FA6862, white 75%);
+}
+
+td.teaches p {
+  /* width: fit-content; */
+  border: 1px solid #29A69D;
+  background: color-mix(in srgb, #29A69D, white 75%);
+}
+
+td.credit p a {
+  font-size: 1em;
 }
 
 /***********************************
@@ -215,6 +305,7 @@ News div formatting
 ***********************************/
 
 div.news {
+  position: relative;
   margin: 1em auto;
   background: #F5F3EF;
   border: 1px solid #DDD9E2;
@@ -222,8 +313,36 @@ div.news {
   padding: 0 1em;
 }
 
-div.news h2 {
+div.news::after {
+  content: "news"; 
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #29A69D;
+  font-size: 1em;
+  line-height: 1;
+}
+
+div.training {
+  position: relative;
+  margin: 1em auto;
+  background: #F5F3EF;
+  border: 1px solid #DDD9E2;
+  border-radius: 8px;
+  padding: 0 1em;
+}
+
+div.training::after {
+  content: "training"; 
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #29A69D;
+  font-size: 1em;
+  line-height: 1;
+}
+
+div.news h2, div.training h2 {
   font-size: 1.25em;
   color: #2E2D62;
 }
-

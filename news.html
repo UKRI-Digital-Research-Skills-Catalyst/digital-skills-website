@@ -40,7 +40,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-4690a3ddcde68fcbfe3727ff945e31b1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-429517226d61b1ac229baa08f875832e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -81,8 +81,8 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a href="./index.html" class="navbar-brand navbar-brand-logo">
-    <img src="./assets/ukri-drsc-logo-transparent.png" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo light-content">
-    <img src="./assets/ukri-drsc-logo-transparent.png" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo dark-content">
+    <img src="./assets/ukri-drsc-logo-transparent.svg" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo light-content">
+    <img src="./assets/ukri-drsc-logo-transparent.svg" alt="Logo for the UKRI Digital Research Skills Catalyst" class="navbar-logo dark-content">
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -147,6 +147,33 @@ ul.task-list li input[type="checkbox"] {
 <div class="hero">
 <p>Stay up to date with the latest training opportunities, conferences, and developments across our community.</p>
 <p>This page highlights upcoming workshops and key announcements designed to support professional growth, collaboration, and innovation in the research world.</p>
+</div>
+<div class="training">
+<h2 class="anchored">
+Reproducible and Automated Reporting with Quarto
+</h2>
+<p>
+March 2026 | Online Workshop
+</p>
+<p>Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows.</p>
+</div>
+<div class="training">
+<h2 class="anchored">
+Metatranscriptomics Workshop
+</h2>
+<p>
+2026 | Online Workshop
+</p>
+<p>Explore advanced methods in metatranscriptomic data analysis, from experimental design to interpretation and visualisation.</p>
+</div>
+<div class="training">
+<h2 class="anchored">
+AI in the Biosciences
+</h2>
+<p>
+Friday 4th September 2026 | Training Conference, York
+</p>
+<p>A full-day conference bringing together researchers, data scientists, and educators to explore the transformative role of AI in bioscience research and training.</p>
 </div>
 <div class="news">
 <h2 class="anchored">
@@ -243,7 +270,7 @@ Spotlight on DaSH Partner
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/UKRI-Digital-Research-Skills-Catalyst\.github\.io\/digital-skills-website\/");
+        var filterRegex = new RegExp("^(?:http:|https:)\/\/3mmarand\.github\.io\/R4BABS");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
@@ -257,6 +284,11 @@ Spotlight on DaSH Partner
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
@@ -576,7 +608,7 @@ Spotlight on DaSH Partner
     <div class="nav-footer-left">
       <ul class="footer-items list-unstyled">
     <li class="nav-item">
-    <a class="nav-link" href="https://fusion-cdt.ac.uk/about/contact/">
+    <a class="nav-link" href="./contact.html">
 <p>contact</p>
 </a>
   </li>  
