@@ -11,6 +11,24 @@ Stay up to date with the latest training opportunities, conferences, and develop
 This page highlights upcoming workshops and key announcements designed to support professional growth, collaboration, and innovation in the research world. 
 :::
 
+::: {.training}
+<h2>Reproducible and Automated Reporting with Quarto</h2>
+<p>March 2026 | Online Workshop</p>
+Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows.
+:::
+
+::: {.training}
+<h2>Metatranscriptomics Workshop</h2>
+<p>2026 | Online Workshop</p>
+Explore advanced methods in metatranscriptomic data analysis, from experimental design to interpretation and visualisation.
+:::
+
+::: {.training}
+<h2>AI in the Biosciences</h2>
+<p>Friday 4th September 2026 | Training Conference, York</p>
+A full-day conference bringing together researchers, data scientists, and educators to explore the transformative role of AI in bioscience research and training.
+:::
+
 ::: {.news}
 <h2>Launch of the Learning Portal</h2>
 We’re excited to announce the launch of our new Learning Portal — a hub for accessing training materials, event information, and community resources.
@@ -25,4 +43,3 @@ Catch up on insights, discussions, and key takeaways from our latest Training Co
 <h2>Spotlight on DaSH Partner</h2>
 Discover how our DaSH partner is advancing data-driven science and contributing to collaborative training initiatives.
 :::
-

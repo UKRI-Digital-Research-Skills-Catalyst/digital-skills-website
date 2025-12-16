@@ -22,3 +22,5 @@ Our Digital Research Specialists from across UKRI funded organisations have expe
 * Data CAMMP: Robotics for plant phenotyping
 
 This service is fully funded by the UKRI Digital Research Infrastructure [grantcode] award, covering the usual consultancy cost of £44/hr to make it free for you to use.
+
+Use the [booking form](https://forms.gle/KRpJXckLwEMY83q49) to request a session.
