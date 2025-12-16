@@ -41,8 +41,8 @@ jobs:
             python-version: "3.13.5"
             cache: 'pip' # helpful to speed up future runs
 
-        - name: Install Python dependencies
-          run: python3 -m pip install jupyter pandas
+        # - name: Install Python dependencies
+        #   run: python3 -m pip install jupyter pandas
 
         - name: Render Quarto
           # This generates the static files into the '_site' directory by default
