@@ -23,6 +23,7 @@ course_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX
 ojs_define(course_data_cached = course_data_cached)
 ```
 
+
 ```{ojs}
 // This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order
 course_data = transpose(course_data_cached)
@@ -46,10 +47,10 @@ function csv_column_set(ds, col, inject_null) {
 }
 audiences = csv_column_set(course_data, "audience", true);
 access_modes = csv_column_set(course_data, "accessMode", false);
-education_levels = csv_column_set(course_data, "educationalLevel", false);
+// education_levels = csv_column_set(course_data, "educationalLevel", false);
 resource_types = csv_column_set(course_data, "learningResourceType", true);
 providers = csv_column_set(course_data, "provider", true);
-times = csv_column_set(course_data, "timeRequired", true);
+times = csv_column_set(course_data, "approxTimeRequired", true);
 keywords = csv_column_set(course_data, "keywords", false);
 ```
 
@@ -62,6 +63,44 @@ search_query = (search_terms ?? "").toLowerCase().trim()
 ```{ojs}
 // The main search box.
 viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
+// viewof search_all = Inputs.button("Show All")
+// viewof show_filters = Inputs.button("Show Filters")
+
+html`
+  <div style="
+      display: flex; 
+      flex-direction: row; 
+      gap: 10px; 
+      align-items: center; 
+      width: 100%;
+      margin-bottom: 20px;
+  ">
+  
+    <div style="flex-grow: 1;">
+      <input type="search" placeholder="Search courses..." style="width: 100%; padding: 8px;">
+    </div>
+
+    <button style="
+        padding: 4px 10px; 
+        font-size: 0.85rem; 
+        height: fit-content;
+        cursor: pointer;
+    ">
+      Reset
+    </button>
+
+    <button style="
+        padding: 4px 10px; 
+        font-size: 0.85rem; 
+        height: fit-content;
+        cursor: pointer;
+    ">
+      Filter
+    </button>
+    
+  </div>
+`
+
 ```
 
 ::: {#search-filters style="display: none;"}
@@ -70,7 +109,7 @@ viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
 // The reset button allows a quick way to re-set the default values.
 // The action cell is at the bottom and does not generate any output.
 viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: null})
-viewof selected_educational_level = Inputs.checkbox(education_levels, {label: "Level", value: education_levels})
+// viewof selected_educational_level = Inputs.checkbox(education_levels, {label: "Level", value: education_levels})
 viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: null})
 viewof selected_time = Inputs.select(times, {label: "Time Required", value: null})
 viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
@@ -110,22 +149,22 @@ viewof reset_filters = Inputs.button("reset filters")
 course_filtered =
   (
     (!selected_audience) &&
-    (selected_educational_level ?? []).length === 0 &&
+    // (selected_educational_level ?? []).length === 0 &&
     (selected_resource_type ?? []).length === 0 &&
     (selected_time ?? []).length === 0 &&
     (selected_provider ?? []).length === 0 &&
     (!search_query)
   )
-  ? course_data.filter(row => row)
+  ? course_data.filter(row => row.featured === "yes")
   : course_data.filter(row =>
       // audience
       (!selected_audience || !row.audience || row.audience.includes(selected_audience)) &&
       // educational level
-      ((selected_educational_level ?? []).length === 0 || (selected_educational_level ?? []).includes(row.educationalLevel)) &&
+      // ((selected_educational_level ?? []).length === 0 || (selected_educational_level ?? []).includes(row.educationalLevel)) &&
       // resource type
       ((selected_resource_type ?? []).length === 0 || (selected_resource_type ?? []).includes(row.learningResourceType)) &&
       // time
-      ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.timeRequired)) &&
+      ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.approxTimeRequired)) &&
       // provider
       ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
       // search
@@ -171,11 +210,19 @@ course_filtered =
             <table>
               <tr>
                 <th scope="row">Pre-requisites</th>
-                <td>${row.competencyRequired}</td>
+                <td class="pre-reqs">${row.competencyRequired?.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(prereq => html`<p>${prereq.trim().replace(/^"|"$/g, "")}</p>`)}</td>
               </tr>
               <tr>
                 <th scope="row">Teaches</th>
-                <td>${row.teaches}</td>
+                <td class="teaches">${row.teaches?.split(/,(?=(?:(?:[^"]*"){2})*[^"]*$)/).map(teach_p => html`<p>${teach_p.trim().replace(/^"|"$/g, "")}</p>`)}</td>
+              </tr>
+              <tr>
+                <th scope="row">Time required</th>
+                <td class="required">${row.TimeRequired}</td>
+              </tr>
+              <tr>
+                <th scope="row">Credit</th>
+                <td class="credit">${md`${row.creditText}`}</td>
               </tr>
               <tr>
                 <th scope="row">Provider</th>
@@ -203,7 +250,7 @@ course_filtered =
     el.dispatchEvent(new Event("input", { bubbles: true }));
   }
   resetInput(viewof selected_audience, null);
-  resetInput(viewof selected_educational_level, []);
+  // resetInput(viewof selected_educational_level, []);
   resetInput(viewof selected_resource_type, null);
   resetInput(viewof selected_time, null);
   resetInput(viewof selected_provider, null);

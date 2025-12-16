@@ -12,12 +12,19 @@ Researchers training needs are supported at a practical level, through the provi
 * A searchable Learning portal to high quality resources developed through UKRI funding
 * Consultation service - access guidance from digital research specialists
 * Workshops and events - occasional online and in-person events to facilitate networking and address training needs
-
 :::
+
+<h2>Learning portal</h2>
+The learning portal has 80+ learning resources, providing a centralised and easily accessible hub to accelerate learning for UK based researchers and innovators.
+Designed to save time and enhance the user's learning experience, the portal allows users to quickly locate resources tailored to their expertise, research area, and preferred study mode.
+Current training resources focus on building digital research skills for bioscientists and health professionals, with plans to expand the offering with additional materials in the future. 
+
+![[Explore the learning portal](./index.qmd)](./assets/learning-portal.svg "The learning portal"){width=500px}
 
 <h2>Consultancy service</h2>
 
-We are pleased to offer a consultancy service where online sessions can be booked with our Digital Research Specialists. Our experts provide tailored support to help you overcome challenges and enhance your research at any stage of your project.
+We are pleased to offer a consultancy service where online sessions can be booked with our Digital Research Specialists.
+Our experts provide tailored support to help you overcome challenges and enhance your research at any stage of your project.
 
 Whether you need assistance with troubleshooting code, tackling analytical problems, or seeking general guidance and advice, our specialists are here to help.
 
@@ -35,7 +42,6 @@ Our consultancy service covers a broad range of research needs, including:
 * Robotics for plant phenotyping
 
 Book a session today and get the expert support you need to move your research forward with confidence.
-
 For further details on the service please visit [Consult an Expert](./consult.qmd).
 
 <h2>Events and bespoke training service</h2>
@@ -48,6 +54,8 @@ Wherever possible, sessions will be delivered online to maximise accessibility.
 
 A full-day training conference, AI Readiness in the Biosciences, will take place on Friday 4th September 2026 in York.
 Attendance is free, and bursaries are available to support travel and care costs.
+
+![AI readiness in the Biosciences](./assets/ai-training.png "AI readiness in the Biosciences"){width=250px}
 
 For further details visit [News and Events](./news.qml).
 
@@ -69,6 +77,9 @@ The Catalyst now centralises access to materials from seven of the nine DaSH pro
 
 The project originally focussed on health and bioscience researchers, the Catalyst aims to reach a broader audience.
 Its digital research skills training resources are also highly relevant for researchers in arts and humanities, sciences, and social sciences, providing opportunities to enhance digital expertise across disciplines.
+
+![Project history](./assets/project-history.png "History of the project"){width=250px}
+
 
 | Project | Research theme | Institution | Lead
 |---------|----------------|-------------|-----

@@ -5,10 +5,10 @@ project:
 website:
   navbar:
     title: false
-    background: "#9088A4"
+    background: "#FFFFFF"
     foreground: "#2E2D62"
     fontcolor: "#2E2D62"
-    logo: assets/ukri-drsc-logo-transparent.png
+    logo: assets/ukri-drsc-logo-transparent.svg
     logo-alt: Logo for the UKRI Digital Research Skills Catalyst
     search: false
     left:
@@ -23,11 +23,11 @@ website:
       - href: contact.qmd
         text: Contact
   page-footer:
-    background: "#9088A4"
-    foreground: "#F5F3EF"
+    # background: "#9088A4"
+    foreground: "#2E2D62"
     left:
       - text: contact
-        href: https://fusion-cdt.ac.uk/about/contact/
+        href: ./contact.qmd
       - text: accessibility
         href: "https://www.york.ac.uk/about/legal-statements/accessibility/"
       - text: privacy
@@ -47,3 +47,5 @@ format:
     theme: cosmo
     css: style.css
     code-fold: true
+    link-external-newwindow: true
+    link-external-filter: '^(?:http:|https:)\/\/3mmarand\.github\.io\/R4BABS'
