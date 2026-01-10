@@ -276,10 +276,12 @@ div.featured {
 }
 
 .featured::after {
-  content: "featured"; 
+  content: attr(feature_text); 
   position: absolute;
   top: 5px;
-  right: 10px;
+  /* right: 10px; */
+  left: 50%;
+  transform: translateX(-50%);
   color: #29A69D;
   font-size: 1em;
   font-weight: bold;
