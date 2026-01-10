@@ -14,6 +14,7 @@ format:
 Boost your digital research skills, accelerate your research impact—discover 80+ learning resources, events, and expert-led training in one central hub with the UKRI Digital Research Skills Catalyst. Find out more [here](./about.qmd).
 
 ```{python}
+#| eval: true
 #| cache: true
 # This cell loads the CSV data directly from the Google sheet via its published CSV-specific URL.
 # We need to load in Python, as OJS doesn't have a caching system.
@@ -23,8 +24,13 @@ course_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX
 ojs_define(course_data_cached = course_data_cached)
 ```
 
+```{ojs}
+//| eval: false
+course_data = FileAttachment("assets/courses.csv").csv({typed: true})
+```
 
 ```{ojs}
+//| eval: true
 // This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order
 course_data = transpose(course_data_cached)
 ```
@@ -63,66 +69,68 @@ search_query = (search_terms ?? "").toLowerCase().trim()
 ```{ojs}
 // The main search box.
 viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
-// viewof search_all = Inputs.button("Show All")
+viewof search_all = Inputs.button("Show All")
 // viewof show_filters = Inputs.button("Show Filters")
-
-html`
-  <div style="
-      display: flex; 
-      flex-direction: row; 
-      gap: 10px; 
-      align-items: center; 
-      width: 100%;
-      margin-bottom: 20px;
-  ">
-  
-    <div style="flex-grow: 1;">
-      <input type="search" placeholder="Search courses..." style="width: 100%; padding: 8px;">
-    </div>
-
-    <button style="
-        padding: 4px 10px; 
-        font-size: 0.85rem; 
-        height: fit-content;
-        cursor: pointer;
-    ">
-      Reset
-    </button>
-
-    <button style="
-        padding: 4px 10px; 
-        font-size: 0.85rem; 
-        height: fit-content;
-        cursor: pointer;
-    ">
-      Filter
-    </button>
-    
-  </div>
-`
-
 ```
 
-::: {#search-filters style="display: none;"}
 ```{ojs}
-// This cell holds all of the search filters that can refine the currently found courses.
-// The reset button allows a quick way to re-set the default values.
-// The action cell is at the bottom and does not generate any output.
-viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: null})
-// viewof selected_educational_level = Inputs.checkbox(education_levels, {label: "Level", value: education_levels})
-viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: null})
-viewof selected_time = Inputs.select(times, {label: "Time Required", value: null})
-viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
-viewof reset_filters = Inputs.button("reset filters")
+//| output: false
+// This updates the search to be "*" on pressing the "show all" button
+{
+  search_all;
+  if (search_all > 0) {
+    const search_element = viewof search_terms;
+    search_element.value = "*";
+    const reset_button = viewof reset_filters;
+    reset_button.value += 1;
+    reset_button.dispatchEvent(new Event("input", {bubbles: true}));
+    search_element.dispatchEvent(new Event("input", {bubbles: true}));
+  }
+}
 ```
 :::
 
-::: {.search-filter-toggle}
+```{ojs}
+// Performs filtering of the complete (`course_data`) data into the filtered (`course_filtered`) set.
+course_filtered = {
+  // 1: If the current search term is empty, and no filters are set, return featured courses
+  if(
+    !search_query &&
+    !selected_audience &&
+    (selected_resource_type ?? []).length === 0 &&
+    (selected_time ?? []).length === 0 &&
+    (selected_provider ?? []).length === 0
+  ) {
+    return course_data.filter(row => row.featured === "yes")
+  }
+  // 2: If the current search term is "*", then return everything:
+  if (search_query === "*") {
+    return course_data
+  }
+  // 3: There is another search term, so filter on it:
+  return course_data.filter(row =>
+      (!selected_audience || !row.audience || row.audience.includes(selected_audience)) &&
+      ((selected_resource_type ?? []).length === 0 || (selected_resource_type ?? []).includes(row.learningResourceType)) &&
+      ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.approxTimeRequired)) &&
+      ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
+      (!search_query ||
+        row.headline.toLowerCase().includes(search_query) ||
+        (row.description  && row.description.includes(search_query)) ||
+        (row.projectFunding  && row.projectFunding.includes(search_query)) ||
+        (row.identifier  && row.identifier.includes(search_query))
+      )
+  )
+}
+```
+
+
+::: {.search-filters}
 ```{ojs}
 // This cell implements a show/hide button for extra filters.
 // This works via a JavaScript function that finds and toggles the div display style.
 {
   const toggleLink = document.createElement("a");
+  toggleLink.id = "toggle-filters";
   toggleLink.href = "#";
   toggleLink.textContent = "show filters";
   toggleLink.addEventListener("click", (event) => {
@@ -139,43 +147,20 @@ viewof reset_filters = Inputs.button("reset filters")
   return toggleLink;
 }
 ```
-:::
-
-:::
-
+::: {#search-filters style="display: none;"}
 ```{ojs}
-// Performs filtering of the complete (`course_data`) data into the filtered (`course_filtered`) set.
-// If there is no search, and nothing has been selected in the filters then we return everything.
-course_filtered =
-  (
-    (!selected_audience) &&
-    // (selected_educational_level ?? []).length === 0 &&
-    (selected_resource_type ?? []).length === 0 &&
-    (selected_time ?? []).length === 0 &&
-    (selected_provider ?? []).length === 0 &&
-    (!search_query)
-  )
-  ? course_data.filter(row => row.featured === "yes")
-  : course_data.filter(row =>
-      // audience
-      (!selected_audience || !row.audience || row.audience.includes(selected_audience)) &&
-      // educational level
-      // ((selected_educational_level ?? []).length === 0 || (selected_educational_level ?? []).includes(row.educationalLevel)) &&
-      // resource type
-      ((selected_resource_type ?? []).length === 0 || (selected_resource_type ?? []).includes(row.learningResourceType)) &&
-      // time
-      ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.approxTimeRequired)) &&
-      // provider
-      ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
-      // search
-      (!search_query ||
-        row.headline.toLowerCase().includes(search_query) ||
-        (row.description  && row.description.includes(search_query)) ||
-        (row.projectFunding  && row.projectFunding.includes(search_query)) ||
-        (row.identifier  && row.identifier.includes(search_query))
-      )
-    )
+// This cell holds all of the search filters that can refine the currently found courses.
+// The reset button allows a quick way to re-set the default values.
+// The action cell is at the bottom and does not generate any output.
+viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: null})
+viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: null})
+viewof selected_time = Inputs.select(times, {label: "Time Required", value: null})
+viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
+viewof reset_filters = Inputs.button("reset filters")
 ```
+:::
+:::
+
 
 ::: {#primary-search-results}
 

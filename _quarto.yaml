@@ -3,12 +3,14 @@ project:
   output-dir: _site
 
 website:
+  favicon: assets/favicon.png
+  google-analytics: "G-M82WW7N600"
   navbar:
     title: false
     background: "#FFFFFF"
     foreground: "#2E2D62"
     fontcolor: "#2E2D62"
-    logo: assets/ukri-drsc-logo-transparent.svg
+    logo: assets/catalyst-logo.svg
     logo-alt: Logo for the UKRI Digital Research Skills Catalyst
     search: false
     left:
