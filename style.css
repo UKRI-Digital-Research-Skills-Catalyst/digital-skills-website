@@ -299,13 +299,17 @@ Specific course data tables
   border-bottom: 1px solid #DDD9E2;
 }
 
+.course-data-extras td.credit p {
+  /* This is required as the $md{} wrapper introduced a <p> block */
+  padding: 0;
+  margin: 0;
+}
 .course-data-extras table tr:last-child th, .course-data-extras table tr:last-child td {
   border-bottom: none;
 }
 .course-data-extras table tr th {
   width: 10em;
 }
-
 /***********************************
 Specific extra information "chips"
 ***********************************/
