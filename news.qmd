@@ -2,7 +2,11 @@
 title: "News &amp; Events"
 format:
   html:
+    toc: false
+    echo: false
     css: style.css
+    keep-hidden: true
+    code-tools: false
 ---
 
 ::: {.hero}
@@ -11,35 +15,25 @@ Stay up to date with the latest training opportunities, conferences, and develop
 This page highlights upcoming workshops and key announcements designed to support professional growth, collaboration, and innovation in the research world. 
 :::
 
-::: {.training}
-<h2>Reproducible and Automated Reporting with Quarto</h2>
-<p>March 2026 | Online Workshop</p>
-Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows.
-:::
 
-::: {.training}
-<h2>Metatranscriptomics Workshop</h2>
-<p>2026 | Online Workshop</p>
-Explore advanced methods in metatranscriptomic data analysis, from experimental design to interpretation and visualisation.
-:::
+```{ojs}
+//| eval: true
+news_data = FileAttachment("assets/news.csv").csv({typed: true})
+```
 
-::: {.training}
-<h2>AI in the Biosciences</h2>
-<p>Friday 4th September 2026 | Training Conference, York</p>
-A full-day conference bringing together researchers, data scientists, and educators to explore the transformative role of AI in bioscience research and training.
-:::
-
-::: {.news}
-<h2>Launch of the Learning Portal</h2>
-We’re excited to announce the launch of our new Learning Portal — a hub for accessing training materials, event information, and community resources.
-:::
-
-::: {.news}
-<h2>Training Conference Highlights</h2>
-Catch up on insights, discussions, and key takeaways from our latest Training Conference.
-:::
-
-::: {.news}
-<h2>Spotlight on DaSH Partner</h2>
-Discover how our DaSH partner is advancing data-driven science and contributing to collaborative training initiatives.
-:::
+```{ojs}
+// Display the news blocks loaded from news_data.
+html`
+<div id="news" class="list-grid">
+  ${news_data.map(row => html`
+    <div class="card ${row.category}">
+      ${row.image ? html`<img src="${row.image}" style="width:100%">` : ""}
+      <div class="card-body">
+        <h3><a href="${row.link}">${row.title }</a></h3>
+        ${md`${row.description}`}
+      </div>
+    </div>
+  `)}
+</div>
+`
+```
