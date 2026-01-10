@@ -80,31 +80,41 @@ header#title-block-header p.subtitle {
 The Main index page search box
 ***********************************/
 
+/* This is the entire navy search box */
 .primary-search {
   background: #2E2D62;
-  padding: 2em;
+  padding: 2em 2em 0em 2em;
   margin: 0 -1.5em 0 -1.5em;
-  color: #2E2D62;
 }
 
-/*
-.primary-search {
-  background: #F5F3EF;
-  border: 1px solid #DDD9E2;
-  border-radius: 8px;
-  padding: 0.25em;
-}
-*/
-
-/* This is necessary to override the standard form width */
-.primary-search form {
-  width: 100% !important;
+/* 1. Set the Flex Container */
+.primary-search div.cell {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: 15px;
 }
 
-.primary-search label {
-    color: white;
+.primary-search div.cell div.cell-output-display:nth-child(1 of .cell-output-display) {
+  width: 95%;
 }
 
+.primary-search div.cell div.cell-output-display:nth-child(1 of .cell-output-display) div div form {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.primary-search div.cell div.cell-output-display:not(:nth-child(1 of .cell-output-display)) {
+  flex-shrink: 1;
+  width: 8em;
+}
+
+.primary-search div.cell div.cell-output-display:not(:nth-child(1 of .cell-output-display)) div {
+  width: 100%;
+}
+
+/* Format the search box */
 .primary-search input[type="text"] {
   border: 1px solid #29A69D;
   border-radius: 6px;
@@ -114,38 +124,83 @@ The Main index page search box
 }
 
 .primary-search input[type="text"]::placeholder {
-  /* color: #DDD9E2; */
   color: color-mix(in srgb, #2E2D62, white 75%);
   opacity: 1;
 }
 
-#search-filters {
-  margin: 0;
-  padding: 1em;
-  font-size: small;
-}
-
-.search-filter-toggle div.cell {
-  width: 100%;
-  text-align: center;
-  font-size: tiny;
-}
-
-.search-filter-toggle div.cell a {
-  color: white;
-  font-size: 0.75em;
-  text-decoration: none;
-}
-
-#search-filters button {
-  border: 1px solid white;
-  background: color-mix(in srgb, #2E2D62, white 25%);
+.primary-search button {
+  width: 8em;
+  border: 1px solid #29A69D;
+  background: #FFFFFF;
+  color: #2E2D62;
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
   margin: 5px;
+}
+
+.primary-search button:hover {
+  background: #FFFFFF;
+  color: #29A69D;
+}
+
+/***********************************
+Search filters
+***********************************/
+div.search-filters {
+  /* border: 1px solid green; */
+  background: #2E2D62;
+  margin: 0 -1.5em 0 -1.5em;
+  padding: 0 2em 2em 2em;
+}
+
+a#toggle-filters {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 8em;
+  border: 1px solid #29A69D;
+  background: #FFFFFF;
+  color: #2E2D62;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  text-decoration: none;
+  line-height: normal;
+}
+
+div#search-filters {
+  color: #F5F3EF;
+}
+
+div#search-filters form {
   width: 100%;
-  font-size: 0.75em;
+}
+
+div#search-filters select {
+  border: 1px solid #29A69D;
+  color: #2E2D62;
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  margin: 5px;
+}
+
+div#search-filters button {
+  width: 8em;
+  border: 1px solid #29A69D;
+  background: #FFFFFF;
+  color: #9088A4;
+  border-radius: 6px;
+  padding: 2px 6px;
+  box-shadow: none;
+  margin: 5px;
+  margin-left: auto;
+}
+
+div#search-filters button:hover {
+  background: #FFFFFF;
+  color: #29A69D;
 }
 
 /***********************************
@@ -210,7 +265,6 @@ div.course-data .toggle-button::after {
 div.course-data .toggle-state:checked ~ .course-data-extras {
   display: block;
 }
-
 
 /***********************************
 Extra featured course decoration
