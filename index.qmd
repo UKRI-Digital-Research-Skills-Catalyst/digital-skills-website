@@ -255,3 +255,5 @@ viewof reset_filters = Inputs.button("reset filters")
 // This cell displays a table of all `course_data` for debugging only.
 Inputs.table(course_data)
 ```
+
+![](./assets/ukri-logo.png){fig-align="center" height="100px" fig-alt="Funded by the UKRI"}
