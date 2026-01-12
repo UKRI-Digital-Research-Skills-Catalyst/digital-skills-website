@@ -6,7 +6,9 @@ format:
   html:
     toc: false
     echo: false
-    css: style.css
+    css:
+      - style.css
+      - main-header.css
     keep-hidden: true
     code-tools: false
 ---

@@ -1,0 +1,21 @@
+header#title-block-header {
+  display: block;
+  background-color: #2E2D62;
+  /* border-radius: 8px; */
+  /* Set L & R margins to -1.5em to make this full-width as ordered.*/
+  margin: 0 -1.5em 1em -1.5em;
+  padding: 4em;
+}
+
+header#title-block-header h1 {
+  font-size: 2em;
+  /* color: #F5F3EF; */
+  color: white;
+  text-align: center;
+}
+
+header#title-block-header p.subtitle {
+  font-size: 1.25em;
+  color: #F5F3EF;
+  text-align: center;
+}
