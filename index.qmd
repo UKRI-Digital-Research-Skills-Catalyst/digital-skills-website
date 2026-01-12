@@ -184,7 +184,7 @@ viewof reset_filters = Inputs.button("reset filters")
         if(a.featured === "" && b.featured != "") return 1;
         return 0;
       }).map((row, row_index) => html `
-        <div class="${row.featured != "" ? "course-data featured" : "course-data"}" id="course_data_${row_index}" feature_text="★ ${row.featuredText} ★">
+        <div class="${row.featured != "" ? "course-data featured" : "course-data"}" id="course_data_${row_index}" ${row.featuredText ? `feature_text="★ ${row.featuredText} ★"` : ""}>
           <h3>
               <a href=${row.url}>${row.headline}</a>
           </h3>
