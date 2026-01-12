@@ -1,5 +1,7 @@
 **/.DS_Store
 /_site/
+/_extensions/
 /.quarto/
 **/*.quarto_ipynb
 assets/courses.csv
+assets/news.csv

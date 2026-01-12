@@ -15,6 +15,8 @@ Stay up to date with the latest training opportunities, conferences, and develop
 This page highlights upcoming workshops and key announcements designed to support professional growth, collaboration, and innovation in the research world. 
 :::
 
+<span style="display: none;">{{< fa user >}}</span>
+
 ```{python}
 #| eval: true
 #| cache: true
@@ -44,9 +46,8 @@ html`
 <div id="news" class="list-grid">
   ${news_data.map(row => html`
     <div class="card ${row.category}" ${row.date ? `item_date="${row.date}"` : ""}>
-      ${row.image ? html`<img src="${row.image}" style="width:100%">` : ""}
       <div class="card-body">
-        <h3><a href="${row.link}">${row.title}</a></h3>
+        <h3>${row.fontawesome ? `<i class="${row.fontawesome}"></i> ` : ""}<a href="${row.link}">${row.title}</a></h3>
         ${md`${row.description}`}
       </div>
     </div>
