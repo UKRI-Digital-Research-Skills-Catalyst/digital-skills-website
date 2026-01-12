@@ -372,13 +372,22 @@ div#news div.card {
   position: relative;
 }
 
+div#news div.card h3 a {
+  /* text-decoration: none; */
+  color: #2E2D62;
+}
+
+div#news div.card i {
+  color: #2E2D62;
+}
+
 div#news div.News {
-  border: 1px solid #FA6862;
+  border: 2px solid #FA6862;
   background: color-mix(in srgb, #FA6862, white 95%);
 }
 
 div#news div.Event {
-  border: 1px solid #2EE2BA;
+  border: 2px solid #2EE2BA;
   background: color-mix(in srgb, #2EE2BA, white 95%);
 }
 
@@ -386,8 +395,9 @@ div#news div.card[item_date]::after {
   /* Add the item date to the top-right of the card */
   content: attr(item_date);
   position: absolute;
-  top: 5px;
-  right: 5px;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
   color: #29A69D;
   font-size: 1em;
   font-weight: bold;

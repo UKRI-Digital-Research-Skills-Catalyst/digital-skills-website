@@ -3,6 +3,10 @@ project:
   output-dir: _site
 
 website:
+  cookie-consent:
+    type: implied
+    style: simple
+    palette: light
   favicon: assets/favicon.png
   google-analytics: "G-M82WW7N600"
   navbar:
@@ -30,14 +34,6 @@ website:
     left:
       - text: contact
         href: ./contact.qmd
-      - text: accessibility
-        href: "https://www.york.ac.uk/about/legal-statements/accessibility/"
-      - text: privacy
-        href: "https://www.york.ac.uk/about/legal-statements/#privacy"
-      - text: cookies
-        href: "https://www.york.ac.uk/about/legal-statements/cookies/"
-      - text: funding
-        href: "#"
     right:
       - icon: linkedin
         href: https://uk.linkedin.com/company/ukri-digital-research-skills-catalyst
