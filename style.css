@@ -24,28 +24,6 @@ h2 {
 }
 
 /***********************************
-Move the burger menu to the right
-***********************************/
-
-/* .navbar-container {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-} */
-
-/* .navbar-brand-container {
-  order: 0; 
-  margin-right: auto;
-  border: 1px solid pink;
-} */
-
-/* .navbar-toggler {
-  order: 9999;
-  margin-left: auto;
-  border: 1px solid green;
-} */
-
-/***********************************
 The main block headers
 ***********************************/
 
