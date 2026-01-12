@@ -109,7 +109,7 @@ course_filtered = {
   }
   // 3: There is another search term, so filter on it:
   return course_data.filter(row =>
-      (!selected_audience || !row.audience || row.audience.includes(selected_audience)) &&
+      ((selected_audience ?? []).length === 0 || (row.audience).includes(selected_audience ?? [])) &&
       ((selected_resource_type ?? []).length === 0 || (selected_resource_type ?? []).includes(row.learningResourceType)) &&
       ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.approxTimeRequired)) &&
       ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
