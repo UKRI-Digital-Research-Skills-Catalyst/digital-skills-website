@@ -19,7 +19,7 @@ The learning portal has 80+ learning resources, providing a centralised and easi
 Designed to save time and enhance the user's learning experience, the portal allows users to quickly locate resources tailored to their expertise, research area, and preferred study mode.
 Current training resources focus on building digital research skills for bioscientists and health professionals, with plans to expand the offering with additional materials in the future. 
 
-![[Explore the learning portal](./index.qmd)](./assets/learning-portal.svg "The learning portal"){width=500px}
+![[Explore the learning portal](./index.html)](./assets/learning-portal.svg "The learning portal"){width=500px}
 
 <h2>Consultancy service</h2>
 
@@ -42,7 +42,7 @@ Our consultancy service covers a broad range of research needs, including:
 * Robotics for plant phenotyping
 
 Book a session today and get the expert support you need to move your research forward with confidence.
-For further details on the service please visit [Consult an Expert](./consult.qmd).
+For further details on the service please visit [Consult an Expert](./consult.html).
 
 <h2>Events and bespoke training service</h2>
 
@@ -57,15 +57,15 @@ Attendance is free, and bursaries are available to support travel and care costs
 
 ![AI readiness in the Biosciences](./assets/ai-training.png "AI readiness in the Biosciences"){width=250px}
 
-For further details visit [News and Events](./news.qml).
+For further details visit [News and Events](./news.html).
 
 <h2>Bespoke training</h2>
 
 If your team or organisation requires a bespoke training session on one of the topics detailed in our learning portal please get in touch.
 A tailored course to suit your team’s learning needs and budget can be organised.
-Please note this option is only available for the courses indicated in the [learning portal](./index.qmd).
+Please note this option is only available for the courses indicated in the [learning portal](./index.html).
 
-For further details on the service please visit the [Learning Portal](./index.qmd).
+For further details on the service please visit the [Learning Portal](./index.html).
 
 <h2>Project history and funding</h2>
 
