@@ -25,11 +25,9 @@ This service is fully funded by the UKRI Digital Research Infrastructure [grantc
 
 Use the [booking form](https://docs.google.com/forms/d/e/1FAIpQLSfZzkuJIe5j5dADrvhOsB_CILZ_QExxxFESWph_69tGfLZw4Q/viewform?usp=dialog&embedded=true) below to request a session:
 
-:::{.column-screen}
 <iframe 
   src="https://docs.google.com/forms/d/e/1FAIpQLSfZzkuJIe5j5dADrvhOsB_CILZ_QExxxFESWph_69tGfLZw4Q/viewform?usp=dialog&embedded=true" 
   width="100%" 
   height="1000" 
   style="border: none;">
 </iframe>
-:::
