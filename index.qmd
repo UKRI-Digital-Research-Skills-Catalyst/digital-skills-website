@@ -105,7 +105,12 @@ course_filtered = {
   }
   // 2: If the current search term is "*", then return everything:
   if (search_query === "*") {
-    return course_data
+    return course_data.filter(row => 
+      ((selected_audience ?? []).length === 0 || (row.audience).includes(selected_audience ?? [])) &&
+      ((selected_resource_type ?? []).length === 0 || (selected_resource_type ?? []).includes(row.learningResourceType)) &&
+      ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.approxTimeRequired)) &&
+      ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider))
+    )
   }
   // 3: There is another search term, so filter on it:
   return course_data.filter(row =>
@@ -168,7 +173,6 @@ viewof reset_filters = Inputs.button("reset filters")
 // This cell iterates through the the filtered course results, and builds the displayed output.
 // If there are no selected results, we show a placeholder <div>.
 // All filtered courses are displayed, sorted first by `featured` status then in the CSV file order.
-//        // <div class="${row.featured != "" ? "course-data featured" : "course-data"}" id="course_data_${row_index}" ${row.featuredText ? `feature_text="★ ${row.featuredText} ★"` : ""}>
 
 {
   const search_results = document.getElementById("primary-search-results");
