@@ -43,10 +43,10 @@ news_data = transpose(news_data_cached)
 html`
 <div id="news" class="list-grid">
   ${news_data.map(row => html`
-    <div class="card ${row.category}">
+    <div class="card ${row.category}" ${row.date ? `item_date="${row.date}"` : ""}>
       ${row.image ? html`<img src="${row.image}" style="width:100%">` : ""}
       <div class="card-body">
-        <h3><a href="${row.link}">${row.title }</a></h3>
+        <h3><a href="${row.link}">${row.title}</a></h3>
         ${md`${row.description}`}
       </div>
     </div>

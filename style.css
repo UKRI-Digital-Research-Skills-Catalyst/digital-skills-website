@@ -270,16 +270,15 @@ div.course-data .toggle-state:checked ~ .course-data-extras {
 Extra featured course decoration
 ***********************************/
 
-div.featured {
+.course-data[featured_text] {
   border-left: 5px solid #29A69D;
   position: relative;
 }
 
-.featured::after {
-  content: attr(feature_text); 
+.course-data[featured_text]::after {
+  content: "★ " attr(featured_text) " ★";
   position: absolute;
   top: 5px;
-  /* right: 10px; */
   left: 50%;
   transform: translateX(-50%);
   color: #29A69D;
@@ -376,6 +375,7 @@ div#news div.card {
   border: 1px solid #DDD9E2;
   border-radius: 8px;
   padding: 0 1em;
+  position: relative;
 }
 
 div#news div.News {
@@ -386,4 +386,16 @@ div#news div.News {
 div#news div.Event {
   border: 1px solid #2EE2BA;
   background: color-mix(in srgb, #2EE2BA, white 95%);
+}
+
+div#news div.card[item_date]::after {
+  /* Add the item date to the top-right of the card */
+  content: attr(item_date);
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #29A69D;
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
 }
