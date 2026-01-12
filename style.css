@@ -378,56 +378,12 @@ div#news div.card {
   padding: 0 1em;
 }
 
-div#news div.news {
+div#news div.News {
   border: 1px solid #FA6862;
   background: color-mix(in srgb, #FA6862, white 95%);
-  /* border-width: 1px 5px; */
 }
 
-div#news div.event {
+div#news div.Event {
   border: 1px solid #2EE2BA;
   background: color-mix(in srgb, #2EE2BA, white 95%);
-  /* border-width: 1px 5px; */
 }
-/* div.news {
-  position: relative;
-  margin: 1em auto;
-  background: #F5F3EF;
-  border: 1px solid #DDD9E2;
-  border-radius: 8px;
-  padding: 0 1em;
-}
-
-div.news::after {
-  content: "news"; 
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  color: #29A69D;
-  font-size: 1em;
-  line-height: 1;
-}
-
-div.training {
-  position: relative;
-  margin: 1em auto;
-  background: #F5F3EF;
-  border: 1px solid #DDD9E2;
-  border-radius: 8px;
-  padding: 0 1em;
-}
-
-div.training::after {
-  content: "training"; 
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  color: #29A69D;
-  font-size: 1em;
-  line-height: 1;
-}
-
-div.news h2, div.training h2 {
-  font-size: 1.25em;
-  color: #2E2D62;
-} */

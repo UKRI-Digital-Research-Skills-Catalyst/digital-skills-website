@@ -15,11 +15,28 @@ Stay up to date with the latest training opportunities, conferences, and develop
 This page highlights upcoming workshops and key announcements designed to support professional growth, collaboration, and innovation in the research world. 
 :::
 
+```{python}
+#| eval: true
+#| cache: true
+# This cell loads the CSV data directly from the Google sheet via its published CSV-specific URL.
+# We need to load in Python, as OJS doesn't have a caching system.
+# Once loaded, we "publish" the variable globally to OJS.
+import pandas as pd
+news_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(news_data_cached = news_data_cached)
+```
+
+```{ojs}
+//| eval: false
+news_data = FileAttachment("assets/news.csv").csv({typed: true})
+```
 
 ```{ojs}
 //| eval: true
-news_data = FileAttachment("assets/news.csv").csv({typed: true})
+// This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order
+news_data = transpose(news_data_cached)
 ```
+
 
 ```{ojs}
 // Display the news blocks loaded from news_data.
