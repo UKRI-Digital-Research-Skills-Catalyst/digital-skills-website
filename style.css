@@ -228,7 +228,7 @@ div.course-data {
   border-radius: 0;
   padding: 1em 1em 0 1em;
   margin: 1em auto;
-  font-size: 0.8rem;
+  font-size: 1em;
 }
 
 div.course-data h3, div.course-data a {
@@ -241,7 +241,7 @@ div.course-data h3, div.course-data a {
 div.course-data div.course-data-extras {
   display: none;
   width: 100%;
-  font-size: 0.75rem;
+  font-size: 1em;
 }
 
 div.course-data .toggle-state {
@@ -252,7 +252,7 @@ div.course-data .toggle-button {
   width: 100%;
   color: #9088A4;
   text-align: right;
-  font-size: 0.75em;
+  font-size: 1em;
 }
 
 div.course-data .toggle-state:checked ~ .toggle-button::after {
