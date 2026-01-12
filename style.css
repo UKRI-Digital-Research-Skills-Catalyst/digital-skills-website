@@ -276,10 +276,12 @@ div.featured {
 }
 
 .featured::after {
-  content: "featured"; 
+  content: attr(feature_text); 
   position: absolute;
   top: 5px;
-  right: 10px;
+  /* right: 10px; */
+  left: 50%;
+  transform: translateX(-50%);
   color: #29A69D;
   font-size: 1em;
   font-weight: bold;
@@ -299,13 +301,17 @@ Specific course data tables
   border-bottom: 1px solid #DDD9E2;
 }
 
+.course-data-extras td.credit p {
+  /* This is required as the $md{} wrapper introduced a <p> block */
+  padding: 0;
+  margin: 0;
+}
 .course-data-extras table tr:last-child th, .course-data-extras table tr:last-child td {
   border-bottom: none;
 }
 .course-data-extras table tr th {
   width: 10em;
 }
-
 /***********************************
 Specific extra information "chips"
 ***********************************/
@@ -358,8 +364,13 @@ div.course-data-empty p {
 News div formatting
 ***********************************/
 
-div.news {
-  position: relative;
+div#news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+div#news div.card {
   margin: 1em auto;
   background: #F5F3EF;
   border: 1px solid #DDD9E2;
@@ -367,36 +378,12 @@ div.news {
   padding: 0 1em;
 }
 
-div.news::after {
-  content: "news"; 
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  color: #29A69D;
-  font-size: 1em;
-  line-height: 1;
+div#news div.News {
+  border: 1px solid #FA6862;
+  background: color-mix(in srgb, #FA6862, white 95%);
 }
 
-div.training {
-  position: relative;
-  margin: 1em auto;
-  background: #F5F3EF;
-  border: 1px solid #DDD9E2;
-  border-radius: 8px;
-  padding: 0 1em;
-}
-
-div.training::after {
-  content: "training"; 
-  position: absolute;
-  top: 5px;
-  right: 10px;
-  color: #29A69D;
-  font-size: 1em;
-  line-height: 1;
-}
-
-div.news h2, div.training h2 {
-  font-size: 1.25em;
-  color: #2E2D62;
+div#news div.Event {
+  border: 1px solid #2EE2BA;
+  background: color-mix(in srgb, #2EE2BA, white 95%);
 }

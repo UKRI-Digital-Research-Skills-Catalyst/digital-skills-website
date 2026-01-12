@@ -9,6 +9,12 @@ The processing and searching of the training materials is performed by [ojs](htt
 Local development requires an installation of quarto.
 Please see Quarto's [Get Started](https://quarto.org/docs/get-started/) documentation to install a local copy.
 
+Set up the correct UV environment with:
+
+```bash
+source ~/.venv/bin/activate.fish
+```
+
 A local preview of the code can be generated using:
 
 ```bash

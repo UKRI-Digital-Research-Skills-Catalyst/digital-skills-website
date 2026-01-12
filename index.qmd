@@ -180,11 +180,11 @@ viewof reset_filters = Inputs.button("reset filters")
   } else {
     return html`
       ${course_filtered.slice().sort((a, b) => {
-        if(a.featured === "yes" && b.featured === "no") return -1;
-        if(a.featured === "no" && b.featured === "yes") return 1;
+        if(a.featuredText != "" && b.featuredText === "") return -1;
+        if(a.featured === "" && b.featured != "") return 1;
         return 0;
       }).map((row, row_index) => html `
-        <div class="${row.featured === "yes" ? "course-data featured" : "course-data"}" id="course_data_${row_index}">
+        <div class="${row.featured != "" ? "course-data featured" : "course-data"}" id="course_data_${row_index}" ${row.featuredText ? `feature_text="★ ${row.featuredText} ★"` : ""}>
           <h3>
               <a href=${row.url}>${row.headline}</a>
           </h3>
