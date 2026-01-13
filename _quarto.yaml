@@ -46,4 +46,5 @@ format:
     css: style.css
     code-fold: true
     link-external-newwindow: true
-    link-external-filter: '^(?:http:|https:)\/\/3mmarand\.github\.io\/R4BABS'
+    link-external-icon: true
+    # link-external-filter: '^(?:http:|https:)\/\/3mmarand\.github\.io\/R4BABS'
