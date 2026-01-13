@@ -47,8 +47,19 @@ html`
   ${news_data.map(row => html`
     <div class="card ${row.category}" ${row.date ? `item_date="${row.date}"` : ""}>
       <div class="card-body">
-        <h3>${row.fontawesome ? `<i class="${row.fontawesome}"></i> ` : ""}<a href="${row.link}">${row.title}</a></h3>
-        ${md`${row.description}`}
+        <div class="card-header">
+          <span class="badge badge-${row.category?.toLowerCase()}">${row.category}</span>
+          ${row.fontawesome ? `<div class="icon"><i class="${row.fontawesome}"></i></div> ` : ""}
+        </div>
+        <h3>${row.title}</h3>
+        <div class="card-desc">
+          ${md`${row.description}`}
+          ${row.date ? `<div class="card-date"><i class="fa-regular fa-calendar fa-xs"></i> ${row.date}</div>`: ""}
+        </div>
+        <a href="${row.link}" class="card-link">
+            Read Details 
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
       </div>
     </div>
   `)}

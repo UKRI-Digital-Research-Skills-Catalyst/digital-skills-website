@@ -283,6 +283,7 @@ Specific course data tables
 .course-data-extras table tr th {
   width: 10em;
 }
+
 /***********************************
 Specific extra information "chips"
 ***********************************/
@@ -334,50 +335,153 @@ div.course-data-empty p {
 /***********************************
 News div formatting
 ***********************************/
+/*            --primary: #0288d1;*/
+/*            --primary-dark: #0277bd;*/
+/*            --secondary: #263238;*/
+/*            --bg-color: #f8fafc;*/
+/*            --text-main: #334155;*/
+/*            --text-light: #64748b;*/
+/*            --card-radius: 16px;*/
+/*            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
 
 div#news {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
+  padding: 10px;
+  background-color: #f8fafc;
+  background-image: linear-gradient(to bottom, #ffffff 0%, rgba(248, 250, 252, 0.85) 20%, rgba(248, 250, 252, 0.9) 100%), url('assets/bg-shapes.png');
+  background-repeat: repeat;
+  background-size: 400px; 
+  background-attachment: fixed;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+
 }
 
 div#news div.card {
-  margin: 1em auto;
-  background: #F5F3EF;
-  border: 1px solid #DDD9E2;
-  border-radius: 8px;
-  padding: 0 1em;
-  position: relative;
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+    position: relative;
 }
 
-div#news div.card h3 a {
-  /* text-decoration: none; */
-  color: #2E2D62;
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: #0288D1;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-div#news div.card i {
-  color: #2E2D62;
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
 }
 
-div#news div.News {
-  border: 2px solid #FA6862;
-  background: color-mix(in srgb, #FA6862, white 95%);
+.card:hover::before {
+  opacity: 1;
 }
 
-div#news div.Event {
-  border: 2px solid #2EE2BA;
-  background: color-mix(in srgb, #2EE2BA, white 95%);
+div#news .card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
-div#news div.card[item_date]::after {
-  /* Add the item date to the top-right of the card */
-  content: attr(item_date);
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #29A69D;
-  font-size: 1em;
-  font-weight: bold;
-  line-height: 1;
+div#news .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    background: none;
+    border: none;
 }
+
+div#news .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #f0f9ff;
+    color: #0288D1;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+div#news .card:hover .icon {
+    background-color: #0288D1;
+    color: white;
+    transform: rotate(-5deg);
+}
+
+.badge {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-workshop { background-color: #e0f2f1; color: #00695c; }
+.badge-news { background-color: #fff1f2; color: #be123c; }
+.badge-event { background-color: #f0fdf4; color: #15803d; }
+
+.card-date {
+    text-align: right;
+    color: #2E2D62;
+    margin: 0;
+    padding: 0;
+}
+
+
+        
+
+
+
+        .card h3 {
+            font-size: 1.25em;
+            margin: 0 0 0.75rem 0;
+            color: #263238;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+
+        .card-desc {
+            font-size: 1em;
+            color: #64748b;
+            margin-bottom: 1em;
+            flex-grow: 1;
+            line-height: 1.7;
+            /* border: 1px solid green; */
+        }
+
+        .card-link {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: #0288D1;
+            margin-top: auto;
+            padding: 0.75rem 0;
+            border-top: 1px solid #f1f5f9;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            text-decoration: none;
+        }
+
+        .card-link i { font-size: 0.8rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
+        
+        .card-link:hover { color: #0277bd; padding-left: 5px; }
+        .card:hover .card-link i { transform: translateX(5px); }

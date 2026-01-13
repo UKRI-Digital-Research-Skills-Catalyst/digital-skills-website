@@ -194,7 +194,7 @@ viewof reset_filters = Inputs.button("reset filters")
       }).map((row, row_index) => html `
         <div class="course-data" id="course_data_${row_index}" ${row.featuredText ? `featured_text="${row.featuredText}"` : ""}>
           <h3>
-              <a href=${row.url}>${row.headline}</a>
+              <a href=${row.url} target="_blank" rel="noopener noreferrer">${row.headline}</a>
           </h3>
           <p>${row.description}</p>
           <input type="checkbox" class="toggle-state" id="toggle-state-${row_index}">
