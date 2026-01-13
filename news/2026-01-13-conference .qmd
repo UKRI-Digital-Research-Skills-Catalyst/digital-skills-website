@@ -1,0 +1,10 @@
+---
+title: "AI in the Biosciences Conference"
+format:
+  html:
+    css: style.css
+---
+
+### **Save the date - registration opening soon!**
+
+Join us for this free for this one day conference in York!
