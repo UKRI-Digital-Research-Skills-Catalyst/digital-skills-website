@@ -1,6 +1,23 @@
 /* UKRI Digital Research Skills Catalyst Styling */
 
-/* Overall page style */
+/*********************************************************************************************************
+The global CSS variables
+**********************************************************************************************************/
+
+:root {
+  --stong-white: #FFFFFF;
+  --york-navy: #2E2D62;
+  --york-teal: #29A69D;
+  --york-pink: #FA6862;
+  --york-white: #F5F3EF;
+  --york-grey: #DDD9E2;
+  --york-blue: #9088A4;
+}
+
+/*********************************************************************************************************
+The Overall page style
+**********************************************************************************************************/
+
 .navbar {
   padding: 0;
   margin: 0;
@@ -13,7 +30,7 @@
 
 h1 {
   font-size: 2em;
-  color: #2E2D62;
+  color: var(--york-navy);
   text-align: center;
 }
 
@@ -23,9 +40,9 @@ h2 {
   margin: 1em 0;
 }
 
-/***********************************
-The main block headers
-***********************************/
+/*********************************************************************************************************
+Styling to override the Quarto-defined blocks
+**********************************************************************************************************/
 
 #quarto-document-content {
   /* Removes the extra margin above the full-width header */
@@ -38,28 +55,29 @@ header#title-block-header {
 
 header#title-block-header h1 {
   font-size: 2em;
-  color: #2E2D62;
+  color: var(--york-navy);
   text-align: left;
 }
 
 header#title-block-header p.subtitle {
   font-size: 1.25em;
-  color: #F5F3EF;
+  color: var(--york-white);
   text-align: center;
 }
 
-/***********************************
-The Main index page search box
-***********************************/
+/*********************************************************************************************************
+Main page search box styling
+NB: This is slightly complex as we want the search bar to extend horizontally, which requires overriding
+several levels of quarto/bootstrap div width calculations
+**********************************************************************************************************/
 
 /* This is the entire navy search box */
 .primary-search {
-  background: #2E2D62;
+  background: var(--york-navy);
   padding: 2em 2em 0em 2em;
   margin: 0 -1.5em 0 -1.5em;
 }
 
-/* 1. Set the Flex Container */
 .primary-search div.cell {
   display: flex;
   flex-direction: row;
@@ -86,9 +104,8 @@ The Main index page search box
   width: 100%;
 }
 
-/* Format the search box */
 .primary-search input[type="text"] {
-  border: 1px solid #29A69D;
+  border: 1px solid var(--york-teal);
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
@@ -96,15 +113,15 @@ The Main index page search box
 }
 
 .primary-search input[type="text"]::placeholder {
-  color: color-mix(in srgb, #2E2D62, white 75%);
+  color: color-mix(in srgb, var(--york-navy), white 75%);
   opacity: 1;
 }
 
 .primary-search button {
   width: 8em;
-  border: 1px solid #29A69D;
-  background: #FFFFFF;
-  color: #2E2D62;
+  border: 1px solid var(--york-teal);
+  background: var(--stong-white);
+  color: var(--york-navy);
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
@@ -112,16 +129,16 @@ The Main index page search box
 }
 
 .primary-search button:hover {
-  background: #FFFFFF;
-  color: #29A69D;
+  background: var(--stong-white);
+  color: var(--york-teal);
 }
 
-/***********************************
-Search filters
-***********************************/
+/*********************************************************************************************************
+Main page search filters styling
+**********************************************************************************************************/
+
 div.search-filters {
-  /* border: 1px solid green; */
-  background: #2E2D62;
+  background: var(--york-navy);
   margin: 0 -1.5em 0 -1.5em;
   padding: 0 2em 2em 2em;
 }
@@ -131,9 +148,9 @@ a#toggle-filters {
   margin: auto;
   text-align: center;
   width: 8em;
-  border: 1px solid #29A69D;
-  background: #FFFFFF;
-  color: #2E2D62;
+  border: 1px solid var(--york-teal);
+  background: var(--stong-white);
+  color: var(--york-navy);
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
@@ -142,7 +159,7 @@ a#toggle-filters {
 }
 
 div#search-filters {
-  color: #F5F3EF;
+  color: var(--york-white);
 }
 
 div#search-filters form {
@@ -150,8 +167,8 @@ div#search-filters form {
 }
 
 div#search-filters select {
-  border: 1px solid #29A69D;
-  color: #2E2D62;
+  border: 1px solid var(--york-teal);
+  color: var(--york-navy);
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
@@ -160,9 +177,9 @@ div#search-filters select {
 
 div#search-filters button {
   width: 8em;
-  border: 1px solid #29A69D;
-  background: #FFFFFF;
-  color: #9088A4;
+  border: 1px solid var(--york-teal);
+  background: var(--stong-white);
+  color: var(--york-blue);
   border-radius: 6px;
   padding: 2px 6px;
   box-shadow: none;
@@ -171,17 +188,16 @@ div#search-filters button {
 }
 
 div#search-filters button:hover {
-  background: #FFFFFF;
-  color: #29A69D;
+  background: var(--stong-white);
+  color: var(--york-teal);
 }
 
-/***********************************
-The Main index page search results
-***********************************/
+/*********************************************************************************************************
+Main page search results styling
+**********************************************************************************************************/
 
 .primary-search-results {
-  border: 1px solid #DDD9E2;
-  /* border-radius: 8px; */
+  border: 1px solid var(--york-grey);
   font-size: 0.75em;
   margin: 1em 0 0 0;
   padding: 1em;
@@ -192,11 +208,10 @@ The Main index page search results
   grid-template-columns: none !important;
 }
 
-/* The Course data block */
 div.course-data {
   width: 100%;
-  border: 1px solid #DDD9E2;
-  background: #F5F3EF;
+  border: 1px solid var(--york-grey);
+  background: var(--york-white);
   border-radius: 0;
   padding: 1em 1em 0 1em;
   margin: 1em auto;
@@ -204,7 +219,7 @@ div.course-data {
 }
 
 div.course-data h3, div.course-data a {
-  color: #2E2D62;
+  color: var(--york-navy);
   font-size: 1rem;
   margin-top: 0;
   font-weight: bold;
@@ -222,7 +237,7 @@ div.course-data .toggle-state {
 
 div.course-data .toggle-button {
   width: 100%;
-  color: #9088A4;
+  color: var(--york-blue);
   text-align: right;
   font-size: 1em;
 }
@@ -238,12 +253,8 @@ div.course-data .toggle-state:checked ~ .course-data-extras {
   display: block;
 }
 
-/***********************************
-Extra featured course decoration
-***********************************/
-
 .course-data[featured_text] {
-  border-left: 5px solid #29A69D;
+  border-left: 5px solid var(--york-teal);
   position: relative;
 }
 
@@ -253,27 +264,23 @@ Extra featured course decoration
   top: 5px;
   left: 50%;
   transform: translateX(-50%);
-  color: #29A69D;
+  color: var(--york-teal);
   font-size: 1em;
   font-weight: bold;
   line-height: 1;
 }
 
-/***********************************
-Specific course data tables
-***********************************/
-
 .course-data-extras table {
   width: 100%;
-  background: #F5F3EF !important;
+  background: var(--york-white) !important;
 }
 
 .course-data-extras table tr th, td {
-  border-bottom: 1px solid #DDD9E2;
+  border-bottom: 1px solid var(--york-grey);
 }
 
 .course-data-extras td.credit p {
-  /* This is required as the $md{} wrapper introduced a <p> block */
+  /* NB: This is required as the $md{} wrapper introduces a <p> block */
   padding: 0;
   margin: 0;
 }
@@ -284,9 +291,9 @@ Specific course data tables
   width: 10em;
 }
 
-/***********************************
-Specific extra information "chips"
-***********************************/
+/*********************************************************************************************************
+Main page search box extra information "chips"
+**********************************************************************************************************/
 
 div.course-data-extras p {
   width: fit-content;
@@ -296,29 +303,27 @@ div.course-data-extras p {
 }
 
 div.course-data-extras td {
-  /* border: 1px dotted red; */
   padding: 0.25em 0;
   margin: 0;
 }
 
 td.pre-reqs p {
-  border: 1px solid #FA6862;
-  background: color-mix(in srgb, #FA6862, white 75%);
+  border: 1px solid var(--york-pink);
+  background: color-mix(in srgb, var(--york-pink), white 75%);
 }
 
 td.teaches p {
-  /* width: fit-content; */
-  border: 1px solid #29A69D;
-  background: color-mix(in srgb, #29A69D, white 75%);
+  border: 1px solid var(--york-teal);
+  background: color-mix(in srgb, var(--york-teal), white 75%);
 }
 
 td.credit p a {
   font-size: 1em;
 }
 
-/***********************************
-"Empty selection" formatting
-***********************************/
+/*********************************************************************************************************
+Main page "no results" div
+**********************************************************************************************************/
 
 div.course-data-empty {
   width: 100%;
@@ -332,17 +337,10 @@ div.course-data-empty p {
   color: #0A2441;
 }
 
-/***********************************
-News div formatting
-***********************************/
-/*            --primary: #0288d1;*/
-/*            --primary-dark: #0277bd;*/
-/*            --secondary: #263238;*/
-/*            --bg-color: #f8fafc;*/
-/*            --text-main: #334155;*/
-/*            --text-light: #64748b;*/
-/*            --card-radius: 16px;*/
-/*            --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);*/
+/*********************************************************************************************************
+News page news item formatting
+NB: Currently, colours do not match the rest of the site, and need tweaking
+**********************************************************************************************************/
 
 div#news {
   display: grid;
@@ -350,7 +348,7 @@ div#news {
   gap: 20px;
   padding: 10px;
   background-color: #f8fafc;
-  background-image: linear-gradient(to bottom, #ffffff 0%, rgba(248, 250, 252, 0.85) 20%, rgba(248, 250, 252, 0.9) 100%), url('assets/bg-shapes.png');
+  background-image: linear-gradient(to bottom, var(--stong-white) 0%, rgba(248, 250, 252, 0.85) 20%, rgba(248, 250, 252, 0.9) 100%), url('assets/bg-shapes.png');
   background-repeat: repeat;
   background-size: 400px; 
   background-attachment: fixed;
@@ -360,7 +358,7 @@ div#news {
 }
 
 div#news div.card {
-    background: #ffffff;
+    background: var(--stong-white);
     border-radius: 16px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -434,54 +432,68 @@ div#news .card:hover .icon {
     letter-spacing: 0.5px;
 }
 
-.badge-workshop { background-color: #e0f2f1; color: #00695c; }
-.badge-news { background-color: #fff1f2; color: #be123c; }
-.badge-event { background-color: #f0fdf4; color: #15803d; }
+.badge-workshop {
+  background-color: #e0f2f1;
+  color: #00695c;
+}
+
+.badge-news {
+  background-color: #fff1f2;
+  color: #be123c;
+}
+
+.badge-event {
+  background-color: #f0fdf4;
+  color: #15803d;
+}
 
 .card-date {
     text-align: right;
-    color: #2E2D62;
+    color: var(--york-navy);
     margin: 0;
     padding: 0;
 }
 
+.card h3 {
+    font-size: 1.25em;
+    margin: 0 0 0.75rem 0;
+    color: #263238;
+    font-weight: 700;
+    line-height: 1.4;
+}
 
-        
+.card-desc {
+    font-size: 1em;
+    color: #64748b;
+    margin-bottom: 1em;
+    flex-grow: 1;
+    line-height: 1.7;
+}
 
+.card-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #0288D1;
+    margin-top: auto;
+    padding: 0.75rem 0;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
 
+.card-link i {
+  font-size: 0.8rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
 
-        .card h3 {
-            font-size: 1.25em;
-            margin: 0 0 0.75rem 0;
-            color: #263238;
-            font-weight: 700;
-            line-height: 1.4;
-        }
+.card-link:hover {
+  color: #0277bd;
+  padding-left: 5px;
+}
 
-        .card-desc {
-            font-size: 1em;
-            color: #64748b;
-            margin-bottom: 1em;
-            flex-grow: 1;
-            line-height: 1.7;
-            /* border: 1px solid green; */
-        }
-
-        .card-link {
-            font-weight: 600;
-            font-size: 0.9rem;
-            color: #0288D1;
-            margin-top: auto;
-            padding: 0.75rem 0;
-            border-top: 1px solid #f1f5f9;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-            text-decoration: none;
-        }
-
-        .card-link i { font-size: 0.8rem; transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); }
-        
-        .card-link:hover { color: #0277bd; padding-left: 5px; }
-        .card:hover .card-link i { transform: translateX(5px); }
+.card:hover .card-link i {
+  transform: translateX(5px);
+}
