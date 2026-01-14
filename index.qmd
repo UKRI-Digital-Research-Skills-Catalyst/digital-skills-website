@@ -19,28 +19,49 @@ Boost your digital research skills, accelerate your research impact—discover 8
 #| eval: true
 #| cache: true
 # This cell loads the CSV data directly from the Google sheet via its published CSV-specific URL.
-# We need to load in Python, as OJS doesn't have a caching system.
-# Once loaded, we "publish" the variable globally to OJS.
+
+# We need to load in Python, as OJS doesn't have a caching system. Once loaded, we "publish" the variable globally to OJS.
+# This block is run in Python as we need Pandas for the necessary caching functionality.
 import pandas as pd
 course_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRSrvsfFfVwokza_WP9JIzd4Wfg6OKPBJcwelLTqYn1SgigZXnfcU6_apN5gWTMF79n4CRQFNOJ5w6M/pub?gid=1012757406&single=true&output=csv")
 ojs_define(course_data_cached = course_data_cached)
 ```
 
-```{ojs}
-//| eval: false
-course_data = FileAttachment("assets/courses.csv").csv({typed: true})
-```
 
 ```{ojs}
 //| eval: true
-// This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order
-course_data = transpose(course_data_cached)
+// This cell transposes the Python-loaded data and populates the `time_hours` field.
+
+// We loaded the data from Google sheets via Python Pandas to allow for caching.
+// This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order.
+// We do this in OJS to make conversion easier.
+// We also convert the "XX hours" / "XX days" `TimeRequired` field to a more useful `XX` hours `time_hours` field.
+course_data = transpose(course_data_cached).map(row => {
+  const time_match = String(row.TimeRequired).match(/([\d\.]+)\s*([a-z]+)/i)
+  let time_hours = null;
+  if (time_match) {
+    const time_amount = parseFloat(time_match[1]);
+    const time_unit = time_match[2].toLowerCase();
+    if (time_unit.startsWith("day")) {
+      time_hours = time_amount * 24;
+    } else if (time_unit.startsWith("hours")) {
+      time_hours = time_amount;
+    }
+  }
+  return {
+    ...row,
+    time_hours: time_hours
+  };
+})
 ```
 
 ```{ojs}
-// This cell defines the possible values we can use to populate the filter dropdowns.#
-// We do this by pulling out all options for specific columns from the course_data object, splitting on commas, and sorting.
-// The `csv_column_set` function simplifies this process.
+// This cell defines the possible values we can use to populate the filter dropdowns directly from the data in `course_data`.
+
+// The `csv_column_set` function simplifies this.  It works by extracting all the distinct values in a given column (split by comma),
+// sorting them (alphabetically as this is Javascript) and if requested injecting a `null` as the first entry.
+// NB: The times can't be set in the same manner, as we don;t want them to be sorted alphabetically, rather we want them logically sorted.
+//     We therefore set the times manually. Make sure that if you change them that you also update the filtering that uses their order.
 function csv_column_set(ds, col, inject_null) {
   let all_values = ds.flatMap(d =>
     d[col]
@@ -54,32 +75,32 @@ function csv_column_set(ds, col, inject_null) {
   return all_values
 }
 audiences = csv_column_set(course_data, "audience", true);
-access_modes = csv_column_set(course_data, "accessMode", false);
-// education_levels = csv_column_set(course_data, "educationalLevel", false);
 resource_types = csv_column_set(course_data, "learningResourceType", true);
 providers = csv_column_set(course_data, "provider", true);
-times = csv_column_set(course_data, "approxTimeRequired", true);
-keywords = csv_column_set(course_data, "keywords", false);
+times = [null, "1–2 hours", "3–8 hours", "9–23 hours", "≥24 hours"];
 ```
 
 ```{ojs}
-// Trim the search query
+// This cell trims the search query and makes it lowercase.
 search_query = (search_terms ?? "").toLowerCase().trim()
 ```
 
 :::{.primary-search}
 ```{ojs}
-// The main search box.
+// This cell contains the main search bar.
+
+// NB: The "show filters" button is programatically added later, so it does not appear here.
 viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
 viewof search_all = Inputs.button("Show All")
-// viewof show_filters = Inputs.button("Show Filters")
 ```
 
 ```{ojs}
 //| output: false
-// This updates the search to be "*" on pressing the "show all" button
+// This cell implements the "search all" function by resetting all filters and inserting "*" into the search query.
+
+// This is done by first updating the search_terms value to "*" and then simulating a click on the "reset_filters" button.
 {
-  search_all;
+  search_all; // We need this line to trigger on an update to the "show all" button.
   if (search_all > 0) {
     const search_element = viewof search_terms;
     search_element.value = "*";
@@ -93,47 +114,100 @@ viewof search_all = Inputs.button("Show All")
 :::
 
 ```{ojs}
-// Performs filtering of the complete (`course_data`) data into the filtered (`course_filtered`) set.
-course_filtered = {
-  // 1: If the current search term is empty, and no filters are set, return featured courses
-  if(
-    !search_query &&
-    !selected_audience &&
-    (selected_resource_type ?? []).length === 0 &&
-    (selected_time ?? []).length === 0 &&
-    (selected_provider ?? []).length === 0
-  ) {
-    return course_data.filter(row => row.featured === "yes")
-  }
-  // 2: If the current search term is "*", then return everything:
-  if (search_query === "*") {
-    return course_data.filter(row => 
-      ((selected_audience ?? []).length === 0 || (row.audience).includes(selected_audience ?? [])) &&
-      ((selected_resource_type ?? []).length === 0 || (selected_resource_type ?? []).includes(row.learningResourceType)) &&
-      ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.approxTimeRequired)) &&
-      ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider))
-    )
-  }
-  // 3: There is another search term, so filter on it:
-  return course_data.filter(row =>
-      ((selected_audience ?? []).length === 0 || (row.audience).includes(selected_audience ?? [])) &&
-      ((selected_resource_type ?? []).length === 0 || (selected_resource_type ?? []).includes(row.learningResourceType)) &&
-      ((selected_time ?? []).length === 0 || (selected_time ?? []).includes(row.approxTimeRequired)) &&
-      ((selected_provider ?? []).length === 0 || (selected_provider ?? []).includes(row.provider)) &&
-      (!search_query ||
-        row.headline.toLowerCase().includes(search_query) ||
-        (row.description  && row.description.includes(search_query)) ||
-        (row.projectFunding  && row.projectFunding.includes(search_query)) ||
-        (row.identifier  && row.identifier.includes(search_query))
-      )
+// This cell performs the course data filtering.
+
+// A function to check if there is any filtering set at all:
+// We will use this as if there is nothing set (ie as we land on the page) then we want to show featured courses only.
+function is_any_filtering() {
+  return (
+    selected_audience ||
+    selected_resource_type ||
+    selected_provider ||
+    selected_time ||
+    search_query
   )
 }
+
+// A function that filters the course_data rows by the active (ie non-null) search dropdowns:
+function filter_course_row_by_filters(data_row) {
+  // 1: Check the "simple" selection dropdown options:
+  const audience_match = !selected_audience || String(data_row.audience).includes(selected_audience);
+  const resource_type_match = !selected_resource_type || String(data_row.learningResourceType).includes(selected_resource_type);
+  const provider_match = !selected_provider || String(data_row.provider).includes(selected_provider);
+  // 2: Check that the row has a time_hours value in range:
+  // NB: This section requires that the selected_time values are in a specifiec order (set by the value of `times`)!
+  //     If you change the values for the times, you must update this selection.
+  let time_match = true;
+  if (selected_time === times[1]) {
+    // Selected 1–2 hours
+    time_match = data_row.time_hours >= 1 && data_row.time_hours <= 2;
+  } else if (selected_time === times[2]) {
+    // Selected "3–8 hours"
+    time_match = data_row.time_hours >= 3 && data_row.time_hours <= 8;
+  } else if (selected_time === times[3]) {
+    // Selected "9–23 hours"
+    time_match = data_row.time_hours >= 9 && data_row.time_hours <= 23;
+  } else if (selected_time === times[4]) {
+    // Selected "≥24 hours"
+    time_match = data_row.time_hours >= 24;
+  }
+  // 3: Return rows that match all filters:
+  return (
+    audience_match &&
+    resource_type_match &&
+    provider_match &&
+    time_match
+  )
+}
+
+// A function that filters course_data rows by the main search bar:
+// This has 2 possibilities:
+// 1: Search bar is empty OR "*" => Return everything
+// 2: Search bar has text => Return rows matching text
+function filter_course_row_by_search(data_row) {
+  // Return everything if search_query is "*" or blank:
+  if (
+    (search_query === "*") ||
+    (!search_query) ||
+    (search_query === "")
+  ) {
+    return true;
+  }
+  // Otherwise, search in headline, description, funding and identifier:
+  return (
+    (data_row.headline && data_row.headline.toLowerCase().includes(search_query)) ||
+    (data_row.description && data_row.description.toLowerCase().includes(search_query)) ||
+    (data_row.projectFunding && data_row.projectFunding.toLowerCase().includes(search_query)) ||
+    (data_row.identifier && data_row.identifier.toLowerCase().includes(search_query))
+  );
+}
+
+// A function that first checks if there is no filtering set at all (and returns featured rows)
+// or returns matching rows
+function filter_course_row(data_row) {
+  // If everything is blank, then we show the featured rows only:
+  if (!is_any_filtering()) {
+    return (
+      data_row.featuredText != null &&
+      data_row.featuredText !== ""
+    );
+  }
+  // Otherwise, filter as normal:
+  return (
+    filter_course_row_by_filters(data_row) &&
+    filter_course_row_by_search(data_row)
+  )
+}
+
+// Filter the commplete data:
+course_filtered = course_data.filter(filter_course_row)
 ```
 
 
 ::: {.search-filters}
 ```{ojs}
-// This cell implements a show/hide button for extra filters.
+// This cell implements the "show filters" button.
+
 // This works via a JavaScript function that finds and toggles the div display style.
 {
   const toggleLink = document.createElement("a");
@@ -154,15 +228,16 @@ course_filtered = {
   return toggleLink;
 }
 ```
+
 ::: {#search-filters style="display: none;"}
 ```{ojs}
 // This cell holds all of the search filters that can refine the currently found courses.
-// The reset button allows a quick way to re-set the default values.
-// The action cell is at the bottom and does not generate any output.
+
 viewof selected_audience = Inputs.select(audiences, {label: "Audience", value: null})
 viewof selected_resource_type = Inputs.select(resource_types, {label: "Type", value: null})
 viewof selected_time = Inputs.select(times, {label: "Time Required", value: null})
 viewof selected_provider = Inputs.select(providers, {label: "Provider", value: null})
+// The reset filters button allows simple resetting to null:
 viewof reset_filters = Inputs.button("reset filters")
 ```
 :::
@@ -173,9 +248,9 @@ viewof reset_filters = Inputs.button("reset filters")
 
 ```{ojs}
 // This cell iterates through the the filtered course results, and builds the displayed output.
+
 // If there are no selected results, we show a placeholder <div>.
 // All filtered courses are displayed, sorted first by `featured` status then in the CSV file order.
-
 {
   const search_results = document.getElementById("primary-search-results");
   const empty_results = document.getElementById("empty-primary-search-results");
@@ -234,7 +309,7 @@ viewof reset_filters = Inputs.button("reset filters")
 //| output: false
 // This cell fires whenever the "reset filters" button is pressed.
 {
-  reset_filters; // This updates whenever the reset button fires.
+  reset_filters; // We need this line to trigger on an update to the "reset filters" button.
   function resetInput(view, value) {
     const el = view.querySelector("select, input");
     if (!el) return;
@@ -243,7 +318,6 @@ viewof reset_filters = Inputs.button("reset filters")
     el.dispatchEvent(new Event("input", { bubbles: true }));
   }
   resetInput(viewof selected_audience, null);
-  // resetInput(viewof selected_educational_level, []);
   resetInput(viewof selected_resource_type, null);
   resetInput(viewof selected_time, null);
   resetInput(viewof selected_provider, null);

@@ -15,33 +15,37 @@ Stay up to date with the latest training opportunities, conferences, and develop
 This page highlights upcoming workshops and key announcements designed to support professional growth, collaboration, and innovation in the research world. 
 :::
 
+<!--
+This hidden span is essential for Quarto to load the fontawesome packages. Normally we could just put it in the header, but we're using fontawesome
+via injected HTML, so we need to actually trigger a use in the markdown to pre-load.
+ -->
 <span style="display: none;">{{< fa user >}}</span>
 
 ```{python}
 #| eval: true
 #| cache: true
 # This cell loads the CSV data directly from the Google sheet via its published CSV-specific URL.
-# We need to load in Python, as OJS doesn't have a caching system.
-# Once loaded, we "publish" the variable globally to OJS.
+
+# We need to load in Python, as OJS doesn't have a caching system. Once loaded, we "publish" the variable globally to OJS.
+# This block is run in Python as we need Pandas for the necessary caching functionality.
 import pandas as pd
 news_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
 ojs_define(news_data_cached = news_data_cached)
 ```
 
 ```{ojs}
-//| eval: false
-news_data = FileAttachment("assets/news.csv").csv({typed: true})
-```
-
-```{ojs}
 //| eval: true
-// This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order
+// This cell transposes the Python-loaded data.
+
+// We loaded the data from Google sheets via Python Pandas to allow for caching.
+// This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order.
+// We do this in OJS to make conversion easier.
 news_data = transpose(news_data_cached)
 ```
 
 
 ```{ojs}
-// Display the news blocks loaded from news_data.
+// This cell iterates through the the news data, and builds the displayed output.
 html`
 <div id="news" class="list-grid">
   ${news_data.map(row => html`
