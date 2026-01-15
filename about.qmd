@@ -94,4 +94,4 @@ Its digital research skills training resources are also highly relevant for rese
 : The Seven DaSH projects contributing data to this project {.striped}
 
 The Catalyst Project is funded by UKRI Digital Research Infrastructure Programme from October 2024 to March 2027.
-Project reference: TBC.
+Project reference: UKRI/ST/B000299/1.
