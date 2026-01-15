@@ -21,7 +21,7 @@ Our Digital Research Specialists from across UKRI funded organisations have expe
 * Ed-DaSH: Data science and statistics
 * Data CAMMP: Robotics for plant phenotyping
 
-This service is fully funded by the UKRI Digital Research Infrastructure [grantcode] award, covering the usual consultancy cost of £44/hr to make it free for you to use.
+This service is fully funded by the UKRI Digital Research Infrastructure Award [Project reference: UKRI/ST/B000299/1], covering the usual consultancy cost of £44/hr to make it free for you to use.
 
 Use the [booking form](https://docs.google.com/forms/d/e/1FAIpQLSfZzkuJIe5j5dADrvhOsB_CILZ_QExxxFESWph_69tGfLZw4Q/viewform?usp=dialog&embedded=true) below to request a session:
 
