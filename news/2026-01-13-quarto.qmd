@@ -8,7 +8,7 @@ format:
 ### **Save the date - registration opening soon!**
 Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows. 
 
-::: {.callout-note appearance="tip"}
+::: {.callout-note appearance="tip"} :::
 
 # Register using the [online form]
 
@@ -31,8 +31,8 @@ There are 30 places available for this online workshop, please register using th
 Fees 
 
 |                  |               |                                                                |
-|------------------|------------------|------------------------------------|
-|Fees  |                       |     |
+|------------------|------------------|------------------|
+| Fees  |                       |     |
 | Students and not-for-profit  | £50 | Enter XX discount code at check-out             |
-
-| Standard  | £75 |                  |                                         |
+| Standard  | £75 |            |
+|  |  |                  |                                         |
