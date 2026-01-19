@@ -23,7 +23,6 @@ Join us for this free online two-hour workshop which provides an introduction to
 -  create automatically numbered tables and figures and cross reference them in text
 
 ## Target audience 
-- Learners who have completed the Prenomics Course 
 - PhD Students & Researchers
 
 ## Registration
