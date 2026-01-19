@@ -8,6 +8,7 @@ format:
 ### **Save the date - registration opening soon!**
 Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows. 
 
+The next workshop will take place from 2-4pm on Wednesday 22nd April 2026.  
 
 ::: {.callout-tip}
 
@@ -15,7 +16,7 @@ Learn how to create dynamic, reproducible reports using Quarto to enhance transp
 
 :::
 
-Join us for this free online two-hour workshop which provides an introduction to Quarto for complete beginners.  By the end of the course you will be able to;
+Join us for this online two-hour workshop which provides an introduction to Quarto for complete beginners.  By the end of the course you will be able to;
 
 -  explain what Quarto and markdown are
 -  appreciate the role of the YAML header
