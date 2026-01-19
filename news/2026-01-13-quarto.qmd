@@ -9,12 +9,11 @@ format:
 Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows. 
 
 
-::: {.callout-note appearance="tip"}
+::: {.callout-tip}
 
-# Register using the [online form]
+## Register using the [online form](YOUR_URL_HERE)
 
 :::
-
 
 Join us for this free online two-hour workshop which provides an introduction to Quarto for complete beginners.  By the end of the course you will be able to;
 
@@ -30,13 +29,11 @@ Join us for this free online two-hour workshop which provides an introduction to
 - PhD Students & Researchers
 
 ## Registration
-There are 30 places available for this online workshop, please register using the [online form]. 
+There are 30 places available for this online workshop, please register using the [online form](YOUR_LINK_HERE). 
 
-Fees 
+| Attendee Type | Fee | Notes |
+|:---|:---|:---|
+| Students and not-for-profit | £50 | Enter XX discount code at check-out |
+| Standard | £75 | |
 
-|                  |               |                                                                |
-|------------|------------|------------|
-| Fees  |                       |     |
-| Students and not-for-profit  | £50 | Enter XX discount code at check-out             |
-| Standard  | £75 |            |
-|  |  |                  |                                         |
+: Workshop Fees {tbl-colwidths="[40,15,45]"}
