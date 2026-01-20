@@ -19,7 +19,7 @@ This page highlights upcoming workshops and key announcements designed to suppor
 This hidden span is essential for Quarto to load the fontawesome packages. Normally we could just put it in the header, but we're using fontawesome
 via injected HTML, so we need to actually trigger a use in the markdown to pre-load.
  -->
-<span style="display: none;">{{< fa user >}}</span>
+<span style="display: none;">{{< fa solid user >}}</span>
 
 ```{python}
 #| eval: true
