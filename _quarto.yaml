@@ -10,6 +10,7 @@ website:
   favicon: assets/favicon.png
   google-analytics: "G-M82WW7N600"
   navbar:
+    toggle-position: right
     title: false
     background: "#FFFFFF"
     foreground: "#2E2D62"

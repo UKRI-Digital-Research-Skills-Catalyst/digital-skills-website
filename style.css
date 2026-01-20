@@ -26,6 +26,7 @@ The Overall page style
 .navbar-brand img {
   max-height: 80px;
   width: 250px;
+  max-width: 100%;
 }
 
 h1 {
@@ -262,6 +263,7 @@ div.course-data .toggle-state:checked ~ .course-data-extras {
   content: "★ " attr(featured_text) " ★";
   position: absolute;
   top: 5px;
+  /* right: 5px; */
   left: 50%;
   transform: translateX(-50%);
   color: var(--york-teal);
