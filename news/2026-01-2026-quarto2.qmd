@@ -1,0 +1,41 @@
+---
+title: "Quarto workshop "
+format:
+  html:
+    css: style.css
+---
+
+### **Save the date - registration opening soon!**
+Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows. 
+
+The next workshop will take place from 10-12pm on Wednesday 22nd July 2026.  
+
+
+::: {.callout-tip}
+
+## Register using the [online form](YOUR_URL_HERE)
+
+:::
+
+Join us for this online two-hour workshop which provides an introduction to Quarto for complete beginners.  By the end of the course you will be able to;
+
+-  explain what Quarto and markdown are
+-  appreciate the role of the YAML header
+-  set default code chunk behaviour and that for individual chunks
+-  use headings, simple text formatting and special characters
+-  add citations and references
+-  use inline code to report results in text
+-  create automatically numbered tables and figures and cross reference them in text
+
+## Target audience 
+- PhD Students & Researchers
+
+## Registration
+There are 30 places available for this online workshop, please register using the [online form](YOUR_LINK_HERE). 
+
+| Attendee Type | Fee | Notes |
+|:---|:---|:---|
+| Students and not-for-profit | £50 | Enter XX discount code at check-out |
+| Standard | £75 | |
+
+: Workshop Fees {tbl-colwidths="[40,15,45]"}
