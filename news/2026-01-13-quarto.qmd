@@ -19,6 +19,7 @@ The next online workshop will take place from 2-4pm on Wednesday 22nd April 2026
 ## Target audience 
 
 Join us for this online two-hour workshop which provides an introduction to Quarto for complete beginners.  
+
 - PhD Students & Researchers
 
 ## Registration
@@ -35,9 +36,9 @@ There are 30 places available for this online workshop, please register using th
 
 Please install the following before the workshop. If you have any problems with installation please contact <research-digital-skills@york.ac.uk>
 
-R version R-4.3. <https://cloud.r-project.org/>
+R version R-5.2. <https://cloud.r-project.org/>
 
-RStudio Desktop (1.4) https://posit.co/download/rstudio-desktop/
+RStudio Desktop <https://posit.co/download/rstudio-desktop/>
 
 ## Learning outcomes 
 
