@@ -8,7 +8,26 @@ format:
 ### **Save the date - registration opening soon!**
 Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows. 
 
-The next online workshop will take place from 2-4pm on Wednesday 22nd April 2026.  
+**The next online workshop will take place from 2-4pm on Wednesday 22nd April 2026.**
+
+This on-line workshop introduces you to Quarto, a scientific and
+technical publishing system designed to facilitate reproducible working
+practices by allowing you to integrate code, results, and narrative text
+in a single document. Quarto supports multiple programming languages,
+including R, Python, Julia, and Observable JavaScript.
+
+The workshop will be taught using R and RStudio, but the concepts are
+applicable to other programming languages supported by Quarto. Some
+familiarity with the layout of RStudio and beginner level knowledge of R
+is assumed.
+
+By the end of this workshop, participants will be able to transform raw
+data into a professional, polished report (HTML, Word, or PDF) where the
+text and analysis remain in sync. We will use the
+[Gapminder](https://www.gapminder.org/) data on global development to
+demonstrate how to produce a reproducible country profile report that
+analyses the relationship between wealth (GDP per capita) and health
+(Life Expectancy) over the last 50 years.
 
 ::: {.callout-tip}
 
@@ -16,13 +35,13 @@ The next online workshop will take place from 2-4pm on Wednesday 22nd April 2026
 
 :::
 
-## Target audience 
 
-Join us for this online two-hour workshop which provides an introduction to Quarto for complete beginners.  
+## Target audience
 
-- PhD Students & Researchers
+This workshop is intended for researchers and research support staff in academia or industry or others that regularly produce reports with data analysis.
 
 ## Registration
+
 There are 30 places available for this online workshop, please register using the [online form](YOUR_LINK_HERE). 
 
 | Attendee Type | Fee | Notes |
@@ -34,20 +53,29 @@ There are 30 places available for this online workshop, please register using th
 
 ## Pre-requisites 
 
-Please install the following before the workshop. If you have any problems with installation please contact <research-digital-skills@york.ac.uk>
+To participate in this course, you will need a computer with internet access.
 
-R version R-5.2. <https://cloud.r-project.org/>
+To follow along with the activities with the instructor, you will need R and RStudio installed on your computer, or access to Posit Cloud, an online platform for R and RStudio. You will also need some R packages and optionally, a lateX distribution if you want to create PDF reports.
 
-RStudio Desktop <https://posit.co/download/rstudio-desktop/>
+If you are using a computer provided by your organisation you may need your IT department to install the software. If that is not possible, you can use Posit Cloud instead.
 
-## Learning outcomes 
+[View guidance](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/before.html) to install R and Rstudio or use Posit Cloud. 
 
-By the end of the course you will be able to;
 
--  explain what Quarto and markdown are
--  appreciate the role of the YAML header
--  set default code chunk behaviour and that for individual chunks
--  use headings, simple text formatting and special characters
--  add citations and references
--  use inline code to report results in text
--  create automatically numbered tables and figures and cross reference them in text
+## Learning objectives
+
+Participants will learn how to:
+
+-   Construct a structured Quarto (.qmd) document using YAML headers to
+    define metadata (title, author, table of contents).
+-   Format narrative text using Markdown syntax to create headers,
+    lists, and emphasis without relying on word processor GUIs.
+-   Integrate R code chunks into prose to produce tables and
+    visualizations directly within the document.
+-   Implement "Inline Code" to insert dynamic statistics (e.g., specific
+    means or *p*-values) directly into sentences, ensuring numbers
+    update automatically if the data changes.
+-   Control report output using "Chunk Options" to hide raw code from
+    the final reader while keeping the results visible.
+-   Render a single source document into multiple output formats (HTML
+    for web, MS Word for collaboration, or PDF for publication).
