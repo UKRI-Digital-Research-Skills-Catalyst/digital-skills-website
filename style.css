@@ -50,14 +50,19 @@ Styling to override the Quarto-defined blocks
   margin-top: 0;
 }
 
+
 header#title-block-header {
-  margin-bottom: 2em;
+  display: block;
+  background-color: var(--york-navy);
+  /* Set L & R margins to -1.5em to make this full-width */
+  margin: 0 -1.5em 2em -1.5em;
+  padding: 4em;
 }
 
 header#title-block-header h1 {
   font-size: 2em;
-  color: var(--york-navy);
-  text-align: left;
+  color: white;
+  text-align: center;
 }
 
 header#title-block-header p.subtitle {
