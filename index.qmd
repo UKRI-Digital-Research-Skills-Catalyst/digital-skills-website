@@ -1,6 +1,6 @@
 ---
 title: "Welcome to the UKRI Digital Research Skills Catalyst"
-subtitle: "A national hub for researcher and innovator development."
+subtitle: "Accelerate your research with digital skills - discover 80+ learning resources, events, and expert-led training."
 jupyter: python3
 format:
   html:
@@ -13,8 +13,6 @@ format:
     code-tools: false
 ---
 
-Boost your digital research skills, accelerate your research impact—discover 80+ learning resources, events, and expert-led training in one central hub with the UKRI Digital Research Skills Catalyst. Find out more [here](./about.qmd).
-
 ```{python}
 #| eval: true
 #| cache: true
@@ -26,7 +24,6 @@ import pandas as pd
 course_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRSrvsfFfVwokza_WP9JIzd4Wfg6OKPBJcwelLTqYn1SgigZXnfcU6_apN5gWTMF79n4CRQFNOJ5w6M/pub?gid=1012757406&single=true&output=csv")
 ojs_define(course_data_cached = course_data_cached)
 ```
-
 
 ```{ojs}
 //| eval: true
@@ -85,7 +82,7 @@ times = [null, "1–2 hours", "3–8 hours", "9–23 hours", "≥24 hours"];
 search_query = (search_terms ?? "").toLowerCase().trim()
 ```
 
-:::{.primary-search}
+::: primary-search
 ```{ojs}
 // This cell contains the main search bar.
 
@@ -203,8 +200,7 @@ function filter_course_row(data_row) {
 course_filtered = course_data.filter(filter_course_row)
 ```
 
-
-::: {.search-filters}
+:::: search-filters
 ```{ojs}
 // This cell implements the "show filters" button.
 
@@ -241,11 +237,9 @@ viewof selected_provider = Inputs.select(providers, {label: "Provider", value: n
 viewof reset_filters = Inputs.button("reset filters")
 ```
 :::
-:::
-
+::::
 
 ::: {#primary-search-results}
-
 ```{ojs}
 // This cell iterates through the the filtered course results, and builds the displayed output.
 
@@ -330,4 +324,5 @@ viewof reset_filters = Inputs.button("reset filters")
 Inputs.table(course_data)
 ```
 
-![](./assets/ukri-logo.png){fig-align="center" height="100px" fig-alt="Funded by the UKRI"}
+![](./assets/ukri-logo.png){fig-align="center" height="100px"
+fig-alt="Funded by the UKRI"}
