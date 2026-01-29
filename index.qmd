@@ -8,7 +8,6 @@ format:
     echo: false
     css:
       - style.css
-      - main-header.css
     keep-hidden: true
     code-tools: false
 ---
