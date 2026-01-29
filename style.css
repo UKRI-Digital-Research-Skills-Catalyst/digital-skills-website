@@ -1,3 +1,6 @@
+/* Import DM Sans font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
 /* UKRI Digital Research Skills Catalyst Styling */
 
 /*********************************************************************************************************
@@ -55,20 +58,24 @@ header#title-block-header {
   display: block;
   background-color: var(--york-navy);
   /* Set L & R margins to -1.5em to make this full-width */
-  margin: 0 -1.5em 2em -1.5em;
-  padding: 4em;
+  margin: 0 -1.5em 0 -1.5em;
+  padding: 2em 2em 0em 2em;
 }
 
 header#title-block-header h1 {
   font-size: 2em;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 header#title-block-header p.subtitle {
-  font-size: 1.25em;
+  font-size: 1.1em;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
   color: var(--york-white);
-  text-align: center;
+  text-align: left;
 }
 
 /*********************************************************************************************************
@@ -80,7 +87,7 @@ several levels of quarto/bootstrap div width calculations
 /* This is the entire navy search box */
 .primary-search {
   background: var(--york-navy);
-  padding: 2em 2em 0em 2em;
+  padding: 1em 2em 0em 2em;
   margin: 0 -1.5em 0 -1.5em;
 }
 
