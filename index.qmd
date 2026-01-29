@@ -6,8 +6,6 @@ format:
   html:
     toc: false
     echo: false
-    css:
-      - style.css
     keep-hidden: true
     code-tools: false
 ---
