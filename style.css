@@ -93,14 +93,14 @@ several levels of quarto/bootstrap div width calculations
 
 .primary-search div.cell {
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   width: 100%;
-  gap: 15px;
+  gap: 10px;
 }
 
 .primary-search div.cell div.cell-output-display:nth-child(1 of .cell-output-display) {
-  width: 95%;
+  width: 100%;
 }
 
 .primary-search div.cell div.cell-output-display:nth-child(1 of .cell-output-display) div div form {
@@ -109,12 +109,13 @@ several levels of quarto/bootstrap div width calculations
 }
 
 .primary-search div.cell div.cell-output-display:not(:nth-child(1 of .cell-output-display)) {
-  flex-shrink: 1;
-  width: 8em;
+  flex-shrink: 0;
+  width: 100%;
 }
 
 .primary-search div.cell div.cell-output-display:not(:nth-child(1 of .cell-output-display)) div {
-  width: 100%;
+  display: inline-block;
+  width: calc(50% - 5px);
 }
 
 .primary-search input[type="text"] {
@@ -131,7 +132,7 @@ several levels of quarto/bootstrap div width calculations
 }
 
 .primary-search button {
-  width: 8em;
+  width: 100%;
   border: 1px solid var(--york-teal);
   background: var(--stong-white);
   color: var(--york-navy);
@@ -139,6 +140,7 @@ several levels of quarto/bootstrap div width calculations
   padding: 6px;
   box-shadow: none;
   margin: 5px;
+  text-transform: lowercase;
 }
 
 .primary-search button:hover {
@@ -169,6 +171,7 @@ a#toggle-filters {
   box-shadow: none;
   text-decoration: none;
   line-height: normal;
+  text-transform: lowercase;
 }
 
 div#search-filters {
@@ -510,4 +513,32 @@ div#news .card:hover .icon {
 
 .card:hover .card-link i {
   transform: translateX(5px);
+}
+/* Button container for side-by-side buttons below search */
+.button-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.button-container .primary-search-button {
+  flex: 1;
+  width: 50%;
+  border: 1px solid var(--york-teal);
+  background: var(--stong-white);
+  color: var(--york-navy);
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.button-container .primary-search-button:hover {
+  background: var(--stong-white);
+  color: var(--york-teal);
 }

@@ -81,32 +81,53 @@ search_query = (search_terms ?? "").toLowerCase().trim()
 
 ::: primary-search
 ```{ojs}
-// This cell contains the main search bar.
+// This cell contains the main search bar and both buttons.
 
-// NB: The "show filters" button is programatically added later, so it does not appear here.
 viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
-viewof search_all = Inputs.button("Show All")
 ```
 
 ```{ojs}
-//| output: false
-// This cell implements the "search all" function by resetting all filters and inserting "*" into the search query.
-
-// This is done by first updating the search_terms value to "*" and then simulating a click on the "reset_filters" button.
+// Create button container
 {
-  search_all; // We need this line to trigger on an update to the "show all" button.
-  if (search_all > 0) {
-    const search_element = viewof search_terms;
-    search_element.value = "*";
-    const reset_button = viewof reset_filters;
-    reset_button.value += 1;
-    reset_button.dispatchEvent(new Event("input", {bubbles: true}));
-    search_element.dispatchEvent(new Event("input", {bubbles: true}));
-  }
+  const buttonContainer = document.createElement("div");
+  buttonContainer.className = "button-container";
+  
+  // Create Show All button
+  const showAllBtn = document.createElement("button");
+  showAllBtn.textContent = "show all";
+  showAllBtn.className = "primary-search-button";
+  showAllBtn.addEventListener("click", () => {
+    viewof search_terms.value = "*";
+    viewof search_terms.dispatchEvent(new Event("input", {bubbles: true}));
+    viewof reset_filters.value += 1;
+    viewof reset_filters.dispatchEvent(new Event("input", {bubbles: true}));
+  });
+  
+  // Create Show Filters button
+  const toggleLink = document.createElement("a");
+  toggleLink.id = "toggle-filters";
+  toggleLink.href = "#";
+  toggleLink.textContent = "show filters";
+  toggleLink.className = "primary-search-button";
+  toggleLink.addEventListener("click", (event) => {
+    event.preventDefault();
+    const filter_div = document.getElementById("search-filters");
+    if (filter_div.style.display === "none") {
+      toggleLink.textContent = "hide filters";
+      filter_div.style.display = "block"
+    } else {
+      toggleLink.textContent = "show filters";
+      filter_div.style.display = "none"
+    }
+  });
+  
+  buttonContainer.appendChild(showAllBtn);
+  buttonContainer.appendChild(toggleLink);
+  
+  return buttonContainer;
 }
 ```
 :::
-
 ```{ojs}
 // This cell performs the course data filtering.
 
@@ -197,31 +218,8 @@ function filter_course_row(data_row) {
 course_filtered = course_data.filter(filter_course_row)
 ```
 
+
 :::: search-filters
-```{ojs}
-// This cell implements the "show filters" button.
-
-// This works via a JavaScript function that finds and toggles the div display style.
-{
-  const toggleLink = document.createElement("a");
-  toggleLink.id = "toggle-filters";
-  toggleLink.href = "#";
-  toggleLink.textContent = "show filters";
-  toggleLink.addEventListener("click", (event) => {
-    event.preventDefault();
-    const filter_div = document.getElementById("search-filters");
-    if (filter_div.style.display === "none") {
-      toggleLink.textContent = "hide filters";
-      filter_div.style.display = "block"
-    } else {
-      toggleLink.textContent = "show filters";
-      filter_div.style.display = "none"
-    }
-  });
-  return toggleLink;
-}
-```
-
 ::: {#search-filters style="display: none;"}
 ```{ojs}
 // This cell holds all of the search filters that can refine the currently found courses.
@@ -235,7 +233,6 @@ viewof reset_filters = Inputs.button("reset filters")
 ```
 :::
 ::::
-
 ::: {#primary-search-results}
 ```{ojs}
 // This cell iterates through the the filtered course results, and builds the displayed output.
