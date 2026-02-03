@@ -1,6 +1,6 @@
 ---
 title: "Welcome to the UKRI Digital Research Skills Catalyst"
-subtitle: "Accelerate your research with digital skills - discover 80+ learning resources, events, and expert-led training."
+subtitle: "Accelerate your research with digital skills - discover 50+ learning resources, events, and expert-led training."
 jupyter: python3
 format:
   html:
