@@ -15,7 +15,7 @@ Researchers training needs are supported at a practical level, through the provi
 :::
 
 <h2>Learning portal</h2>
-The learning portal has 80+ learning resources, providing a centralised and easily accessible hub to accelerate learning for UK based researchers and innovators.
+The learning portal has 50+ learning resources, providing a centralised and easily accessible hub to accelerate learning for UK based researchers and innovators.
 Designed to save time and enhance the user's learning experience, the portal allows users to quickly locate resources tailored to their expertise, research area, and preferred study mode.
 Current training resources focus on building digital research skills for bioscientists and health professionals, with plans to expand the offering with additional materials in the future. 
 
