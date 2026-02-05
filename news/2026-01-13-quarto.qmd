@@ -46,7 +46,7 @@ There are 30 places available for this online workshop, please register using th
 
 | Attendee Type | Fee | Notes |
 |:---|:---|:---|
-| Students and not-for-profit | £50 | Enter XX discount code at check-out |
+| Students and not-for-profit | £50 | Enter *Discount25* code at check-out |
 | Standard | £75 | |
 
 : Workshop Fees {tbl-colwidths="[40,15,45]"}
