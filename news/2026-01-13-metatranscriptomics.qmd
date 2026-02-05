@@ -7,7 +7,7 @@ format:
 
 ### **Save the date - registration opening soon!**
 
-Gain practical skills in metatranscriptomics analysis with this hands-on online workshop. Designed for HPC beginners, you will learn to process, profile, and visualise RNA-seq data using command line tools.
+Gain practical skills in metatranscriptomics analysis with this practical online workshop. Designed for HPC beginners, you will learn to process, profile, and visualise RNA-seq data using command line tools.
 
 **The next online workshop will take place from 11-20 May 2026.**
 
@@ -28,7 +28,7 @@ Registration for this course will open shortly.
 
 There are 30 places available and this workshop is free of charge.
 
-# Programme
+## Programme
 
 We start by teaching the essential tools used in High Performance computing such as file systems and the command-line to connect to and use cloud computing for file navigation and script writing. We then introduce explore how to clean and prepare raw RNA-seq data through quality control and rRNA removal to enable detailed taxonomic and functional profiling of the microbial community. The process culminates in the visualisation of these insights using interactive tools like Krona to facilitate interpretation.
 
@@ -38,19 +38,20 @@ We start by teaching the essential tools used in High Performance computing such
 
 |                     |               |                                                                |
 |------------------|------------------|------------------------------------|
-| Monday 11 May | 10:00 - 12:00  | File systems and directories  |
-| Tuesday 12 May| 10:00 - 12:00 | Using the command line               |
-| Wednesday 13 May| 10:00 - 13:00 | An introduction to metatranscriptomics, quality control and preprocessing |
-| Thursday 14 May | 13:00 - 14:00 | Online troubleshooting drop-in session (optional) |
-| Friday 15 May | 10:00 - 11:30 | Review of sortmeRNA. Taxonomic profiling of communities with Metaphlan. |
+| Monday, 11 May | 10:00 - 12:00  | File systems and directories  |
+| Tuesday, 12 May| 10:00 - 12:00 | Using the command line               |
+| Wednesday, 13 May| 10:00 - 13:00 | An introduction to metatranscriptomics, quality control and preprocessing |
+| Thursday, 14 May | 13:00 - 14:00 | Online troubleshooting drop-in session (optional) |
+| Friday, 15 May | 10:00 - 11:30 | Review of sortmeRNA. Taxonomic profiling of communities with Metaphlan. |
 
 **Week 2**
 
 |                       |               |                                                   |
 |------------------|------------------|------------------------------------|
-| Monday 18 May | 13:00 - 14:00 | Online troubleshooting drop-in session (optional) |
-| Tuesday 19 May  | 10:00 - 12:00 | Functional profiling of communities with Humann         |
-| Wednesday 20 May | 14:00 - 15:00 | Online troubleshooting drop-in session (optional) |
+| Monday, 18 May | 13:00 - 14:00 | Online troubleshooting drop-in session (optional) |
+| Tuesday, 19 May  | 10:00 - 12:00 | Functional profiling of communities with Humann         |
+| Wednesday, 20 May | 14:00 - 15:00 | Online troubleshooting drop-in session (optional) |
+
 
 If you are unable to attend an online session, recordings will be distributed. You will have access to your instance one week after the final taught session to give you time to consolidate your learning. Usage of the instances will be monitored; instances which are inactive will be closed down as a daily charge is incurred.
 
@@ -87,21 +88,15 @@ The samples originate from a **cellulose-degrading microbial consortium (SEM1b)*
 
 Participants will learn how to:
 
--   navigating file directories and using the command line
--   logging into a remote cloud instance
--   using common commands and running analysis programs in the command line
--   what is metatranscriptomics?
--   following a metatranscriptomics analysis workflow including:
+-   navigate file directories and using the command line
+-   log into a remote cloud instance
+-   use common commands and running analysis programs in the command line
+-   understand what metatranscriptomics is
+-   follow a metatranscriptomics analysis workflow including:
     -   Perform quality control on RNA-seq reads
-
     -   Carry out adapter trimming and quality filtering
-
     -   Remove rRNA sequences from RNA-seq data
-
     -   Merge and prepare reads for downstream analyses
-
     -   Perform taxonomic profiling of metatranscriptomic data
-
     -   Functionally interpret expressed genes
-
     -   Visualise and explore results using interactive tools such as Krona
