@@ -30,9 +30,8 @@ There are 30 places available and this workshop is free of charge.
 
 ## Programme
 
-We start by teaching the essential tools used in High Performance computing such as file systems and the command-line to connect to and use cloud computing for file navigation and script writing. We then introduce explore how to clean and prepare raw RNA-seq data through quality control and rRNA removal to enable detailed taxonomic and functional profiling of the microbial community. The process culminates in the visualisation of these insights using interactive tools like Krona to facilitate interpretation.
+We start by teaching the essential tools used in High Performance computing such as file systems and the command-line to connect to and use cloud computing for file navigation and script writing. We then explore how to clean and prepare raw RNA-seq data through quality control and rRNA removal to enable detailed taxonomic and functional profiling of the microbial community. The process culminates in the visualisation of these insights using interactive tools like Krona to facilitate interpretation.
 
-*Happy learning!*
 
 **Week 1**
 
@@ -53,7 +52,7 @@ We start by teaching the essential tools used in High Performance computing such
 | Wednesday, 20 May | 14:00 - 15:00 | Online troubleshooting drop-in session (optional) |
 
 
-If you are unable to attend an online session, recordings will be distributed. You will have access to your instance one week after the final taught session to give you time to consolidate your learning. Usage of the instances will be monitored; instances which are inactive will be closed down as a daily charge is incurred.
+If you are unable to attend one of the online sessions, recordings will be distributed. You will have access to your instance one week after the final taught session to give you time to consolidate your learning. Usage of the instances will be monitored; instances which are inactive will be closed down as a daily charge is incurred.
 
 
 ## Course format
