@@ -4,22 +4,27 @@ format:
   html:
     toc: false
     echo: false
-    css: style.css
     keep-hidden: true
     code-tools: false
 ---
 
-::: {.hero}
-Stay up to date with the latest training opportunities, conferences, and developments across our community.
+::: hero
+Stay up to date with the latest training opportunities, conferences, and
+developments across our community.
 
-This page highlights upcoming workshops and key announcements designed to support professional growth, collaboration, and innovation in the research world. 
+This page highlights upcoming workshops and key announcements designed
+to support professional growth, collaboration, and innovation in the
+research world.
 :::
 
+```{=html}
 <!--
 This hidden span is essential for Quarto to load the fontawesome packages. Normally we could just put it in the header, but we're using fontawesome
 via injected HTML, so we need to actually trigger a use in the markdown to pre-load.
  -->
-<span style="display: none;">{{< fa solid user >}}</span>
+```
+
+[{{< fa solid user >}}]{style="display: none;"}
 
 ```{python}
 #| eval: true
@@ -42,7 +47,6 @@ ojs_define(news_data_cached = news_data_cached)
 // We do this in OJS to make conversion easier.
 news_data = transpose(news_data_cached)
 ```
-
 
 ```{ojs}
 // This cell iterates through the the news data, and builds the displayed output.

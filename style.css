@@ -54,29 +54,6 @@ Styling to override the Quarto-defined blocks
 }
 
 
-header#title-block-header {
-  display: block;
-  background-color: var(--york-navy);
-  /* Set L & R margins to -1.5em to make this full-width */
-  margin: 0 -1.5em 0 -1.5em;
-  padding: 2em 2em 0em 2em;
-}
-
-header#title-block-header h1 {
-  font-size: 2em;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 700;
-  color: white;
-  text-align: left;
-}
-
-header#title-block-header p.subtitle {
-  font-size: 1.1em;
-  font-family: 'DM Sans', sans-serif;
-  font-weight: 400;
-  color: var(--york-white);
-  text-align: left;
-}
 
 /*********************************************************************************************************
 Main page search box styling
@@ -146,6 +123,20 @@ several levels of quarto/bootstrap div width calculations
 .primary-search button:hover {
   background: var(--stong-white);
   color: var(--york-teal);
+}
+
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+  /* On larger screens, make search box only 50% width */
+  .primary-search div.cell div.cell-output-display:nth-child(1 of .cell-output-display) {
+    width: 50%;
+  }
+  
+  /* Buttons below should also be 50% of the container (so 25% each of full width) */
+  .primary-search div.cell div.cell-output-display:not(:nth-child(1 of .cell-output-display)) {
+    width: 50%;
+  }
 }
 
 /*********************************************************************************************************
