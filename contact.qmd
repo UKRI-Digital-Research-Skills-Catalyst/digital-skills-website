@@ -1,19 +1,17 @@
 ---
 title: "Contact"
 format:
-  html:
-    css: style.css
+  html
 ---
 
-::: {.hero}
-For general enquiries please contact [research-digital-skills@york.ac.uk](mailto:research-digital-skills@york.ac.uk)
+::: hero
+For general enquiries please contact
+[research-digital-skills\@york.ac.uk](mailto:research-digital-skills@york.ac.uk)
 :::
 
-<h2>Follow us </h2>
+<h2>Follow us</h2>
 
-Connect with us on social media for event updates and community news:  
+Connect with us on social media for event updates and community news:
 
-* [Linkedin](https://uk.linkedin.com/company/ukri-digital-research-skills-catalyst)
-* [Bluesky](https://bsky.app/profile/ukriskillscatalyst.bsky.social)
-
-
+-   [Linkedin](https://uk.linkedin.com/company/ukri-digital-research-skills-catalyst)
+-   [Bluesky](https://bsky.app/profile/ukriskillscatalyst.bsky.social)
