@@ -8,6 +8,8 @@ format:
     echo: false
     keep-hidden: true
     code-tools: false
+    css:
+      - index-header.css
 ---
 
 ```{python}
@@ -128,6 +130,7 @@ viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
 }
 ```
 :::
+
 ```{ojs}
 // This cell performs the course data filtering.
 
@@ -218,7 +221,6 @@ function filter_course_row(data_row) {
 course_filtered = course_data.filter(filter_course_row)
 ```
 
-
 :::: search-filters
 ::: {#search-filters style="display: none;"}
 ```{ojs}
@@ -233,6 +235,7 @@ viewof reset_filters = Inputs.button("reset filters")
 ```
 :::
 ::::
+
 ::: {#primary-search-results}
 ```{ojs}
 // This cell iterates through the the filtered course results, and builds the displayed output.

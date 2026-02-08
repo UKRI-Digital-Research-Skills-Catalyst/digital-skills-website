@@ -1,0 +1,26 @@
+/* Index/Home Page Header Styling */
+/* This file contains the navy header block styles that are specific to the index.qmd page */
+
+header#title-block-header {
+  display: block;
+  background-color: var(--york-navy);
+  /* Set L & R margins to -1.5em to make this full-width */
+  margin: 0 -1.5em 0 -1.5em;
+  padding: 2em 2em 0em 2em;
+}
+
+header#title-block-header h1 {
+  font-size: 2em;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+}
+
+header#title-block-header p.subtitle {
+  font-size: 1.1em;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  color: var(--york-white);
+  text-align: left;
+}
