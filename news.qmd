@@ -65,7 +65,7 @@ html`
           ${row.date ? `<div class="card-date"><i class="fa-regular fa-calendar fa-xs"></i> ${row.date}</div>`: ""}
         </div>
         <a href="${row.link}" class="card-link">
-            Read Details 
+            More ... 
             <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
