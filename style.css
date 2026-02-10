@@ -244,7 +244,7 @@ div.course-data .toggle-state {
 
 div.course-data .toggle-button {
   width: 100%;
-  color: var(--york-blue);
+  color: var(--york-navy);
   text-align: right;
   font-size: 1em;
 }
@@ -345,7 +345,6 @@ div.course-data-empty p {
 
 /*********************************************************************************************************
 News page news item formatting
-NB: Currently, colours do not match the rest of the site, and need tweaking
 **********************************************************************************************************/
 
 div#news {
@@ -376,7 +375,7 @@ div#news div.card {
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 4px;
-    background: var(--york-blue);
+    background: var(--york-navy);
     opacity: 0;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -415,12 +414,12 @@ div#news .icon {
     justify-content: center;
     font-size: 1.2rem;
     background-color: transparent;
-    color: var(--york-blue);
+    color: var(--york-navy);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 div#news .card:hover .icon {
-    background-color: var(--york-blue);
+    background-color: var(--york-navy);
     color: white;
     transform: rotate(-5deg);
 }
