@@ -474,7 +474,7 @@ div#news .card:hover .icon {
 .card-link {
     font-weight: 600;
     font-size: 0.9rem;
-    color: var(--york-blue);
+    color: var(--york-navy);
     margin-top: auto;
     padding: 0.75rem 0;
     border-top: 1px solid #f1f5f9;
