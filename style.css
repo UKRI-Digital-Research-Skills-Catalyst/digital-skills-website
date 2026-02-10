@@ -269,9 +269,7 @@ div.course-data .toggle-state:checked ~ .course-data-extras {
   content: "★ " attr(featured_text) " ★";
   position: absolute;
   top: 5px;
-  /* right: 5px; */
-  left: 50%;
-  transform: translateX(-50%);
+  right: 5px;
   color: var(--york-teal);
   font-size: 1em;
   font-weight: bold;
@@ -355,18 +353,14 @@ div#news {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
   padding: 10px;
-  background-color: #f8fafc;
-  background-image: linear-gradient(to bottom, var(--stong-white) 0%, rgba(248, 250, 252, 0.85) 20%, rgba(248, 250, 252, 0.9) 100%), url('assets/bg-shapes.png');
-  background-repeat: repeat;
-  background-size: 400px; 
-  background-attachment: fixed;
+  background-color: transparent;
   padding-top: 2rem;
   padding-bottom: 6rem;
 
 }
 
 div#news div.card {
-    background: var(--stong-white);
+    background: var(--york-white);
     border-radius: 16px;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -382,7 +376,7 @@ div#news div.card {
     position: absolute;
     top: 0; left: 0; right: 0;
     height: 4px;
-    background: #0288D1;
+    background: var(--york-blue);
     opacity: 0;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -420,13 +414,13 @@ div#news .icon {
     align-items: center;
     justify-content: center;
     font-size: 1.2rem;
-    background-color: #f0f9ff;
-    color: #0288D1;
+    background-color: transparent;
+    color: var(--york-blue);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 div#news .card:hover .icon {
-    background-color: #0288D1;
+    background-color: var(--york-blue);
     color: white;
     transform: rotate(-5deg);
 }
@@ -441,18 +435,18 @@ div#news .card:hover .icon {
 }
 
 .badge-workshop {
-  background-color: #e0f2f1;
-  color: #00695c;
+  background-color: var(--york-teal);
+  color: var(--stong-white);
 }
 
 .badge-news {
-  background-color: #fff1f2;
-  color: #be123c;
+  background-color: var(--york-grey);
+  color: var(--york-navy);
 }
 
 .badge-event {
-  background-color: #f0fdf4;
-  color: #15803d;
+  background-color: var(--york-pink);
+  color: var(--stong-white);
 }
 
 .card-date {
@@ -465,14 +459,13 @@ div#news .card:hover .icon {
 .card h3 {
     font-size: 1.25em;
     margin: 0 0 0.75rem 0;
-    color: #263238;
+    color: var(--york-navy);
     font-weight: 700;
     line-height: 1.4;
 }
 
 .card-desc {
     font-size: 1em;
-    color: #64748b;
     margin-bottom: 1em;
     flex-grow: 1;
     line-height: 1.7;
@@ -481,7 +474,7 @@ div#news .card:hover .icon {
 .card-link {
     font-weight: 600;
     font-size: 0.9rem;
-    color: #0288D1;
+    color: var(--york-blue);
     margin-top: auto;
     padding: 0.75rem 0;
     border-top: 1px solid #f1f5f9;
@@ -497,8 +490,19 @@ div#news .card:hover .icon {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-link:hover {
-  color: #0277bd;
+/* Category-specific hover colors for card links */
+div#news .card.workshop .card-link:hover {
+  color: var(--york-teal);
+  padding-left: 5px;
+}
+
+div#news .card.event .card-link:hover {
+  color: var(--york-pink);
+  padding-left: 5px;
+}
+
+div#news .card.news .card-link:hover {
+  color: var(--york-navy);
   padding-left: 5px;
 }
 
