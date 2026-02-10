@@ -38,4 +38,5 @@ Address: The Guildhall York, Coney Street, York, YO1 9QN
 ## Travel scholarships 
 Travel scholarships (up to £100) are available on a first come first serve basis. Lunch and Networking tea/coffee will be included.
 
-![AI readiness in the Biosciences](./assets/ai-conference.png "AI readiness in the Biosciences"){width=250px}
+![AI readiness in the Biosciences](../assets/ai-conference.png "AI readiness in the Biosciences"){width=250px}
+
