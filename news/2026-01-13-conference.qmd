@@ -7,4 +7,36 @@ format:
 
 ### **Save the date - registration opening soon!**
 
-Join us for this free for this one day conference in York!
+Join us on Friday 4th September in York for this free full-day conference bringing together researchers, data scientists, and educators to explore the transformative role of AI in bioscience research and training.
+
+::: {.callout-tip}
+
+## Register using the [online form](YOUR_URL_HERE)
+
+:::
+
+## Target audience
+
+Ideal for any health or bioscientist researchers looking to build AI confidence and skills in their projects.
+
+## Registration
+
+Registration will open in April. 
+
+There are 100 places available for this in-person conference, please register using the [online form](YOUR_LINK_HERE). 
+
+## Programme 
+
+The programme will be announced shortly. 
+
+## Venue 
+
+The conference will be held at the Guildhall York, it is a fantastic venue located a short 10 minute walk from York Rail Station. 
+
+Address: The Guildhall York, Coney Street, York, YO1 9QN
+
+## Travel scholarships 
+Travel scholarships (up to £100) are available on a first come first serve basis. Lunch and Networking tea/coffee will be included.
+
+![AI readiness in the Biosciences](../assets/ai-conference.png "AI readiness in the Biosciences"){width=250px}
+

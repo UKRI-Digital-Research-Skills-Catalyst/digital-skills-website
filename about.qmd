@@ -28,34 +28,20 @@ Our experts provide tailored support to help you overcome challenges and enhance
 
 Whether you need assistance with troubleshooting code, tackling analytical problems, or seeking general guidance and advice, our specialists are here to help.
 
-Our consultancy service covers a broad range of research needs, including:
-
-* Experimental design
-* Data processing and management
-* Data analysis and interpretation
-* Medical image acquisition, analysis, and management
-* Big data skills and ‘omics for health sciences
-* High Performance Computing for ‘omics
-* Data stewardship
-* Machine learning for health & biosciences
-* Data science and statistics
-* Robotics for plant phenotyping
-
 Book a session today and get the expert support you need to move your research forward with confidence.
 For further details on the service please visit [Consult an Expert](./consult.html).
 
 <h2>Events and bespoke training service</h2>
 
-Training events are offered on an ad-hoc basis, both online and in person.
-These engaging sessions are offered at a reduced rate or completely free of charge, led by experienced instructors who are passionate about sharing their knowledge.
-We’re committed to creating a welcoming and accessible learning space for everyone in the research community.
+Training events are offered on an ad-hoc basis, both online and in person. These engaging sessions are offered at a reduced rate or completely free of charge, led by experienced instructors who are passionate about sharing their knowledge.
+We are committed to creating a welcoming and accessible learning space for everyone in the research community.
 Scholarships are available to support travel and care costs, helping to ensure that everyone can participate.
 Wherever possible, sessions will be delivered online to maximise accessibility.
 
 A full-day training conference, AI Readiness in the Biosciences, will take place on Friday 4th September 2026 in York.
 Attendance is free, and bursaries are available to support travel and care costs.
 
-![AI readiness in the Biosciences](./assets/ai-training.png "AI readiness in the Biosciences"){width=250px}
+![AI readiness in the Biosciences](./assets/ai-conference.png "AI readiness in the Biosciences"){width=250px}
 
 For further details visit [News and Events](./news.html).
 
@@ -65,8 +51,6 @@ If your team or organisation requires a bespoke training session on one of the t
 A tailored course to suit your team’s learning needs and budget can be organised.
 Please note this option is only available for the courses indicated in the [learning portal](./index.html).
 
-For further details on the service please visit the [Learning Portal](./index.html).
-
 <h2>Project history and funding</h2>
 
 Led by Professor Emma Rand at the University of York, the Catalyst Project was developed in response to the UKRI Digital Research Infrastructure Programme funding call.
@@ -74,9 +58,6 @@ It brings together seven university partners in a collaborative effort to centra
 
 The project builds on resources created by Data Science in Healthcare & Biosciences (DaSH), which developed training materials and hosted events between 2021 and 2023 to upskill health and bioscience researchers in data management and analysis.
 The Catalyst now centralises access to materials from seven of the nine DaSH projects, creating a single hub for researchers to access these resources.
-
-The project originally focussed on health and bioscience researchers, the Catalyst aims to reach a broader audience.
-Its digital research skills training resources are also highly relevant for researchers in arts and humanities, sciences, and social sciences, providing opportunities to enhance digital expertise across disciplines.
 
 ![Project history](./assets/project-history.png "History of the project"){width=250px}
 

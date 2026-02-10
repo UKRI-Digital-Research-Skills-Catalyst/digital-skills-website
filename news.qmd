@@ -8,14 +8,6 @@ format:
     code-tools: false
 ---
 
-::: hero
-Stay up to date with the latest training opportunities, conferences, and
-developments across our community.
-
-This page highlights upcoming workshops and key announcements designed
-to support professional growth, collaboration, and innovation in the
-research world.
-:::
 
 ```{=html}
 <!--
@@ -65,7 +57,7 @@ html`
           ${row.date ? `<div class="card-date"><i class="fa-regular fa-calendar fa-xs"></i> ${row.date}</div>`: ""}
         </div>
         <a href="${row.link}" class="card-link">
-            Read Details 
+            More ... 
             <i class="fa-solid fa-arrow-right"></i>
         </a>
       </div>
