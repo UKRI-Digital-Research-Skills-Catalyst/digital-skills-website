@@ -8,14 +8,6 @@ format:
     code-tools: false
 ---
 
-::: hero
-Stay up to date with the latest training opportunities, conferences, and
-developments across our community.
-
-This page highlights upcoming workshops and key announcements designed
-to support professional growth, collaboration, and innovation in the
-research world.
-:::
 
 ```{=html}
 <!--
