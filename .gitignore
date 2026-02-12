@@ -4,3 +4,4 @@
 **/*.quarto_ipynb
 assets/courses.csv
 assets/news.csv
+.Rproj.user

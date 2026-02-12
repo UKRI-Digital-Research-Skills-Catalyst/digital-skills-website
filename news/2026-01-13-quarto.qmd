@@ -1,81 +1,139 @@
 ---
-title: "Quarto workshop "
+title: "Introduction to Quarto"
 format:
   html:
-    css: style.css
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
 ---
 
-### **Save the date - registration opening soon!**
-Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows. 
+```{python}
+#| eval: true
+#| cache: true
+#| echo: false
+# Load event details from Google Sheets
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+# Filter for this specific event by title
+this_event = event_data_cached[event_data_cached['title'] == 'Introduction to Quarto']
+ojs_define(event_details = this_event.to_dict('records')[0] if len(this_event) > 0 else {})
+```
 
-**The next online workshop will take place from 2-4pm on Wednesday 22nd April 2026.**
+```{ojs}
+//| echo: false
+// Transpose the event data for use
+event = transpose(event_details)
+```
 
-This on-line workshop introduces you to Quarto, a scientific and
-technical publishing system designed to facilitate reproducible working
-practices by allowing you to integrate code, results, and narrative text
-in a single document. Quarto supports multiple programming languages,
-including R, Python, Julia, and Observable JavaScript.
+::: {.course-page-layout}
 
-The workshop will be taught using R and RStudio, but the concepts are
-applicable to other programming languages supported by Quarto. Some
-familiarity with the layout of RStudio and beginner level knowledge of R
-is assumed.
+::: {.course-content}
 
-By the end of this workshop, participants will be able to transform raw
-data into a professional, polished report (HTML, Word, or PDF) where the
-text and analysis remain in sync. We will use the
-[Gapminder](https://www.gapminder.org/) data on global development to
-demonstrate how to produce a reproducible country profile report that
-analyses the relationship between wealth (GDP per capita) and health
-(Life Expectancy) over the last 50 years.
+<span class="course-badge">Workshop</span>
+
+# Introduction to Quarto
+
+<p class="lead">Learn to create dynamic, reproducible academic reports that weave together text and code seamlessly.</p>
+
+## About the Workshop
+
+Writing research reports often involves a messy workflow of copying and pasting results from R into Word. **Quarto changes that.**
+
+In this session, we will cover the next-generation version of R Markdown. You will learn how to integrate your analysis directly into your writing, ensuring that when your data updates, your report updates automatically.
+
+### What you will learn
+
+- **The Workflow:** How to set up a Quarto project in RStudio
+- **Formatting:** Text styling, headers, and citations
+- **Code Integration:** Embedding R code chunks and controlling their output
+- **Dynamic Statistics:** Insert dynamic statistics (e.g., means or *p*-values) directly into sentences, ensuring numbers update automatically
+- **Exporting:** Rendering your work to HTML, PDF, and Word formats
+
+We will use the [Gapminder](https://www.gapminder.org/) data on global development to demonstrate how to produce a reproducible country profile report that analyses the relationship between wealth (GDP per capita) and health (Life Expectancy) over the last 50 years.
 
 ::: {.callout-tip}
+### Prerequisites
 
-## Register using the [online form](YOUR_URL_HERE)
+Participants must have the following installed **before** the session:
 
+- R (Version 4.3 or higher)
+- RStudio Desktop (Latest version)  
+- Quarto CLI (Included in recent RStudio versions)
+
+[View detailed installation guidance](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/before.html)
 :::
 
-
-## Target audience
+## Target Audience
 
 This workshop is intended for researchers and research support staff in academia or industry or others that regularly produce reports with data analysis.
 
-## Registration
+## Registration Fees
 
-There are 30 places available for this online workshop, please register using the [online form](YOUR_LINK_HERE). 
+| Category | Price |
+|:---|:---|
+| Standard Rate (Public/Private Sector) | £75 |
+| Academic / Non-profit / Student <span class="text-xs bg-green-200 text-green-800 px-2 py-0.5 rounded ml-2">SAVE £25</span> | £50 |
 
-| Attendee Type | Fee | Notes |
-|:---|:---|:---|
-| Students and not-for-profit | £50 | Enter *Discount25* code at check-out |
-| Standard | £75 | |
+: Workshop Fees {tbl-colwidths="[60,40]"}
 
-: Workshop Fees {tbl-colwidths="[40,15,45]"}
+:::
 
-## Pre-requisites 
+::: {.event-details-sidebar}
 
-To participate in this course, you will need a computer with internet access.
+```{ojs}
+//| echo: false
+html`
+<h3>Event Details</h3>
 
-To follow along with the activities with the instructor, you will need R and RStudio installed on your computer, or access to Posit Cloud, an online platform for R and RStudio. You will also need some R packages and optionally, a lateX distribution if you want to create PDF reports.
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="far fa-calendar-alt"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || 'TBA'}</p>
+  </div>
+</div>
 
-If you are using a computer provided by your organisation you may need your IT department to install the software. If that is not possible, you can use Posit Cloud instead.
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="far fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || 'TBA'}</p>
+  </div>
+</div>
 
-[View guidance](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/before.html) to install R and Rstudio or use Posit Cloud. 
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fas fa-video"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'Online'}</p>
+  </div>
+</div>
 
+<a href="${event.link || '#'}" class="register-button">Register Now</a>
 
-## Learning objectives
+<p class="event-note">Limited to 30 places</p>
 
-Participants will learn how to:
+<div class="discount-code-box">
+  <p>Have a discount code?</p>
+  <div class="discount-code-display">
+    DSC-STUDENT-2026
+  </div>
+</div>
 
--   Construct a structured Quarto (.qmd) document using YAML headers to
-    define metadata (title, author, table of contents).
--   Format narrative text using Markdown syntax to create headers,
-    lists, and emphasis without relying on word processor GUIs.
--   Integrate R code chunks into prose to produce tables and
-    visualizations directly within the document.
--   Implement "Inline Code" to insert dynamic statistics (e.g., specific
-    means or *p*-values) directly into sentences, ensuring numbers
-    update automatically if the data changes.
--   Control report output using "Chunk Options" to hide raw code from
-    the final reader while keeping the results visible.
--   Render a single source document into multiple output formats (HTML
-    for web, MS Word for collaboration, or PDF for publication).
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:info@digitalskillscatalyst.ac.uk">info@digitalskillscatalyst.ac.uk</a>
+</div>
+`
+```
+
+:::
+
+:::
