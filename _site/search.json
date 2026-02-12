@@ -1,0 +1,212 @@
+[
+  {
+    "objectID": "news.html",
+    "href": "news.html",
+    "title": "News & Events",
+    "section": "",
+    "text": "Code\n# This cell loads the CSV data directly from the Google sheet via its published CSV-specific URL.\n\n# We need to load in Python, as OJS doesn't have a caching system. Once loaded, we \"publish\" the variable globally to OJS.\n# This block is run in Python as we need Pandas for the necessary caching functionality.\nimport pandas as pd\nnews_data_cached = pd.read_csv(\"https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv\")\nojs_define(news_data_cached = news_data_cached)\n\n\n\n\n\n\n\nCode\n// This cell transposes the Python-loaded data.\n\n// We loaded the data from Google sheets via Python Pandas to allow for caching.\n// This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order.\n// We do this in OJS to make conversion easier.\nnews_data = transpose(news_data_cached)\n\n\n\n\n\n\n\n\n\nCode\n// This cell iterates through the the news data, and builds the displayed output.\nhtml`\n&lt;div id=\"news\" class=\"list-grid\"&gt;\n  ${news_data.map(row =&gt; html`\n    &lt;div class=\"card ${row.category}\" ${row.date ? `item_date=\"${row.date}\"` : \"\"}&gt;\n      &lt;div class=\"card-body\"&gt;\n        &lt;div class=\"card-header\"&gt;\n          &lt;span class=\"badge badge-${row.category?.toLowerCase()}\"&gt;${row.category}&lt;/span&gt;\n          ${row.fontawesome ? `&lt;div class=\"icon\"&gt;&lt;i class=\"${row.fontawesome}\"&gt;&lt;/i&gt;&lt;/div&gt; ` : \"\"}\n        &lt;/div&gt;\n        &lt;h3&gt;${row.title}&lt;/h3&gt;\n        &lt;div class=\"card-desc\"&gt;\n          ${md`${row.description}`}\n          ${row.date ? `&lt;div class=\"card-date\"&gt;&lt;i class=\"fa-regular fa-calendar fa-xs\"&gt;&lt;/i&gt; ${row.date}&lt;/div&gt;`: \"\"}\n        &lt;/div&gt;\n        &lt;a href=\"${row.link}\" class=\"card-link\"&gt;\n            More ... \n            &lt;i class=\"fa-solid fa-arrow-right\"&gt;&lt;/i&gt;\n        &lt;/a&gt;\n      &lt;/div&gt;\n    &lt;/div&gt;\n  `)}\n&lt;/div&gt;\n`"
+  },
+  {
+    "objectID": "news/2026-01-2026-quarto2.html",
+    "href": "news/2026-01-2026-quarto2.html",
+    "title": "Quarto workshop",
+    "section": "",
+    "text": "Learn how to create dynamic, reproducible reports using Quarto to enhance transparency and automation in your research workflows.\nThe next workshop will take place from 10-12pm on Wednesday 22nd July 2026.\n\n\n\n\n\n\nRegister using the online form\n\n\n\n\n\n\nJoin us for this online two-hour workshop which provides an introduction to Quarto for complete beginners.  By the end of the course you will be able to;\n\nexplain what Quarto and markdown are\nappreciate the role of the YAML header\nset default code chunk behaviour and that for individual chunks\nuse headings, simple text formatting and special characters\nadd citations and references\nuse inline code to report results in text\ncreate automatically numbered tables and figures and cross reference them in text"
+  },
+  {
+    "objectID": "news/2026-01-2026-quarto2.html#target-audience",
+    "href": "news/2026-01-2026-quarto2.html#target-audience",
+    "title": "Quarto workshop",
+    "section": "Target audience",
+    "text": "Target audience\n\nPhD Students & Researchers"
+  },
+  {
+    "objectID": "news/2026-01-2026-quarto2.html#registration",
+    "href": "news/2026-01-2026-quarto2.html#registration",
+    "title": "Quarto workshop",
+    "section": "Registration",
+    "text": "Registration\nThere are 30 places available for this online workshop, please register using the online form.\n\nWorkshop Fees\n\n\n\n\n\n\n\nAttendee Type\nFee\nNotes\n\n\n\n\nStudents and not-for-profit\n£50\nEnter XX discount code at check-out\n\n\nStandard\n£75"
+  },
+  {
+    "objectID": "news/2026-01-13-metatranscriptomics.html",
+    "href": "news/2026-01-13-metatranscriptomics.html",
+    "title": "Metatranscriptomics",
+    "section": "",
+    "text": "Gain practical skills in metatranscriptomics analysis with this practical online workshop. Designed for HPC beginners, you will learn to process, profile, and visualise RNA-seq data using command line tools.\nThe next online workshop will take place from 11-20 May 2026.\n\n\n\n\n\n\nRegister using the online form"
+  },
+  {
+    "objectID": "news/2026-01-13-metatranscriptomics.html#target-audience",
+    "href": "news/2026-01-13-metatranscriptomics.html#target-audience",
+    "title": "Metatranscriptomics",
+    "section": "Target audience",
+    "text": "Target audience\nUK based researchers at any career stage or anyone with an interest in Metatranscriptomics. The workshop is aimed at those with little or no experience of the command line or using high performance computing (HPC) for data analysis."
+  },
+  {
+    "objectID": "news/2026-01-13-metatranscriptomics.html#register",
+    "href": "news/2026-01-13-metatranscriptomics.html#register",
+    "title": "Metatranscriptomics",
+    "section": "Register",
+    "text": "Register\nRegistration for this course will open shortly.\nThere are 30 places available and this workshop is free of charge."
+  },
+  {
+    "objectID": "news/2026-01-13-metatranscriptomics.html#programme",
+    "href": "news/2026-01-13-metatranscriptomics.html#programme",
+    "title": "Metatranscriptomics",
+    "section": "Programme",
+    "text": "Programme\nWe start by teaching the essential tools used in High Performance computing such as file systems and the command-line to connect to and use cloud computing for file navigation and script writing. We then explore how to clean and prepare raw RNA-seq data through quality control and rRNA removal to enable detailed taxonomic and functional profiling of the microbial community. The process culminates in the visualisation of these insights using interactive tools like Krona to facilitate interpretation.\nWeek 1\n\n\n\n\n\n\n\n\nMonday, 11 May\n10:00 - 12:00\nFile systems and directories\n\n\nTuesday, 12 May\n10:00 - 12:00\nUsing the command line\n\n\nWednesday, 13 May\n10:00 - 13:00\nAn introduction to metatranscriptomics, quality control and preprocessing\n\n\nThursday, 14 May\n13:00 - 14:00\nOnline troubleshooting drop-in session (optional)\n\n\nFriday, 15 May\n10:00 - 11:30\nReview of sortmeRNA. Taxonomic profiling of communities with Metaphlan.\n\n\n\nWeek 2\n\n\n\n\n\n\n\n\nMonday, 18 May\n13:00 - 14:00\nOnline troubleshooting drop-in session (optional)\n\n\nTuesday, 19 May\n10:00 - 12:00\nFunctional profiling of communities with Humann\n\n\nWednesday, 20 May\n14:00 - 15:00\nOnline troubleshooting drop-in session (optional)\n\n\n\nIf you are unable to attend one of the online sessions, recordings will be distributed. You will have access to your instance one week after the final taught session to give you time to consolidate your learning. Usage of the instances will be monitored; instances which are inactive will be closed down as a daily charge is incurred."
+  },
+  {
+    "objectID": "news/2026-01-13-metatranscriptomics.html#course-format",
+    "href": "news/2026-01-13-metatranscriptomics.html#course-format",
+    "title": "Metatranscriptomics",
+    "section": "Course format",
+    "text": "Course format\nThis workshop is designed to be run on pre-imaged Amazon Web Services (AWS) instances. All the software and data used in the workshop are hosted on an Amazon Machine Image (AMI). We will give you details as to how to access these instances after registration.\nThe course will take place over two weeks and will combine live coding and teaching with offline work. We will guide you through the analysis each session but some steps may need to completed offline due to the amount of time they take to complete. There will also be drop-in sessions to offer support and troubleshooting help, and a Slack workspace for questions."
+  },
+  {
+    "objectID": "news/2026-01-13-metatranscriptomics.html#prerequisites",
+    "href": "news/2026-01-13-metatranscriptomics.html#prerequisites",
+    "title": "Metatranscriptomics",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\n\n\n\n\n\nBiological concepts and software setup\n\n\n\nThis course assumes no prior experience with the tools covered in the workshop but learners are expected to have some familiarity with biological concepts, including the concept of genomes and microbiomes. Participants should bring their own laptops and plan to participate actively.\nTo get started, follow the directions to get access to the required software and data for this workshop. Windows users need to install Git Bash in their laptop. Mac users may need to configure the terminal program in their laptop to use the Bash shell."
+  },
+  {
+    "objectID": "news/2026-01-13-metatranscriptomics.html#data",
+    "href": "news/2026-01-13-metatranscriptomics.html#data",
+    "title": "Metatranscriptomics",
+    "section": "Data",
+    "text": "Data\n\n\n\n\n\n\nAbout the data used in the course\n\n\n\nThis course uses data from the Galaxy Training Network tutorial on metatranscriptomics, which utilizes a dataset hosted on Zenodo (Kunath et al., 2018, ISME J). The dataset comes from a time-series analysis of a microbial community inside a bioreactor. For the purposes of this course, we focus on a single time point (the first) and one biological replicate (replicate A). The data consist of paired-end RNA-Seq sequences in FastQ format, representing the expressed functional potential of the microbial community.\nThe samples originate from a cellulose-degrading microbial consortium (SEM1b) enriched from a thermophilic biogas reactor in Norway. The consortium is co-dominated by Clostridium thermocellum, a cellulolytic bacterium, and multiple strains of Coprothermobacter proteolyticus, which together degrade plant biomass under anaerobic, high-temperature conditions. This enrichment was performed to study the active expression of carbohydrate-degrading genes within the community."
+  },
+  {
+    "objectID": "news/2026-01-13-metatranscriptomics.html#learning-objectives",
+    "href": "news/2026-01-13-metatranscriptomics.html#learning-objectives",
+    "title": "Metatranscriptomics",
+    "section": "Learning objectives",
+    "text": "Learning objectives\nParticipants will learn how to:\n\nnavigate file directories and using the command line\nlog into a remote cloud instance\nuse common commands and running analysis programs in the command line\nunderstand what metatranscriptomics is\nfollow a metatranscriptomics analysis workflow including:\n\nPerform quality control on RNA-seq reads\nCarry out adapter trimming and quality filtering\nRemove rRNA sequences from RNA-seq data\nMerge and prepare reads for downstream analyses\nPerform taxonomic profiling of metatranscriptomic data\nFunctionally interpret expressed genes\nVisualise and explore results using interactive tools such as Krona"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the UKRI Digital Research Skills Catalyst",
+    "section": "",
+    "text": "Code\n# This cell loads the CSV data directly from the Google sheet via its published CSV-specific URL.\n\n# We need to load in Python, as OJS doesn't have a caching system. Once loaded, we \"publish\" the variable globally to OJS.\n# This block is run in Python as we need Pandas for the necessary caching functionality.\nimport pandas as pd\ncourse_data_cached = pd.read_csv(\"https://docs.google.com/spreadsheets/d/e/2PACX-1vRSrvsfFfVwokza_WP9JIzd4Wfg6OKPBJcwelLTqYn1SgigZXnfcU6_apN5gWTMF79n4CRQFNOJ5w6M/pub?gid=1012757406&single=true&output=csv\")\nojs_define(course_data_cached = course_data_cached)\n\n\n\n\n\n\n\nCode\n// This cell transposes the Python-loaded data and populates the `time_hours` field.\n\n// We loaded the data from Google sheets via Python Pandas to allow for caching.\n// This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order.\n// We do this in OJS to make conversion easier.\n// We also convert the \"XX hours\" / \"XX days\" `TimeRequired` field to a more useful `XX` hours `time_hours` field.\ncourse_data = transpose(course_data_cached).map(row =&gt; {\n  const time_match = String(row.TimeRequired).match(/([\\d\\.]+)\\s*([a-z]+)/i)\n  let time_hours = null;\n  if (time_match) {\n    const time_amount = parseFloat(time_match[1]);\n    const time_unit = time_match[2].toLowerCase();\n    if (time_unit.startsWith(\"day\")) {\n      time_hours = time_amount * 24;\n    } else if (time_unit.startsWith(\"hours\")) {\n      time_hours = time_amount;\n    }\n  }\n  return {\n    ...row,\n    time_hours: time_hours\n  };\n})\n\n\n\n\n\n\n\n\n\nCode\nfunction csv_column_set(ds, col, inject_null) {\n  let all_values = ds.flatMap(d =&gt;\n    d[col]\n      ? d[col].split(\",\").map(s =&gt; s.trim())\n      : []\n  );\n  all_values = Array.from(new Set(all_values)).sort()\n  if(inject_null) {\n    all_values.unshift(null)\n  }\n  return all_values\n}\naudiences = csv_column_set(course_data, \"audience\", true);\nresource_types = csv_column_set(course_data, \"learningResourceType\", true);\nproviders = csv_column_set(course_data, \"provider\", true);\ntimes = [null, \"1–2 hours\", \"3–8 hours\", \"9–23 hours\", \"≥24 hours\"];\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n// This cell trims the search query and makes it lowercase.\nsearch_query = (search_terms ?? \"\").toLowerCase().trim()\n\n\n\n\n\n\n\n\n\n\nCode\n// This cell contains the main search bar and both buttons.\n\nviewof search_terms = Inputs.text({placeholder: \"Search Training Resources...\"})\n\n\n\n\n\n\n\n\n\nCode\n// Create button container\n{\n  const buttonContainer = document.createElement(\"div\");\n  buttonContainer.className = \"button-container\";\n  \n  // Create Show All button\n  const showAllBtn = document.createElement(\"button\");\n  showAllBtn.textContent = \"show all\";\n  showAllBtn.className = \"primary-search-button\";\n  showAllBtn.addEventListener(\"click\", () =&gt; {\n    viewof search_terms.value = \"*\";\n    viewof search_terms.dispatchEvent(new Event(\"input\", {bubbles: true}));\n    viewof reset_filters.value += 1;\n    viewof reset_filters.dispatchEvent(new Event(\"input\", {bubbles: true}));\n  });\n  \n  // Create Show Filters button\n  const toggleLink = document.createElement(\"a\");\n  toggleLink.id = \"toggle-filters\";\n  toggleLink.href = \"#\";\n  toggleLink.textContent = \"show filters\";\n  toggleLink.className = \"primary-search-button\";\n  toggleLink.addEventListener(\"click\", (event) =&gt; {\n    event.preventDefault();\n    const filter_div = document.getElementById(\"search-filters\");\n    if (filter_div.style.display === \"none\") {\n      toggleLink.textContent = \"hide filters\";\n      filter_div.style.display = \"block\"\n    } else {\n      toggleLink.textContent = \"show filters\";\n      filter_div.style.display = \"none\"\n    }\n  });\n  \n  buttonContainer.appendChild(showAllBtn);\n  buttonContainer.appendChild(toggleLink);\n  \n  return buttonContainer;\n}\n\n\n\n\n\n\n\n\n\n\nCode\nfunction is_any_filtering() {\n  return (\n    selected_audience ||\n    selected_resource_type ||\n    selected_provider ||\n    selected_time ||\n    search_query\n  )\n}\n\n// A function that filters the course_data rows by the active (ie non-null) search dropdowns:\nfunction filter_course_row_by_filters(data_row) {\n  // 1: Check the \"simple\" selection dropdown options:\n  const audience_match = !selected_audience || String(data_row.audience).includes(selected_audience);\n  const resource_type_match = !selected_resource_type || String(data_row.learningResourceType).includes(selected_resource_type);\n  const provider_match = !selected_provider || String(data_row.provider).includes(selected_provider);\n  // 2: Check that the row has a time_hours value in range:\n  // NB: This section requires that the selected_time values are in a specifiec order (set by the value of `times`)!\n  //     If you change the values for the times, you must update this selection.\n  let time_match = true;\n  if (selected_time === times[1]) {\n    // Selected 1–2 hours\n    time_match = data_row.time_hours &gt;= 1 && data_row.time_hours &lt;= 2;\n  } else if (selected_time === times[2]) {\n    // Selected \"3–8 hours\"\n    time_match = data_row.time_hours &gt;= 3 && data_row.time_hours &lt;= 8;\n  } else if (selected_time === times[3]) {\n    // Selected \"9–23 hours\"\n    time_match = data_row.time_hours &gt;= 9 && data_row.time_hours &lt;= 23;\n  } else if (selected_time === times[4]) {\n    // Selected \"≥24 hours\"\n    time_match = data_row.time_hours &gt;= 24;\n  }\n  // 3: Return rows that match all filters:\n  return (\n    audience_match &&\n    resource_type_match &&\n    provider_match &&\n    time_match\n  )\n}\n\n// A function that filters course_data rows by the main search bar:\n// This has 2 possibilities:\n// 1: Search bar is empty OR \"*\" =&gt; Return everything\n// 2: Search bar has text =&gt; Return rows matching text\nfunction filter_course_row_by_search(data_row) {\n  // Return everything if search_query is \"*\" or blank:\n  if (\n    (search_query === \"*\") ||\n    (!search_query) ||\n    (search_query === \"\")\n  ) {\n    return true;\n  }\n  // Otherwise, search in headline, description, funding and identifier:\n  return (\n    (data_row.headline && data_row.headline.toLowerCase().includes(search_query)) ||\n    (data_row.description && data_row.description.toLowerCase().includes(search_query)) ||\n    (data_row.projectFunding && data_row.projectFunding.toLowerCase().includes(search_query)) ||\n    (data_row.identifier && data_row.identifier.toLowerCase().includes(search_query))\n  );\n}\n\n// A function that first checks if there is no filtering set at all (and returns featured rows)\n// or returns matching rows\nfunction filter_course_row(data_row) {\n  // If everything is blank, then we show the featured rows only:\n  if (!is_any_filtering()) {\n    return (\n      data_row.featuredText != null &&\n      data_row.featuredText !== \"\"\n    );\n  }\n  // Otherwise, filter as normal:\n  return (\n    filter_course_row_by_filters(data_row) &&\n    filter_course_row_by_search(data_row)\n  )\n}\n\n// Filter the commplete data:\ncourse_filtered = course_data.filter(filter_course_row)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\nviewof selected_audience = Inputs.select(audiences, {label: \"Audience\", value: null})\nviewof selected_resource_type = Inputs.select(resource_types, {label: \"Type\", value: null})\nviewof selected_time = Inputs.select(times, {label: \"Time Required\", value: null})\nviewof selected_provider = Inputs.select(providers, {label: \"Provider\", value: null})\n// The reset filters button allows simple resetting to null:\nviewof reset_filters = Inputs.button(\"reset filters\")\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCode\n// This cell iterates through the the filtered course results, and builds the displayed output.\n\n// If there are no selected results, we show a placeholder &lt;div&gt;.\n// All filtered courses are displayed, sorted first by `featured` status then in the CSV file order.\n{\n  const search_results = document.getElementById(\"primary-search-results\");\n  const empty_results = document.getElementById(\"empty-primary-search-results\");\n  if (course_filtered.length === 0) {\n    return html`\n      &lt;div class=\"course-data-empty\"&gt;\n        &lt;p&gt;No results to display&lt;/p&gt;\n      &lt;/div&gt;\n    `\n  } else {\n    return html`\n      ${course_filtered.slice().sort((a, b) =&gt; {\n        if(a.featuredText != \"\" && b.featuredText === \"\") return -1;\n        if(a.featured === \"\" && b.featured != \"\") return 1;\n        return 0;\n      }).map((row, row_index) =&gt; html `\n        &lt;div class=\"course-data\" id=\"course_data_${row_index}\" ${row.featuredText ? `featured_text=\"${row.featuredText}\"` : \"\"}&gt;\n          &lt;h3&gt;\n              &lt;a href=${row.url} target=\"_blank\" rel=\"noopener noreferrer\"&gt;${row.headline}&lt;/a&gt;\n          &lt;/h3&gt;\n          &lt;p&gt;${row.description}&lt;/p&gt;\n          &lt;input type=\"checkbox\" class=\"toggle-state\" id=\"toggle-state-${row_index}\"&gt;\n          &lt;label for=\"toggle-state-${row_index}\" class=\"toggle-button\"&gt;&lt;/label&gt;\n          &lt;div class=\"course-data-extras\" id=\"course_data_extras_${row_index}\"&gt;\n            &lt;table&gt;\n              &lt;tr&gt;\n                &lt;th scope=\"row\"&gt;Pre-requisites&lt;/th&gt;\n                &lt;td class=\"pre-reqs\"&gt;${row.competencyRequired?.split(/,(?=(?:(?:[^\"]*\"){2})*[^\"]*$)/).map(prereq =&gt; html`&lt;p&gt;${prereq.trim().replace(/^\"|\"$/g, \"\")}&lt;/p&gt;`)}&lt;/td&gt;\n              &lt;/tr&gt;\n              &lt;tr&gt;\n                &lt;th scope=\"row\"&gt;Teaches&lt;/th&gt;\n                &lt;td class=\"teaches\"&gt;${row.teaches?.split(/,(?=(?:(?:[^\"]*\"){2})*[^\"]*$)/).map(teach_p =&gt; html`&lt;p&gt;${teach_p.trim().replace(/^\"|\"$/g, \"\")}&lt;/p&gt;`)}&lt;/td&gt;\n              &lt;/tr&gt;\n              &lt;tr&gt;\n                &lt;th scope=\"row\"&gt;Time required&lt;/th&gt;\n                &lt;td class=\"required\"&gt;${row.TimeRequired}&lt;/td&gt;\n              &lt;/tr&gt;\n              &lt;tr&gt;\n                &lt;th scope=\"row\"&gt;Credit&lt;/th&gt;\n                &lt;td class=\"credit\"&gt;${md`${row.creditText}`}&lt;/td&gt;\n              &lt;/tr&gt;\n              &lt;tr&gt;\n                &lt;th scope=\"row\"&gt;Provider&lt;/th&gt;\n                &lt;td&gt;${row.projectFunding}&lt;/td&gt;\n              &lt;/tr&gt;\n            &lt;/table&gt;\n          &lt;/div&gt;\n        &lt;/div&gt;\n    `)}`\n  }\n}\n\n\n\n\n\n\n\n\n\n\nCode\n// This cell fires whenever the \"reset filters\" button is pressed.\n{\n  reset_filters; // We need this line to trigger on an update to the \"reset filters\" button.\n  function resetInput(view, value) {\n    const el = view.querySelector(\"select, input\");\n    if (!el) return;\n    el.value = value;\n    view.value = value;\n    el.dispatchEvent(new Event(\"input\", { bubbles: true }));\n  }\n  resetInput(viewof selected_audience, null);\n  resetInput(viewof selected_resource_type, null);\n  resetInput(viewof selected_time, null);\n  resetInput(viewof selected_provider, null);\n}\n\n\n\n\n\n\n\n\n\nCode\n// This cell displays a table of all `course_data` for debugging only.\nInputs.table(course_data)"
+  },
+  {
+    "objectID": "consult.html",
+    "href": "consult.html",
+    "title": "Consult an Expert",
+    "section": "",
+    "text": "Need help tackling an analytical problem? Troubleshooting your code? Need guidance on where to learn a new skill?\nConsult an Expert and have a short 1:1 session for help, advice, or signposting in the right direction funded entirely by the UKRI Digital Research Infrastructure Programme.\n\nOur Digital Research Specialists from across UKRI funded organisations have expertise across a whole range of topics:\n\nHealth + Bioscience IDEAS: Medical image acquisition, analysis, and management\nInnovation Scholars: Big data skills and ’omics for health sciences\nCloud-SPAN: High Performance Computing for ’omics\nElixir UK: Data stewardship\nLearn2Discover: Machine learning for health & biosciences\nEd-DaSH: Data science and statistics\nData CAMMP: Robotics for plant phenotyping\n\nThis service is fully funded by the UKRI Digital Research Infrastructure Award [Project reference: UKRI/ST/B000299/1], covering the usual consultancy cost of £44/hr to make it free for you to use.\nUse the booking form below to request a session:"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "The UKRI Digital Research Skills Catalyst connects researchers and innovators across the UK with cutting-edge training opportunities and sector expertise to power their professional growth. Researchers training needs are supported at a practical level, through the provision of the following features:\n\nA searchable Learning portal to high quality resources developed through UKRI funding\nConsultation service - access guidance from digital research specialists\nWorkshops and events - occasional online and in-person events to facilitate networking and address training needs\n\n\n\nLearning portal\n\nThe learning portal has 50+ learning resources, providing a centralised and easily accessible hub to accelerate learning for UK based researchers and innovators. Designed to save time and enhance the user’s learning experience, the portal allows users to quickly locate resources tailored to their expertise, research area, and preferred study mode. Current training resources focus on building digital research skills for bioscientists and health professionals, with plans to expand the offering with additional materials in the future.\n\n\n\nExplore the learning portal\n\n\n\nConsultancy service\n\nWe are pleased to offer a consultancy service where online sessions can be booked with our Digital Research Specialists. Our experts provide tailored support to help you overcome challenges and enhance your research at any stage of your project.\nWhether you need assistance with troubleshooting code, tackling analytical problems, or seeking general guidance and advice, our specialists are here to help.\nBook a session today and get the expert support you need to move your research forward with confidence. For further details on the service please visit Consult an Expert.\n\nEvents and bespoke training service\n\nTraining events are offered on an ad-hoc basis, both online and in person. These engaging sessions are offered at a reduced rate or completely free of charge, led by experienced instructors who are passionate about sharing their knowledge. We are committed to creating a welcoming and accessible learning space for everyone in the research community. Scholarships are available to support travel and care costs, helping to ensure that everyone can participate. Wherever possible, sessions will be delivered online to maximise accessibility.\nA full-day training conference, AI Readiness in the Biosciences, will take place on Friday 4th September 2026 in York. Attendance is free, and bursaries are available to support travel and care costs.\n\n\n\nAI readiness in the Biosciences\n\n\nFor further details visit News and Events.\n\nBespoke training\n\nIf your team or organisation requires a bespoke training session on one of the topics detailed in our learning portal please get in touch. A tailored course to suit your team’s learning needs and budget can be organised. Please note this option is only available for the courses indicated in the learning portal.\n\nProject history and funding\n\nLed by Professor Emma Rand at the University of York, the Catalyst Project was developed in response to the UKRI Digital Research Infrastructure Programme funding call. It brings together seven university partners in a collaborative effort to centralise high-quality training materials for researchers and innovators.\nThe project builds on resources created by Data Science in Healthcare & Biosciences (DaSH), which developed training materials and hosted events between 2021 and 2023 to upskill health and bioscience researchers in data management and analysis. The Catalyst now centralises access to materials from seven of the nine DaSH projects, creating a single hub for researchers to access these resources.\n\n\n\nProject history\n\n\n\nThe Seven DaSH projects contributing data to this project\n\n\nProject\nResearch theme\nInstitution\nLead\n\n\n\n\nHealth and Bioscience IDEAS\nMedical image acquisition, analysis, management\nUniversity College London\nDavid Cash\n\n\nData Campp\nRobotics for plant phenotyping\nUniversity of Nottingham, University of Lincoln\nAndrew French, Elizabeth Sklar\n\n\nELIXIR-UK: FAIR data stewardship training\nData Stewardship in Life Sciences\nUniversity of Bradford, Cardiff University\nKrzysztof Poterlowicz\n\n\nEnabling the big data revolution\nHealth data science and omics\nKing’s College London\nRebecca Oakey\n\n\nLearn to Discover (L2D)\nData science and ML for health and bioscience\nUniversity College London\nGeraint Thomas\n\n\nCloud-SPAN\nCloud High-Performance Computing for Environmental ’omics\nUniversity of York and Software, Sustainability Institute\nEmma Rand, James Chong\n\n\nEd-DaSH\nData science training for bioscience and health\nUniversity of Edinburgh\nGiacomo Peru\n\n\n\nThe Catalyst Project is funded by UKRI Digital Research Infrastructure Programme from October 2024 to March 2027. Project reference: UKRI/ST/B000299/1."
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
+    "section": "",
+    "text": "For general enquiries please contact research-digital-skills@york.ac.uk\n\n\nFollow us\n\nConnect with us on social media for event updates and community news:\n\nLinkedin\nBluesky"
+  },
+  {
+    "objectID": "news/2026-01-13-conference.html",
+    "href": "news/2026-01-13-conference.html",
+    "title": "AI in the Biosciences Conference",
+    "section": "",
+    "text": "Join us on Friday 4th September in York for this free full-day conference bringing together researchers, data scientists, and educators to explore the transformative role of AI in bioscience research and training.\n\n\n\n\n\n\nRegister using the online form"
+  },
+  {
+    "objectID": "news/2026-01-13-conference.html#target-audience",
+    "href": "news/2026-01-13-conference.html#target-audience",
+    "title": "AI in the Biosciences Conference",
+    "section": "Target audience",
+    "text": "Target audience\nIdeal for any health or bioscientist researchers looking to build AI confidence and skills in their projects."
+  },
+  {
+    "objectID": "news/2026-01-13-conference.html#registration",
+    "href": "news/2026-01-13-conference.html#registration",
+    "title": "AI in the Biosciences Conference",
+    "section": "Registration",
+    "text": "Registration\nRegistration will open in April.\nThere are 100 places available for this in-person conference, please register using the online form."
+  },
+  {
+    "objectID": "news/2026-01-13-conference.html#programme",
+    "href": "news/2026-01-13-conference.html#programme",
+    "title": "AI in the Biosciences Conference",
+    "section": "Programme",
+    "text": "Programme\nThe programme will be announced shortly."
+  },
+  {
+    "objectID": "news/2026-01-13-conference.html#venue",
+    "href": "news/2026-01-13-conference.html#venue",
+    "title": "AI in the Biosciences Conference",
+    "section": "Venue",
+    "text": "Venue\nThe conference will be held at the Guildhall York, it is a fantastic venue located a short 10 minute walk from York Rail Station.\nAddress: The Guildhall York, Coney Street, York, YO1 9QN"
+  },
+  {
+    "objectID": "news/2026-01-13-conference.html#travel-scholarships",
+    "href": "news/2026-01-13-conference.html#travel-scholarships",
+    "title": "AI in the Biosciences Conference",
+    "section": "Travel scholarships",
+    "text": "Travel scholarships\nTravel scholarships (up to £100) are available on a first come first serve basis. Lunch and Networking tea/coffee will be included.\n\n\n\nAI readiness in the Biosciences"
+  },
+  {
+    "objectID": "news/2026-01-13-quarto.html",
+    "href": "news/2026-01-13-quarto.html",
+    "title": "Introduction to Quarto",
+    "section": "",
+    "text": "Code\n// Transpose the event data for use\nevent = transpose(event_details)"
+  },
+  {
+    "objectID": "news/2026-01-13-quarto.html#about-the-workshop",
+    "href": "news/2026-01-13-quarto.html#about-the-workshop",
+    "title": "Introduction to Quarto",
+    "section": "About the Workshop",
+    "text": "About the Workshop\nWriting research reports often involves a messy workflow of copying and pasting results from R into Word. Quarto changes that.\nIn this session, we will cover the next-generation version of R Markdown. You will learn how to integrate your analysis directly into your writing, ensuring that when your data updates, your report updates automatically.\n\nWhat you will learn\n\nThe Workflow: How to set up a Quarto project in RStudio\nFormatting: Text styling, headers, and citations\nCode Integration: Embedding R code chunks and controlling their output\nDynamic Statistics: Insert dynamic statistics (e.g., means or p-values) directly into sentences, ensuring numbers update automatically\nExporting: Rendering your work to HTML, PDF, and Word formats\n\nWe will use the Gapminder data on global development to demonstrate how to produce a reproducible country profile report that analyses the relationship between wealth (GDP per capita) and health (Life Expectancy) over the last 50 years.\n\n\n\n\n\n\nPrerequisites\n\n\n\nParticipants must have the following installed before the session:\n\nR (Version 4.3 or higher)\nRStudio Desktop (Latest version)\n\nQuarto CLI (Included in recent RStudio versions)\n\nView detailed installation guidance"
+  },
+  {
+    "objectID": "news/2026-01-13-quarto.html#target-audience",
+    "href": "news/2026-01-13-quarto.html#target-audience",
+    "title": "Introduction to Quarto",
+    "section": "Target Audience",
+    "text": "Target Audience\nThis workshop is intended for researchers and research support staff in academia or industry or others that regularly produce reports with data analysis."
+  },
+  {
+    "objectID": "news/2026-01-13-quarto.html#registration-fees",
+    "href": "news/2026-01-13-quarto.html#registration-fees",
+    "title": "Introduction to Quarto",
+    "section": "Registration Fees",
+    "text": "Registration Fees\n\nWorkshop Fees\n\n\n\n\n\n\nCategory\nPrice\n\n\n\n\nStandard Rate (Public/Private Sector)\n£75\n\n\nAcademic / Non-profit / Student SAVE £25\n£50"
+  },
+  {
+    "objectID": "news/2026-02-12.html",
+    "href": "news/2026-02-12.html",
+    "title": "Website Launch",
+    "section": "",
+    "text": "We are thrilled to announce the launch of the UKRI Digital Research Skills Catalyst, a major new initiative designed to transform the way researchers and innovators across the UK access digital training and expertise.\nIn an increasingly data-driven world, having the right digital skills is no longer just an advantage—it’s essential. The Catalyst project is here to bridge the skills gap, providing a centralised hub of high-quality resources and direct support to empower you at every stage of your research journey."
+  },
+  {
+    "objectID": "news/2026-02-12.html#a-centralised-hub-for-digital-training",
+    "href": "news/2026-02-12.html#a-centralised-hub-for-digital-training",
+    "title": "Website Launch",
+    "section": "A Centralised Hub for Digital Training",
+    "text": "A Centralised Hub for Digital Training\nAt the heart of this initiative is our newly launched website, a comprehensive platform built to save you time and accelerate your learning. The Catalyst brings together materials from seven university partners, creating a single point of access for cutting-edge training.\nHere’s what you can find on the new site:\n\nThe Learning Portal Dive into a searchable library of over 50 high-quality learning resources. Whether you’re looking to master machine learning, improve your data stewardship, or get to grips with High Performance Computing for ’omics, you can quickly find materials tailored to your expertise level and research area. While the current focus is on building skills for health and bioscience professionals, many resources are highly relevant for researchers in arts, humanities, and social sciences too.\nExpert Consultation Service Sometimes, you need more than just a tutorial. That’s why we’ve launched a dedicated consultation service. You can now book one-on-one online sessions with our Digital Research Specialists. From troubleshooting code and experimental design to tackling complex analytical problems, our experts are ready to provide personalised guidance to help you overcome challenges and move your project forward.\nWorkshops and Events Connect with peers and leading instructors through our programme of online and in-person events. These sessions are designed to facilitate networking and address specific training needs within the community. Keep an eye on our “News & Events” page for upcoming opportunities, including a full-day conference on “AI Readiness in the Biosciences” planned for 2026."
+  },
+  {
+    "objectID": "news/2026-02-12.html#building-on-a-legacy-of-success",
+    "href": "news/2026-02-12.html#building-on-a-legacy-of-success",
+    "title": "Website Launch",
+    "section": "Building on a Legacy of Success",
+    "text": "Building on a Legacy of Success\nLed by Professor Emma Rand at the University of York and funded by the UKRI Digital Research Infrastructure Programme, the Catalyst builds on the successful foundation of the Data Science in Healthcare & Biosciences (DaSH) project. By centralising resources from seven DaSH projects into one accessible hub, we are ensuring that valuable training materials are readily available to the wider research community."
+  },
+  {
+    "objectID": "news/2026-02-12.html#get-started-today",
+    "href": "news/2026-02-12.html#get-started-today",
+    "title": "Website Launch",
+    "section": "Get Started Today",
+    "text": "Get Started Today\nWhether you are a doctoral student, a principal investigator, or a programme manager, the UKRI Digital Research Skills Catalyst is your new go-to resource for professional growth in the digital age.\nWe invite you to explore the new website, browse the learning portal, and book a consultation to see how we can support your research.\n👉 Visit the new website: digitalskillscatalyst.ac.uk"
+  }
+]

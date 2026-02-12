@@ -1,0 +1,538 @@
+/* Import DM Sans font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+/* UKRI Digital Research Skills Catalyst Styling */
+
+/*********************************************************************************************************
+The global CSS variables
+**********************************************************************************************************/
+
+:root {
+  --stong-white: #FFFFFF;
+  --york-navy: #2E2D62;
+  --york-teal: #29A69D;
+  --york-pink: #FA6862;
+  --york-white: #F5F3EF;
+  --york-grey: #DDD9E2;
+  --york-blue: #9088A4;
+}
+
+/*********************************************************************************************************
+The Overall page style
+**********************************************************************************************************/
+
+.navbar {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-brand img {
+  max-height: 80px;
+  width: 250px;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2em;
+  color: var(--york-navy);
+  text-align: center;
+}
+
+h2 {
+  border-bottom: none;
+  padding: 0;
+  margin: 1em 0;
+}
+
+/*********************************************************************************************************
+Styling to override the Quarto-defined blocks
+**********************************************************************************************************/
+
+#quarto-document-content {
+  /* Removes the extra margin above the full-width header */
+  margin-top: 0;
+}
+
+
+
+/*********************************************************************************************************
+Main page search box styling
+NB: This is slightly complex as we want the search bar to extend horizontally, which requires overriding
+several levels of quarto/bootstrap div width calculations
+**********************************************************************************************************/
+
+/* This is the entire navy search box */
+.primary-search {
+  background: var(--york-navy);
+  padding: 1em 2em 0em 2em;
+  margin: 0 -1.5em 0 -1.5em;
+}
+
+.primary-search div.cell {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  width: 100%;
+  gap: 10px;
+}
+
+.primary-search div.cell div.cell-output-display:nth-child(1 of .cell-output-display) {
+  width: 100%;
+}
+
+.primary-search div.cell div.cell-output-display:nth-child(1 of .cell-output-display) div div form {
+  flex-grow: 1;
+  width: 100%;
+}
+
+.primary-search div.cell div.cell-output-display:not(:nth-child(1 of .cell-output-display)) {
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.primary-search div.cell div.cell-output-display:not(:nth-child(1 of .cell-output-display)) div {
+  display: inline-block;
+  width: calc(50% - 5px);
+}
+
+.primary-search input[type="text"] {
+  border: 1px solid var(--york-teal);
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  margin: 5px;
+}
+
+.primary-search input[type="text"]::placeholder {
+  color: color-mix(in srgb, var(--york-navy), white 75%);
+  opacity: 1;
+}
+
+.primary-search button {
+  width: 100%;
+  border: 1px solid var(--york-teal);
+  background: var(--stong-white);
+  color: var(--york-navy);
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  margin: 5px;
+  text-transform: lowercase;
+}
+
+.primary-search button:hover {
+  background: var(--stong-white);
+  color: var(--york-teal);
+}
+
+
+/* Responsive layout for larger screens */
+@media (min-width: 768px) {
+  /* On larger screens, make search box only 50% width */
+  .primary-search div.cell div.cell-output-display:nth-child(1 of .cell-output-display) {
+    width: 50%;
+  }
+  
+  /* Buttons below should also be 50% of the container (so 25% each of full width) */
+  .primary-search div.cell div.cell-output-display:not(:nth-child(1 of .cell-output-display)) {
+    width: 50%;
+  }
+}
+
+/*********************************************************************************************************
+Main page search filters styling
+**********************************************************************************************************/
+
+div.search-filters {
+  background: var(--york-navy);
+  margin: 0 -1.5em 0 -1.5em;
+  padding: 0 2em 2em 2em;
+}
+
+a#toggle-filters {
+  display: block;
+  margin: auto;
+  text-align: center;
+  width: 8em;
+  border: 1px solid var(--york-teal);
+  background: var(--stong-white);
+  color: var(--york-navy);
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  text-decoration: none;
+  line-height: normal;
+  text-transform: lowercase;
+}
+
+div#search-filters {
+  color: var(--york-white);
+}
+
+div#search-filters form {
+  width: 100%;
+}
+
+div#search-filters select {
+  border: 1px solid var(--york-teal);
+  color: var(--york-navy);
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  margin: 5px;
+}
+
+div#search-filters button {
+  width: 8em;
+  border: 1px solid var(--york-teal);
+  background: var(--stong-white);
+  color: var(--york-blue);
+  border-radius: 6px;
+  padding: 2px 6px;
+  box-shadow: none;
+  margin: 5px;
+  margin-left: auto;
+}
+
+div#search-filters button:hover {
+  background: var(--stong-white);
+  color: var(--york-teal);
+}
+
+/*********************************************************************************************************
+Main page search results styling
+**********************************************************************************************************/
+
+.primary-search-results {
+  border: 1px solid var(--york-grey);
+  font-size: 0.75em;
+  margin: 1em 0 0 0;
+  padding: 1em;
+}
+
+.observablehq {
+  display: block !important;
+  grid-template-columns: none !important;
+}
+
+div.course-data {
+  width: 100%;
+  border: 1px solid var(--york-grey);
+  background: var(--york-white);
+  border-radius: 0;
+  padding: 1em 1em 0 1em;
+  margin: 1em auto;
+  font-size: 1em;
+}
+
+div.course-data h3, div.course-data a {
+  color: var(--york-navy);
+  font-size: 1rem;
+  margin-top: 0;
+  font-weight: bold;
+}
+
+div.course-data div.course-data-extras {
+  display: none;
+  width: 100%;
+  font-size: 1em;
+}
+
+div.course-data .toggle-state {
+  display: none;
+}
+
+div.course-data .toggle-button {
+  width: 100%;
+  color: var(--york-navy);
+  text-align: right;
+  font-size: 1em;
+}
+
+div.course-data .toggle-state:checked ~ .toggle-button::after {
+content: "collapse details";
+}
+div.course-data .toggle-button::after {
+  content: "expand details";
+}
+
+div.course-data .toggle-state:checked ~ .course-data-extras {
+  display: block;
+}
+
+.course-data[featured_text] {
+  border-left: 5px solid var(--york-teal);
+  position: relative;
+}
+
+.course-data[featured_text]::after {
+  content: "★ " attr(featured_text) " ★";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: var(--york-teal);
+  font-size: 1em;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.course-data-extras table {
+  width: 100%;
+  background: var(--york-white) !important;
+}
+
+.course-data-extras table tr th, td {
+  border-bottom: 1px solid var(--york-grey);
+}
+
+.course-data-extras td.credit p {
+  /* NB: This is required as the $md{} wrapper introduces a <p> block */
+  padding: 0;
+  margin: 0;
+}
+.course-data-extras table tr:last-child th, .course-data-extras table tr:last-child td {
+  border-bottom: none;
+}
+.course-data-extras table tr th {
+  width: 10em;
+}
+
+/*********************************************************************************************************
+Main page search box extra information "chips"
+**********************************************************************************************************/
+
+div.course-data-extras p {
+  width: fit-content;
+  padding: 0 5px;
+  border-radius: 1em;
+  margin: 0.25em 0;
+}
+
+div.course-data-extras td {
+  padding: 0.25em 0;
+  margin: 0;
+}
+
+td.pre-reqs p {
+  border: 1px solid var(--york-pink);
+  background: color-mix(in srgb, var(--york-pink), white 75%);
+}
+
+td.teaches p {
+  border: 1px solid var(--york-teal);
+  background: color-mix(in srgb, var(--york-teal), white 75%);
+}
+
+td.credit p a {
+  font-size: 1em;
+}
+
+/*********************************************************************************************************
+Main page "no results" div
+**********************************************************************************************************/
+
+div.course-data-empty {
+  width: 100%;
+  border: none;
+  padding:1em;
+  margin:1em 0;
+}
+
+div.course-data-empty p {
+  text-align: center;
+  color: #0A2441;
+}
+
+/*********************************************************************************************************
+News page news item formatting
+**********************************************************************************************************/
+
+div#news {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 10px;
+  background-color: transparent;
+  padding-top: 2rem;
+  padding-bottom: 6rem;
+
+}
+
+div#news div.card {
+    background: var(--york-white);
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #f1f5f9;
+    position: relative;
+}
+
+.card::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--york-navy);
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+div#news .card-body {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+div#news .card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1.25rem;
+    background: none;
+    border: none;
+}
+
+div#news .icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: transparent;
+    color: var(--york-navy);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+div#news .card:hover .icon {
+    background-color: var(--york-navy);
+    color: white;
+    transform: rotate(-5deg);
+}
+
+.badge {
+    padding: 0.35rem 0.85rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.badge-workshop {
+  background-color: var(--york-teal);
+  color: var(--stong-white);
+}
+
+.badge-news {
+  background-color: var(--york-grey);
+  color: var(--york-navy);
+}
+
+.badge-event {
+  background-color: var(--york-pink);
+  color: var(--stong-white);
+}
+
+.card-date {
+    text-align: right;
+    color: var(--york-navy);
+    margin: 0;
+    padding: 0;
+}
+
+.card h3 {
+    font-size: 1.25em;
+    margin: 0 0 0.75rem 0;
+    color: var(--york-navy);
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.card-desc {
+    font-size: 1em;
+    margin-bottom: 1em;
+    flex-grow: 1;
+    line-height: 1.7;
+}
+
+.card-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--york-navy);
+    margin-top: auto;
+    padding: 0.75rem 0;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+
+.card-link i {
+  font-size: 0.8rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Category-specific hover colors for card links */
+div#news .card.workshop .card-link:hover {
+  color: var(--york-teal);
+  padding-left: 5px;
+}
+
+div#news .card.event .card-link:hover {
+  color: var(--york-pink);
+  padding-left: 5px;
+}
+
+div#news .card.news .card-link:hover {
+  color: var(--york-navy);
+  padding-left: 5px;
+}
+
+.card:hover .card-link i {
+  transform: translateX(5px);
+}
+/* Button container for side-by-side buttons below search */
+.button-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.button-container .primary-search-button {
+  flex: 1;
+  width: 50%;
+  border: 1px solid var(--york-teal);
+  background: var(--stong-white);
+  color: var(--york-navy);
+  border-radius: 6px;
+  padding: 6px;
+  box-shadow: none;
+  text-transform: lowercase;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.button-container .primary-search-button:hover {
+  background: var(--stong-white);
+  color: var(--york-teal);
+}
