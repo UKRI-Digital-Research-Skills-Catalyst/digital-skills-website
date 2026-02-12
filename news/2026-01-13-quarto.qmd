@@ -6,12 +6,12 @@ format:
       - ../style.css
       - ../course-page.css
     toc: false
+    echo: false
 ---
 
 ```{python}
 #| eval: true
 #| cache: true
-#| echo: false
 # Load event details from Google Sheets
 import pandas as pd
 event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
@@ -21,14 +21,13 @@ ojs_define(event_details = this_event.to_dict('records')[0] if len(this_event) >
 ```
 
 ```{ojs}
-//| echo: false
 // Transpose the event data for use
 event = transpose(event_details)
 ```
 
-::: {.course-page-layout}
+<div class="course-page-layout">
 
-::: {.course-content}
+<div class="course-content">
 
 <span class="course-badge">Workshop</span>
 
@@ -73,16 +72,15 @@ This workshop is intended for researchers and research support staff in academia
 | Category | Price |
 |:---|:---|
 | Standard Rate (Public/Private Sector) | £75 |
-| Academic / Non-profit / Student <span class="text-xs bg-green-200 text-green-800 px-2 py-0.5 rounded ml-2">SAVE £25</span> | £50 |
+| Academic / Non-profit / Student <span style="font-size: 0.75rem; background-color: #bbf7d0; color: #166534; padding: 0.125rem 0.5rem; border-radius: 0.25rem; margin-left: 0.5rem;">SAVE £25</span> | £50 |
 
 : Workshop Fees {tbl-colwidths="[60,40]"}
 
-:::
+</div>
 
-::: {.event-details-sidebar}
+<div class="event-details-sidebar">
 
 ```{ojs}
-//| echo: false
 html`
 <h3>Event Details</h3>
 
@@ -134,6 +132,6 @@ html`
 `
 ```
 
-:::
+</div>
 
-:::
+</div>
