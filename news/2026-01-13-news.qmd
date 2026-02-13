@@ -1,14 +1,14 @@
 ---
-title: "AI in the Biosciences Conference"
+title: "Website launch"
 format:
   html:
     css: style.css
 ---
 
-### Introducing the UKRI Digital Research Skills Catalyst: Powering Your Research Potential **
+### Introducing the UKRI Digital Research Skills Catalyst: Powering Your Research Potential 
 
-We are thrilled to announce the launch of the **UKRI Digital Research Skills Catalyst**, a major new initiative designed to transform the way researchers and innovators across the UK access digital training and expertise.
-In an increasingly data-driven world, having the right digital skills is no longer just an advantage—it's essential. The Catalyst project is here to bridge the skills gap, providing a centralised hub of high-quality resources and direct support to empower you at every stage of your research journey.
+
+We are thrilled to announce the launch of the **UKRI Digital Research Skills Catalyst**, a major new initiative designed to transform the way researchers and innovators across the UK access digital training and expertise. In an increasingly data-driven world, having the right digital skills is no longer just an advantage—it's essential. The Catalyst project is here to bridge the skills gap, providing a centralised hub of high-quality resources and direct support to empower you at every stage of your research journey.
 
 **A Centralised Hub for Digital Training**
 
@@ -16,16 +16,17 @@ At the heart of this initiative is our newly launched website, a comprehensive p
 Here’s what you can find on the new site:
 
 - **The Learning Portal:** Dive into a searchable library of over 50 high-quality learning resources. Whether you're looking to master machine learning, improve your data stewardship, or get to grips with High Performance Computing for 'omics, you can quickly find materials tailored to your expertise level and research area. While the current focus is on building skills for health and bioscience professionals, many resources are highly relevant for researchers in arts, humanities, and social sciences too.
-- Expert Consultation Service: Sometimes, you need more than just a tutorial. That's why we've launched a dedicated consultation service. You can now book one-on-one online sessions with our Digital Research Specialists. From troubleshooting code and experimental design to tackling complex analytical problems, our experts are ready to provide personalised guidance to help you overcome challenges and move your project forward.
-- Workshops and Events: Connect with peers and leading instructors through our programme of online and in-person events. These sessions are designed to facilitate networking and address specific training needs within the community. Keep an eye on our "News & Events" page for upcoming opportunities, including a full-day conference on "AI Readiness in the Biosciences" planned for 2026.
+- **Expert Consultation Service:** Sometimes, you need more than just a tutorial. That's why we've launched a dedicated consultation service. You can now book one-to-one online sessions with our Digital Research Specialists. From troubleshooting code and experimental design to tackling complex analytical problems, our experts are ready to provide personalised guidance to help you overcome challenges and move your project forward.
+- **Workshops and Events:** Connect with peers and leading instructors through our programme of online and in-person events. These sessions are designed to facilitate networking and address specific training needs within the community. Keep an eye on our "News & Events" page for upcoming opportunities, including a full-day conference on "AI Readiness in the Biosciences" planned for later this year. 
 
 **Building on a Legacy of Success**
 
-Led by Professor Emma Rand at the University of York and funded by the UKRI Digital Research Infrastructure Programme, the Catalyst builds on the successful foundation of the Data Science in Healthcare & Biosciences (DaSH) project. By centralising resources from seven DaSH projects into one accessible hub, we are ensuring that valuable training materials are readily available to the wider research community.
+Led by Professor Emma Rand at the University of York and funded by the UKRI Digital Research Infrastructure Programme, the Catalyst builds on the successful foundation of the Data Science Training in Healthcare & Biosciences (DaSH) project. By centralising resources from seven DaSH projects into one accessible hub, we are ensuring that valuable training materials are readily available to the wider research community.
 
 **Get Started Today**
 
 Whether you are a doctoral student, a principal investigator, or a programme manager, the UKRI Digital Research Skills Catalyst is your new go-to resource for professional growth in the digital age.
+
 We invite you to explore the new website, browse the learning portal, and book a consultation to see how we can support your research. 
 
 👉 Visit the new website: digitalskillscatalyst.ac.uk
