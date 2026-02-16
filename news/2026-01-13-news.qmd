@@ -17,7 +17,7 @@ Here’s what you can find on the new site:
 
 - **The Learning Portal:** Dive into a searchable library of over 50 high-quality learning resources. Whether you're looking to master machine learning, improve your data stewardship, or get to grips with High Performance Computing for 'omics, you can quickly find materials tailored to your expertise level and research area. While the current focus is on building skills for health and bioscience professionals, many resources are highly relevant for researchers in arts, humanities, and social sciences too.
 - **Expert Consultation Service:** Sometimes, you need more than just a tutorial. That's why we've launched a dedicated consultation service. You can now book one-to-one online sessions with our Digital Research Specialists. From troubleshooting code and experimental design to tackling complex analytical problems, our experts are ready to provide personalised guidance to help you overcome challenges and move your project forward.
-- **Workshops and Events:** Connect with peers and leading instructors through our programme of online and in-person events. These sessions are designed to facilitate networking and address specific training needs within the community. Keep an eye on our "News & Events" page for upcoming opportunities, including a full-day conference on "AI Readiness in the Biosciences" planned for later this year. 
+- **Workshops and Events:** Connect with peers and leading instructors through our programme of online and in-person events. These sessions are designed to facilitate networking and address specific training needs within the community. Keep an eye on our "News & Events" page for upcoming opportunities, including a full-day conference on [AI Readiness in the Biosciences](https://digitalskillscatalyst.ac.uk/news/2026-01-13-conference.html) planned for later this year. 
 
 **Building on a Legacy of Success**
 
@@ -29,5 +29,5 @@ Whether you are a doctoral student, a principal investigator, or a programme man
 
 We invite you to explore the new website, browse the learning portal, and book a consultation to see how we can support your research. 
 
-👉 Visit the new website: digitalskillscatalyst.ac.uk
+👉 Visit the website: [www.digitalskillscatalyst.ac.uk](https://digitalskillscatalyst.ac.uk/)
 
