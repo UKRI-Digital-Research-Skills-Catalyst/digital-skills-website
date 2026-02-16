@@ -2,7 +2,11 @@
 title: "Metatranscriptomics"
 format:
   html:
-    css: style.css
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
 ---
 
 ### **Save the date - registration opening soon!**
