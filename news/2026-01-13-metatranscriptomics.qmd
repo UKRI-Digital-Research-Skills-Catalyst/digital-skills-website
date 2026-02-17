@@ -9,18 +9,9 @@ format:
     echo: false
 ---
 
-### **Save the date - registration opening soon!**
-
 Gain practical skills in metatranscriptomics analysis with this practical online workshop. Designed for HPC beginners, you will learn to process, profile, and visualise RNA-seq data using command line tools.
 
 **The next online workshop will take place from 11-20 May 2026.**
-
-
-::: {.callout-tip}
-
-## Register using the [online form](YOUR_URL_HERE)
-
-:::
 
 ## Target audience
 
@@ -28,7 +19,12 @@ UK based researchers at any career stage or anyone with an interest in Metatrans
 
 ## Register 
 
-Registration for this course will open shortly. 
+
+::: {.callout-tip}
+
+## Register using the [online form](https://forms.gle/pniYkpZP4G7pbVUQ6)
+
+:::
 
 There are 30 places available and this workshop is free of charge.
 
@@ -56,7 +52,7 @@ We start by teaching the essential tools used in High Performance computing such
 | Wednesday, 20 May | 14:00 - 15:00 | Online troubleshooting drop-in session (optional) |
 
 
-If you are unable to attend one of the online sessions, recordings will be distributed. You will have access to your instance one week after the final taught session to give you time to consolidate your learning. Usage of the instances will be monitored; instances which are inactive will be closed down as a daily charge is incurred.
+If you are unable to attend one of the online sessions, recordings will be distributed. You will have access to your instance until Friday 22 May to give you time to consolidate your learning. Usage of the instances will be monitored; instances which are inactive will be closed down as a daily charge is incurred.
 
 
 ## Course format
