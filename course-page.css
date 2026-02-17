@@ -51,7 +51,8 @@ Course content area (left column)
 }
 
 /* Lead paragraph */
-.course-content .lead {
+.course-content .lead,
+.course-page-layout .lead {
   font-size: 1.25rem;
   color: var(--york-blue);
   line-height: 1.75;
@@ -77,128 +78,14 @@ Course content area (left column)
   text-align: left;
 }
 
-/* Course content lists */
-.course-content ul {
-  margin: 1rem 0;
-  padding-left: 0;
-  list-style: none;
-}
 
-.course-content li {
-  margin-bottom: 0.75rem;
-  line-height: 1.6;
-  padding-left: 1.75rem;
-  position: relative;
-}
-
-.course-content li::before {
-  content: "\f058";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  color: var(--york-teal);
-  position: absolute;
-  left: 0;
-  top: 0.1rem;
-}
-
-/* Callout boxes */
-.course-content .callout {
-  background-color: color-mix(in srgb, var(--york-pink), white 90%);
-  border-left: 5px solid var(--york-pink);
-  padding: 1rem 1rem 1rem 3rem;
-  margin: 1.5rem 0;
-  border-radius: 0.25rem;
-  position: relative;
-}
-
-.course-content .callout::before {
-  content: "\f05a";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  color: var(--york-pink);
-  position: absolute;
-  left: 1rem;
-  top: 1rem;
-  font-size: 1.2rem;
-}
-
-.course-content .callout-tip {
-  background-color: color-mix(in srgb, #fef3c7, white 20%);
-  border-left: 5px solid #f59e0b;
-}
-
-.course-content .callout-tip::before {
-  content: "\f109";
-  color: #f59e0b;
-}
-
-.course-content .callout h2,
-.course-content .callout h3 {
-  font-size: 0.875rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  color: var(--york-navy);
-}
-
-.course-content .callout p {
-  margin-bottom: 0.5rem;
-}
-
-.course-content .callout ul {
-  margin-top: 0.5rem;
-}
-
-/* Course fees table */
-.course-content table {
-  width: 100%;
-  margin: 1.5rem 0;
-  border-collapse: collapse;
-  font-size: 0.875rem;
-  border: 1px solid var(--york-grey);
-  border-radius: 0.5rem;
-  overflow: hidden;
-}
-
-.course-content thead {
-  background-color: #f9fafb;
-  text-transform: uppercase;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  border-bottom: 1px solid var(--york-grey);
-}
-
-.course-content th {
-  padding: 0.75rem 1.5rem;
-  text-align: left;
-  font-size: 0.75rem;
-  color: var(--york-navy);
-}
-
-.course-content td {
-  padding: 1rem 1.5rem;
-  text-align: left;
-}
-
-.course-content tbody tr {
-  border-bottom: 1px solid var(--york-grey);
-}
-
-.course-content tbody tr:last-child {
-  border-bottom: none;
-}
-
-.course-content tbody tr:nth-child(even) {
-  background-color: var(--york-white);
-}
 
 /*********************************************************************************************************
 Event details sidebar (right column)
 **********************************************************************************************************/
 
 .event-details-sidebar {
-  background: var(--stong-white);
+  background: var(--york-white);
   padding: 1.5rem;
   border-radius: 1rem;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
@@ -232,15 +119,13 @@ Event details sidebar (right column)
 .event-detail-icon {
   width: 2rem;
   height: 2rem;
-  border-radius: 50%;
-  background-color: color-mix(in srgb, #3b82f6, white 85%);
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #3b82f6;
+  color: var(--york-pink);
   margin-right: 0.75rem;
   flex-shrink: 0;
-  font-size: 0.875rem;
+  font-size: 1.1rem;
 }
 
 .event-detail-content {
@@ -248,12 +133,18 @@ Event details sidebar (right column)
 }
 
 .event-detail-content p:first-child {
-  font-size: 0.625rem;
+  font-size: 0.8rem;
   text-transform: uppercase;
   font-weight: 600;
-  color: #6b7280;
   margin: 0 0 0.125rem 0;
   letter-spacing: 0.05em;
+}
+
+.event-detail-content p {
+  font-weight: 500;
+  color: var(--york-navy);
+  margin: 0;
+  font-size: 0.875rem;
 }
 
 .event-detail-content p:last-child {
@@ -288,36 +179,9 @@ Event details sidebar (right column)
 .event-note {
   font-size: 0.75rem;
   text-align: center;
-  color: #6b7280;
   margin-top: 0.75rem;
 }
 
-/* Discount code box */
-.discount-code-box {
-  margin-top: 1.5rem;
-  background-color: #f1f5f9;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  border: 1px solid #cbd5e1;
-}
-
-.discount-code-box p:first-child {
-  font-size: 0.875rem;
-  color: #64748b;
-  margin-bottom: 0.5rem;
-}
-
-.discount-code-display {
-  background: var(--stong-white);
-  border: 1px solid #d1d5db;
-  border-radius: 0.25rem;
-  padding: 0.5rem;
-  text-align: center;
-  font-family: 'Courier New', monospace;
-  font-size: 0.875rem;
-  color: #475569;
-  user-select: all;
-}
 
 /* Questions section */
 .questions-section {
@@ -327,7 +191,6 @@ Event details sidebar (right column)
 
 .questions-section p {
   font-size: 0.875rem;
-  color: #6b7280;
   margin-bottom: 0.25rem;
 }
 

@@ -8,7 +8,6 @@ format:
     code-tools: false
 ---
 
-
 ```{=html}
 <!--
 This hidden span is essential for Quarto to load the fontawesome packages. Normally we could just put it in the header, but we're using fontawesome
