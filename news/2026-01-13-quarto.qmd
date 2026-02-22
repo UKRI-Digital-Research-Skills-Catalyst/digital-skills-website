@@ -141,7 +141,7 @@ html`
   </div>
 </div>
 
-<a href="#registration" class="register-button">Register Now</a>
+<a href="${event.register_link || '#'}" class="register-button">Register Now</a>
 
 <p class="event-note">Limited to 30 places</p>
 
@@ -153,26 +153,3 @@ html`
 ```
 :::
 :::::
-
-## Registration {#registration}
-
-Available course dates and booking options:
-
-<div id="response"></div>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="//cdn.jsdelivr.net/gh/jpillora/xdomain@0.7.4/dist/xdomain.min.js" slave="https://york.accessplanit.com/proxy.html"></script>
-<script src="https://york.accessplanit.com/accessplan/NetLibrary/ClientScripts/webintegration.js"></script>
-<script type="text/javascript">
-CourseManager.columns.CourseName = 'Course name';
-CourseManager.columns.StartDate = 'StartDateString';
-CourseManager.columns.EndDate = 'EndDateString';
-var options = {
-   ContainerID: 'response',
-   CompanyID: "UNIVERZM7W",
-   CourseIDs:["UKRIDI3hBS"],
-   Columns: [CourseManager.columns.CourseName, CourseManager.columns.StartDateString, CourseManager.columns.EndDateString, CourseManager.columns.CostWithCurrency, CourseManager.columns.Book],
-   CssClasses: { anchor: 'c-btn c-btn--medium'}
-}
-CourseManager.coursesTable(options);
-</script>
