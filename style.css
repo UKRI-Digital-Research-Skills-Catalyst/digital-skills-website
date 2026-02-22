@@ -33,12 +33,16 @@ The Overall page style
 }
 
 h1 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
   font-size: 2em;
   color: var(--york-navy);
   text-align: center;
 }
 
 h2 {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
   border-bottom: none;
   padding: 0;
   margin: 1em 0;
