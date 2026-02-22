@@ -1,5 +1,4 @@
 ---
-title: "Metatranscriptomics"
 format:
   html:
     css:
@@ -7,95 +6,161 @@ format:
       - ../course-page.css
     toc: false
     echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
 ---
 
-Gain practical skills in metatranscriptomics analysis with this practical online workshop. Designed for HPC beginners, you will learn to process, profile, and visualise RNA-seq data using command line tools.
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
 
-**The next online workshop will take place from 11-20 May 2026.**
+[{{< fa solid calendar >}}]{style="display: none;"}
 
-## Target audience
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
 
-UK based researchers at any career stage or anyone with an interest in Metatranscriptomics. The workshop is aimed at those with little or no experience of the command line or using high performance computing (HPC) for data analysis. 
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-01-13-metatranscriptomics.html') ?? {}
+```
 
-## Register 
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
 
+## Metatranscriptomics
 
-::: {.callout-tip}
+<p class="lead">
 
-## Register using the [online form](https://forms.gle/pniYkpZP4G7pbVUQ6)
+Hands-on online workshop designed for HPC beginners. Learn to analyse
+and visualise RNA-seq data using command line tools.
 
-:::
+</p>
 
-There are 30 places available and this workshop is free of charge.
+### About the Workshop
 
-## Programme
+We start by teaching the essential tools used in High Performance
+Computing such as file systems and the command-line to connect to and
+use cloud computing for file navigation and script writing. We then
+explore how to clean and prepare raw RNA-seq data through quality
+control and rRNA removal to enable detailed taxonomic and functional
+profiling of the microbial community. The process culminates in the
+visualisation of these insights using interactive tools like Krona to
+facilitate interpretation.
 
-We start by teaching the essential tools used in High Performance computing such as file systems and the command-line to connect to and use cloud computing for file navigation and script writing. We then explore how to clean and prepare raw RNA-seq data through quality control and rRNA removal to enable detailed taxonomic and functional profiling of the microbial community. The process culminates in the visualisation of these insights using interactive tools like Krona to facilitate interpretation.
+All the software and data used in the workshop are hosted on an Amazon
+Machine Image (AMI). We will give you details as to how to access these
+instances after registration.
 
+### What you will learn
 
-**Week 1**
+-   **File systems and using the command line:** How to log into and
+    navigate an HPC system
+-   **Quality control for metatransciptomcs:** An introduction to
+    metatranscriptomics and preprocessing with sortmeRNA
+-   **Taxonomic profiling:** Analysis of community taxonomy with
+    Metaphlan
+-   **Functional profiling:** Analysis of community function with Humann
 
-|                     |               |                                                                |
-|------------------|------------------|------------------------------------|
-| Monday, 11 May | 10:00 - 12:00  | File systems and directories  |
-| Tuesday, 12 May| 10:00 - 12:00 | Using the command line               |
-| Wednesday, 13 May| 10:00 - 13:00 | An introduction to metatranscriptomics, quality control and preprocessing |
+### Programme
+
+The course takes place over two weeks and combines teaching and live
+coding with time spent out of the zoom room while long analyses
+complete. There are drop-in sessions
+
+| **Week 1** |   |   |
+|----|----|----|
+| Monday, 11 May | 10:00 - 12:00 | File systems and directories |
+| Tuesday, 12 May | 10:00 - 12:00 | Using the command line |
+| Wednesday, 13 May | 10:00 - 13:00 | An introduction to metatranscriptomics, quality control and preprocessing |
 | Thursday, 14 May | 13:00 - 14:00 | Online troubleshooting drop-in session (optional) |
 | Friday, 15 May | 10:00 - 11:30 | Review of sortmeRNA. Taxonomic profiling of communities with Metaphlan. |
 
-**Week 2**
-
-|                       |               |                                                   |
-|------------------|------------------|------------------------------------|
+| **Week 2** |   |   |
+|----|----|----|
 | Monday, 18 May | 13:00 - 14:00 | Online troubleshooting drop-in session (optional) |
-| Tuesday, 19 May  | 10:00 - 12:00 | Functional profiling of communities with Humann         |
+| Tuesday, 19 May | 10:00 - 12:00 | Functional profiling of communities with Humann |
 | Wednesday, 20 May | 14:00 - 15:00 | Online troubleshooting drop-in session (optional) |
 
+### Audience
 
-If you are unable to attend one of the online sessions, recordings will be distributed. You will have access to your instance until Friday 22 May to give you time to consolidate your learning. Usage of the instances will be monitored; instances which are inactive will be closed down as a daily charge is incurred.
+This workshop is aimed at researchers with no prior experience of the
+tools covered in the workshop. However, participants will need some
+familiarity with biological concepts such as genomes and microbiomes.
 
+### Prerequisites
 
-## Course format
+To participate in this course, you will need a computer with internet
+access. The software and data used for analysis during the course are
+hosted on an Amazon Web Services (AWS) virtual machine (VM) instance.
 
-This workshop is designed to be run on pre-imaged Amazon Web Services (AWS) instances. All the software and data used in the workshop are hosted on an Amazon Machine Image (AMI). We will give you details as to how to access these instances after registration.
-
-The course will take place over two weeks and will combine live coding and teaching with offline work. We will guide you through the analysis each session but some steps may need to completed offline due to the amount of time they take to complete. There will also be drop-in sessions to offer support and troubleshooting help, and a Slack workspace for questions.
-
-## Prerequisites
-
-::: callout-important
-## Biological concepts and software setup
-
-This course assumes no prior experience with the tools covered in the workshop but learners are expected to have some familiarity with biological concepts, including the concept of genomes and microbiomes. Participants should bring their own laptops and plan to participate actively.
-
-To get started, follow the [directions](https://cloud-span.github.io/metatranscriptomics/docs/miscellanea/precourse-instructions.html) to get access to the required software and data for this workshop. **Windows users** need to install Git Bash in their laptop. **Mac users** may need to configure the **terminal** program in their laptop to use the Bash shell.
+To access your AWS instance from your personal computer, you will need a
+shell or terminal. This shell is available by default for Linux and Mac
+users but Windows users will need to install Git for Windows.\
+[Detailed Pre-course
+instructions](https://cloud-span.github.io/metatranscriptomics/docs/miscellanea/precourse-instructions.html)
 :::
 
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
 
-## Data
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || 'TBA'}</p>
+  </div>
+</div>
 
-::: callout-note
-## About the data used in the course
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || 'TBA'}</p>
+  </div>
+</div>
 
-This course uses data from the Galaxy Training Network tutorial on metatranscriptomics, which utilizes a dataset hosted on Zenodo ([Kunath et al., 2018, ISME J](https://academic.oup.com/ismej/article/13/3/603/7475213)). The dataset comes from a time-series analysis of a microbial community inside a bioreactor. For the purposes of this course, we focus on a single time point (the first) and one biological replicate (replicate A). The data consist of paired-end RNA-Seq sequences in FastQ format, representing the expressed functional potential of the microbial community.
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'Online'}</p>
+  </div>
+</div>
 
-The samples originate from a **cellulose-degrading microbial consortium (SEM1b)** enriched from a thermophilic biogas reactor in Norway. The consortium is co-dominated by *Clostridium thermocellum*, a cellulolytic bacterium, and multiple strains of *Coprothermobacter proteolyticus*, which together degrade plant biomass under anaerobic, high-temperature conditions. This enrichment was performed to study the active expression of carbohydrate-degrading genes within the community.
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || '#'}" class="register-button">Register Now</a>
+
+<p class="event-note">Limited to 30 places</p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a>
+</div>
+`
+```
 :::
-
-
-## Learning objectives
-
-Participants will learn how to:
-
--   navigate file directories and using the command line
--   log into a remote cloud instance
--   use common commands and running analysis programs in the command line
--   understand what metatranscriptomics is
--   follow a metatranscriptomics analysis workflow including:
-    -   Perform quality control on RNA-seq reads
-    -   Carry out adapter trimming and quality filtering
-    -   Remove rRNA sequences from RNA-seq data
-    -   Merge and prepare reads for downstream analyses
-    -   Perform taxonomic profiling of metatranscriptomic data
-    -   Functionally interpret expressed genes
-    -   Visualise and explore results using interactive tools such as Krona
+:::::
