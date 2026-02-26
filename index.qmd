@@ -106,9 +106,8 @@ viewof search_terms = Inputs.text({placeholder: "Search Training Resources..."})
   });
   
   // Create Show Filters button
-  const toggleLink = document.createElement("a");
+  const toggleLink = document.createElement("button");
   toggleLink.id = "toggle-filters";
-  toggleLink.href = "#";
   toggleLink.textContent = "show filters";
   toggleLink.className = "primary-search-button";
   toggleLink.addEventListener("click", (event) => {

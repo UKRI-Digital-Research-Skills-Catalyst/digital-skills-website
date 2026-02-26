@@ -100,11 +100,16 @@ several levels of quarto/bootstrap div width calculations
 }
 
 .primary-search input[type="text"] {
-  border: 1px solid var(--york-teal);
+  border: 2px solid transparent;
   border-radius: 6px;
-  padding: 6px;
+  padding: 9px;
   box-shadow: none;
   margin: 5px;
+  outline: none;
+}
+
+.primary-search input[type="text"]:focus {
+  border: 2px solid var(--york-pink);
 }
 
 .primary-search input[type="text"]::placeholder {
@@ -114,9 +119,9 @@ several levels of quarto/bootstrap div width calculations
 
 .primary-search button {
   width: 100%;
-  border: 1px solid var(--york-teal);
-  background: var(--stong-white);
+  background: var(--york-white);
   color: var(--york-navy);
+  border: 2px solid transparent;
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
@@ -125,7 +130,7 @@ several levels of quarto/bootstrap div width calculations
 }
 
 .primary-search button:hover {
-  background: var(--stong-white);
+  background: var(--york-white);
   color: var(--york-teal);
 }
 
@@ -143,30 +148,10 @@ several levels of quarto/bootstrap div width calculations
   }
 }
 
-/*********************************************************************************************************
-Main page search filters styling
-**********************************************************************************************************/
-
 div.search-filters {
   background: var(--york-navy);
   margin: 0 -1.5em 0 -1.5em;
   padding: 0 2em 2em 2em;
-}
-
-a#toggle-filters {
-  display: block;
-  margin: auto;
-  text-align: center;
-  width: 8em;
-  border: 1px solid var(--york-teal);
-  background: var(--stong-white);
-  color: var(--york-navy);
-  border-radius: 6px;
-  padding: 6px;
-  box-shadow: none;
-  text-decoration: none;
-  line-height: normal;
-  text-transform: lowercase;
 }
 
 div#search-filters {
@@ -178,7 +163,6 @@ div#search-filters form {
 }
 
 div#search-filters select {
-  border: 1px solid var(--york-teal);
   color: var(--york-navy);
   border-radius: 6px;
   padding: 6px;
@@ -188,9 +172,9 @@ div#search-filters select {
 
 div#search-filters button {
   width: 8em;
-  border: 1px solid var(--york-teal);
-  background: var(--stong-white);
-  color: var(--york-blue);
+  background: var(--york-white);
+  color: var(--york-navy);
+  border: 2px solid transparent;
   border-radius: 6px;
   padding: 2px 6px;
   box-shadow: none;
@@ -199,7 +183,7 @@ div#search-filters button {
 }
 
 div#search-filters button:hover {
-  background: var(--stong-white);
+  background: var(--york-white);
   color: var(--york-teal);
 }
 
@@ -523,20 +507,25 @@ div#news .card.news .card-link:hover {
 .button-container .primary-search-button {
   flex: 1;
   width: 50%;
-  border: 1px solid var(--york-teal);
-  background: var(--stong-white);
+  background: var(--york-white);
   color: var(--york-navy);
+  border: 2px solid transparent;
   border-radius: 6px;
   padding: 6px;
   box-shadow: none;
+  box-sizing: border-box;
   text-transform: lowercase;
   text-decoration: none;
   text-align: center;
   display: block;
   cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 .button-container .primary-search-button:hover {
-  background: var(--stong-white);
+  background: var(--york-white);
   color: var(--york-teal);
 }
