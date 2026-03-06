@@ -5,10 +5,9 @@ format:
     css: style.css
 ---
 
-## Save the date - registration opening soon!
+## Save the date - registration opening soon! 
 
 Join us on Friday 4th September in York! This free full-day training conference is specifically designed to provide ECR/PGR researchers in the biosciences and health with an introduction to AI. We aim to demystify the "black box" of AI, moving beyond the hype to provide you with the foundational knowledge and practical coding skills required to integrate machine learning into your specific research workflows.
-
 
 ## Who Should Attend? 
 
