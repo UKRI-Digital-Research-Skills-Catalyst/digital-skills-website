@@ -60,7 +60,7 @@ course_data.forEach(row => {
   const jsonld = { "@context": "https://schema.org" };
 
   // Use CSV column for type if it exists
-  if (row.schemaVersion) jsonld["@type"] = row.schemaVersion;
+  if (row.schemaVersion) jsonld["@type"] = "Course";
 
   // @id and url
   if (row.identifier) jsonld["@id"] = row.identifier;
