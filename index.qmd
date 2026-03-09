@@ -80,17 +80,7 @@ course_data.forEach(row => {
         "name": row.projectFunding
       } : undefined,
       "timeRequired": row.TimeRequired,
-      "teaches": row.teaches
-        ? row.teaches.split(",").map(t => t.trim())
-        : undefined,
-      "competencyRequired": row.competencyRequired
-        ? row.competencyRequired.split(",").map(t => t.trim())
-        : undefined,
       "educationalLevel": row.audience,
-      "keywords": [
-        row.learningResourceType,
-        row.audience
-      ].filter(Boolean),
       "isAccessibleForFree": true,
       "inLanguage": "en",
       "publisher": {
