@@ -81,6 +81,7 @@ course_data.forEach(row => {
 
   document.head.appendChild(script)
 })
+```
 
 ```{ojs}
 // This cell defines the possible values we can use to populate the filter dropdowns directly from the data in `course_data`.
