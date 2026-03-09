@@ -52,10 +52,8 @@ course_data = transpose(course_data_cached).map(row => {
 ```
 
 ```{ojs}
-//| output: as-is
-// Remove previous JSON-LD scripts
-document.querySelectorAll('script[data-course-jsonld]').forEach(el => el.remove());
-
+#| echo: false
+#| results: as-is
 course_data.map(row => {
 
   const jsonld = { "@context": "https://schema.org", "@type": "Course" };
