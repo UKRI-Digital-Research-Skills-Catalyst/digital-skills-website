@@ -56,22 +56,21 @@ course_data = transpose(course_data_cached).map(row => {
 document.querySelectorAll('script[data-course-jsonld]').forEach(el => el.remove());
 
 course_data.forEach(row => {
-
   const jsonld = { "@context": "https://schema.org", "@type": "Course" };
 
-  // @id and url
-  if (row.identifier) jsonld["@id"] = row.identifier;
-  if (row.url) jsonld["url"] = row.url;
+  // IDs and URLs
+  jsonld["@id"] = row.identifier || row.url;
+  jsonld["url"] = row.url;
 
-  // Name and description
-  if (row.headline) jsonld["name"] = row.headline;
-  if (row.description) jsonld["description"] = row.description;
+  // Name & description
+  jsonld["name"] = row.headline;
+  jsonld["description"] = row.description;
 
-  // Learning resource type and educational level
+  // Learning type & level
   if (row.learningResourceType) jsonld["learningResourceType"] = row.learningResourceType;
   if (row.educationalLevel) jsonld["educationalLevel"] = row.educationalLevel;
 
-  // Audience (comma-separated)
+  // Audience
   if (row.audience) {
     const audienceArray = row.audience.split(",").map(s => s.trim());
     jsonld["audience"] = audienceArray.map(a => ({ "@type": "Audience", "audienceType": a }));
@@ -80,15 +79,14 @@ course_data.forEach(row => {
   // Provider
   if (row.provider) jsonld["provider"] = { "@type": "Organization", "name": row.provider };
 
-  // Keywords (trim to ~20 to avoid TeSS errors)
+  // Keywords – use exact set if provided
   if (row.keywords) {
-    const keywordsArray = row.keywords.split(",").map(k => k.trim());
-    jsonld["keywords"] = keywordsArray.slice(0, 20);
+    jsonld["keywords"] = row.keywords.split(",").map(k => k.trim());
   }
 
-  // Authors as Person objects
+  // Authors – do NOT split commas inside names; treat as single strings
   if (row.author) {
-    const authors = row.author.split(",").map(a => a.trim());
+    const authors = row.author.split(/;\s*/); // use ; to separate multiple authors if present
     jsonld["author"] = authors.map(a => ({ "@type": "Person", "name": a }));
   }
 
@@ -103,11 +101,11 @@ course_data.forEach(row => {
     }
   }
 
-  // Language and accessibility
-  if (row.inLanguage) jsonld["inLanguage"] = row.inLanguage.toLowerCase();
+  // Language & free
+  jsonld["inLanguage"] = row.inLanguage ? row.inLanguage.toLowerCase() : "en";
   jsonld["isAccessibleForFree"] = row.isAccessibleForFree === "yes";
 
-  // Explicitly mark no course instance for TeSS
+  // Explicitly mark no course instance
   jsonld["hasCourseInstance"] = false;
 
   // Create script element
