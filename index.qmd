@@ -52,11 +52,11 @@ course_data = transpose(course_data_cached).map(row => {
 ```
 
 ```{ojs}
-//| output: false
+//| output: as-is
 // Remove previous JSON-LD scripts
 document.querySelectorAll('script[data-course-jsonld]').forEach(el => el.remove());
 
-course_data.forEach(row => {
+course_data.map(row => {
 
   const jsonld = { "@context": "https://schema.org", "@type": "Course" };
 
@@ -109,14 +109,10 @@ course_data.forEach(row => {
   // Always set hasCourseInstance to false for TeSS
   jsonld["hasCourseInstance"] = false;
 
-  // Create script element
-  const script = document.createElement("script");
-  script.type = "application/ld+json";
-  script.dataset.courseJsonld = "true";
-  script.textContent = JSON.stringify(jsonld, null, 2);
-
-  document.head.appendChild(script);
-});
+  return `<script type="application/ld+json" data-course-jsonld>
+${JSON.stringify(jsonld, null, 2)}
+</script>`;
+}).join("\n")
 ```
 
 ```{ojs}
