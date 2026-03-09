@@ -53,21 +53,16 @@ course_data = transpose(course_data_cached).map(row => {
 ```{ojs}
 //| output: false
 
-// Prevent duplicates during reactive reruns
 document.querySelectorAll('script[data-course-jsonld]').forEach(el => el.remove())
 
-// Only inject once per page
 if (!window.__courses_jsonld_added) {
   window.__courses_jsonld_added = true
 
   course_data.forEach(row => {
-
     const jsonld = {
       "@context": [
         "https://schema.org",
-        {
-          "bioschemas": "https://bioschemas.org/"
-        }
+        { "bioschemas": "https://bioschemas.org/" }
       ],
       "@type": "LearningResource",
       "@id": row.identifier || row.url,
@@ -75,32 +70,20 @@ if (!window.__courses_jsonld_added) {
       "name": row.headline,
       "description": row.description,
       "learningResourceType": row.learningResourceType,
-      "audience": row.audience ? {
-        "@type": "Audience",
-        "audienceType": row.audience
-      } : undefined,
-      "provider": row.projectFunding ? {
-        "@type": "Organization",
-        "name": row.projectFunding
-      } : undefined,
       "timeRequired": row.TimeRequired,
-      "teaches": row.teaches
-        ? row.teaches.split(",").map(t => t.trim())
-        : undefined,
-      "competencyRequired": row.competencyRequired
-        ? row.competencyRequired.split(",").map(t => t.trim())
-        : undefined,
       "educationalLevel": row.audience,
-      "keywords": [
-        row.learningResourceType,
-        row.audience
-      ].filter(Boolean),
+      "keywords": [row.learningResourceType, row.audience].filter(Boolean),
       "isAccessibleForFree": true,
       "inLanguage": "en",
       "publisher": {
         "@type": "Organization",
         "name": "UKRI Digital Research Skills Catalyst"
-      }
+      },
+      // Optional keys added only if they exist
+      ...(row.audience ? { audience: { "@type": "Audience", "audienceType": row.audience } } : {}),
+      ...(row.projectFunding ? { provider: { "@type": "Organization", "name": row.projectFunding } } : {}),
+      ...(row.teaches ? { teaches: row.teaches.split(",").map(t => t.trim()) } : {}),
+      ...(row.competencyRequired ? { competencyRequired: row.competencyRequired.split(",").map(c => c.trim()) } : {})
     }
 
     const script = document.createElement("script")
