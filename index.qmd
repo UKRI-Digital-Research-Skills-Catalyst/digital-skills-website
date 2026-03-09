@@ -23,6 +23,57 @@ import pandas as pd
 course_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRSrvsfFfVwokza_WP9JIzd4Wfg6OKPBJcwelLTqYn1SgigZXnfcU6_apN5gWTMF79n4CRQFNOJ5w6M/pub?gid=1012757406&single=true&output=csv")
 ojs_define(course_data_cached = course_data_cached)
 ```
+```{ojs}
+//| echo: false
+//| results: as-is
+
+course_data.map(row => {
+
+  const jsonld = { "@context": "https://schema.org", "@type": "Course" };
+
+  jsonld["@id"] = row.identifier?.startsWith("http") ? row.identifier : row.url;
+  jsonld["url"] = row.url;
+  jsonld["name"] = row.headline;
+  jsonld["description"] = row.description?.replace(/\*\*|\[.*?\]\(.*?\)/g, "").trim();
+  
+  if (row.learningResourceType) jsonld["learningResourceType"] = row.learningResourceType;
+  if (row.educationalLevel) jsonld["educationalLevel"] = row.educationalLevel;
+
+  if (row.audience) {
+    const audienceArray = row.audience.split(",").map(s => s.trim());
+    jsonld["audience"] = audienceArray.map(a => ({ "@type": "Audience", "audienceType": a }));
+  }
+
+  if (row.provider) jsonld["provider"] = { "@type": "Organization", "name": row.provider };
+
+  if (row.TimeRequired || row.approxTimeRequired) {
+    const timeText = row.TimeRequired || row.approxTimeRequired;
+    const match = timeText.match(/([\d\.]+)\s*(hour|day)/i);
+    if (match) {
+      let hours = parseFloat(match[1]);
+      if (match[2].toLowerCase().startsWith("day")) hours *= 24;
+      jsonld["timeRequired"] = `PT${hours}H`;
+    }
+  }
+
+  jsonld["inLanguage"] = row.inLanguage || "en";
+  jsonld["isAccessibleForFree"] = row.isAccessibleForFree?.toLowerCase() === "yes";
+
+  if (row.keywords) {
+    jsonld["keywords"] = row.keywords
+      .split(",")
+      .map(k => k.trim())
+      .map(k => k.length > 20 ? k.substring(0, 20) : k)
+      .slice(0, 20);
+  }
+
+  jsonld["hasCourseInstance"] = false;
+
+  return `<script type="application/ld+json" data-course-jsonld>
+${JSON.stringify(jsonld, null, 2)}
+</script>`;
+}).join("\n")
+```
 
 ```{ojs}
 //| eval: true
@@ -49,74 +100,6 @@ course_data = transpose(course_data_cached).map(row => {
     time_hours: time_hours
   };
 })
-```
-
-```{ojs}
-//| output: false
-// Remove previous JSON-LD scripts
-document.querySelectorAll('script[data-course-jsonld]').forEach(el => el.remove());
-
-course_data.forEach(row => {
-
-  const jsonld = { "@context": "https://schema.org", "@type": "Course" };
-
-  // Use CSV column for full URL as @id; fallback to row.url
-  jsonld["@id"] = row.identifier?.startsWith("http") ? row.identifier : row.url;
-  jsonld["url"] = row.url;
-
-  // Name and plain-text description
-  jsonld["name"] = row.headline;
-  // Remove markdown/HTML links from description
-  jsonld["description"] = row.description?.replace(/\*\*|\[.*?\]\(.*?\)/g, "").trim();
-
-  // Educational fields
-  if (row.learningResourceType) jsonld["learningResourceType"] = row.learningResourceType;
-  if (row.educationalLevel) jsonld["educationalLevel"] = row.educationalLevel;
-
-  // Audience
-  if (row.audience) {
-    const audienceArray = row.audience.split(",").map(s => s.trim());
-    jsonld["audience"] = audienceArray.map(a => ({ "@type": "Audience", "audienceType": a }));
-  }
-
-  // Provider
-  if (row.provider) jsonld["provider"] = { "@type": "Organization", "name": row.provider };
-
-  // Time required
-  if (row.TimeRequired || row.approxTimeRequired) {
-    const timeText = row.TimeRequired || row.approxTimeRequired;
-    const match = timeText.match(/([\d\.]+)\s*(hour|day)/i);
-    if (match) {
-      let hours = parseFloat(match[1]);
-      if (match[2].toLowerCase().startsWith("day")) hours *= 24;
-      jsonld["timeRequired"] = `PT${hours}H`;
-    }
-  }
-
-  // Language & accessibility
-  jsonld["inLanguage"] = row.inLanguage || "en";
-  jsonld["isAccessibleForFree"] = row.isAccessibleForFree?.toLowerCase() === "yes";
-
-  // Keywords - limit to 20 max, truncate to 20 characters
-  if (row.keywords) {
-    jsonld["keywords"] = row.keywords
-      .split(",")
-      .map(k => k.trim())
-      .map(k => k.length > 20 ? k.substring(0, 20) : k)
-      .slice(0, 20);
-  }
-
-  // Always set hasCourseInstance to false for TeSS
-  jsonld["hasCourseInstance"] = false;
-
-  // Create script element
-  const script = document.createElement("script");
-  script.type = "application/ld+json";
-  script.dataset.courseJsonld = "true";
-  script.textContent = JSON.stringify(jsonld, null, 2);
-
-  document.head.appendChild(script);
-});
 ```
 
 ```{ojs}
