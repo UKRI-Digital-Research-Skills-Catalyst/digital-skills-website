@@ -53,8 +53,8 @@ course_data = transpose(course_data_cached).map(row => {
 
 ```{ojs}
 //| echo: false
-//| output: hidden
-course_data.map(row => {
+//| results: hidden
+course_data.forEach(row => {
 
   const jsonld = { "@context": "https://schema.org", "@type": "Course" };
 
@@ -64,7 +64,6 @@ course_data.map(row => {
 
   // Name and plain-text description
   jsonld["name"] = row.headline;
-  // Remove markdown/HTML links from description
   jsonld["description"] = row.description?.replace(/\*\*|\[.*?\]\(.*?\)/g, "").trim();
 
   // Educational fields
@@ -95,7 +94,7 @@ course_data.map(row => {
   jsonld["inLanguage"] = row.inLanguage || "en";
   jsonld["isAccessibleForFree"] = row.isAccessibleForFree?.toLowerCase() === "yes";
 
-  // Keywords - limit to 20 max, truncate to 20 characters
+  // Keywords
   if (row.keywords) {
     jsonld["keywords"] = row.keywords
       .split(",")
@@ -107,15 +106,13 @@ course_data.map(row => {
   // Always set hasCourseInstance to false for TeSS
   jsonld["hasCourseInstance"] = false;
 
-  // CREATE SCRIPT ELEMENT AND APPEND TO HEAD
+  // append JSON-LD script to <head>
   const script = document.createElement("script");
   script.type = "application/ld+json";
   script.dataset.courseJsonld = "true";
   script.textContent = JSON.stringify(jsonld, null, 2);
 
-  // append to head instead of returning
   document.head.appendChild(script);
-
 });
 ```
 
