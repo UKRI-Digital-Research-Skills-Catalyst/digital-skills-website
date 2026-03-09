@@ -51,49 +51,36 @@ course_data = transpose(course_data_cached).map(row => {
 })
 ```
 ```{ojs}
-//| eval: true
 //| output: false
 
+// Prevent duplicates during reactive reruns
 document.querySelectorAll('script[data-course-jsonld]').forEach(el => el.remove())
 
-if (!window.__courses_jsonld_added) {
-  window.__courses_jsonld_added = true
+course_data.forEach(row => {
 
-  course_data.forEach(row => {
-    const jsonld = {
-      "@context": [
-        "https://schema.org",
-        { "bioschemas": "https://bioschemas.org/" }
-      ],
-      "@type": "LearningResource",
-      "@id": row.identifier || row.url,
-      "url": row.url,
-      "name": row.headline,
-      "description": row.description,
-      "learningResourceType": row.learningResourceType,
-      "timeRequired": row.TimeRequired,
-      "educationalLevel": row.audience,
-      "keywords": [row.learningResourceType, row.audience].filter(Boolean),
-      "isAccessibleForFree": true,
-      "inLanguage": "en",
-      "publisher": {
-        "@type": "Organization",
-        "name": "UKRI Digital Research Skills Catalyst"
-      },
-      ...(row.audience ? { audience: { "@type": "Audience", "audienceType": row.audience } } : {}),
-      ...(row.projectFunding ? { provider: { "@type": "Organization", "name": row.projectFunding } } : {}),
-      ...(row.teaches ? { teaches: row.teaches.split(",").map(t => t.trim()) } : {}),
-      ...(row.competencyRequired ? { competencyRequired: row.competencyRequired.split(",").map(c => c.trim()) } : {})
-    }
+  const jsonld = {
+    "@context": "https://schema.org",
+    "@type": "LearningResource",
+    "@id": row.identifier || row.url,
+    "name": row.headline,
+    "description": row.description,
+    "url": row.url,
+    "provider": {
+      "@type": "Organization",
+      "name": row.projectFunding
+    },
+    "audience": row.audience,
+    "timeRequired": row.TimeRequired,
+    "learningResourceType": row.learningResourceType
+  }
 
-    const script = document.createElement("script")
-    script.type = "application/ld+json"
-    script.dataset.courseJsonld = "true"
-    script.textContent = JSON.stringify(jsonld)
+  const script = document.createElement("script")
+  script.type = "application/ld+json"
+  script.dataset.courseJsonld = "true"
+  script.textContent = JSON.stringify(jsonld)
 
-    document.head.appendChild(script)
-  })
-}
+  document.head.appendChild(script)
+})
 ```
 
 ```{ojs}
