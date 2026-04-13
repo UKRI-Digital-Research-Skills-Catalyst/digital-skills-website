@@ -44,10 +44,17 @@ The conference will be held at the Guildhall York, it is a fantastic venue locat
 Address: The Guildhall York, Coney Street, York, YO1 9QN
 
 ## Travel scholarships 
-Travel scholarships (up to £100) are available on a first come first serve basis. Lunch and Networking tea/coffee will be included.
+
+Through the [AIBIO-UK Flexifund](https://aibio.ac.uk/), we are pleased to offer travel scholarships to help cover your attendance costs.
+
+-   Standard Travel: Up to £100 per person for economy rail or bus travel
+-   Long-Distance Travel: Up to £150 per person for those traveling from further afield who require an overnight stay in York (covers economy travel and hotel expenses)
+
+You will need to reclaim these expenses by completing an expense form and submitting receipts after participation in the course. Scholarships will be provided on a first come first served basis.
+We will contact you within a few days of your registration to confirm whether you have been awarded a scholarship. Lunch and Networking tea/coffee will be included.
 
 ## Funding 
-The Catalyst conference is funded by UKRI award UKRI/ST/B000299/1 and [AIBIO UK](https://aibio.ac.uk/). The event is intended for those whose work contributes to the UK research and innovation community. Unfortunately, we cannot offer place to other researchers, however there is a catalogue of learning materials available via the [UKRI Digital Research Skills Catalyst](https://digitalskillscatalyst.ac.uk/) website to support your training needs. 
+The Catalyst conference is funded by UKRI award UKRI/ST/B000299/1 and [AIBIO-UK](https://aibio.ac.uk/). The event is intended for those whose work contributes to the UK research and innovation community. Unfortunately, we cannot offer place to other researchers, however there is a catalogue of learning materials available via the [UKRI Digital Research Skills Catalyst](https://digitalskillscatalyst.ac.uk/) website to support your training needs. 
 
-![AI readiness in the Biosciences](../assets/ai-conference.png "AI readiness in the Biosciences"){width=250px}
+![AI readiness in the Biosciences](../assets/AIBIO-UK_LOGO.jpg "AIBIO-UK"){width=250px}
 
