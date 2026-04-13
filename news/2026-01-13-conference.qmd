@@ -56,5 +56,5 @@ We will contact you within a few days of your registration to confirm whether yo
 ## Funding 
 The Catalyst conference is funded by UKRI award UKRI/ST/B000299/1 and [AIBIO-UK](https://aibio.ac.uk/). The event is intended for those whose work contributes to the UK research and innovation community. Unfortunately, we cannot offer place to other researchers, however there is a catalogue of learning materials available via the [UKRI Digital Research Skills Catalyst](https://digitalskillscatalyst.ac.uk/) website to support your training needs. 
 
-![AI readiness in the Biosciences](../assets/AIBIO-UK_LOGO.jpg "AIBIO-UK"){width=250px}
+![AIBIO-UK logo](../assets/AIBIO-UK_LOGO.jpg "AIBIO-UK"){width=250px}
 
