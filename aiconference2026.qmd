@@ -10,12 +10,9 @@ format:
     css:
       - index-header.css
 ---
-
-# AICatalyst2026: AI in the Biosciences Training Conference
-
 ![](https://upload.wikimedia.org/wikipedia/commons/d/db/York_Guildhall.jpg){fig-alt="The Guildhall in York" fig-align="center" style="width:100%; height:auto;"}
 
-## Date and Location
+# Date and Location
 
 The meeting will take place from **9:30 to 16:10** on **Friday 4th September 2026** at **The Guildhall in York**, a beautiful medieval building in the heart of the city centre that is a short 10 minute walk from York Railway Station.
 
@@ -23,13 +20,13 @@ The meeting will take place from **9:30 to 16:10** on **Friday 4th September 202
 
 </iframe>
 
-## Registration
+# Registration
 
 [Click here to register for your place at the Conference.](https://docs.google.com/forms/d/1_pYWvE7EzxcJ0IQNPcSiSOzBdLBbDKFglE-zJh75voY)
 
 Conference capacity is limited to 100 places.
 
-## About the Conference
+# About the Conference
 
 This free training conference is organised by the **UKRI Digital Research Skills Catalyst**, with funding support from **AIBIO-UK**.
 
@@ -41,7 +38,7 @@ Attendees will also have the opportunity to present their own work through a **p
 
 While this conference primarily is targeted at PhD and postgraduate researchers in the biological, medical, and environmental sciences, we welcome professionals at all career stages.
 
-## Travel scholarships
+# Travel scholarships
 
 Through the AIBIO-UK Flexifund, we are pleased to offer travel scholarships to help cover your attendance costs.
 
@@ -51,7 +48,7 @@ Through the AIBIO-UK Flexifund, we are pleased to offer travel scholarships to h
 
 You will need to reclaim these expenses by completing an expense form and submitting receipts after participation in the course. Scholarships will be provided on a first come first served basis. We will contact you within a few days of your registration to confirm whether you have been awarded a scholarship. Lunch and Networking tea/coffee will be included.
 
-## Programme
+# Programme
 
 The event will be taking place across all three venues wtihin the Guildhall:
 The Main Hall, The Riverside Lounge, and The Committee Room.
@@ -71,7 +68,7 @@ The Main Hall, The Riverside Lounge, and The Committee Room.
 | 16:00–16:10 | Closing Remarks |  |  |
 | 16:10 onwards | Networking at House of Trembling Madness | | |
 
-## About the Organisers
+# About the Organisers
 
 ::: {.column width="30%"}
 ![](https://raw.githubusercontent.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/a402bb7cbdeed71db7f2d53e7237ef048c092ea4/assets/catalyst-logo.svg){width="60%"}
