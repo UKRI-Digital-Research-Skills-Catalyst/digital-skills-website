@@ -4,6 +4,7 @@ subtitle: "Accelerate your research with digital skills - discover 50+ learning 
 jupyter: python3
 format:
   html:
+    include-in-header: _jsonld_head.html
     toc: false
     echo: false
     keep-hidden: true

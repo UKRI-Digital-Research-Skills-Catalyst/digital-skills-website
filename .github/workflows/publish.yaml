@@ -44,6 +44,9 @@ jobs:
         - name: Install Python dependencies
           run: python3 -m pip install jupyter pandas
 
+        - name: Generate JSON-LD head file
+          run: python generate_jsonld.py
+
         - name: Render Quarto
           # This generates the static files into the '_site' directory by default
           run: quarto render
