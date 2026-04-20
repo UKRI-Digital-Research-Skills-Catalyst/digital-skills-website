@@ -1,0 +1,92 @@
+---
+title: "AICatalyst2026: AI in the Biosciences Training Conference"
+subtitle: "4th September 2026 @ The Guildhall, York"
+format:
+  html:
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    css:
+      - index-header.css
+---
+
+# AICatalyst2026: AI in the Biosciences Training Conference
+
+![](https://upload.wikimedia.org/wikipedia/commons/d/db/York_Guildhall.jpg){fig-alt="The Guildhall in York" fig-align="center" style="width:100%; height:auto;"}
+
+## Date and Location
+
+The meeting will take place from **9:30 to 16:10** on **Friday 4th September 2026** at **The Guildhall in York**, a beautiful medieval building in the heart of the city centre that is a short 10 minute walk from York Railway Station.
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.411140852621!2d-1.087356123230612!3d53.95996637247358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487931a86ff38add%3A0xe410dbffc3227b6d!2sThe%20Guildhall%20York!5e0!3m2!1sen!2suk!4v1776688248046!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+</iframe>
+
+## About the Conference
+
+This free training conference is organised by the **UKRI Digital Research Skills Catalyst**, with funding support from **AIBIO-UK**.
+
+The programme brings together a mix of expert **talks** and **hands-on workshops** designed to introduce **AI methods in bioscience research**.
+
+These sessions will equip you with working knowledge of a wide range of techniques under the AI umbrella, *from traditional Machine Learning to Large Language Models*, applied to a range of biological applications.
+
+Attendees will also have the opportunity to present their own work through a **poster session**, allowing you to network and be part of the nascent AI in Bioscience community, as well as potentially win the coveted Poster Prize!
+
+While this conference primarily is targeted at PhD and postgraduate researchers in the biological, medical, and environmental sciences, we welcome professionals at all career stages.
+
+## Travel scholarships
+
+Through the AIBIO-UK Flexifund, we are pleased to offer travel scholarships to help cover your attendance costs.
+
+-   Standard Travel: Up to £100 per person for economy rail or bus travel
+
+-   Long-Distance Travel: Up to £150 per person for those traveling from further afield who require an overnight stay in York (covers economy travel and hotel expenses)
+
+You will need to reclaim these expenses by completing an expense form and submitting receipts after participation in the course. Scholarships will be provided on a first come first served basis. We will contact you within a few days of your registration to confirm whether you have been awarded a scholarship. Lunch and Networking tea/coffee will be included.
+
+## Registration
+
+[Click here to register for your place at the Conference.](https://docs.google.com/forms/d/1_pYWvE7EzxcJ0IQNPcSiSOzBdLBbDKFglE-zJh75voY)
+
+Conference capacity is limited to 100 places.
+
+## Programme
+
+The event will be taking place across all three venues wtihin the Guildhall:
+The Main Hall, The Riverside Lounge, and The Committee Room.
+
+| Time | Main Hall | Riverside Lounge | Committee Room |
+|------------------|------------------|-------------------|------------------|
+| 09:30–10:00 | Registration + networking coffee |  |  |
+| 10:00–10:15 | Introductory Welcome |  |  |
+| 10:20–11:20 | Introduction to Image Analysis for Microscopy using Napari (IDEAS) | Large Language Models in Bioscience – Dr Alastair Droop (Cloud-SPAN, University of York) | AI in Agriculture – Prof Elizabeth Sklar & Prof Simon Parsons (University of Lincoln) |
+| 11:20–11:30 | Break |  |  |
+| 11:30–12:30 | Introduction to Image Analysis for Microscopy using Napari (IDEAS) | scryptIQ Supervised Learning Taster Session – Dr Laurence Blackhurst & Dr Adam Lee | Funding at the Interface: Tips for Writing Grants – Prof Andrew French |
+| 12:30–13:30 | Lunch + Poster Sessions |  |  |
+|  | MORF BIO Demonstration |  |  |
+| 13:30–14:30 | Galaxy for AI in Bioscience – Khaled Jumah (ELIXIR, University of Bradford) | A Whirlwind Tour of the FAIR Principles (ED-DASH) |  |
+| 14:30–14:50 | Coffee Break |  |  |
+| 14:50–15:50 | (TBC) | AI for Multiomics – Dr Alessandra Vigilante (King’s College London) |  |
+| 16:00–16:10 | Closing Remarks |  |  |
+| 16:10 onwards | Networking Drinks at House of Trembling Madness | | |
+
+## About the Organisers
+
+::: {.column width="30%"}
+![](https://raw.githubusercontent.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/a402bb7cbdeed71db7f2d53e7237ef048c092ea4/assets/catalyst-logo.svg){width="60%"}
+:::
+
+**UKRI Digital Research Skills Catalyst** A UKRI-funded national initiative providing a central hub for digital research training, connecting researchers to high-quality learning resources, workshops, and expert support to develop skills in data science and computational research. Find out more here: <https://digitalskillscatalyst.ac.uk/>
+
+::: {.column width="30%"}
+![](https://github.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/blob/main/assets/AIBIO-UK_LOGO.jpg?raw=true){width="60%"}
+:::
+
+**AIBIO-UK** A BBSRC-funded network that brings together the AI and bioscience communities across the UK, supporting collaboration through events, pilot funding, and shared resources to advance the use of AI in biological research. More information on their future funding opportunities can be found here: <https://aibio.ac.uk/>.
+
+::: {.column width="30%"}
+![](https://morf-bio.com/wp-content/uploads/2026/02/Morf-Bio-Logo-02-scaled.png){width="60%"}
+:::
+
+**MORF BIO** A web-based bioinformatics platform (“Multi-Omics Research Factory”) that enables researchers to explore, visualise, and interpret complex multi-omics and bioprocess data without coding, turning biological data into actionable insights through intuitive, collaborative tools. Find out more here: <https://morf-bio.com/>
