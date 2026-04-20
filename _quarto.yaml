@@ -25,6 +25,8 @@ website:
         text: Consult an Expert
       - href: news.qmd
         text: News &amp; Events
+      - href: aiconference2026.qmd
+        text: AICatalyst Training Conference
       - href: about.qmd
         text: About
       - href: contact.qmd
