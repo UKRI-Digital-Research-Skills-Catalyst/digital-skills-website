@@ -57,7 +57,7 @@ The event will be taking place across all three venues wtihin the Guildhall: The
 
 ## Overview
 
-| Time | Main Hall | Riverside Lounge | Committee Room |
+| Time | Room 1 | Room 2 | Room 3 |
 |------------------|------------------|-------------------|------------------|
 | 09:30–10:00 | Registration + networking coffee |  |  |
 | 10:00–10:15 | Introductory Welcome |  |  |
@@ -65,7 +65,7 @@ The event will be taking place across all three venues wtihin the Guildhall: The
 | 11:20–11:30 | Break |  |  |
 | 11:30–12:30 | [Image visualisation with Napari, a modular based framework with AI capabilities] | [scryptIQ Supervised Learning Taster Session] | [Funding at the Interface: Tips for writing grants for AI and Biosciences research] |
 | 12:30–13:30 | Lunch + Poster Sessions |  |  |
-|  | MORF BIO Demonstration |  |  |
+|  | [MORF-BIO Demonstration] |  |  |
 | 13:30–14:30 | [Galaxy for AI in Bioscience: Tools, Training, and Reproducible Workflows] | [A whirlwind tour of the FAIR principles] |  |
 | 14:30–14:50 | Coffee Break |  |  |
 | 14:50–15:50 | (TBC) | [AI for Multiomics] |  |
@@ -105,6 +105,12 @@ In this brief taster session, we will demonstrate a complete workflow for traini
 
 TBC
 
+### MORF-BIO Demonstration
+
+#### MORF-BIO Team
+
+MORF-BIO is a web-based bioinformatics platform (“Multi-Omics Research Factory”) that enables researchers to explore, visualise, and interpret complex multi-omics and bioprocess data without coding, turning biological data into actionable insights through intuitive, collaborative tools. Find out more here: <https://morf-bio.com/>
+
 ### Galaxy for AI in Bioscience: Tools, Training, and Reproducible Workflows
 
 #### Krzysztof Poterlowicz (University of Bradford); Khaled Jumah (University of Bradford)
@@ -138,9 +144,3 @@ This workshop will introduce how AI and machine learning can help integrate mult
 :::
 
 **AIBIO-UK** A BBSRC-funded network that brings together the AI and bioscience communities across the UK, supporting collaboration through events, pilot funding, and shared resources to advance the use of AI in biological research. More information on their future funding opportunities can be found here: <https://aibio.ac.uk/>.
-
-::: {.column width="30%"}
-![](https://morf-bio.com/wp-content/uploads/2026/02/Morf-Bio-Logo-02-scaled.png){width="60%"}
-:::
-
-**MORF BIO** A web-based bioinformatics platform (“Multi-Omics Research Factory”) that enables researchers to explore, visualise, and interpret complex multi-omics and bioprocess data without coding, turning biological data into actionable insights through intuitive, collaborative tools. Find out more here: <https://morf-bio.com/>
