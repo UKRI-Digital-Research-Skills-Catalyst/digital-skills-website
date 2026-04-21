@@ -35,7 +35,7 @@ The conference will take place from **9:30 to 16:10** on **Friday 4th September 
 
 # Registration
 
-[Click here to register for your place at the Conference.](https://docs.google.com/forms/d/1_pYWvE7EzxcJ0IQNPcSiSOzBdLBbDKFglE-zJh75voY)
+Registration will be opening soon!  [Click here to register for your place at the Conference.](https://docs.google.com/forms/d/1_pYWvE7EzxcJ0IQNPcSiSOzBdLBbDKFglE-zJh75voY)
 
 Conference capacity is limited to 100 places.
 
@@ -69,8 +69,8 @@ The event will be taking place across all three venues wtihin the Guildhall: The
 | 13:30–14:30 | [Galaxy for AI in Bioscience: Tools, Training, and Reproducible Workflows] | [A whirlwind tour of the FAIR principles] |  |
 | 14:30–14:50 | Coffee Break |  |  |
 | 14:50–15:50 | (TBC) | [AI for Multiomics] |  |
-| 16:00–16:10 | Closing Remarks |  |  |
-| 16:10 onwards | Networking at House of Trembling Madness |  |  |
+| 16:00–16:15 | Closing Remarks |  |  |
+| 16:15 onwards | Networking at House of Trembling Madness |  |  |
 
 ## Session Details
 
