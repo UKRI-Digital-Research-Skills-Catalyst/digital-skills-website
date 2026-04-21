@@ -113,7 +113,7 @@ Artificial intelligence is increasingly utilised in bioscience, particularly for
 
 ### A whirlwind tour of the FAIR principles
 
-#### Not specified
+#### Dr Evgenij Belikov (EPCC)
 
 In this session, based on Ed-DaSH materials, we will look at applying the FAIR principles in practice to make your data and code more findable, accessible, interoperable and reusable. Feel free to bring your own projects.
 
