@@ -27,7 +27,7 @@ While this conference primarily is targeted at PhD and postgraduate researchers 
 
 # Date and Location
 
-The conference will take place from **9:30 to 16:10** on **Friday 4th September 2026** at **The Guildhall in York**, a beautiful medieval building in the heart of the city centre that is a short 10 minute walk from York Railway Station.
+The conference will take place from **9:30 to 16:15** on **Friday 4th September 2026** at **The Guildhall in York**, a beautiful medieval building in the heart of the city centre that is a short 10 minute walk from York Railway Station.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.411140852621!2d-1.087356123230612!3d53.95996637247358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487931a86ff38add%3A0xe410dbffc3227b6d!2sThe%20Guildhall%20York!5e0!3m2!1sen!2suk!4v1776688248046!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
 
