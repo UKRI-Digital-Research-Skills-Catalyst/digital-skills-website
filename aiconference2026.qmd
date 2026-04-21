@@ -112,7 +112,7 @@ Image analysis, visualisation and processing are a set of skills required in any
 ### Funding at the Interface: Tips for writing grants for AI and Biosciences research
 #### Prof Andrew French
 #### Description
-Not specified
+TBC
 
 ---
 
