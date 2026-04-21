@@ -76,42 +76,34 @@ The Main Hall, The Riverside Lounge, and The Committee Room.
 
 ### scryptIQ Supervised Learning Taster Session
 #### Dr. Laurence Blackhurst (scryptIQ); Dr. Adam Lee (scryptIQ, University College London)
-#### Description
 In this brief taster session, we will demonstrate a complete workflow for training supervised machine learning models to make accurate, generalisable predictions using a real-world biological dataset. We will guide participants through the full sequence of steps, from cleaning and pre-processing raw data for machine learning analysis, all the way through to optimally training multiple classification models, generating predictions and evaluating the performance of trained models. We aim to show how classical machine learning methods remain a fast, efficient and accurate way to predict on biological data.
 
 ### AI for agriculture
 #### Prof Elizabeth Sklar (Director of LIAT); Prof Simon Parsons (Director of SUSTAIN, University of Lincoln)
-#### Description
 This talk is intended to be a broad “taster” session, aiming to introduce participants to popular Artificial Intelligence (AI) concepts that appear in the media or consumer marketing documents (e.g. “deep learning”, “large language model”, etc.). We will discuss how these methods fit within the wider field of AI and how the full range of AI techniques can aid the agri-food sector. We will share examples from our work at the Lincoln Institute for Agri-food Technology (LIAT), University of Lincoln, as well as highlighting seminal work of others drawn from the agri-food domain. Participants will be given the opportunity to ask questions and begin actively thinking about AI concepts within the context of their own work. Resources for follow-on guidance and support will also be highlighted.
 
 ### Galaxy for AI in Bioscience: Tools, Training, and Reproducible Workflows
 #### Krzysztof Poterlowicz (University of Bradford); Khaled Jumah (University of Bradford)
-#### Description
 Artificial intelligence is increasingly utilised in bioscience, particularly for high-dimensional omics data, bioimaging, and structural biology. However, access to tools, infrastructure, and training remains a significant challenge. This session will introduce Galaxy as an open-source, web-based platform that enables researchers to implement AI methods in a reproducible and user-friendly environment.
 
 ### A whirlwind tour of the FAIR principles
 #### Not specified
-#### Description
 In this session, based on Ed-DaSH materials, we will look at applying the FAIR principles in practice to make your data and code more findable, accessible, interoperable and reusable. Feel free to bring your own projects.
 
 ### Large Language Models in Bioscience
 #### Dr Alastair Droop (University of York)
-#### Description
 Large Language Models (such as Gemini or ChatGPT) are at the forefront of the current AI hype wave. In this talk Dr Alastair Droop will provide a brief overview of how Large Language Models work, and discuss their use in bioscience research. Common misconceptions and pitfalls will be explored.
 
 ### AI for Multiomics
 #### Dr Alessandra Vigilante (Kings College London)
-#### Description
 This workshop will introduce how AI and machine learning can help integrate multiomics data to discover biology and make useful predictions.
 
 ### Image visualisation with Napari, a modular based framework with AI capabilities
 #### Prof. Dave Cash (University College London); Dr. David Pérez-Suárez (University College London)
-#### Description
 Image analysis, visualisation and processing are a set of skills required in any medical and bioscience researcher who works with imaging instruments. Napari is an extensible modular based open source framework that is easy to learn and to develop to. This session will introduce how to use it in your research workflow and present some of the plugins that provide AI capabilities to analyse and process your data.
 
 ### Funding at the Interface: Tips for writing grants for AI and Biosciences research
 #### Prof Andrew French
-#### Description
 TBC
 
 ---
