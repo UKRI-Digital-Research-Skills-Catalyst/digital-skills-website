@@ -35,7 +35,7 @@ The conference will take place from **9:30 to 16:15** on **Friday 4th September 
 
 # Registration
 
-Registration opening soon! Join our mailing list at "mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk to be notified as soon as sign-up goes live.
+Registration opening soon! Join our mailing list at <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a> to be notified as soon as sign-up goes live.
 
 Conference capacity is limited to 100 places.
 
