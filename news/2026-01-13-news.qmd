@@ -23,11 +23,13 @@ The **UKRI Digital Research Skills Catalyst** bridges the skills gap, provides a
 
 ## What you can do with the Catalyst
 
-::: {.columns}
+::: {.columns .feature-cards}
 
-::: {.column width="33%"}
+::: {.column}
 
-### [Explore the Learning Portal](https://digitalskillscatalyst.ac.uk/)
+<div class="card">
+
+### 🔎 [Explore the Learning Portal](https://digitalskillscatalyst.ac.uk/)
 
 A searchable library of over 50 high-quality resources covering:
 
@@ -36,40 +38,49 @@ A searchable library of over 50 high-quality resources covering:
 - High Performance Computing for 'omics  
 - And more  
 
-While the current focus is on building skills for health and bioscience professionals, many resources are highly relevant for researchers in arts, humanities, and social sciences too.
+<p class="small">While the current focus is on health and biosciences, many resources are useful across disciplines.</p>
+
+</div>
 
 :::
 
-::: {.column width="33%"}
+::: {.column}
 
-### [Get expert support](https://digitalskillscatalyst.ac.uk/consult.html)
+<div class="card">
+
+### 🧠 [Get expert support](https://digitalskillscatalyst.ac.uk/consult.html)
 
 Book one-to-one sessions with Digital Research Specialists to:
 
 - Troubleshoot code  
 - Improve experimental design  
-- Solve complex analytical challenges  
+- Solve analytical challenges  
 
-Get tailored support when you need it most.
+<p class="small">Tailored support, when you need it most.</p>
+
+</div>
 
 :::
 
-::: {.column width="33%"}
+::: {.column}
 
-### Join workshops and events
+<div class="card">
 
-Connect with peers and learn from experts through our events programme.
+### 🎓 Join workshops and events
+
+Connect with peers and learn from experts.
 
 **Upcoming highlight:**  
 *AICatalyst2026: AI in the Biosciences Training Conference*  
 📍 Friday, 4 September  
 
-[Learn more about the conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html)
+[Learn more →](https://digitalskillscatalyst.ac.uk/aiconference2026.html)
+
+</div>
 
 :::
 
 :::
-
 ### Built on proven success
 
 Led by Professor Emma Rand at the University of York and funded by the UKRI Digital Research Infrastructure Programme, the Catalyst builds on the successful foundation of the Data Science Training in Healthcare & Biosciences (DaSH) funding call. By centralising resources from seven DaSH projects into one accessible hub, we are ensuring that valuable training materials are readily available to the wider research community.
