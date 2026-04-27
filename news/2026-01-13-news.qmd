@@ -10,9 +10,9 @@ format:
 
 **Access digital training, expert support, and events—all in one place.**
 
-- 🔍 50+ learning resources  
-- 👩‍💻 One-to-one expert consultations  
-- 📅 Workshops and training events  
+🔍 50+ learning resources  
+👩‍💻 One-to-one expert consultations  
+📅 Workshops and training events  
 
 
 We are thrilled to announce the launch of the UKRI Digital Research Skills Catalyst, a major new initiative designed to transform the way researchers and innovators across the UK access digital training and expertise. In an increasingly data-driven world, having the right digital skills is no longer just an advantage—it’s essential. 
@@ -60,7 +60,8 @@ Get tailored support when you need it most.
 Connect with peers and learn from experts through our events programme.
 
 **Upcoming highlight:**  
-- *AICatalyst2026: AI in the Biosciences Training Conference*  
+
+- AICatalyst2026: AI in the Biosciences Training Conference  
 📍 Friday, 4 September  
 - [Learn more about the conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html)
 
