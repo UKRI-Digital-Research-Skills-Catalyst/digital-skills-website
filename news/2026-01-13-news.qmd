@@ -23,7 +23,11 @@ The **UKRI Digital Research Skills Catalyst** bridges the skills gap, provides a
 
 ## What you can do with the Catalyst
 
-### Explore the Learning Portal
+::: {.columns}
+
+::: {.column width="33%"}
+
+### [Explore the Learning Portal](https://digitalskillscatalyst.ac.uk/)
 
 A searchable library of over 50 high-quality resources covering:
 
@@ -34,9 +38,11 @@ A searchable library of over 50 high-quality resources covering:
 
 While the current focus is on building skills for health and bioscience professionals, many resources are highly relevant for researchers in arts, humanities, and social sciences too.
 
----
+:::
 
-### Get expert support
+::: {.column width="33%"}
+
+### [Get expert support](https://digitalskillscatalyst.ac.uk/consult.html)
 
 Book one-to-one sessions with Digital Research Specialists to:
 
@@ -46,7 +52,9 @@ Book one-to-one sessions with Digital Research Specialists to:
 
 Get tailored support when you need it most.
 
----
+:::
+
+::: {.column width="33%"}
 
 ### Join workshops and events
 
@@ -58,6 +66,9 @@ Connect with peers and learn from experts through our events programme.
 
 [Learn more about the conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html)
 
+:::
+
+:::
 
 ### Built on proven success
 
