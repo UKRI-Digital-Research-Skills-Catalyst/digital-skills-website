@@ -23,20 +23,18 @@ The **UKRI Digital Research Skills Catalyst** bridges the skills gap, provides a
 
 ## What you can do with the Catalyst
 
-## What you can do with the Catalyst
-
 ::: {.columns}
 
 ::: {.column width="33%" style="padding: 1rem;"}
 
-### [Explore the Learning Portal](https://digitalskillscatalyst.ac.uk/)
+### Explore the Learning Portal
 
 A searchable library of over 50 high-quality resources covering:
 
 - Machine learning  
 - Data stewardship  
 - High Performance Computing for 'omics  
-- And more  
+- [View the resources] (https://digitalskillscatalyst.ac.uk/)
 
 While the current focus is on building skills for health and bioscience professionals, many resources are highly relevant for researchers in arts, humanities, and social sciences too.
 
@@ -44,9 +42,9 @@ While the current focus is on building skills for health and bioscience professi
 
 ::: {.column width="33%" style="padding: 1rem;"}
 
-### [Get expert support](https://digitalskillscatalyst.ac.uk/consult.html)
+### Get expert support
 
-Book one-to-one sessions with Digital Research Specialists to:
+[Book one-to-one sessions](https://digitalskillscatalyst.ac.uk/consult.html) with Digital Research Specialists to:
 
 - Troubleshoot code  
 - Improve experimental design  
@@ -63,10 +61,9 @@ Get tailored support when you need it most.
 Connect with peers and learn from experts through our events programme.
 
 **Upcoming highlight:**  
-*AICatalyst2026: AI in the Biosciences Training Conference*  
+- *AICatalyst2026: AI in the Biosciences Training Conference*  
 📍 Friday, 4 September  
-
-[Learn more about the conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html)
+- [Learn more about the conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html)
 
 :::
 
