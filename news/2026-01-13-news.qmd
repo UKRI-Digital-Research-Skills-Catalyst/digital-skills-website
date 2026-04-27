@@ -22,7 +22,6 @@ The **UKRI Digital Research Skills Catalyst** bridges the skills gap, provides a
 ---
 
 ## What you can do with the Catalyst
-
 ::: {.columns}
 
 ::: {.column width="33%" style="padding: 1rem;"}
@@ -34,7 +33,7 @@ A searchable library of over 50 high-quality resources covering:
 - Machine learning  
 - Data stewardship  
 - High Performance Computing for 'omics  
-- [View the resources] (https://digitalskillscatalyst.ac.uk/)
+- [View the resources](https://digitalskillscatalyst.ac.uk/)
 
 While the current focus is on building skills for health and bioscience professionals, many resources are highly relevant for researchers in arts, humanities, and social sciences too.
 
