@@ -45,16 +45,15 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
   </div>
   <h3>Explore the Learning Portal</h3>
   <p>A searchable library of over 50 high-quality resources covering: </p>
-  <ul>
+  <br>
+<ul>
     <li>Machine learning</li>
     <li>High Performance Computing for 'omics</li>
     <li>Data stewardship</li>
   </ul>
 
-<p>
-    Designed to save you time and enhance your learning experience, the portal allows you to quickly locate resources tailored to your expertise, research area, and preferred study mode
-    <a href="https://digitalskillscatalyst.ac.uk/">Browse the learning resources</a> 
-  </p>
+ <p>Designed to save you time and enhance your learning experience, the portal allows you to quickly locate resources tailored to your expertise, research area, and preferred study mode
+    <a href="https://digitalskillscatalyst.ac.uk/">Browse the learning resources</a> </p>
 
 </div>
 
@@ -87,6 +86,17 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
   </div>
   <h3>Join workshops and events</h3>
   <p>Connect with peers and learn from experts through our events programme.</p>
+<p>Training events are offered on an ad-hoc basis, both online and in person. These engaging sessions are offered at a reduced rate or completely free of charge, led by experienced instructors who are passionate about sharing their knowledge.</p>
+
+  <ul>
+    <li>Metatranscriptomics | May</li>
+    <li>Quarto workshop | July </li>
+    <li>AICatalyst Training Conference | September </li>
+  </ul>
+
+<a href="https://digitalskillscatalyst.ac.uk/news.html">Sign up for an event/a> 
+    
+
 </div>
 
 
