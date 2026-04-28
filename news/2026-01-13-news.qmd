@@ -27,13 +27,10 @@ The Catalyst bridges the skills gap, provides a centralised hub of high-quality 
 The Digital Research Skills Catalyst is a UKRI initiative designed to improve access to digital skills training for UK based researchers.
 
 It helps you to:
-
-<ul class="indent-list">
-  <li>📅 Discover relevant courses and resources</li>
-  <li>🔍 Navigate digital learning pathways</li>
-  <li>💻 Access curated, high-quality training materials</li>
-  <li>👩‍💻 Build skills aligned with real research needs</li>
-</ul>
+  <p>📅 Discover relevant courses and resources</p>
+  <p>🔍 Navigate digital learning pathways</p>
+  <p>💻 Access curated, high-quality training materials</p>
+  <p>👩‍💻 Build skills aligned with real research needs</p>
 
 <ul class="icon-list">
   <li><i class="fa-regular fa-calendar"></i> Discover relevant courses and resources</li>
