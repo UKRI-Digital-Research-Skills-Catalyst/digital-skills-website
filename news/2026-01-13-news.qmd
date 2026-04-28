@@ -50,12 +50,27 @@ We invite you to explore the new website, browse the learning portal, and book a
   <p>A searchable library of over 50 high-quality resources.</p>
 </div>
 
+
 <div class="consult-card">
   <div class="icon">
     <i class="fa-solid fa-code"></i>
   </div>
   <h3>Get expert support</h3>
   <p>Resolve coding issues and learn best practices for research software development.</p>
+
+<p>
+    <a href="https://digitalskillscatalyst.ac.uk/consult.html">Book one-to-one sessions</a> 
+    with Digital Research Specialists who can help you:
+  </p>
+
+  <ul>
+    <li>Troubleshoot and optimise your code</li>
+    <li>Strengthen your experimental design</li>
+    <li>Tackle complex analytical challenges</li>
+  </ul>
+
+  <p>Access tailored support exactly when you need it.</p>
+
 </div>
 
 <div class="consult-card">
