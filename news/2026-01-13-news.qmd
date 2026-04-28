@@ -42,6 +42,14 @@ While the current focus is on building skills for health and bioscience professi
 
 <div class="consult-card">
   <div class="icon">
+    <i class="fa-solid fa-puzzle-piece"></i>
+  </div>
+  <h3>Tackle Analytical Problems</h3>
+  <p>Get fresh perspectives on complex data analysis and research methodology.</p>
+</div>
+
+<div class="consult-card">
+  <div class="icon">
     <i class="fa-solid fa-code"></i>
   </div>
   <h3>Debug Your Code</h3>
