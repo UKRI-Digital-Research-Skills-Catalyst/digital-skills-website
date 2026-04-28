@@ -1,6 +1,8 @@
 ---
 title: "Introducing the UKRI Digital Research Skills Catalyst: A new platform for UK researchers"
-subtitle: 
+subtitle: "For help and advice in applying digital skills to your research"
+
+"
 format:
   html:
     toc: false
@@ -11,7 +13,7 @@ format:
       - index-header.css
 ---
 
-## For help and advice in applying digital skills to your research
+## Introducing the UKRI Digital Research Skills Catalyst: A new platform for UK researchers
 
 **Access digital training, expert support, and events—all in one place.**
 
