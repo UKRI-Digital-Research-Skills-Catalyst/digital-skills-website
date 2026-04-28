@@ -1,6 +1,6 @@
 ---
 title: "Introducing the UKRI Digital Research Skills Catalyst: A new platform for UK researchers"
-subtitle: "For help and advice in applying digital skills to your research"
+subtitle: "Digital skills are now essential for research. The Catalyst helps you build them faster and more effectively."
 format:
   html:
     toc: false
@@ -17,13 +17,34 @@ format:
 
 We are thrilled to announce the launch of the **UKRI Digital Research Skills Catalyst**, a major new initiative designed to transform the way researchers and innovators across the UK access digital training and expertise. In an increasingly data-driven world, having the right digital skills is no longer just an advantage—it’s essential.
 
+The Catalyst bridges the skills gap, provides a centralised hub of high-quality resources and direct support to empower you at every stage of your research journey.
+
+
+###What is the Digital Research Skills Catalyst?
+
 **Access digital training, expert support, and events—all in one place.**
 
-🔍 50+ learning resources  
-👩‍💻 One-to-one expert consultations  
-📅 Workshops and training events  
+The Digital Research Skills Catalyst is a UKRI initiative designed to improve access to digital skills training for UK based researchers.
 
-The Catalyst bridges the skills gap, provides a centralised hub of high-quality resources and direct support to empower you at every stage of your research journey.
+It helps you to:
+
+📅 Discover relevant courses and resources
+🔍 Navigate digital learning pathways
+💻 Access curated, high-quality training materials
+👩‍💻 Build skills aligned with real research needs
+
+By bringing together fragmented resources, the platform makes it easier to find the right training at the right time.
+
+### Who should use the Catalyst?
+
+This platform is designed for:
+
+- Early-career researchers building foundational digital skills
+- Academics adapting to new research technologies
+- Research software engineers and technical staff
+- Anyone working with data, AI, or digital tools
+
+If your work involves data or technology, developing digital skills will enhance your research impact and career prospects.
 
 ### Explore the Catalyst
 
@@ -31,7 +52,7 @@ Whether you are a doctoral student, a principal investigator, or a programme man
 
 We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/), browse the learning portal, and book a consultation to see how we can support your research.
 
-👉 Visit the website: [www.digitalskillscatalyst.ac.uk](https://digitalskillscatalyst.ac.uk/)
+👉 Explore the Catalyst platform and start building your next skill: [www.digitalskillscatalyst.ac.uk](https://digitalskillscatalyst.ac.uk/)
 
 [{{< fa solid puzzle-piece >}}]{style="display: none;"}
 
@@ -103,11 +124,13 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
 
 ### Built on proven success
 
-Led by Professor Emma Rand at the University of York and funded by the UKRI Digital Research Infrastructure Programme, the Catalyst builds on the successful foundation of the Data Science Training in Healthcare & Biosciences (DaSH) funding call. By centralising resources from seven DaSH projects into one accessible hub, we are ensuring that valuable training materials are readily available to the wider research community.
+Led by Professor Emma Rand at the University of York and funded by the UKRI Digital Research Infrastructure Programme UKRI/ST/B000299/1, the Catalyst builds on the successful foundation of the Data Science Training in Healthcare & Biosciences (DaSH) funding call. By centralising resources from seven DaSH projects into one accessible hub, we are ensuring that valuable training materials are readily available to the wider research community.
 
 ![Project development phases](../assets/Project-dev2.jpg){width=60% fig-cap="The Catalyst brings together training, expertise, and community into one unified platform." style="border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"}
 
 ### Get in touch 
+
+Digital skills are now essential for research. The Catalyst helps you build them faster and more effectively.
 
 For questions about our training programmes, events, or consultation services: <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a>
 
