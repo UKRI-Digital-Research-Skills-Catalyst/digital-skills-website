@@ -2,6 +2,10 @@
 title: "Website launch"
 format:
   html:
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
     css:
       - index-header.css
 ---
