@@ -44,26 +44,26 @@ We invite you to explore the new website, browse the learning portal, and book a
 
 <div class="consult-card">
   <div class="icon">
-    <i class="fa-solid fa-puzzle-piece"></i>
+    <i class="fa-solid fa-keyboard"></i>
   </div>
-  <h3>Tackle Analytical Problems</h3>
-  <p>Get fresh perspectives on complex data analysis and research methodology.</p>
+  <h3>Explore the Learning Portal</h3>
+  <p>A searchable library of over 50 high-quality resources.</p>
 </div>
 
 <div class="consult-card">
   <div class="icon">
     <i class="fa-solid fa-code"></i>
   </div>
-  <h3>Debug Your Code</h3>
+  <h3>Get expert support</h3>
   <p>Resolve coding issues and learn best practices for research software development.</p>
 </div>
 
 <div class="consult-card">
   <div class="icon">
-    <i class="fa-solid fa-database"></i>
+    <i class="fa-solid fa-user-group"></i>
   </div>
-  <h3>Manage Research Data</h3>
-  <p>Design effective strategies for organizing, storing, and sharing your research data.</p>
+  <h3>Join workshops and events</h3>
+  <p>Connect with peers and learn from experts through our events programme.</p>
 </div>
 
 
