@@ -52,8 +52,8 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
     <li>Data stewardship</li>
   </ul>
 
- <p>Designed to save you time and enhance your learning experience, the portal allows you to quickly locate resources tailored to your expertise, research area, and preferred study mode
-    <a href="https://digitalskillscatalyst.ac.uk/">Browse the learning resources</a> </p>
+ <p>Designed to save you time and enhance your learning experience, the portal allows you to quickly locate resources tailored to your expertise, research area, and preferred study mode. </p>
+     <p> <a href="https://digitalskillscatalyst.ac.uk/">Browse the learning resources</a> </p>
 
 </div>
 
@@ -65,9 +65,7 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
   <h3>Get expert support</h3>
   <p>Resolve coding issues and learn best practices for research software development.</p>
 
-<p>
-    <a href="https://digitalskillscatalyst.ac.uk/consult.html">Book one-to-one sessions</a> 
-    with Digital Research Specialists who can help you:
+<p> Access tailored support exactly when you need it with Digital Research Specialists who can help you:
   </p>
 
   <ul>
@@ -76,7 +74,7 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
     <li>Tackle complex analytical challenges</li>
   </ul>
 
-  <p><i>Access tailored support exactly when you need it.</i></p>
+  <p> <a href="https://digitalskillscatalyst.ac.uk/consult.html">Book one-to-one sessions</a> .</p>
 
 </div>
 
@@ -86,15 +84,15 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
   </div>
   <h3>Join workshops and events</h3>
   <p>Connect with peers and learn from experts through our events programme.</p>
-<p>Training events are offered on an ad-hoc basis, both online and in person. These engaging sessions are offered at a reduced rate or completely free of charge, led by experienced instructors who are passionate about sharing their knowledge.</p>
-
+<p>Training events are delivered on an ad hoc basis, both online and in person. These engaging sessions are often free or offered at a reduced cost, and are led by experienced instructors passionate about sharing their expertise.</p>
+<p> Upcoming events: </p>
   <ul>
     <li>Metatranscriptomics | May</li>
     <li>Quarto workshop | July </li>
     <li>AICatalyst Training Conference | September </li>
   </ul>
 
-<a href="https://digitalskillscatalyst.ac.uk/news.html">Sign up for an event/a> 
+<a href="https://digitalskillscatalyst.ac.uk/news.html">Sign up for an event</a> 
     
 
 </div>
