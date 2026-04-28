@@ -1,5 +1,5 @@
 ---
-title: Website launch"
+title: "Website launch"
 subtitle: "Introducing the UKRI Digital Research Skills Catalyst: A new platform for UK researchers"
 format:
   html:
