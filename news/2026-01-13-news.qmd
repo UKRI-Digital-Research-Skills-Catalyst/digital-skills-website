@@ -35,6 +35,13 @@ It helps you to:
   <li>👩‍💻 Build skills aligned with real research needs</li>
 </ul>
 
+<ul class="icon-list">
+  <li><i class="fa-regular fa-calendar"></i> Discover relevant courses and resources</li>
+  <li><i class="fa-solid fa-magnifying-glass"></i> Navigate digital learning pathways</li>
+  <li><i class="fa-solid fa-laptop-code"></i> Access curated, high-quality training materials</li>
+  <li><i class="fa-solid fa-user-gear"></i> Build skills aligned with real research needs</li>
+</ul>
+
 By bringing together fragmented resources, the platform makes it easier to find the right training at the right time.
 
 ### Who should use the Catalyst?
