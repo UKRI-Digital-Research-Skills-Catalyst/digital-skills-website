@@ -33,16 +33,11 @@ It helps you to:
   <p> <i class="fa-solid fa-laptop-code"></i> Access curated, high-quality training materials</p>
   <p> <i class="fa-solid fa-user-gear"></i> Build skills aligned with real research needs</p>
 
-<ul class="icon-list">
-  <li><i class="fa-regular fa-calendar"></i> Discover relevant courses and resources</li>
-  <li><i class="fa-solid fa-magnifying-glass"></i> Navigate digital learning pathways</li>
-  <li><i class="fa-solid fa-laptop-code"></i> Access curated, high-quality training materials</li>
-  <li><i class="fa-solid fa-user-gear"></i> Build skills aligned with real research needs</li>
-</ul>
-
 By bringing together fragmented resources, the platform makes it easier to find the right training at the right time.
 
 ### Who should use the Catalyst?
+
+Whether you are a doctoral student, a principal investigator, or a programme manager, the UKRI Digital Research Skills Catalyst is your new go-to resource for professional growth in the digital age. We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/), browse the learning portal, and book a consultation to see how we can support your research.
 
 This platform is designed for:
 
@@ -52,13 +47,6 @@ This platform is designed for:
 - Anyone working with data, AI, or digital tools
 
 If your work involves data or technology, developing digital skills will enhance your research impact and career prospects.
-
-### Explore the Catalyst
-
-Whether you are a doctoral student, a principal investigator, or a programme manager, the UKRI Digital Research Skills Catalyst is your new go-to resource for professional growth in the digital age.
-
-We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/), browse the learning portal, and book a consultation to see how we can support your research.
-
 
 [{{< fa solid puzzle-piece >}}]{style="display: none;"}
 
@@ -72,7 +60,7 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
   </div>
   <h3>Explore the Learning Portal</h3>
   <p>A searchable library of over 50 high-quality resources.</p>
-
+<br>
  <p>Designed to save you time and enhance your learning experience, the portal allows you to quickly locate resources tailored to your expertise, research area, and preferred study mode. </p>
 <br>
      <p> <a href="https://digitalskillscatalyst.ac.uk/">Browse the learning resources</a> </p>
@@ -89,7 +77,7 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
 <br>
 <p> Access tailored support exactly when you need it with our Digital Research Specialists.
   </p>
-
+<br>
   <p> <a href="https://digitalskillscatalyst.ac.uk/consult.html">Book one-to-one sessions</a> .</p>
 
 </div>
@@ -101,10 +89,9 @@ We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/)
   <h3>Join workshops and events</h3>
   <p>Connect with peers and learn from experts through our events programme.</p>
 <br>
-<p>Training events are delivered on an ad hoc basis, both online and in person. These engaging sessions are often free or offered at a reduced cost, and are led by experienced instructors passionate about sharing their expertise.</p>
-
+<p>Training events are delivered both online and in person. These engaging sessions are often free or offered at a reduced cost, and are led by experienced instructors passionate about sharing their expertise.</p>
+<br>
 <a href="https://digitalskillscatalyst.ac.uk/news.html">Sign up for an event</a> 
-  
 </div>
 </div>
 ```
