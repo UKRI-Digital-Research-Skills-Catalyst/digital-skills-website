@@ -1,6 +1,6 @@
 ---
-title: "Website launch"
-subtitle: "Introducing the UKRI Digital Research Skills Catalyst: A new platform for UK researchers"
+title: "Consult a Digital Research Specialist"
+subtitle: "For help and advice in applying digital skills to your research"
 format:
   html:
     toc: false
