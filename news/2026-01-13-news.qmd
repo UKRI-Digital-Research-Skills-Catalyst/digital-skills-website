@@ -1,6 +1,6 @@
 ---
-title: "Consult a Digital Research Specialist"
-subtitle: "For help and advice in applying digital skills to your research"
+title: "AICatalyst2026: AI in the Biosciences Training Conference"
+subtitle: "4th September 2026 @ The Guildhall, York"
 format:
   html:
     toc: false
@@ -11,11 +11,19 @@ format:
       - index-header.css
 ---
 
-::: consultation-button-container
-[Request a
-consultation](https://docs.google.com/forms/d/e/1FAIpQLSfZzkuJIe5j5dADrvhOsB_CILZ_QExxxFESWph_69tGfLZw4Q/viewform?embedded=true){.consultation-button
-.external target="_self"}
-:::
+![](https://upload.wikimedia.org/wikipedia/commons/d/db/York_Guildhall.jpg){fig-alt="The Guildhall in York" fig-align="center" style="width:100%; height:auto;"}
+
+# About the Conference
+
+This free training conference is organised by the **UKRI Digital Research Skills Catalyst**, with funding support from **AIBIO-UK**.
+
+The programme brings together a mix of expert **talks** and **hands-on workshops** designed to introduce **AI methods in bioscience research**.
+
+These sessions will equip you with working knowledge of a wide range of techniques under the AI umbrella, *from traditional Machine Learning to Large Language Models*, applied to a range of biological applications.
+
+Attendees will also have the opportunity to present their own work through a **poster session**, allowing you to network and be part of the nascent AI in Bioscience community, as well as potentially win the coveted Poster Prize!
+
+While this conference primarily is targeted at PhD and postgraduate researchers in the biological, medical, and environmental sciences, we welcome professionals at all career stages.
 
 [{{< fa solid puzzle-piece >}}]{style="display: none;"}
 
@@ -50,4 +58,124 @@ consultation](https://docs.google.com/forms/d/e/1FAIpQLSfZzkuJIe5j5dADrvhOsB_CIL
 
 
 </div>
-```
+
+# Date and Location
+
+The conference will take place from **9:30 to 16:15** on **Friday 4th September 2026** at **The Guildhall in York**, a beautiful medieval building in the heart of the city centre that is a short 10 minute walk from York Railway Station.
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2347.411140852621!2d-1.087356123230612!3d53.95996637247358!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487931a86ff38add%3A0xe410dbffc3227b6d!2sThe%20Guildhall%20York!5e0!3m2!1sen!2suk!4v1776688248046!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+
+</iframe>
+
+# Registration
+
+Registration opening soon! Join our mailing list at <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a> to be notified as soon as sign-up goes live.
+
+Conference capacity is limited to 100 places.
+
+# Travel scholarships
+
+Through the AIBIO-UK Flexifund, we are pleased to offer travel scholarships to help cover your attendance costs.
+
+-   Standard Travel: Up to £100 per person for economy rail or bus travel
+
+-   Long-Distance Travel: Up to £150 per person for those traveling from further afield who require an overnight stay in York (covers economy travel and hotel expenses)
+
+You will need to reclaim these expenses by completing an expense form and submitting receipts after participation in the course. Scholarships will be provided on a first come first served basis. We will contact you within a few days of your registration to confirm whether you have been awarded a scholarship. Lunch and Networking tea/coffee will be included.
+
+------------------------------------------------------------------------
+
+# Programme
+
+The event will be taking place across all three venues wtihin the Guildhall: The Main Hall, The Riverside Lounge, and The Committee Room.
+
+## Overview
+
+| Time | Room 1 | Room 2 | Room 3 |
+|------------------|------------------|-------------------|------------------|
+| 09:30–10:00 | Registration + networking coffee |  |  |
+| 10:00–10:15 | Introductory Welcome |  |  |
+| 10:20–11:20 | [Image visualisation with Napari, a modular based framework with AI capabilities] | [Large Language Models in Bioscience] | [AI for agriculture] |
+| 11:20–11:30 | Break |  |  |
+| 11:30–12:30 | [Image visualisation with Napari, a modular based framework with AI capabilities] | [scryptIQ Supervised Learning Taster Session] | [Funding at the Interface: Tips for writing grants for AI and Biosciences research] |
+| 12:30–13:30 | Lunch + Poster Sessions |  |  |
+|  | [MORF-BIO Demonstration] |  |  |
+| 13:30–14:30 | [Galaxy for AI in Bioscience: Tools, Training, and Reproducible Workflows] | [A whirlwind tour of the FAIR principles] |  |
+| 14:30–14:50 | Coffee Break |  |  |
+| 14:50–15:50 | (TBC) | [AI for Multiomics] |  |
+| 16:00–16:15 | Closing Remarks |  |  |
+| 16:15 onwards | Networking at House of Trembling Madness |  |  |
+
+## Session Details
+
+### Image visualisation with Napari, a modular based framework with AI capabilities
+
+#### Prof Dave Cash (University College London); Dr David Pérez-Suárez (University College London)
+
+Image analysis, visualisation and processing are a set of skills required in any medical and bioscience researcher who works with imaging instruments. Napari is an extensible modular based open source framework that is easy to learn and to develop to. This session will introduce how to use it in your research workflow and present some of the plugins that provide AI capabilities to analyse and process your data.
+### scryptIQ Supervised Learning Taster Session
+
+### Large Language Models in Bioscience
+
+#### Dr Alastair Droop (University of York)
+
+Large Language Models (such as Gemini or ChatGPT) are at the forefront of the current AI hype wave. In this talk Dr Alastair Droop will provide a brief overview of how Large Language Models work, and discuss their use in bioscience research. Common misconceptions and pitfalls will be explored.
+
+### AI for agriculture
+
+#### Prof Elizabeth Sklar (Director of LIAT, University of Lincoln); Prof Simon Parsons (Director of SUSTAIN, University of Lincoln)
+
+This talk is intended to be a broad “taster” session, aiming to introduce participants to popular Artificial Intelligence (AI) concepts that appear in the media or consumer marketing documents (e.g. “deep learning”, “large language model”, etc.). We will discuss how these methods fit within the wider field of AI and how the full range of AI techniques can aid the agri-food sector. We will share examples from our work at the Lincoln Institute for Agri-food Technology (LIAT), University of Lincoln, as well as highlighting seminal work of others drawn from the agri-food domain. Participants will be given the opportunity to ask questions and begin actively thinking about AI concepts within the context of their own work. Resources for follow-on guidance and support will also be highlighted.
+
+### scryptIQ Supervised Learning Taster Session
+
+#### Dr. Laurence Blackhurst (scryptIQ); Dr. Adam Lee (scryptIQ, University College London)
+
+In this brief taster session, we will demonstrate a complete workflow for training supervised machine learning models to make accurate, generalisable predictions using a real-world biological dataset. We will guide participants through the full sequence of steps, from cleaning and pre-processing raw data for machine learning analysis, all the way through to optimally training multiple classification models, generating predictions and evaluating the performance of trained models. We aim to show how classical machine learning methods remain a fast, efficient and accurate way to predict on biological data.
+
+### Funding at the Interface: Tips for writing grants for AI and Biosciences research
+
+#### Prof Andrew French (University of Nottingham, AIBIO-UK lead)
+
+Securing research funding is a challenge in the current climate; securing interdisciplinary funding can be even more difficult.  In this session Prof Andrew French will share some tips on writing interdisciplinary funding applications and building collaborative teams for interdisciplinary projects.
+
+
+### MORF-BIO Demonstration
+
+#### MORF-BIO Team
+
+MORF-BIO is a web-based bioinformatics platform (“Multi-Omics Research Factory”) that enables researchers to explore, visualise, and interpret complex multi-omics and bioprocess data without coding, turning biological data into actionable insights through intuitive, collaborative tools. Find out more here: <https://morf-bio.com/>
+
+### Galaxy for AI in Bioscience: Tools, Training, and Reproducible Workflows
+
+#### Prof Krzysztof Poterlowicz (University of Bradford); Dr Khaled Jumah (University of Bradford)
+
+Artificial intelligence is increasingly utilised in bioscience, particularly for high-dimensional omics data, bioimaging, and structural biology. However, access to tools, infrastructure, and training remains a significant challenge. This session will introduce Galaxy as an open-source, web-based platform that enables researchers to implement AI methods in a reproducible and user-friendly environment.
+
+### A whirlwind tour of the FAIR principles
+
+#### Dr Evgenij Belikov (EPCC, The University of Edinburgh)
+
+In this session, based on Ed-DaSH materials, we will look at applying the FAIR principles in practice to make your data and code more findable, accessible, interoperable and reusable. Feel free to bring your own projects.
+
+### AI for Multiomics
+
+#### Dr Alessandra Vigilante (Kings College London)
+
+This workshop will introduce how AI and machine learning can help integrate multiomics data to discover biology and make useful predictions.
+
+------------------------------------------------------------------------
+
+# About the Organisers
+
+::: {.column width="30%"}
+![](https://raw.githubusercontent.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/a402bb7cbdeed71db7f2d53e7237ef048c092ea4/assets/catalyst-logo.svg){width="60%"}
+:::
+
+**UKRI Digital Research Skills Catalyst** A UKRI-funded national initiative providing a central hub for digital research training, connecting researchers to high-quality learning resources, workshops, and expert support to develop skills in data science and computational research. Find out more here: <https://digitalskillscatalyst.ac.uk/>
+
+::: {.column width="30%"}
+![](https://github.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/blob/main/assets/AIBIO-UK_LOGO.jpg?raw=true){width="60%"}
+:::
+
+**AIBIO-UK** A BBSRC-funded network that brings together the AI and bioscience communities across the UK, supporting collaboration through events, pilot funding, and shared resources to advance the use of AI in biological research. More information on their future funding opportunities can be found here: <https://aibio.ac.uk/>.
