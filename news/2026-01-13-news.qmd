@@ -1,6 +1,6 @@
 ---
 title: "Introducing the UKRI Digital Research Skills Catalyst: A new platform for UK researchers"
-subtitle: "
+subtitle: 
 format:
   html:
     toc: false
