@@ -44,7 +44,17 @@ We invite you to explore the new website, browse the learning portal, and book a
     <i class="fa-solid fa-keyboard"></i>
   </div>
   <h3>Explore the Learning Portal</h3>
-  <p>A searchable library of over 50 high-quality resources.</p>
+  <p>A searchable library of over 50 high-quality resources covering: </p>
+  <ul>
+    <li>Machine learning</li>
+    <li>High Performance Computing for 'omics</li>
+    <li>Data stewardship</li>
+  </ul>
+
+<p>
+    <a href="https://digitalskillscatalyst.ac.uk/">Browse the learning resources</a> 
+  </p>
+
 </div>
 
 
@@ -66,7 +76,7 @@ We invite you to explore the new website, browse the learning portal, and book a
     <li>Tackle complex analytical challenges</li>
   </ul>
 
-  <p>Access tailored support exactly when you need it.</p>
+  <p><i>Access tailored support exactly when you need it.</i></p>
 
 </div>
 
