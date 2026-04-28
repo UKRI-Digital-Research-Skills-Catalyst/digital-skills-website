@@ -11,6 +11,12 @@ format:
       - index-header.css
 ---
 
+::: consultation-button-container
+[Request a
+consultation](https://docs.google.com/forms/d/e/1FAIpQLSfZzkuJIe5j5dADrvhOsB_CILZ_QExxxFESWph_69tGfLZw4Q/viewform?embedded=true){.consultation-button
+.external target="_self"}
+:::
+
 [{{< fa solid puzzle-piece >}}]{style="display: none;"}
 
 # Get help to...
