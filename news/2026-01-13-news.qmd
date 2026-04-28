@@ -38,7 +38,6 @@ We invite you to explore the new website, browse the learning portal, and book a
 
 [{{< fa solid puzzle-piece >}}]{style="display: none;"}
 
-# Get help to...
 
 ```{=html}
 <div id="consult-cards">
@@ -47,46 +46,28 @@ We invite you to explore the new website, browse the learning portal, and book a
   <div class="icon">
     <i class="fa-solid fa-puzzle-piece"></i>
   </div>
-  <h3>Explore the Learning Portal</h3>
-  <p>A searchable library of over 50 high-quality resources covering:
-- Machine learning  
-- Data stewardship  
-- High Performance Computing for 'omics.</p>
-
-  <p> [View the resources](https://digitalskillscatalyst.ac.uk/)
-While the current focus is on building skills for health and bioscience professionals, many resources are highly relevant for researchers in arts, humanities, and social sciences too.
-</p>
+  <h3>Tackle Analytical Problems</h3>
+  <p>Get fresh perspectives on complex data analysis and research methodology.</p>
 </div>
 
 <div class="consult-card">
   <div class="icon">
     <i class="fa-solid fa-code"></i>
   </div>
-  <h3>Get expert support</h3>
-  <p>[Book one-to-one sessions](https://digitalskillscatalyst.ac.uk/consult.html) with Digital Research Specialists to: 
-- Troubleshoot code  
-- Improve experimental design  
-- Solve complex analytical challenges 
-</p>
-<p>Get tailored support when you need it most.</p>
+  <h3>Debug Your Code</h3>
+  <p>Resolve coding issues and learn best practices for research software development.</p>
 </div>
 
 <div class="consult-card">
   <div class="icon">
     <i class="fa-solid fa-database"></i>
   </div>
-  <h3> Join workshops and events</h3>
-  <p> Connect with peers and learn from experts through our events programme.
-  </p> **Upcoming highlight:**  
- - AICatalyst2026: AI in the Biosciences Training Conference  
-📍 Friday, 4 September  
- [Learn more about the conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html)
-   </p>
+  <h3>Manage Research Data</h3>
+  <p>Design effective strategies for organizing, storing, and sharing your research data.</p>
 </div>
 
 
 </div>
-
 ```
 
 ### Built on proven success
