@@ -1,5 +1,6 @@
 ---
-title: "Website launch"
+title: Website launch"
+subtitle: "Introducing the UKRI Digital Research Skills Catalyst: A new platform for UK researchers"
 format:
   html:
     toc: false
@@ -10,40 +11,12 @@ format:
       - index-header.css
 ---
 
-## Introducing the UKRI Digital Research Skills Catalyst: A new platform for UK researchers
-
-**Access digital training, expert support, and events—all in one place.**
-
-🔍 50+ learning resources  
-👩‍💻 One-to-one expert consultations  
-📅 Workshops and training events  
-
-
-We are thrilled to announce the launch of the UKRI Digital Research Skills Catalyst, a major new initiative designed to transform the way researchers and innovators across the UK access digital training and expertise. In an increasingly data-driven world, having the right digital skills is no longer just an advantage—it’s essential. 
-
-The **UKRI Digital Research Skills Catalyst** bridges the skills gap, provides a centralised hub of high-quality resources and direct support to empower you at every stage of your research journey.
-
----
-
-## What you can do with the Catalyst
-
 [{{< fa solid puzzle-piece >}}]{style="display: none;"}
+
+# Get help to...
 
 ```{=html}
 <div id="consult-cards">
-
-<div class="consult-card">
-  <div class="icon">
-    <i class="fa-solid fa-puzzle-piece"></i>
-  </div>
-  <h3>Explore the Learning Portal</h3>
-  <p>A searchable library of over 50 high-quality resources covering: 
-- Machine learning  
-- Data stewardship  
-- High Performance Computing for 'omics  
-- [View the resources](https://digitalskillscatalyst.ac.uk/)
-While the current focus is on building skills for health and bioscience professionals, many resources are highly relevant for researchers in arts, humanities, and social sciences too. </p>
-</div>
 
 <div class="consult-card">
   <div class="icon">
@@ -71,25 +44,4 @@ While the current focus is on building skills for health and bioscience professi
 
 
 </div>
-
-
-### Built on proven success
-
-Led by Professor Emma Rand at the University of York and funded by the UKRI Digital Research Infrastructure Programme, the Catalyst builds on the successful foundation of the Data Science Training in Healthcare & Biosciences (DaSH) funding call. By centralising resources from seven DaSH projects into one accessible hub, we are ensuring that valuable training materials are readily available to the wider research community.
-
-![Project development phases](../assets/Project-dev2.jpg){width=60% fig-cap="The Catalyst brings together training, expertise, and community into one unified platform." style="border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"}
-
-
-### Explore the Catalyst
-
-Whether you are a doctoral student, a principal investigator, or a programme manager, the UKRI Digital Research Skills Catalyst is your new go-to resource for professional growth in the digital age.
-
-- Browse training resources  
-- Learn about the DaSH projects  
-- Get involved  
-
-We invite you to explore the new website, browse the learning portal, and book a consultation to see how we can support your research. 
-
-👉 Visit the website: [www.digitalskillscatalyst.ac.uk](https://digitalskillscatalyst.ac.uk/)
-
-
+```
