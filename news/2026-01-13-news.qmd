@@ -27,6 +27,7 @@ The **UKRI Digital Research Skills Catalyst** bridges the skills gap, provides a
 
 ## What you can do with the Catalyst
 
+[{{< fa solid puzzle-piece >}}]{style="display: none;"}
 
 ```{=html}
 <div id="consult-cards">
