@@ -29,7 +29,7 @@ The Catalyst bridges the skills gap, provides a centralised hub of high-quality 
 
 Whether you are a doctoral student, a principal investigator, or a programme manager, the UKRI Digital Research Skills Catalyst is your new go-to resource for professional growth in the digital age.
 
-We invite you to explore the new website, browse the learning portal, and book a consultation to see how we can support your research.
+We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/), browse the learning portal, and book a consultation to see how we can support your research.
 
 👉 Visit the website: [www.digitalskillscatalyst.ac.uk](https://digitalskillscatalyst.ac.uk/)
 
@@ -52,6 +52,7 @@ We invite you to explore the new website, browse the learning portal, and book a
   </ul>
 
 <p>
+    Designed to save you time and enhance your learning experience, the portal allows you to quickly locate resources tailored to your expertise, research area, and preferred study mode
     <a href="https://digitalskillscatalyst.ac.uk/">Browse the learning resources</a> 
   </p>
 
@@ -97,6 +98,12 @@ We invite you to explore the new website, browse the learning portal, and book a
 Led by Professor Emma Rand at the University of York and funded by the UKRI Digital Research Infrastructure Programme, the Catalyst builds on the successful foundation of the Data Science Training in Healthcare & Biosciences (DaSH) funding call. By centralising resources from seven DaSH projects into one accessible hub, we are ensuring that valuable training materials are readily available to the wider research community.
 
 ![Project development phases](../assets/Project-dev2.jpg){width=60% fig-cap="The Catalyst brings together training, expertise, and community into one unified platform." style="border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"}
+
+### Get in touch 
+
+For questions about our training programmes, events, or consultation services: <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a>
+
+Visit the website: [www.digitalskillscatalyst.ac.uk](https://digitalskillscatalyst.ac.uk/)
 
 
 
