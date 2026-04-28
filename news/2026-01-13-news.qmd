@@ -13,7 +13,7 @@ format:
 
 ![Catalyst AI Workshop](../assets/sitelaunchimage.png){width=60% fig-cap="Catalyst AI Workshop." style="border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1);"}
 
-## For help and advice in applying digital skills to your research
+## Connecting researchers with the digital skills needed for modern research
 
 We are thrilled to announce the launch of the **UKRI Digital Research Skills Catalyst**, a major new initiative designed to transform the way researchers and innovators across the UK access digital training and expertise. In an increasingly data-driven world, having the right digital skills is no longer just an advantage—it’s essential.
 
