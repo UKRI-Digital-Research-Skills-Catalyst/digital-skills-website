@@ -14,38 +14,21 @@ format:
 
 ## Connecting researchers with the digital skills needed for modern research
 
-We are thrilled to announce the launch of the **UKRI Digital Research Skills Catalyst**, a major new initiative designed to transform the way researchers and innovators across the UK access digital training and expertise. In an increasingly data-driven world, having the right digital skills is no longer just an advantage—it’s essential.
-
-The Catalyst bridges the skills gap, provides a centralised hub of high-quality resources and direct support to empower you at every stage of your research journey.
-
-
-### What is the Digital Research Skills Catalyst?
+We are thrilled to announce the launch of the **UKRI Digital Research Skills Catalyst**, a major new initiative designed to transform the way researchers and innovators across the UK access digital research training and expertise. 
 
 **Access digital training, expert support, and events—all in one place.**
 
-The Digital Research Skills Catalyst is a UKRI initiative designed to improve access to digital skills training for UK based researchers.
+### What is the Digital Research Skills Catalyst?
 
-It helps you to:
+The UKRI Digital Research Skills Catalyst is a new national training platform built on six years of collaborative work across seven UK universities. It brings together peer-reviewed training materials covering programming, statistics, machine learning, data stewardship, and more, alongside direct one-to-one support from research software engineers and data scientists.
 
-  <p> <i class="fa-regular fa-calendar"></i> Discover relevant courses and resources</p>
-  <p> <i class="fa-solid fa-magnifying-glass"></i> Navigate digital learning pathways</p>
-  <p> <i class="fa-solid fa-laptop-code"></i> Access curated, high-quality training materials</p>
-  <p> <i class="fa-solid fa-user-gear"></i> Build skills aligned with real research needs</p>
-
-By bringing together fragmented resources, the platform makes it easier to find the right training at the right time.
+Whether you need training materials or consultation to solve a specific problem, the Catalyst is here to help you apply digital research skills to your own work.
 
 ### Who should use the Catalyst?
 
-Whether you are a doctoral student, a principal investigator, or a programme manager, the UKRI Digital Research Skills Catalyst is your new go-to resource for professional growth in the digital age. We invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/), browse the learning portal, and book a consultation to see how we can support your research.
+The Catalyst is for anyone in the UK research and innovation community including researchers, clinicians, technicians, engineers, and those working in industry or the public sector. Training is available from foundational to advanced level, covering areas relevant to the BBSRC, MRC, EPSRC and NERC remits.
 
-This platform is designed for:
-
-- Early-career researchers building foundational digital skills
-- Academics adapting to new research technologies
-- Research software engineers and technical staff
-- Anyone working with data, AI, or digital tools
-
-If your work involves data or technology, developing digital skills will enhance your research impact and career prospects.
+Whether you are a doctoral student, a principal investigator, or a programme manager, we invite you to explore the new [website](https://digitalskillscatalyst.ac.uk/), browse the learning portal, and book a consultation to see how we can support your research.
 
 [{{< fa solid puzzle-piece >}}]{style="display: none;"}
 
@@ -58,9 +41,8 @@ If your work involves data or technology, developing digital skills will enhance
     <i class="fa-solid fa-keyboard"></i>
   </div>
   <h3>Explore the Learning Portal</h3>
-  <p>A searchable library of over 50 high-quality resources.</p>
 <br>
- <p>Designed to save you time and enhance your learning experience, the portal allows you to quickly locate resources tailored to your expertise, research area, and preferred study mode. </p>
+ <p>A searchable library of over 50 peer-reviewed resources covering programming, statistics, machine learning, AI, image analysis, data stewardship, FAIR principles, and more. Filter by your expertise level, research area, and preferred study mode. </p>
 <br>
      <p> <a href="https://digitalskillscatalyst.ac.uk/">Browse the learning resources</a> </p>
 
@@ -72,10 +54,7 @@ If your work involves data or technology, developing digital skills will enhance
     <i class="fa-solid fa-code"></i>
   </div>
   <h3>Get expert support</h3>
-  <p>Resolve coding issues and learn best practices for research software development.</p> 
-<br>
-<p> Access tailored support exactly when you need it with our Digital Research Specialists.
-  </p>
+  <p>Book an online consultation with a research software engineer, data scientist, or informatician. Support is available at any stage of your project. </p> 
 <br>
   <p> <a href="https://digitalskillscatalyst.ac.uk/consult.html">Book one-to-one sessions</a></p>
 
@@ -102,11 +81,9 @@ Led by Professor Emma Rand at the University of York and funded by the UKRI Digi
 
 ### Get in touch 
 
-Digital skills are now essential for research. The Catalyst helps you build them faster and more effectively.
-
 For questions about our training programmes, events, or consultation services: <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a>
 
-Explore the Catalyst platform and start building your next skill: [www.digitalskillscatalyst.ac.uk](https://digitalskillscatalyst.ac.uk/)
+Explore the Catalyst platform and start building your digital research skills: [www.digitalskillscatalyst.ac.uk](https://digitalskillscatalyst.ac.uk/)
 
 
 
