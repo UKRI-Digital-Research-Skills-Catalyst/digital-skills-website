@@ -10,7 +10,7 @@ format:
       - index-header.css
 ---
 
-![Catalyst AI Workshop](../assets/sitelaunchimage.png){width=100% fig-cap="Catalyst AI Workshop.}
+![Catalyst AI Workshop](../assets/sitelaunchimage.png){width=100% fig-cap="Catalyst AI Workshop"}
 
 ## Connecting researchers with the digital skills needed for modern research
 
