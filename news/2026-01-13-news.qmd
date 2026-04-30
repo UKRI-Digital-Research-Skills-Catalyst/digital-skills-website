@@ -71,7 +71,7 @@ Whether you are a doctoral student, a principal investigator, or a programme man
 </div>
 </div>
 ```
-### Built on proven success
+### Project history
 
 Led by Professor Emma Rand at the University of York and funded by the UKRI Digital Research Infrastructure Programme UKRI/ST/B000299/1, the Catalyst builds on the successful foundation of the Data Science Training in Healthcare & Biosciences (DaSH) funding call. By centralising resources from seven DaSH projects into one accessible hub, we are ensuring that valuable training materials are readily available to the wider research community.
 
