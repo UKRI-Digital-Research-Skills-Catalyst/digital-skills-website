@@ -16,7 +16,7 @@ format:
 
 Researchers across the UK will gain access to practical training, tools, and support through the **UKRI Digital Research Skills Catalyst**. The initiative aims to strengthen data, software, and AI capabilities—helping research teams work more efficiently and deliver greater impact. 
 
-### What is the Digital Research Skills Catalyst?
+### What is the UKRI Digital Research Skills Catalyst?
 
 The UKRI Digital Research Skills Catalyst is a new national training platform built on six years of collaborative work across seven UK universities. It brings together peer-reviewed training materials covering programming, statistics, machine learning, data stewardship, and more, alongside direct one-to-one support from research software engineers and data scientists.
 
