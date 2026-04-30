@@ -64,9 +64,8 @@ Whether you are a doctoral student, a principal investigator, or a programme man
     <i class="fa-solid fa-user-group"></i>
   </div>
   <h3>Join workshops and events</h3>
-  <p>Connect with peers and learn from experts through our events programme.</p>
 <br>
-<p>Training events are delivered both online and in person; they are often free or offered at a reduced cost, and are led by experienced instructors passionate about sharing their expertise.</p>
+  <p>Connect with peers and learn from experts through our events programme. Training events are delivered both online and in person; they are often free or offered at a reduced cost and are led by experienced instructors.</p>
 <br>
 <a href="https://digitalskillscatalyst.ac.uk/news.html">Sign up for an event</a> 
 </div>
