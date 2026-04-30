@@ -1,6 +1,5 @@
 ---
 title: "Introducing the UKRI Digital Research Skills Catalyst: A new platform for UK researchers"
-subtitle: "Digital skills are now essential for research. The Catalyst helps you build them faster and more effectively."
 format:
   html:
     toc: false
@@ -78,7 +77,7 @@ If your work involves data or technology, developing digital skills will enhance
 <p> Access tailored support exactly when you need it with our Digital Research Specialists.
   </p>
 <br>
-  <p> <a href="https://digitalskillscatalyst.ac.uk/consult.html">Book one-to-one sessions</a> .</p>
+  <p> <a href="https://digitalskillscatalyst.ac.uk/consult.html">Book one-to-one sessions</a></p>
 
 </div>
 
