@@ -41,7 +41,7 @@ Wherever possible, sessions will be delivered online to maximise accessibility.
 A full-day training conference, AI Readiness in the Biosciences, will take place on Friday 4th September 2026 in York.
 Attendance is free, and bursaries are available to support travel and care costs.
 
-![AI readiness in the Biosciences](./assets/ai-conference.png "AI readiness in the Biosciences"){width=250px}
+![AIConference2026](./assets/AIConference2026.jpg "AIConference2026"){width=250px}
 
 For further details visit [News and Events](./news.html).
 
