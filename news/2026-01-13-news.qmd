@@ -16,8 +16,6 @@ format:
 
 We are thrilled to announce the launch of the **UKRI Digital Research Skills Catalyst**, a major new initiative designed to transform the way researchers and innovators across the UK access digital research training and expertise. 
 
-**Access digital training, expert support, and events—all in one place.**
-
 ### What is the Digital Research Skills Catalyst?
 
 The UKRI Digital Research Skills Catalyst is a new national training platform built on six years of collaborative work across seven UK universities. It brings together peer-reviewed training materials covering programming, statistics, machine learning, data stewardship, and more, alongside direct one-to-one support from research software engineers and data scientists.
@@ -54,6 +52,7 @@ Whether you are a doctoral student, a principal investigator, or a programme man
     <i class="fa-solid fa-code"></i>
   </div>
   <h3>Get expert support</h3>
+<br>
   <p>Book an online consultation with a research software engineer, data scientist, or informatician. Support is available at any stage of your project. </p> 
 <br>
   <p> <a href="https://digitalskillscatalyst.ac.uk/consult.html">Book one-to-one sessions</a></p>
@@ -67,7 +66,7 @@ Whether you are a doctoral student, a principal investigator, or a programme man
   <h3>Join workshops and events</h3>
   <p>Connect with peers and learn from experts through our events programme.</p>
 <br>
-<p>Training events are delivered both online and in person. These engaging sessions are often free or offered at a reduced cost, and are led by experienced instructors passionate about sharing their expertise.</p>
+<p>Training events are delivered both online and in person; they are often free or offered at a reduced cost, and are led by experienced instructors passionate about sharing their expertise.</p>
 <br>
 <a href="https://digitalskillscatalyst.ac.uk/news.html">Sign up for an event</a> 
 </div>
