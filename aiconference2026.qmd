@@ -53,7 +53,7 @@ You will need to reclaim these expenses by completing an expense form and submit
 
 # Programme
 
-The event will be taking place across all three venues wtihin the Guildhall: The Main Hall, The Riverside Lounge, and The Committee Room.
+The event will be taking place across all three venues within the Guildhall: The Main Hall, The Riverside Lounge, and The Committee Room.
 
 ## Overview
 
@@ -68,7 +68,7 @@ The event will be taking place across all three venues wtihin the Guildhall: The
 |  | [MORF-BIO Demonstration] |  |  |
 | 13:30–14:30 | [Galaxy for AI in Bioscience: Tools, Training, and Reproducible Workflows] | [A whirlwind tour of the FAIR principles] |  |
 | 14:30–14:50 | Coffee Break |  |  |
-| 14:50–15:50 | (TBC) | [AI for Multiomics] |  |
+| 14:50–15:50 | [Biologically-Literate Feature Selection] | [AI for Multiomics] |  |
 | 16:00–16:15 | Closing Remarks |  |  |
 | 16:15 onwards | Networking at House of Trembling Madness |  |  |
 
@@ -123,6 +123,13 @@ Artificial intelligence is increasingly utilised in bioscience, particularly for
 #### Dr Evgenij Belikov (EPCC, The University of Edinburgh)
 
 In this session, based on Ed-DaSH materials, we will look at applying the FAIR principles in practice to make your data and code more findable, accessible, interoperable and reusable. Feel free to bring your own projects.
+
+### Biologically-Literate Feature Selection
+
+#### Dr Andrew Mason (University of York)
+
+As increasingly complex and sophisticated methods become available and relatively easy to implement it is easy to dismiss the major determinant of a successful AI or ML driven project: your starting data. 
+Illustrated by examples from ongoing cancer research projects, this talk will explore the impact of data composition, feature selection and integration of multiple data modalities on the identification of clinically-actionable disease subgroups.
 
 ### AI for Multiomics
 
