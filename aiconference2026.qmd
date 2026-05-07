@@ -79,7 +79,6 @@ The event will be taking place across all three venues within the Guildhall: The
 #### Prof Dave Cash (University College London); Dr David Pérez-Suárez (University College London)
 
 Image analysis, visualisation and processing are a set of skills required in any medical and bioscience researcher who works with imaging instruments. Napari is an extensible modular based open source framework that is easy to learn and to develop to. This session will introduce how to use it in your research workflow and present some of the plugins that provide AI capabilities to analyse and process your data.
-### scryptIQ Supervised Learning Taster Session
 
 ### Large Language Models in Bioscience
 
