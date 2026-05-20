@@ -104,6 +104,18 @@ shell or terminal. This shell is available by default for Linux and Mac
 users but Windows users will need to install Git for Windows.\
 [Detailed Pre-course
 instructions](https://cloud-span.github.io/metatranscriptomics/docs/miscellanea/precourse-instructions.html)
+
+### Learner Testimonials
+
+🗨️ I loved the practical exercises and the step‑by‑step explanations. Now I can analyse my own mosquito RNA samples and look for viral pathogens. This course was fantastic – I would definitely recommend it to fellow biologists.
+
+🗣️ A strong opportunity to deepen, update, and expand my bioinformatics skills. (Biji Shibulal)
+
+🗨️ I am so grateful for the opportunity to join the Metatranscriptomics workshop 2026. The instructors delivered the materials in a highly structured manner and communicated very well to the participants. They were also very helpful. My most favourite part of the course was the session on functional profiling using HumanN. The workshop is highly relevant for someone like me, who would use bioinformatics in my research. I highly recommend this workshop for anyone who will use metatranscriptomics in their research or simply curious about the world of bioinformatics! (Lay Monica, The University of Oxford)
+
+🗣️ I have to wholeheartedly recommend this course in addition to a range of others that are part of Cloudspan as they are the greatest opportunities to learn bioinformatics to an exceptional standard with wonderful experts to guide you! Thank you so much to everyone involved because you have helped me to achieve my dream career and I will be eternally grateful for your help and support :)
+
+
 :::
 
 ::: event-details-sidebar
