@@ -89,6 +89,11 @@ To follow along with the activities with the instructor, you will need R
 and RStudio installed on your computer, **or** access to Posit Cloud, an
 online platform for R and RStudio.
 
+### Learner Testimonial
+
+🗣️ Emma was a very friendly and knowledgeable course leader. It was great to see the report come together throughout the workshop! We built on simple principles, then added extra elements to improve the output. Attending this Quarto course has helped me to upskill, and I have recently received a promotion. Thank you!
+
+
 [Detailed Pre-course
 instructions](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/before.html)
 :::
