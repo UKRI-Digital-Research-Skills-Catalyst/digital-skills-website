@@ -1,5 +1,5 @@
 ---
-title: "Apply for a NorthenBUG travel scholarship"
+title: "Apply for a NorthernBUG travel scholarship"
 format:
   html:
     toc: false
@@ -10,15 +10,43 @@ format:
       - index-header.css
 ---
 
-We are offering five travel scholarships to support attendance at the [Northern Bioinformatics User Group (Northern BUG)](https://northernbug.github.io/northernbug16), taking place on 24 July 2026 at the University of Bradford Norcroft Centre.
+We are offering **five travel scholarships** to support attendance at the [Northern Bioinformatics User Group (NorthernBUG) meeting](https://northernbug.github.io/northernbug16), taking place on **24 July 2026** at the **University of Bradford Norcroft Centre**.
 
-NorthernBUG is a network of bioinformaticians and users or bioinformatics services in the north of England which hold quarterly meetings to build a community of researchers and others using big data in biology. NorthernBUG meetings are open to **anyone** interested in bioinformatics or its application in life science research and beyond. **Meetings are free** and early career researchers are especially encouraged career to attend and present their work. It’s a great forum to practice your talks, float new ideas and approaches, and present early work.
+::: {.callout-important}
+
+## Key information
+
+📅 **Event:** NorthernBUG 16
+📍 **Location:** University of Bradford Norcroft Centre, Bradford
+🎓 **Scholarships available:** 5 travel scholarships
+⏰ **Application deadline:** 12:00pm, Wednesday 15 July 2026
+
+
+### About NorthernBUG
+
+NorthernBUG is a network of bioinformaticians and users of bioinformatics services across the north of England. Through quarterly meetings, the network brings together researchers and practitioners working with biological data to share expertise, ideas, and emerging research.
+
+Meetings are **free and open to anyone** interested in bioinformatics and its applications in life science research and related fields.
+
+Early career researchers are particularly encouraged to attend and present their work. NorthernBUG provides an excellent opportunity to:
+
+- practise presentations and talks
+- share new ideas and approaches
+- showcase early-stage research
+- connect with the regional bioinformatics community
 
 ![NorthenBUG logo](../assets/northernbug.jpg){width=30% fig-cap="NorthenBUG"}
 
-### How to apply 
+### How to apply
 
-Register for the [NBUG meeting](https://northernbug.github.io/northernbug16) and complete a [scholarship application](https://forms.gle/GJvpPV5aMhgjkQUi6) by 12:00pm on Wednesday, 15 July 2026. All applicants will be informed of the outcome of their application by Thursday, 16 July 2026.
+1. Register for the [NorthernBUG meeting](https://northernbug.github.io/northernbug16)
+2. Complete the travel [scholarship application](https://forms.gle/GJvpPV5aMhgjkQUi6)
+
+Applications close at **12:00pm on Wednesday, 15 July 2026.**
+
+All applicants will be notified of the outcome by Thursday, 16 July 2026.
+
+[Apply for a scholarship](https://forms.gle/GJvpPV5aMhgjkQUi6){.btn .btn-primary}
 
 ### Upcoming training events
 
