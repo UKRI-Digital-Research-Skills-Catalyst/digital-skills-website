@@ -10,13 +10,11 @@ format:
       - index-header.css
 ---
 
-## 5 travel scholarships are available 
-
 We are offering five travel scholarships to support attendance at the [Northern Bioinformatics User Group (Northern BUG)](https://northernbug.github.io/northernbug16), taking place on 24 July 2026 at the University of Bradford Norcroft Centre.
 
 NorthernBUG is a network of bioinformaticians and users or bioinformatics services in the north of England which hold quarterly meetings to build a community of researchers and others using big data in biology. NorthernBUG meetings are open to **anyone** interested in bioinformatics or its application in life science research and beyond. **Meetings are free** and early career researchers are especially encouraged career to attend and present their work. It’s a great forum to practice your talks, float new ideas and approaches, and present early work.
 
-![NorthenBUG logo](../assets/northernbug.jpg){width=50% fig-cap="NorthenBUG"}
+![NorthenBUG logo](../assets/northernbug.jpg){width=30% fig-cap="NorthenBUG"}
 
 ### How to apply 
 
@@ -26,8 +24,9 @@ Register for the [NBUG meeting](https://northernbug.github.io/northernbug16) and
 
 Check out upcoming Catalyst events: 
 
-**[Quarto Workshop]**(https://digitalskillscatalyst.ac.uk/news/2026-01-13-quarto2.html) ONLINE 22 July 2026 
-**[AICatalyst2026: AI in the Biosciences Training Conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html) YORK 4 September 2026
+**[Quarto Workshop](https://digitalskillscatalyst.ac.uk/news/2026-01-13-quarto2.html)** – ONLINE – 22 July 2026  
+
+**[AICatalyst2026: AI in the Biosciences Training Conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html)** – YORK – 4 September 2026
 
 ### Get in touch 
 
