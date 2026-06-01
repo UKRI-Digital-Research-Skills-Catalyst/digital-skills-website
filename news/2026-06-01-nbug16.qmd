@@ -12,9 +12,9 @@ format:
 
 We are offering **five travel scholarships** to support attendance at the [Northern Bioinformatics User Group (NorthernBUG) meeting](https://northernbug.github.io/northernbug16), taking place on **24 July 2026** at the **University of Bradford Norcroft Centre**.
 
-::: {.callout-important}
+::: {.callout-tip}
 
-## Key information
+## Key information :::
 
 📅 **Event:** NorthernBUG 16
 
@@ -24,7 +24,8 @@ We are offering **five travel scholarships** to support attendance at the [North
 
 ⏰ **Application deadline:** 12:00pm, Wednesday 15 July 2026
 
-:::
+::: {.callout-tip}:::
+
 
 ### About NorthernBUG
 
@@ -39,7 +40,8 @@ Early career researchers are particularly encouraged to attend and present their
 - showcase early-stage research
 - connect with the regional bioinformatics community
 
-![NorthenBUG logo](../assets/northernbug.jpg){width=30% fig-cap="NorthenBUG"}
+:::{style="text-align: center;"}
+![NorthenBUG logo](../assets/northernbug.jpg){width=30% fig-cap="NorthenBUG"} :::
 
 ### How to apply
 
