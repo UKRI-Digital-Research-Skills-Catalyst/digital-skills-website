@@ -33,7 +33,7 @@ event = all_events.find(row => row.link?.trim() === 'news/2026-01-13-quarto2.htm
 ::: course-content
 [Workshop]{.course-badge}
 
-## Introduction to Quarto
+## Reproducible reports with Quarto
 
 <p class="lead">
 
