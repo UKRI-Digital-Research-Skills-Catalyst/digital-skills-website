@@ -11,7 +11,7 @@ Although some participants had experience in shell commands, many had never used
 
 The next session we got stuck into prepping the data for downstream analysis, starting performing quality control on the reads with FastQC and using commands to download the reports. After verifying the data met our standards we filtered out any bad reads and trimmed adapter sequences off. Finally, we sorted our reads into mRNA and rRNA using sortmeRNA.
 
-After that the process we explored the world of BioBakery tools (many of us getting slightly hungry in our pre-lunch sessions) and used Metaphlan to do taxonomic assignment to our reads (seeing which species are present) and used Krona to visualise it. In the final session we used another BioBakery tool called Humann to do functional assignment (seeing which reactions/processes are present) and had a look at various ways of labelling the genes to match different databases like KEGG and GO.
+After that we explored the world of BioBakery tools (many of us getting slightly hungry in our pre-lunch sessions) and used Metaphlan to do taxonomic assignment to our reads (seeing which species are present) and used Krona to visualise it. In the final session we used another BioBakery tool called Humann to do functional assignment (seeing which reactions/processes are present) and had a look at various ways of labelling the genes to match different databases like KEGG and GO.
 
 At the end of all that the participants had flexed their mind muscles and had completed the pipeline of raw data to analysable outputs. We had chatted about what everyone’s research was on, and there were a lot of different research questions being covered by the group. 
 As metatranscriptomics can provide insight into all of these questions it is a very powerful tool to have, but because there’s no one-size-fits-all approach to the downstream analysis we ended with outlining different statistical and modelling techniques applicable to these different questions.
@@ -22,6 +22,7 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 ## Here’s what some of the participants had to say:
 
 💬 I am so grateful for the opportunity to join the Metatranscriptomics workshop 2026. The instructors delivered the materials in a highly structured manner and communicated very well to the participants. They were also very helpful. My most favourite part of the course was the session on functional profiling using HumanN. The workshop is highly relevant for someone like me, who would use bioinformatics in my research. I highly recommend this workshop for anyone who will use metatranscriptomics in their research or simply curious about the world of bioinformatics! 
+
 **Lay Monica, The University of Oxford**
 
 💬 I have to wholeheartedly recommend this course in addition to a range of others that are part of Cloudspan as they are the greatest opportunities to learn bioinformatics to an exceptional standard with wonderful experts to guide you! Thank you so much to everyone involved because you have helped me to achieve my dream career and I will be eternally grateful for your help and support :)
@@ -30,6 +31,7 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 
 
 💬 A strong opportunity to deepen, update, and expand my bioinformatics skills. 
+
 **Biji Shibulal**
 
 💬 This is a fantastic opportunity, really well explained and well organised. I learnt a lot and will apply this to my own work. 
@@ -43,6 +45,7 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 - Career vision establishment: I wanted to learn about omics all time, which I think are essential skills for biologists nowadays. Learning how you do it makes the metatranscriptomics less mystical for me and it broadens my vision on what people are doing next time when I see research in this topic. 
 - Bioinformatics Skill Enrichment: The QC, filtering, and annotation strategies taught in the workshop are not too far off my current endeavour of small RNA sequencing post-processing. 
 - The workshop is well-taught with very detailed manual and teaching sessions. It starts from the basis of files and command lines which are also very useful for beginners. Bash is an essential skill. 
+
 **Rocky Yu, Department of Biology, University of York**
 
 
