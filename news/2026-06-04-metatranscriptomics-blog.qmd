@@ -48,4 +48,8 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 
 **Rocky Yu, Department of Biology, University of York**
 
+# What's next?
 
+- [22nd July: Reproducible reports with Quarto](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/)
+
+- [4th September: AICatalyst Training Conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html)
