@@ -3,7 +3,7 @@
 Last month we had the pleasure of welcoming 33 participants from a range of institutes, universities, and agencies based across the UK. 
 All were gathered for the very first Cloud-SPAN Metatranscriptomics course!
 
-![Cloud-SPAN Metatranscriptomics Instance](https://media.licdn.com/dms/image/v2/D4E22AQGg9CG5UP3w9Q/feedshare-shrink_800/B4EZ4XH_tvIMAg-/0/1778504432814?e=1782345600&v=beta&t=45NvCJYVXN0u2wrkZGKpRapdFrV3Q2vxkMgx_JniW-E)
+![Cloud-SPAN Metatranscriptomics Instance](https://raw.githubusercontent.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/refs/heads/main/assets/metatranscriptomics-instance.jpg)
 
 Participants joined us from a wide range of institutions including the University of York, University of Warwick, University of Birmingham, University of Oxford, University of Cambridge, the Earlham Institute, John Innes Centre, Forest Research, and many others. 
 
