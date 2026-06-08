@@ -3,6 +3,8 @@
 Last month we had the pleasure of welcoming 33 participants from a range of institutes, universities, and agencies based across the UK. 
 All were gathered for the very first Cloud-SPAN Metatranscriptomics course!
 
+![Cloud-SPAN Metatranscriptomics Instance](https://media.licdn.com/dms/image/v2/D4E22AQGg9CG5UP3w9Q/feedshare-shrink_800/B4EZ4XH_tvIMAg-/0/1778504432814?e=1782345600&v=beta&t=45NvCJYVXN0u2wrkZGKpRapdFrV3Q2vxkMgx_JniW-E)
+
 Participants joined us from a wide range of institutions including the University of York, University of Warwick, University of Birmingham, University of Oxford, University of Cambridge, the Earlham Institute, John Innes Centre, Forest Research, and many others. 
 
 For the next two weeks we dug right into the hands-on process of performing metatranscriptomics using cloud-based high-powered computing, all the way from the basics to the further analyses.
@@ -52,4 +54,4 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 
 - [22nd July: Reproducible reports with Quarto](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/)
 
-- [4th September: AICatalyst Training Conference](https://digitalskillscatalyst.ac.uk/aiconference2026.html)
+- [4th September: AICatalyst Training Conference](https://digitalskillscatalyst.ac.uk/aiconference2026)
