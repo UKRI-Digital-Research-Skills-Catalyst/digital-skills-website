@@ -46,6 +46,11 @@ All applicants will be notified of the outcome by Thursday, 16 July 2026.
 
 [Apply for a scholarship](https://forms.gle/GJvpPV5aMhgjkQUi6){.consultation-button.external target="_self"}
 
+::: consultation-button-container
+[Apply for a scholarship](https://forms.gle/GJvpPV5aMhgjkQUi6){.consultation-button
+.external target="_self"}
+:::
+
 ### Upcoming training events
 
 Check out upcoming Catalyst events: 
