@@ -39,7 +39,12 @@ Applications close at **12:00pm on Wednesday, 15 July 2026.**
 
 All applicants will be notified of the outcome by Thursday, 16 July 2026.
 
-[Apply for a scholarship](https://forms.gle/GJvpPV5aMhgjkQUi6){.btn .btn-primary}
+[Apply for a scholarship](https://forms.gle/GJvpPV5aMhgjkQUi6){.btn .btn-primary} 
+
+[Apply for a scholarship](https://forms.gle/GJvpPV5aMhgjkQUi6){.consultation-button
+.external target="_self"}
+
+[Apply for a scholarship](https://forms.gle/GJvpPV5aMhgjkQUi6){.consultation-button.external target="_self"}
 
 ### Upcoming training events
 
