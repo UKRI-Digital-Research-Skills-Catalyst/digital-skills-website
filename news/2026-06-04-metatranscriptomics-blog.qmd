@@ -1,6 +1,6 @@
 # Cloud-SPAN Metatranscriptomics Workshop 2026: Training the Next Generation of Bioinformatics Researchers
 
-Last month, 33 researchers from universities, research institutes, and public agencies across the UK came together for the first-ever Cloud-SPAN Metatranscriptomics course. Over two weeks, participants learned how to analyse metatranscriptomic data using cloud computing, progressing from command-line basics to taxonomic and functional profiling of microbial communities.
+Last month, 33 researchers from universities, research institutes, and public agencies across the UK came together for the first-ever Cloud-SPAN Metatranscriptomics course. Over two weeks, participants learned how to analyse metatranscriptomic data using cloud computing, progressing from command-line basics to taxonomic and functional profiling of microbial communities. Find out how the course unfolded and what participants learned.
 
 ![Cloud-SPAN Metatranscriptomics Instance](https://raw.githubusercontent.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/refs/heads/main/assets/metatranscriptomics-instance.jpg)
 
@@ -113,3 +113,5 @@ Interested in developing your digital research skills? Join us at one of our upc
 - [22nd July: Reproducible reports with Quarto](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/)
 - [24th July: NorthernBug Meeting](https://digitalskillscatalyst.ac.uk/news/2026-06-01-nbug16.html)
 - [4th September: AICatalyst Training Conference](https://digitalskillscatalyst.ac.uk/aiconference2026)
+
+Register now to continue building your data analysis and research computing expertise.
