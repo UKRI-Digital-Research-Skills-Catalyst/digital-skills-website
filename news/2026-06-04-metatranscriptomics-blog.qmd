@@ -36,7 +36,7 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 > 
 > **Lay Monica, The University of Oxford**
 
-> 💬 I have to wholeheartedly recommend this course in addition to a range of others that are part of Cloudspan as they are the greatest opportunities to learn bioinformatics to an exceptional standard with wonderful experts to guide you! Thank you so much to everyone involved because you have helped me to achieve my dream career and I will be eternally grateful for your help and support :)
+💬 I have to wholeheartedly recommend this course in addition to a range of others that are part of Cloudspan as they are the greatest opportunities to learn bioinformatics to an exceptional standard with wonderful experts to guide you! Thank you so much to everyone involved because you have helped me to achieve my dream career and I will be eternally grateful for your help and support :)
 
 > I loved the practical exercises and the step‑by‑step explanations. Now I can analyse my own mosquito RNA samples and look for viral pathogens. This course was fantastic – I would definitely recommend it to fellow biologists.
 
@@ -44,7 +44,7 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 > A strong opportunity to deepen, update, and expand my bioinformatics skills. **Biji Shibulal**
 
 
-> 💬 This is a fantastic opportunity, really well explained and well organised. I learnt a lot and will apply this to my own work. 
+💬 This is a fantastic opportunity, really well explained and well organised. I learnt a lot and will apply this to my own work. 
 
 > I really enjoyed the workshop and found it very practical and well-structured. My favourite part was working through the full metatranscriptomics pipeline using real datasets, as it helped me understand how raw sequencing data is processed into meaningful biological insights. I also found the hands-on command-
 >line experience very valuable and confidence-building. I will definitely use these skills in future research and data analysis work, especially in building my technical foundation for bioinformatics and related roles. **I would recommend this course to others who want a strong introduction to real-world computational biology workflows.**
@@ -85,7 +85,6 @@ We are proud to support researcher development and provide free training to rese
 - University of Warwick
 - University of York
 
-*...and many other organisations across the UK.*
 
 :::
 
@@ -109,7 +108,7 @@ We are proud to support researcher development and provide free training to rese
 
 # What's next?
 
-Interested in developing your computational biology skills? Join us at one of our upcoming events: 
+Interested in developing your digital research skills? Join us at one of our upcoming events: 
 
 - [22nd July: Reproducible reports with Quarto](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/)
 - [24th July: NorthernBug Meeting](https://digitalskillscatalyst.ac.uk/news/2026-06-01-nbug16.html)
