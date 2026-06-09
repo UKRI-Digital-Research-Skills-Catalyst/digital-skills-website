@@ -27,6 +27,8 @@ It was fantastic to see such enthusiasm from our participants across the UK, and
 
 > By the end of the course, participants had completed an end-to-end metatranscriptomics workflow, transforming raw sequencing reads into taxonomic and functional profiles ready for downstream analysis. It was truly impressive to see the growth of scientists who arrived with no command line experience and then left as power users! 
 
+![Cloud-SPAN Metatranscriptomics Workflow](../assets/metatranscriptomics_flowchart_short.png)
+
 Thank you to all of our participants for helping make the Metatranscriptomics Workshop 2026 such a success. We look forward to seeing what they do with their newfound knowledge and skills!
 
 ## Here’s what some of the participants had to say:
