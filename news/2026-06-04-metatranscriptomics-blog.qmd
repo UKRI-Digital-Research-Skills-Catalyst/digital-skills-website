@@ -1,4 +1,4 @@
-# Cloud-SPAN Metatranscriptomics Roundup
+# Cloud-SPAN Metatranscriptomics Workshop 2026: Training the Next Generation of Bioinformatics Researchers
 
 Last month, 33 researchers from universities, research institutes, and public agencies across the UK came together for the first-ever Cloud-SPAN Metatranscriptomics course. Over two weeks, participants learned how to analyse metatranscriptomic data using cloud computing, progressing from command-line basics to taxonomic and functional profiling of microbial communities.
 
@@ -60,17 +60,89 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 ## Who attended?
 
 Participants joined from:
+Universities and institutions 
 
-* University of Oxford
-* University of Cambridge
-* University of York
-* University of Warwick
-* University of Birmingham
 * Earlham Institute
-* John Innes Centre
 * Forest Research
+* John Innes Centre
+* Natural Resources Institute, University of Greenwich 
+* University of Aberdeen 
+* University of Birmingham
+* University of Brighton
+* University of Cambridge 
+* University of Chester
+* University of Dundee
+* University of Essex
+* University of Leicester 
+* University of Nottingham
+* University of Oxford
+* University of Strathclyde
+* University of Warwick
+* University of York
 and many other organisations across the UK.
 
+DTP/DLA 
+
+* CENTA
+* EastBio DTP
+* EPSRC Mobility DTP in leadership and Excellence in Circular, Resource-efficient, Sustainable Manufacturing
+* EPSRC prosperity partnership 
+* London Interdisciplinary Biosciences Consortium
+* Midlands Integrative Biosciences Doctoral Training Partnership (MIBTP)
+* NRPDTP
+* Oxford Interdisciplinary Life and Environmental Science Landscape Award (ILESLA)
+
+Yorkshire Bioscience DTP (YBDTP White Rose)
+
+## Who attended?
+
+Participants joined from universities, research institutes, doctoral training partnerships (DTPs), and other organisations across the UK.
+
+:::: {.columns}
+
+::: {.column width="65%"}
+
+### Universities and Research Institutes
+
+- Earlham Institute
+- Forest Research
+- John Innes Centre
+- Natural Resources Institute, University of Greenwich
+- University of Aberdeen
+- University of Birmingham
+- University of Brighton
+- University of Cambridge
+- University of Chester
+- University of Dundee
+- University of Essex
+- University of Leicester
+- University of Nottingham
+- University of Oxford
+- University of Strathclyde
+- University of Warwick
+- University of York
+
+*...and many other organisations across the UK.*
+
+:::
+
+::: {.column width="35%"}
+
+### DTPs and Doctoral Programmes
+
+- CENTA
+- EastBio DTP
+- EPSRC Mobility DTP in Leadership and Excellence in Circular, Resource-efficient, Sustainable Manufacturing
+- EPSRC Prosperity Partnership
+- London Interdisciplinary Biosciences Consortium
+- Midlands Integrative Biosciences Doctoral Training Partnership (MIBTP)
+- NRPDTP
+- Oxford Interdisciplinary Life and Environmental Science Landscape Award (ILESLA)
+- Yorkshire Bioscience DTP (YBDTP White Rose)
+
+:::
+
+::::
 
 # What's next?
 
