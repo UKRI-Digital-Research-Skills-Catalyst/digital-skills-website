@@ -21,11 +21,11 @@ After that we explored the world of BioBakery tools (many of us getting slightly
 At the end of all that the participants had flexed their mind muscles and had completed the pipeline of raw data to analysable outputs. We had chatted about what everyone’s research was on, and there were a lot of different research questions being covered by the group. 
 As metatranscriptomics can provide insight into all of these questions it is a very powerful tool to have, but because there’s no one-size-fits-all approach to the downstream analysis we ended with outlining different statistical and modelling techniques applicable to these different questions.
 
-It was fantastic to see such enthusiasm from our participants across the UK, and we are grateful to everyone who attended, contributed questions, and shared their experiences throughout the two weeks. 
-
+> It was fantastic to see such enthusiasm from our participants across the UK, and we are grateful to everyone who attended, contributed questions, and shared their experiences throughout the two weeks. 
+> 
 > By the end of the course, participants had completed an end-to-end metatranscriptomics workflow, transforming raw sequencing reads into taxonomic and functional profiles ready for downstream analysis. It was truly impressive to see the growth of scientists who arrived with no command line experience and then left as power users! 
 
-![Cloud-SPAN Metatranscriptomics Workflow](../assets/metatranscriptomics_flowchart_short.png){width=40% fig-align="center"}
+![Cloud-SPAN Metatranscriptomics Workflow](../assets/metatranscriptomics_flowchart_short.png){width=50% fig-align="center"}
 
 
 Thank you to all of our participants for helping make the Metatranscriptomics Workshop 2026 such a success. We look forward to seeing what they do with their newfound knowledge and skills!
