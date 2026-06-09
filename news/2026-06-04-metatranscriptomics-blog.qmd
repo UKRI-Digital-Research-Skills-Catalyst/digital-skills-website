@@ -47,7 +47,7 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 > 💬 This is a fantastic opportunity, really well explained and well organised. I learnt a lot and will apply this to my own work. 
 
 > I really enjoyed the workshop and found it very practical and well-structured. My favourite part was working through the full metatranscriptomics pipeline using real datasets, as it helped me understand how raw sequencing data is processed into meaningful biological insights. I also found the hands-on command-
->line experience very valuable and confidence-building. I will definitely use these skills in future research and data analysis work, especially in building my technical foundation for bioinformatics and related roles. **I would recommend this course to others who want a strong introduction to real-world computational >biology workflows.**
+>line experience very valuable and confidence-building. I will definitely use these skills in future research and data analysis work, especially in building my technical foundation for bioinformatics and related roles. **I would recommend this course to others who want a strong introduction to real-world computational biology workflows.**
 
 
 > **Rocky Yu, Department of Biology, University of York**
@@ -59,48 +59,11 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 
 ## Who attended?
 
-Participants joined from:
-Universities and institutions 
-
-* Earlham Institute
-* Forest Research
-* John Innes Centre
-* Natural Resources Institute, University of Greenwich 
-* University of Aberdeen 
-* University of Birmingham
-* University of Brighton
-* University of Cambridge 
-* University of Chester
-* University of Dundee
-* University of Essex
-* University of Leicester 
-* University of Nottingham
-* University of Oxford
-* University of Strathclyde
-* University of Warwick
-* University of York
-and many other organisations across the UK.
-
-DTP/DLA 
-
-* CENTA
-* EastBio DTP
-* EPSRC Mobility DTP in leadership and Excellence in Circular, Resource-efficient, Sustainable Manufacturing
-* EPSRC prosperity partnership 
-* London Interdisciplinary Biosciences Consortium
-* Midlands Integrative Biosciences Doctoral Training Partnership (MIBTP)
-* NRPDTP
-* Oxford Interdisciplinary Life and Environmental Science Landscape Award (ILESLA)
-
-Yorkshire Bioscience DTP (YBDTP White Rose)
-
-## Who attended?
-
-Participants joined from universities, research institutes, doctoral training partnerships (DTPs), and other organisations across the UK.
+We are proud to support researcher development and provide free training to researchers from a diverse range of institutions and doctoral programmes. 
 
 :::: {.columns}
 
-::: {.column width="65%"}
+::: {.column width="40%"}
 
 ### Universities and Research Institutes
 
@@ -126,19 +89,19 @@ Participants joined from universities, research institutes, doctoral training pa
 
 :::
 
-::: {.column width="35%"}
+::: {.column width="40%"}
 
 ### DTPs and Doctoral Programmes
 
-- CENTA
-- EastBio DTP
-- EPSRC Mobility DTP in Leadership and Excellence in Circular, Resource-efficient, Sustainable Manufacturing
-- EPSRC Prosperity Partnership
-- London Interdisciplinary Biosciences Consortium
-- Midlands Integrative Biosciences Doctoral Training Partnership (MIBTP)
-- NRPDTP
-- Oxford Interdisciplinary Life and Environmental Science Landscape Award (ILESLA)
-- Yorkshire Bioscience DTP (YBDTP White Rose)
+* The Central England NERC Training Alliance (CENTA)
+* EastBio DTP
+* EPSRC Mobility DTP in leadership and Excellence in Circular, Resource-efficient, Sustainable Manufacturing
+* EPSRC prosperity partnership 
+* London Interdisciplinary Biosciences Consortium (LIDo)
+* Midlands Integrative Biosciences Doctoral Training Partnership (MIBTP)
+* The Norwich Research Park Biosciences Doctoral Training Partnership (NRPDTP)
+* Oxford Interdisciplinary Life and Environmental Science Landscape Award (ILESLA)
+* Yorkshire Bioscience DTP (YBDTP)
 
 :::
 
@@ -146,9 +109,7 @@ Participants joined from universities, research institutes, doctoral training pa
 
 # What's next?
 
-Interested in developing your computational biology skills?
-
-Upcoming events: 
+Interested in developing your computational biology skills? Join us at one of our upcoming events: 
 
 - [22nd July: Reproducible reports with Quarto](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/)
 - [24th July: NorthernBug Meeting](https://digitalskillscatalyst.ac.uk/news/2026-06-01-nbug16.html)
