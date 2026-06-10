@@ -6,7 +6,7 @@ Last month, 33 researchers from universities, research institutes, and public ag
 
 ## What the participants learned
 
-### Week 1 
+#### Week 1 
 
 For the next two weeks we dug right into the hands-on process of performing metatranscriptomics using cloud-based high-powered computing, all the way from the basics to the further analyses.
 
@@ -14,7 +14,7 @@ Although some participants had experience in shell commands, many had never used
 
 The next session we got stuck into prepping the data for downstream analysis, starting performing quality control on the reads with FastQC and using commands to download the reports. After verifying the data met our standards we filtered out any bad reads and trimmed adapter sequences off. Finally, we sorted our reads into mRNA and rRNA using sortmeRNA.
 
-### Week 2
+#### Week 2
 
 After that we explored the world of BioBakery tools (many of us getting slightly hungry in our pre-lunch sessions) and used Metaphlan to do taxonomic assignment to our reads (seeing which species are present) and used Krona to visualise it. In the final session we used another BioBakery tool called Humann to do functional assignment (seeing which reactions/processes are present) and had a look at various ways of labelling the genes to match different databases like KEGG and GO.
 
@@ -25,8 +25,7 @@ It was fantastic to see such enthusiasm from our participants across the UK, and
 
 By the end of the course, participants had completed an end-to-end metatranscriptomics workflow, transforming raw sequencing reads into taxonomic and functional profiles ready for downstream analysis. It was truly impressive to see the growth of scientists who arrived with no command line experience and then left as power users! 
 
-![Cloud-SPAN Metatranscriptomics Workflow](../assets/metatranscriptomics_flowchart_short.png){width=50% fig-align="center"}
-
+![Cloud-SPAN Metatranscriptomics Workflow](../assets/metatranscriptomics_flowchart_short.png){width=20% fig-align="center" .center-caption}
 
 Thank you to all of our participants for helping make the Metatranscriptomics Workshop 2026 such a success. We look forward to seeing what they do with their newfound knowledge and skills!
 
