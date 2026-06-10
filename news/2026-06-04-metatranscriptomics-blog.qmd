@@ -49,8 +49,11 @@ By the end of the course, participants had completed an end-to-end metatranscrip
 > 💬 I really enjoyed the workshop and found it very practical and well-structured. My favourite part was working through the full metatranscriptomics pipeline using real datasets, as it helped me understand how raw sequencing data is processed into meaningful biological insights. I also found the hands-on command-line experience very valuable and confidence-building. I will definitely use these skills in future research and data analysis work, especially in building my technical foundation for bioinformatics and related roles. *I would recommend this course to others who want a strong introduction to real-world computational biology workflows.*
 
 > 💬 This workshop has been an absolute eye-opener for me in several profound ways: 
+>
 > - Spur of Methodological Synergy: Seeing how you profile and annotate myriads of transcripts across diverse microbial communities gave me great inspiration. Some of the downstream analyses tools you introduced at the end of the last session also revealed some new possibilities. 
+>
 > - Career vision establishment: I wanted to learn about omics all time, which I think are essential skills for biologists nowadays. Learning how you do it makes the metatranscriptomics less mystical for me and it broadens my vision on what people are doing next time when I see research in this topic. 
+>
 > - Bioinformatics Skill Enrichment: The QC, filtering, and annotation strategies taught in the workshop are not too far off my current endeavour of small RNA sequencing post-processing. 
 > 
 > **Rocky Yu, Department of Biology, University of York**
