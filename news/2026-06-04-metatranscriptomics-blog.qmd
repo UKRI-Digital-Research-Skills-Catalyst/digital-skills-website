@@ -8,9 +8,11 @@
 # Cloud-SPAN Metatranscriptomics Workshop 2026: Training the Next Generation of Bioinformatics Researchers
 
 Last month, 33 researchers from universities, research institutes, and public agencies across the UK came together for the first-ever Cloud-SPAN Metatranscriptomics course. Over two weeks, participants learned how to analyse metatranscriptomic data using cloud computing, progressing from command-line basics to taxonomic and functional profiling of microbial communities. Find out how the course unfolded and what participants learned.
+
 ::: {.center-caption}
 ![Cloud-SPAN Metatranscriptomics Instance](https://raw.githubusercontent.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/refs/heads/main/assets/metatranscriptomics-instance.jpg){fig-align="center"}
 :::
+
 ## What the participants learned
 
 #### Week 1 
@@ -20,9 +22,11 @@ For the next two weeks we dug right into the hands-on process of performing meta
 Although some participants had experience in shell commands, many had never used the command line before, and so we had a deep dive into the basics of file hierarchies, using the shell to access a remote instance, and using commands to perform tasks in the shell. By the end of these first two sessions everyone was ready to start tackling some metatranscriptomics!
 
 The next session we got stuck into prepping the data for downstream analysis, starting performing quality control on the reads with FastQC and using commands to download the reports. After verifying the data met our standards we filtered out any bad reads and trimmed adapter sequences off. Finally, we sorted our reads into mRNA and rRNA using sortmeRNA.
+
 ::: {.center-caption}
 ![Cloud-SPAN Metatranscriptomics Workflow](../assets/metatranscriptomics_flowchart_short.png){width=50% fig-align="center"}
 :::
+
 #### Week 2
 
 After that we explored the world of BioBakery tools (many of us getting slightly hungry in our pre-lunch sessions) and used Metaphlan to do taxonomic assignment to our reads (seeing which species are present) and used Krona to visualise it. In the final session we used another BioBakery tool called Humann to do functional assignment (seeing which reactions/processes are present) and had a look at various ways of labelling the genes to match different databases like KEGG and GO.
