@@ -21,9 +21,9 @@ After that we explored the world of BioBakery tools (many of us getting slightly
 At the end of all that the participants had flexed their mind muscles and had completed the pipeline of raw data to analysable outputs. We had chatted about what everyone’s research was on, and there were a lot of different research questions being covered by the group. 
 As metatranscriptomics can provide insight into all of these questions it is a very powerful tool to have, but because there’s no one-size-fits-all approach to the downstream analysis we ended with outlining different statistical and modelling techniques applicable to these different questions.
 
-> It was fantastic to see such enthusiasm from our participants across the UK, and we are grateful to everyone who attended, contributed questions, and shared their experiences throughout the two weeks. 
-> 
-> By the end of the course, participants had completed an end-to-end metatranscriptomics workflow, transforming raw sequencing reads into taxonomic and functional profiles ready for downstream analysis. It was truly impressive to see the growth of scientists who arrived with no command line experience and then left as power users! 
+It was fantastic to see such enthusiasm from our participants across the UK, and we are grateful to everyone who attended, contributed questions, and shared their experiences throughout the two weeks. 
+
+By the end of the course, participants had completed an end-to-end metatranscriptomics workflow, transforming raw sequencing reads into taxonomic and functional profiles ready for downstream analysis. It was truly impressive to see the growth of scientists who arrived with no command line experience and then left as power users! 
 
 ![Cloud-SPAN Metatranscriptomics Workflow](../assets/metatranscriptomics_flowchart_short.png){width=50% fig-align="center"}
 
@@ -36,31 +36,20 @@ Thank you to all of our participants for helping make the Metatranscriptomics Wo
 > 
 > **Lay Monica, The University of Oxford**
 
-💬 I have to wholeheartedly recommend this course in addition to a range of others that are part of Cloudspan as they are the greatest opportunities to learn bioinformatics to an exceptional standard with wonderful experts to guide you! Thank you so much to everyone involved because you have helped me to achieve my dream career and I will be eternally grateful for your help and support :)
+> 💬 I really enjoyed the workshop and found it very practical and well-structured. My favourite part was working through the full metatranscriptomics pipeline using real datasets, as it helped me understand how raw sequencing data is processed into meaningful biological insights. I also found the hands-on command-line experience very valuable and confidence-building. I will definitely use these skills in future research and data analysis work, especially in building my technical foundation for bioinformatics and related roles. **I would recommend this course to others who want a strong introduction to real-world computational biology workflows.**
 
-> I loved the practical exercises and the step‑by‑step explanations. Now I can analyse my own mosquito RNA samples and look for viral pathogens. This course was fantastic – I would definitely recommend it to fellow biologists.
-
-
-> A strong opportunity to deepen, update, and expand my bioinformatics skills. **Biji Shibulal**
-
-
-💬 This is a fantastic opportunity, really well explained and well organised. I learnt a lot and will apply this to my own work. 
-
-> I really enjoyed the workshop and found it very practical and well-structured. My favourite part was working through the full metatranscriptomics pipeline using real datasets, as it helped me understand how raw sequencing data is processed into meaningful biological insights. I also found the hands-on command-
->line experience very valuable and confidence-building. I will definitely use these skills in future research and data analysis work, especially in building my technical foundation for bioinformatics and related roles. **I would recommend this course to others who want a strong introduction to real-world computational biology workflows.**
-
-
-> **Rocky Yu, Department of Biology, University of York**
-> This workshop has been an absolute eye-opener for me in several profound ways: 
+> 💬 This workshop has been an absolute eye-opener for me in several profound ways: 
 > - Spur of Methodological Synergy: Seeing how you profile and annotate myriads of transcripts across diverse microbial communities gave me great inspiration. Some of the downstream analyses tools you introduced at the end of the last session also revealed some new possibilities. 
 > - Career vision establishment: I wanted to learn about omics all time, which I think are essential skills for biologists nowadays. Learning how you do it makes the metatranscriptomics less mystical for me and it broadens my vision on what people are doing next time when I see research in this topic. 
 > - Bioinformatics Skill Enrichment: The QC, filtering, and annotation strategies taught in the workshop are not too far off my current endeavour of small RNA sequencing post-processing. 
+**Rocky Yu, Department of Biology, University of York**
 
 
 ## Who attended?
 
 We are proud to support researcher development and provide free training to researchers from a diverse range of institutions and doctoral programmes. 
 
+<div style="font-size: 0.85em;">
 :::: {.columns}
 
 ::: {.column width="40%"}
@@ -105,6 +94,7 @@ We are proud to support researcher development and provide free training to rese
 :::
 
 ::::
+</div>
 
 # What's next?
 
