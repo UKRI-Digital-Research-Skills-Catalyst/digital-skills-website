@@ -42,7 +42,8 @@ By the end of the course, participants had completed an end-to-end metatranscrip
 > 
 > **Lay Monica, The University of Oxford**
 
-> 💬 I really enjoyed the workshop and found it very practical and well-structured. My favourite part was working through the full metatranscriptomics pipeline using real datasets, as it helped me understand how raw sequencing data is processed into meaningful biological insights. I also found the hands-on command-line experience very valuable and confidence-building. I will definitely use these skills in future research and data analysis work, especially in building my technical foundation for bioinformatics and related roles. *I would recommend this course to others who want a strong introduction to real-world computational biology workflows.*
+> 💬 I really enjoyed the workshop and found it very practical and well-structured. My favourite part was working through the full metatranscriptomics pipeline using real datasets, as it helped me understand how raw sequencing data is processed into meaningful biological insights. I also found the hands-on command-line experience very valuable and confidence-building. I will definitely use these skills in future research and data analysis work, especially in building my technical foundation for bioinformatics and related roles. 
+> *I would recommend this course to others who want a strong introduction to real-world computational biology workflows.*
 
 > 💬 This workshop has been an absolute eye-opener for me in several profound ways: 
 >
