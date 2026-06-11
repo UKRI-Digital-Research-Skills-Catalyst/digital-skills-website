@@ -9,11 +9,6 @@ format:
     css:
       - index-header.css
 
-<style>
-.center-caption figcaption {
-  text-align: center !important;
-}
-</style>
 ---
 
 We are offering **five travel scholarships** to support attendance at the [Northern Bioinformatics User Group (NorthernBUG) meeting](https://northernbug.github.io/northernbug16), taking place on **24 July 2026** at the **University of Bradford Norcroft Centre**.
