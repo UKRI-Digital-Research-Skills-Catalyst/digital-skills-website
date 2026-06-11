@@ -32,6 +32,11 @@ Early career researchers are particularly encouraged to attend and present their
 ![NorthernBUG logo](../assets/northernbug.jpg){width=30% fig-align="center" fig-cap="NorthernBUG logo"}
 :::
 
+::: {#fig-northernbug .center-caption}
+![NorthernBUG logo](../assets/northernbug.jpg){width=30%}
+NorthernBUG logo
+:::
+
 ### How to apply
 
 1. Register for the [NorthernBUG meeting](https://northernbug.github.io/northernbug16)
