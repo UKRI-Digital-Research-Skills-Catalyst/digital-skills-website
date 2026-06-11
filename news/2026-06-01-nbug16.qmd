@@ -28,7 +28,9 @@ Early career researchers are particularly encouraged to attend and present their
 - showcase early-stage research
 - connect with the regional bioinformatics community
 
+::: {.center-caption}
 ![NorthernBUG logo](../assets/northernbug.jpg){width=30% fig-align="center" fig-cap="NorthernBUG logo"}
+:::
 
 ### How to apply
 
