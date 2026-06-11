@@ -62,7 +62,7 @@ By the end of the course, participants had completed an end-to-end metatranscrip
 
 ## Who attended?
 
-We are proud to support researcher development and provide free training to researchers from a diverse range of institutions and doctoral programmes. 
+We are proud to support researcher development and provide training to researchers from a diverse range of institutions and doctoral programmes. 
 
 <div style="font-size: 0.80em;">
 :::: {.columns}
@@ -118,5 +118,6 @@ Interested in developing your digital research skills? Join us at one of our upc
 - [22nd July: Reproducible reports with Quarto](https://ukri-digital-research-skills-catalyst.github.io/quarto-intro/)
 - [24th July: NorthernBug Meeting](https://digitalskillscatalyst.ac.uk/news/2026-06-01-nbug16.html)
 - [4th September: AICatalyst Training Conference](https://digitalskillscatalyst.ac.uk/aiconference2026)
+- [View Cloud-SPAN training materials available on the Catalyst](https://digitalskillscatalyst.ac.uk/)
 
 Register now to continue building your data analysis and research computing expertise.
