@@ -16,7 +16,7 @@ format:
 VoiceIn is a mobile app and digital research platform that makes it easier for people to be included in health research. It enables members of the public to contribute to research ideas in a quick and simple way and helps researchers to easily connect with diverse voices.   
 
 ::: {.center-caption}
-![ Four screenshots from the VoiceIn app, showing the welcome page, sample project, sample question, and thank you page.](../assets/VoiceIn.png){width=30% fig-align="center" fig-cap="VoiceIn App"}
+![ Four screenshots from the VoiceIn app, showing the welcome page, sample project, sample question, and thank you page.](../assets/voicein.png.png){width=30% fig-align="center" fig-cap="VoiceIn App"}
 :::
 
 VoiceIn was co-designed with and by young people to encourage long-term commitment, confidence, and engagement with health research. It is free and available for both researchers and public contributors, aged 16+ and based in the UK.
