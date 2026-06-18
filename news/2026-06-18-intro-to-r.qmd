@@ -69,11 +69,31 @@ This two-day workshop will introduce you to R and RStudio, the most widely used 
 
 The workshop takes place over two days and combines teaching and live coding.
 
+##Tuesday 28th July
+
+| Time | Session | 
+|----|----|
+| 10:00 - 12:30 | **What they forgot to teach you about computers** | 
+|               | File system organisation, file types, working directories and paths. | 
+| 12:30 - 13:30 |  Lunch |
+| 13:30 - 16:00 | **Types of variable, summarising and plotting distributions** | 
+|               |Revise the difference between continuous and discrete values and how we summarise and visualise them. Importing data from text files and excel files and developing your understanding of working directories and paths. |
+
+## Tuesday 28 July sarah
+
+| Time | Session |
+|------|---------|
+| 10:00–12:30 | **What they forgot to teach you about computers** |
+| | File system organisation, file types, working directories and paths. |
+| 12:30–13:30 | Lunch |
+| 13:30–16:00 | **Types of variable, summarising and plotting distributions** |
+| | Revise the difference between continuous and discrete variables and how we summarise and visualise them. Import data from text and Excel files while developing your understanding of working directories and paths. |
+
 **Tuesday 28th July** 
 
 | Time | Session | Description |
 |--|----|----|
-| 10:00 - 12:30 | **What they forgot to teach you about computers** | File system organisation, file types, working directories and paths.
+| 10:00 - 12:30 | **What they forgot to teach you about computers** | File system organisation, file types, working directories and paths.|
 | 12:30 - 13:30 |  | Lunch |
 | 13:30 - 16:00 | **Types of variable, summarising and plotting distributions** | Revise the difference between continuous and discrete values and how we summarise and visualise them. Importing data from text files and excel files and developing your understanding of working directories and paths. |
 
