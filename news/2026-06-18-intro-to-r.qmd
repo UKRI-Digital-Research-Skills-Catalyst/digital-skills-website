@@ -1,0 +1,158 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-01-13-quarto.html') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Introduction to reproducible data analysis in R
+
+<p class="lead">
+
+Learn to create reproducible reports that weave together text and code
+seamlessly. 
+
+</p>
+
+### Background
+
+An increase in the complexity and scale of biological data means biologists are increasingly expected to develop the data skills needed to design reproducible workflows for simulating, collecting, analysing and presenting data. Coding is at the heart of reproducibility because it explicitly describes everything you do with your raw data making your work completely transparent and reproducible.
+
+The good news is that generative AI tools like ChatGPT and GitHub Copilot have transformed what is possible for non-programmers. Writing code is no longer the barrier it once was - if you can describe what you need you can get working code back in seconds. But working code is not enough - code can run and not be doing what you think it is. That ability to precisely describe what you want and knowing how to question and validate what AI produces comes from learning to code. 
+
+Research consistently shows that AI coding assistants work best for people who already understand the code being generated. Without that foundation, it's hard to know when the output is wrong, incomplete, or quietly doing something other than what you intended. A little coding knowledge helps you write better prompts and know when to trust the result.
+
+That's where **Introduction to reproducible data analysis in R** comes in!
+
+R is a free and open source language especially well-suited to data analysis and visualisation. It has a reputation for catering to users who do not see themselves as programmers, but then allowing them to slide gradually into programming.
+
+### About the Workshop
+
+This two-day workshop will introduce you to R and RStudio, the most widely used interface for working with R. It will start with what they forgot to teach you about computers covering file systems, paths and working directories. These are threshold concepts in scientific computing which, if not known, block your ability to make progress. We will live code so you can code along with us in learning your way around RStudio, and creating, importing, summarising and plotting data and saving outputs. 
+
+We will cover how the type of variables we have matter in how we analyse and visualise them and how to organise data in spreadsheets. In the final part of the workshop you will be able to work with one (or more!) canonical biology examples: qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ files.
+
+
+
+By the end of this workshop, participants will be able to transform raw
+data into a professional, polished report (HTML, Word, or PDF) where the
+text and analysis remain in sync. We will use the
+[Gapminder](https://www.gapminder.org/) data on global development to
+demonstrate how to produce a reproducible country profile report that
+analyses the relationship between wealth (GDP per capita) and health
+(Life Expectancy) over the last 50 years.
+
+### Audience
+
+This workshop is designed for researchers, technical staff, and postgraduate students in the life sciences who want to develop practical data analysis skills using R and RStudio.
+
+### What you will learn
+
+After this workshop the successful learner will be able to:
+-   explain what an operating system is and the organisation of files and directories in a file system
+-   explain root, home and working directories along with absolute and relative file paths
+-   find their way around the RStudio windows, use an RStudio Project to organise work and a script to run commands
+-   use the R command line to create and use the basic data types in R
+-   distinguish between continuous and discrete variables and be able to appropriately summarise and plot them in R
+import data in to RStudio from a variety of file types
+-   explain what is meant by ‘tidy’ data and organise data in spreadsheets.
+-   customise and save publication quality figures
+-   Use and modify R workflows for qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ files
+
+### Prerequisites
+
+No previous programming experience is required.
+
+
+[Detailed Pre-course
+instructions]()
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || 'TBA'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || 'TBA'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'Online'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || '#'}" class="register-button">Register Now</a>
+
+<p class="event-note">Limited to 0 places</p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
