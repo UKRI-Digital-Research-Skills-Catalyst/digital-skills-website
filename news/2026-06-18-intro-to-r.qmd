@@ -173,7 +173,7 @@ html`
 
 <a href="${event.register_link || '#'}" class="register-button">Register Now</a>
 
-<p class="event-note">Limited to 0 places</p>
+<p class="event-note">60 places available</p>
 
 <div class="questions-section">
   <p>Questions?</p>
