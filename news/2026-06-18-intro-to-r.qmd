@@ -97,7 +97,6 @@ The course is  suitable for:
 - Participants with little or no prior programming experience who need a supportive introduction to scientific computing concepts.
 - Anyone who has attempted to learn R independently but found file management, working directories, data organisation, or coding workflows challenging.
 
-
 ### Prerequisites
 
 No previous programming experience is required.
@@ -122,6 +121,21 @@ After this workshop the successful learner will be able to:
 The workshop will take place in the department of Biology at the University of York. 
 
 Room B/R/012 (PC classroom) is located on the Ground Floor of Biology Block R in the Biomedical and Natural Sciences Building at the University of York's Campus West. Use the [University of York Campus Map](https://www.york.ac.uk/map/) for directions. 
+
+### Registration fees and travel scholarships 
+
+Fees: Standard £200 | Academic/student/not-for-profit £150 
+
+We are pleased to offer 10 travel scholarships of up to £200 to help cover travel and accommodation costs as follows:
+
+* Standard Travel: economy rail or bus travel
+* Accommodation: Up to £140 inc. VAT
+
+Scholarships will be allocated on a first-come basis to researchers at academic institutions and not-for-profit organisations who contribute to research in the UK. 
+
+You will need to reclaim these expenses by completing an expense form and submitting receipts after participation at the event.
+
+We will contact you within a few days of your registration to confirm whether you have been awarded a scholarship. 
 
 :::
 
