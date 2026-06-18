@@ -74,6 +74,7 @@ The workshop takes place over two days and combines teaching with live coding.
 | Time | Session | Description |
 |--|----|----|
 | 10:00 - 12:30 | **What they forgot to teach you about computers** | File system organisation, file types, working directories and paths.|
+|  | **Introduction to R, RStudio and project organisation.** | You will learn about data types such as “numerics” and “characters” and object types such as “vectors” and “dataframes” and create your first graph! These are the building blocks for the rest of your R journey. You will also learn about the layout of RStudio and a workflow using scripts and RStudio Projects to keep your work organised.|
 | 12:30 - 13:30 |  | Lunch |
 | 13:30 - 16:00 | **Types of variable, summarising and plotting distributions** | Revise the difference between continuous and discrete values and how we summarise and visualise them. Importing data from text files and excel files and developing your understanding of working directories and paths. |
 
@@ -83,7 +84,8 @@ The workshop takes place over two days and combines teaching with live coding.
 |--|----|----|
 | 10:00–12:30           | **Summarising data with several variables** | Building on the previous day's work exploring single variables, you will learn how to summarise and visualise datasets containing multiple variables. You will identify response and explanatory variables, explore the principles of "tidy" data, carry out a simple data tidying exercise, and learn how to save figures for publication and reporting. |
 | 12:30–13:30           | **Lunch**                                   |    |                                                                                                                                                                                                        
-| 13:30–16:00           | **Data organisation in spreadsheets**       | Learn how to recognise the underlying structure of your data and arrange it in a ‘tidy’ format to make your life easier. R workflows for qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ file. | 
+| 13:30–16:00           | **Data organisation in spreadsheets**       | Learn how to recognise the underlying structure of your data and arrange it in a ‘tidy’ format to make your life easier. | 
+|            | **R workflows**       | Explore and modify workflows for qPCR analysis, RNA sequence analysis, flow  cytometry analysis or ImageJ files. | 
 
 ### Audience
 
