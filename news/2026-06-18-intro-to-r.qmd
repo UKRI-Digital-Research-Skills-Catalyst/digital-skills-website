@@ -97,6 +97,9 @@ No previous programming experience is required.
 
 [Detailed Pre-course
 instructions]()
+
+### Location
+
 :::
 
 ::: event-details-sidebar
