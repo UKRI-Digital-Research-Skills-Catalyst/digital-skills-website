@@ -71,6 +71,8 @@ demonstrate how to produce a reproducible country profile report that
 analyses the relationship between wealth (GDP per capita) and health
 (Life Expectancy) over the last 50 years.
 
+### Programme 
+
 ### Audience
 
 This workshop is designed for researchers, technical staff, and postgraduate students in the life sciences who want to develop practical data analysis skills using R and RStudio.
