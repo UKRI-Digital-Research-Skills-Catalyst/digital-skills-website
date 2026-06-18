@@ -67,7 +67,7 @@ This two-day workshop will introduce you to R and RStudio, the most widely used 
 
 ### Programme 
 
-The workshop takes place over two days and combines teaching and live coding.
+The workshop takes place over two days and combines teaching with live coding.
 
 **Tuesday 28th July** 
 
@@ -101,7 +101,7 @@ The course is  suitable for:
 
 No previous programming experience is required.
 
-No previous programming experience is required. There are Windows PCs at the venue and you are not required to bring your own machine. Participants from outside of York will be provided with a temporary IT account.
+There are Windows PCs at the venue and you are not required to bring your own machine. Participants from outside of York will be provided with a temporary IT account.
 
 ### What you will learn
 
