@@ -39,8 +39,7 @@ event = all_events.find(row => row.link?.trim() === 'news/2026-06-18-intro-to-r.
 
 <p class="lead">
 
-Learn to create reproducible reports that weave together text and code
-seamlessly. 
+This two-day workshop provides a hands-on introduction to reproducible data analysis using R and RStudio, covering essential scientific computing concepts such as file systems, working directories, data organisation, and data visualisation. Through live coding exercises, participants will learn to import, analyse, and present data in R then applying their skills to real-world biological datasets, including qPCR, RNA sequencing, flow cytometry, and ImageJ analyses.
 
 </p>
 
@@ -79,15 +78,15 @@ This workshop is designed for researchers, technical staff, and postgraduate stu
 ### What you will learn
 
 After this workshop the successful learner will be able to:
--   explain what an operating system is and the organisation of files and directories in a file system
--   explain root, home and working directories along with absolute and relative file paths
--   find their way around the RStudio windows, use an RStudio Project to organise work and a script to run commands
--   use the R command line to create and use the basic data types in R
--   distinguish between continuous and discrete variables and be able to appropriately summarise and plot them in R
+- explain what an operating system is and the organisation of files and directories in a file system
+- explain root, home and working directories along with absolute and relative file paths
+- find their way around the RStudio windows, use an RStudio Project to organise work and a script to run commands
+- use the R command line to create and use the basic data types in R
+- distinguish between continuous and discrete variables and be able to appropriately summarise and plot them in R
 import data in to RStudio from a variety of file types
--   explain what is meant by ‘tidy’ data and organise data in spreadsheets.
--   customise and save publication quality figures
--   Use and modify R workflows for qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ files
+- explain what is meant by ‘tidy’ data and organise data in spreadsheets.
+- customise and save publication quality figures
+- Use and modify R workflows for qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ files
 
 ### Prerequisites
 
