@@ -59,10 +59,10 @@ R is a free and open source language especially well-suited to data analysis and
 
 This two-day workshop will introduce you to R and RStudio, the most widely used interface for working with R.
 
-1. It will start with what they forgot to teach you about computers covering file systems, paths and working directories. These are threshold concepts in scientific computing which, if not known, block your ability to make progress.
-2. The workshop uses a live-coding format, allowing you to code alongside the instructor as you learn to navigate RStudio and perform core tasks such as creating, importing, summarising and plotting data and saving outputs
-3. We will cover how the type of variables we have matter in how we analyse and visualise them and how to organise data in spreadsheets. 
-4. In the final part of the workshop you will be able to work with one (or more!) canonical biology examples: qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ files.
+* It will start with what they forgot to teach you about computers covering file systems, paths and working directories. These are threshold concepts in scientific computing which, if not known, block your ability to make progress.
+* The workshop uses a live-coding format, allowing you to code alongside the instructor as you learn to navigate RStudio and perform core tasks such as creating, importing, summarising and plotting data and saving outputs
+* We will cover how the type of variables we have matter in how we analyse and visualise them and how to organise data in spreadsheets. 
+* In the final part of the workshop you will be able to work with one (or more!) canonical biology examples: qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ files.
 
 
 ### Programme 
