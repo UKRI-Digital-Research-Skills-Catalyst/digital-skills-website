@@ -69,26 +69,6 @@ This two-day workshop will introduce you to R and RStudio, the most widely used 
 
 The workshop takes place over two days and combines teaching and live coding.
 
-##Tuesday 28th July
-
-| Time | Session | 
-|----|----|
-| 10:00 - 12:30 | **What they forgot to teach you about computers** | 
-|               | File system organisation, file types, working directories and paths. | 
-| 12:30 - 13:30 |  Lunch |
-| 13:30 - 16:00 | **Types of variable, summarising and plotting distributions** | 
-|               |Revise the difference between continuous and discrete values and how we summarise and visualise them. Importing data from text files and excel files and developing your understanding of working directories and paths. |
-
-## Tuesday 28 July sarah
-
-| Time | Session |
-|------|---------|
-| 10:00–12:30 | **What they forgot to teach you about computers** |
-| | File system organisation, file types, working directories and paths. |
-| 12:30–13:30 | Lunch |
-| 13:30–16:00 | **Types of variable, summarising and plotting distributions** |
-| | Revise the difference between continuous and discrete variables and how we summarise and visualise them. Import data from text and Excel files while developing your understanding of working directories and paths. |
-
 **Tuesday 28th July** 
 
 | Time | Session | Description |
@@ -102,7 +82,8 @@ The workshop takes place over two days and combines teaching and live coding.
 | Time | Session | Description |
 |--|----|----|
 | 10:00–12:30           | **Summarising data with several variables** | Building on the previous day's work exploring single variables, you will learn how to summarise and visualise datasets containing multiple variables. You will identify response and explanatory variables, explore the principles of "tidy" data, carry out a simple data tidying exercise, and learn how to save figures for publication and reporting. |
-| 12:30–13:30           | **Lunch**                                   |    |                                                                                                                                                  | 13:30–16:00           | **Data organisation in spreadsheets**       | Learn how to recognise the underlying structure of your data and arrange it in a ‘tidy’ format to make your life easier. R workflows for qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ file. |                                                            
+| 12:30–13:30           | **Lunch**                                   |    |                                                                                                                                                                                                        
+| 13:30–16:00           | **Data organisation in spreadsheets**       | Learn how to recognise the underlying structure of your data and arrange it in a ‘tidy’ format to make your life easier. R workflows for qPCR analysis, RNA sequence analysis, flow cytometry analysis or ImageJ file. | 
 
 ### Audience
 
@@ -126,6 +107,7 @@ No previous programming experience is required. There are Windows PCs at the ven
 ### What you will learn
 
 After this workshop the successful learner will be able to:
+
 - explain what an operating system is and the organisation of files and directories in a file system
 - explain root, home and working directories along with absolute and relative file paths
 - find their way around the RStudio windows, use an RStudio Project to organise work and a script to run commands
@@ -137,7 +119,7 @@ After this workshop the successful learner will be able to:
 
 ### Venue
 
-The workshop will take place in the deparment of Biology at the University of York. 
+The workshop will take place in the department of Biology at the University of York. 
 
 Room B/R/012 (PC classroom) is located on the Ground Floor of Biology Block R in the Biomedical and Natural Sciences Building at the University of York's Campus West. Use the [University of York Campus Map](https://www.york.ac.uk/map/) for directions. 
 
