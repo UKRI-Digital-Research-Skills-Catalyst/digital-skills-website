@@ -28,7 +28,7 @@ ojs_define(event_data_cached = event_data_cached)
 ```{ojs}
 //| eval: true
 all_events = transpose(event_data_cached)
-event = all_events.find(row => row.link?.trim() === 'news/2026-01-13-quarto.html') ?? {}
+event = all_events.find(row => row.link?.trim() === 'news/2026-06-18-intro-to-r.html') ?? {}
 ```
 
 ::::: {.course-page-layout .column-page}
