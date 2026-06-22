@@ -4,7 +4,6 @@ format:
     css:
       - ../style.css
       - ../course-page.css
-      - ../index-header.css
     toc: false
     echo: false
     keep-hidden: true
