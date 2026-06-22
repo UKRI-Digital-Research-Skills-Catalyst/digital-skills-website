@@ -1,0 +1,60 @@
+# Stuck on a Digital Research Problem? 
+# Consult One of Our Experts.
+
+Do you need advice on a specific problem, help choosing the right tools, or guidance from someone who has tackled a similar challenge before?
+Researchers from across the UK can book a one-to-one discussion with one of our Digital Research Infrastructure specialists and get practical advice tailored to their project. 
+
+It's completely **free to use** too! All the cost of the service is covered by the UKRI.
+
+## Who can book a consultation?
+Our consultancy service is open to anyone looking to develop their digital research skills or tackle a specific research challenge. 
+
+Whether you're a PhD student taking your first steps into data-intensive research, a postdoctoral researcher exploring new methods, an academic leading a project, or a research group looking for specialist advice, we're here to help. 
+
+We also welcome professional services staff supporting researchers, as well as colleagues from industry and the public sector who want to learn more about digital tools, data management, AI, bioinformatics, and other research technologies. 
+
+Whatever your background or level of experience, our experts can help you find practical solutions and useful next steps.
+
+## The expertise behind the Catalyst
+
+Our consultancy team draws on expertise from seven UKRI-funded DaSH (Data Science in Health and Bioscience) projects, bringing together specialists from across the UK research community.
+
+### Looking for help with images or visual data?
+
+From microscopy and medical imaging to image analysis and visualisation, our experts can help you work more effectively with image-based datasets and the tools used to analyse them.
+
+### Curious about AI?
+Whether you're exploring machine learning for the first time or looking to apply AI methods to your research, we can help you understand the opportunities, limitations, and practical next steps.
+
+### Managing research data?
+
+If you're unsure about data management plans, metadata, data sharing, or FAIR principles, our specialists can provide guidance to help you organise, manage, and share your research more effectively.
+
+### Working with large biological datasets?
+
+Our network includes experts in genomics, transcriptomics, bioinformatics, and other data-intensive bioscience fields who can help you navigate workflows, tools, and analysis approaches.
+
+### Need more computing power?
+
+Whether you're considering cloud computing, high-performance computing, or ways to make your analyses more reproducible, we can help you find solutions that fit your research needs.
+
+### Collecting complex experimental data?
+
+From sensor technologies and automated data collection to robotics and plant phenotyping, we can support researchers working with increasingly data-rich experimental systems.
+
+### Not sure who or what to ask?
+
+That's completely normal. If you're facing a digital research challenge but aren't sure what support you need, get in touch anyway. We'll help connect you with the right expertise and resources.
+
+## Why book a consultation?
+
+Avoid spending days searching for the right software, reading documentation, or trying to work out whether a particular method is suitable for your data. A short conversation with somebody who already knows the field can save you a huge amount of time!
+Our consultations are not formal consultancy projects and there's no expectation that you arrive with a fully formed question. They're simply an opportunity to discuss your research challenge with somebody who understands digital research methods and can help you move forward.
+
+## Book today!
+
+The consultancy service is funded by UKRI to support the research community, so don't be shy about using it!
+
+Whether you're planning a new project, exploring AI, trying to improve your data management practices, wrestling with reproducibility, or just looking for advice on where to begin, we're here to help.
+
+Book a consultation, ask your questions, and make the most of the expertise available through the UKRI Digital Research Skills Catalyst!
