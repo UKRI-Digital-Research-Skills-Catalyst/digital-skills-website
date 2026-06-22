@@ -121,7 +121,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Consultancy Open Until</p>
-    <p>${event.date || '28th Feb 2027'}</p>
+    <p>28th Feb 2027</p>
   </div>
 </div>
 
@@ -131,7 +131,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Time Slots Available</p>
-    <p>${event.time || '15-30 Minutes Provisionally'}</p>
+    <p>15–30 minutes</p>
   </div>
 </div>
 
@@ -141,7 +141,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Location</p>
-    <p>${event.location || 'Online'}</p>
+    <p>Online</p>
   </div>
 </div>
 
@@ -151,11 +151,11 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Fees</p>
-    <p>${event.fees || 'Free'}</p>
+    <p>Free</p>
   </div>
 </div>
 
-<a href="${event.register_link || '#'}" class="register-button">Book Now</a>
+<a href="#" class="register-button">Book Now</a>
 
 <div class="questions-section">
   <p>Questions?</p>
