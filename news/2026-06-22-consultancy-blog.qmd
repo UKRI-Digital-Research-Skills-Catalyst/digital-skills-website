@@ -155,7 +155,7 @@ html`
   </div>
 </div>
 
-<a href="#" class="register-button">Book Now</a>
+<a href="https://docs.google.com/forms/d/e/1FAIpQLSfZzkuJIe5j5dADrvhOsB_CILZ_QExxxFESWph_69tGfLZw4Q/viewform?embedded=true" class="register-button">Book Now</a>
 
 <div class="questions-section">
   <p>Questions?</p>
