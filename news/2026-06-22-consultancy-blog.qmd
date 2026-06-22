@@ -1,3 +1,20 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+      - ../index-header.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
 # Stuck on a Digital Research Problem? 
 # Consult One of Our Experts.
 
@@ -19,32 +36,65 @@ Whatever your background or level of experience, our experts can help you find p
 
 Our consultancy team draws on expertise from seven UKRI-funded DaSH (Data Science in Health and Bioscience) projects, bringing together specialists from across the UK research community.
 
-### Looking for help with images or visual data?
+<div id="consult-cards">
 
-From microscopy and medical imaging to image analysis and visualisation, our experts can help you work more effectively with image-based datasets and the tools used to analyse them.
+  <div class="consult-card">
+    <div class="icon">
+      <i class="fa-solid fa-image"></i>
+    </div>
+    <h3>Working with Images or Visual Data?</h3>
+    <p>Get support with microscopy, medical imaging, image analysis, visualisation, and tools for working with image-based datasets.</p>
+  </div>
 
-### Curious about AI?
-Whether you're exploring machine learning for the first time or looking to apply AI methods to your research, we can help you understand the opportunities, limitations, and practical next steps.
+  <div class="consult-card">
+    <div class="icon">
+      <i class="fa-solid fa-brain"></i>
+    </div>
+    <h3>Curious About AI?</h3>
+    <p>Whether you're new to machine learning or applying AI in your research, we can help you explore methods, limitations, and practical next steps.</p>
+  </div>
 
-### Managing research data?
+  <div class="consult-card">
+    <div class="icon">
+      <i class="fa-solid fa-database"></i>
+    </div>
+    <h3>Managing Research Data?</h3>
+    <p>Get guidance on data management plans, metadata, data sharing, FAIR principles, and organising your research data effectively.</p>
+  </div>
 
-If you're unsure about data management plans, metadata, data sharing, or FAIR principles, our specialists can provide guidance to help you organise, manage, and share your research more effectively.
+  <div class="consult-card">
+    <div class="icon">
+      <i class="fa-solid fa-dna"></i>
+    </div>
+    <h3>Working with Biological Data?</h3>
+    <p>Connect with experts in genomics, transcriptomics, bioinformatics, and other data-intensive bioscience research.</p>
+  </div>
 
-### Working with large biological datasets?
+  <div class="consult-card">
+    <div class="icon">
+      <i class="fa-solid fa-server"></i>
+    </div>
+    <h3>Need More Computing Power?</h3>
+    <p>Explore cloud computing, high-performance computing, and reproducible research workflows tailored to your project.</p>
+  </div>
 
-Our network includes experts in genomics, transcriptomics, bioinformatics, and other data-intensive bioscience fields who can help you navigate workflows, tools, and analysis approaches.
+  <div class="consult-card">
+    <div class="icon">
+      <i class="fa-solid fa-microchip"></i>
+    </div>
+    <h3>Collecting Complex Experimental Data?</h3>
+    <p>Find support for sensor technologies, automated data collection, robotics, plant phenotyping, and other data-rich research systems.</p>
+  </div>
 
-### Need more computing power?
+  <div class="consult-card">
+    <div class="icon">
+      <i class="fa-solid fa-circle-question"></i>
+    </div>
+    <h3>Not Sure Where to Start?</h3>
+    <p>If you're facing a digital research challenge but don't know what support you need, we'll help connect you with the right expertise.</p>
+  </div>
 
-Whether you're considering cloud computing, high-performance computing, or ways to make your analyses more reproducible, we can help you find solutions that fit your research needs.
-
-### Collecting complex experimental data?
-
-From sensor technologies and automated data collection to robotics and plant phenotyping, we can support researchers working with increasingly data-rich experimental systems.
-
-### Not sure who or what to ask?
-
-That's completely normal. If you're facing a digital research challenge but aren't sure what support you need, get in touch anyway. We'll help connect you with the right expertise and resources.
+</div>
 
 ## Why book a consultation?
 
@@ -58,3 +108,59 @@ The consultancy service is funded by UKRI to support the research community, so 
 Whether you're planning a new project, exploring AI, trying to improve your data management practices, wrestling with reproducibility, or just looking for advice on where to begin, we're here to help.
 
 Book a consultation, ask your questions, and make the most of the expertise available through the UKRI Digital Research Skills Catalyst!
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Consultancy Open Until</p>
+    <p>${event.date || '28th Feb 2027'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time Slots Available</p>
+    <p>${event.time || '15-30 Minutes Provisionally'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'Online'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    <p>${(event.fees || 'Free'}</p>
+  </div>
+</div>
+
+<a href="${event.register_link || '#'}" class="register-button">Book Now</a>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a>
+</div>
+`
+```
+:::
