@@ -19,7 +19,8 @@ consultation](https://docs.google.com/forms/d/e/1FAIpQLSfZzkuJIe5j5dADrvhOsB_CIL
 
 [{{< fa solid puzzle-piece >}}]{style="display: none;"}
 
-Do you need advice on a specific problem, help choosing the right tools, or guidance from someone who has tackled a similar challenge before? Researchers from across the UK can book a one-to-one discussion with one of our Digital Research Infrastructure specialists and get practical advice tailored to their project.
+### Do you need advice on a specific problem, help choosing the right tools, or guidance from someone who has tackled a similar challenge before? 
+Researchers from across the UK can book a one-to-one discussion with one of our Digital Research Infrastructure specialists and get practical advice tailored to their project.
 
 Whether you’re a PhD student taking your first steps into data-intensive research, a postdoctoral researcher exploring new methods, an academic leading a project, or a research group looking for specialist advice, we’re here to help.
 
@@ -27,7 +28,7 @@ We also welcome professional services staff supporting researchers, as well as c
 
 Whatever your background or level of experience, our experts can help you find practical solutions and useful next steps.
 
-It’s completely **free to use** too! All the cost of the service is covered by the UKRI.
+### It’s completely **free to use** too! All the cost of the service is covered by the UKRI.
 
 # Get help to...
 
