@@ -151,7 +151,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Fees</p>
-    <p>${(event.fees || 'Free'}</p>
+    <p>${event.fees || 'Free'}</p>
   </div>
 </div>
 
