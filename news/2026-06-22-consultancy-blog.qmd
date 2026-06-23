@@ -2,7 +2,6 @@
 format:
   html:
     css:
-      - ../style.css
       - ../course-page.css
     toc: false
     echo: false
