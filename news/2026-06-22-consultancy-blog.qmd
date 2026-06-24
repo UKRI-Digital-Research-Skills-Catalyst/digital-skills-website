@@ -38,6 +38,7 @@ Whatever your background or level of experience, our experts can help you find p
 
 Our consultancy team draws on expertise from seven UKRI-funded DaSH (Data Science in Health and Bioscience) projects, bringing together specialists from across the UK research community.
 
+```{=html}
 <div id="consult-cards">
 
   <div class="consult-card">
@@ -97,6 +98,7 @@ Our consultancy team draws on expertise from seven UKRI-funded DaSH (Data Scienc
   </div>
 
 </div>
+```
 
 ## Why book a consultation?
 
