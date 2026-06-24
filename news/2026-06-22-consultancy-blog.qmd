@@ -17,7 +17,7 @@ format:
 # Stuck on a Digital Research Problem? 
 # Consult One of Our Experts.
 
-![Consult an Expert](../assets/sitelaunchimage.png)
+![Consult an Expert](../assets/sitelaunchimage.png){width=100% fig-cap=""}
 
 ::::: {.course-page-layout .column-page}
 ::: course-content
