@@ -43,6 +43,14 @@ Our consultancy team draws on expertise from seven UKRI-funded DaSH (Data Scienc
 
   <div class="consult-card">
     <div class="icon">
+      <i class="fa-solid fa-circle-question"></i>
+    </div>
+    <h3>Not Sure Where to Start?</h3>
+    <p>If you're facing a digital research challenge but don't know what support you need, we'll help connect you with the right expertise.</p>
+  </div>
+
+  <div class="consult-card">
+    <div class="icon">
       <i class="fa-solid fa-image"></i>
     </div>
     <h3>Working with Images or Visual Data?</h3>
@@ -87,14 +95,6 @@ Our consultancy team draws on expertise from seven UKRI-funded DaSH (Data Scienc
     </div>
     <h3>Collecting Complex Experimental Data?</h3>
     <p>Find support for sensor technologies, automated data collection, robotics, plant phenotyping, and other data-rich research systems.</p>
-  </div>
-
-  <div class="consult-card">
-    <div class="icon">
-      <i class="fa-solid fa-circle-question"></i>
-    </div>
-    <h3>Not Sure Where to Start?</h3>
-    <p>If you're facing a digital research challenge but don't know what support you need, we'll help connect you with the right expertise.</p>
   </div>
 
 </div>
