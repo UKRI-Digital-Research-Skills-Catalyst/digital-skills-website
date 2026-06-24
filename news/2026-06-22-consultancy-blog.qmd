@@ -17,7 +17,7 @@ format:
 # Stuck on a Digital Research Problem? 
 # Consult One of Our Experts.
 
-![Consult an Expert](../assets/sitelaunchimage.png){width=100% fig-cap=""}
+![Consult an Expert](../assets/laptop-coding-help.png){width=100% fig-cap=""}
 
 ::::: {.course-page-layout .column-page}
 ::: course-content
@@ -40,16 +40,12 @@ Whatever your background or level of experience, our experts can help you find p
 
 Our consultancy team draws on expertise from seven UKRI-funded DaSH (Data Science in Health and Bioscience) projects, bringing together specialists from across the UK research community.
 
+### Not Sure Where to Start?
+
+If you're facing a digital research challenge but don't know what support you need, we'll help connect you with the right expertise.
+
 ```{=html}
 <div id="consult-cards">
-
-  <div class="consult-card">
-    <div class="icon">
-      <i class="fa-solid fa-circle-question"></i>
-    </div>
-    <h3>Not Sure Where to Start?</h3>
-    <p>If you're facing a digital research challenge but don't know what support you need, we'll help connect you with the right expertise.</p>
-  </div>
 
   <div class="consult-card">
     <div class="icon">
@@ -120,7 +116,7 @@ Book a consultation, ask your questions, and make the most of the expertise avai
 ```{ojs}
 //| eval: true
 html`
-<h3>Event Details</h3>
+<h3>Details</h3>
 
 <div class="event-detail-item">
   <div class="event-detail-icon">
