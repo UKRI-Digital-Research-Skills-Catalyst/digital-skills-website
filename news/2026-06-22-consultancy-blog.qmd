@@ -16,6 +16,9 @@ format:
 # Stuck on a Digital Research Problem? 
 # Consult One of Our Experts.
 
+::::: {.course-page-layout .column-page}
+::: course-content
+
 Do you need advice on a specific problem, help choosing the right tools, or guidance from someone who has tackled a similar challenge before?
 Researchers from across the UK can book a one-to-one discussion with one of our Digital Research Infrastructure specialists and get practical advice tailored to their project. 
 
@@ -106,6 +109,7 @@ The consultancy service is funded by UKRI to support the research community, so 
 Whether you're planning a new project, exploring AI, trying to improve your data management practices, wrestling with reproducibility, or just looking for advice on where to begin, we're here to help.
 
 Book a consultation, ask your questions, and make the most of the expertise available through the UKRI Digital Research Skills Catalyst!
+:::
 
 ::: event-details-sidebar
 ```{ojs}
@@ -162,3 +166,4 @@ html`
 `
 ```
 :::
+:::::
