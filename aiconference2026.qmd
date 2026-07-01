@@ -141,7 +141,11 @@ Illustrated by examples from ongoing cancer research projects, this talk will ex
 
 #### Dr Alessandra Vigilante (Kings College London)
 
-This workshop will introduce how AI and machine learning can help integrate multiomics data to discover biology and make useful predictions.
+Artificial intelligence is reshaping how we work with omics data, moving the field from traditional, rule-based pipelines toward AI-driven approaches. This shift is visible across the board: from established methods of SNP analysis to newer models such as AlphaGenome, and from manual coding to AI-assisted development.
+
+This session is split between a short talk and a live demonstration. The talk will outline this changing landscape, what's driving the move to AI-based tools and what it means for everyday omics workflows. The demonstration will then put these ideas into practice. Attendees are welcome to follow along on their own laptops or simply watch.
+
+No prior experience with AI tools is required.
 
 ------------------------------------------------------------------------
 
