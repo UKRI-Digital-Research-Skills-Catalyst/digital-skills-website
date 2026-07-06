@@ -78,7 +78,7 @@ The workshop takes place over two days and combines teaching with live coding.
 | 12:30 - 13:30 |  | Lunch |
 | 13:30 - 16:00 | **Types of variable, summarising and plotting distributions** | Revise the difference between continuous and discrete values and how we summarise and visualise them. Importing data from text files and excel files and developing your understanding of working directories and paths. |
 
-**Wednesday 30 July**         
+**Wednesday 29th July**         
 
 | Time | Session | Description |
 |--|----|----|
