@@ -14,7 +14,7 @@ for _, row in df.iterrows():
 
     jsonld = {
         "@context": "https://schema.org",
-        "@type": "Course",
+        "@type": "TrainingMaterial",
         "@id": row.get("identifier") if str(row.get("identifier")).startswith("http") else row.get("url"),
         "url": row.get("url"),
         "name": row.get("headline"),
