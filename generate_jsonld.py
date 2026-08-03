@@ -14,13 +14,14 @@ for _, row in df.iterrows():
 
     jsonld = {
         "@context": "https://schema.org",
-        "@type": "TrainingMaterial",
+        "@type": "Course",
         "@id": row.get("identifier") if str(row.get("identifier")).startswith("http") else row.get("url"),
         "url": row.get("url"),
         "name": row.get("headline"),
         "description": desc,
         "inLanguage": row.get("inLanguage","en"),
         "isAccessibleForFree": str(row.get("isAccessibleForFree","")).lower()=="yes",
+        "hasCourseInstance": False
     }
 
     if pd.notna(row.get("learningResourceType")):
