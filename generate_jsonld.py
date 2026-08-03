@@ -21,7 +21,6 @@ for _, row in df.iterrows():
         "description": desc,
         "inLanguage": row.get("inLanguage","en"),
         "isAccessibleForFree": str(row.get("isAccessibleForFree","")).lower()=="yes",
-        "hasCourseInstance": False
     }
 
     if pd.notna(row.get("learningResourceType")):
