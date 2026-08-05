@@ -153,6 +153,7 @@ No prior experience with AI tools is required.
 
 ------------------------------------------------------------------------
 
+::: {.callout-note collapse="true"}
 ### Posters
 
 #### BioCOMPASS: Integrating Biomarkers into Transformer-Based Immunotherapy Response Prediction
@@ -235,7 +236,7 @@ Alexander Marks (University of York)
 
 #### Neural-stromal crosstalk in tumour microenvironment
 Anthea Hiu Ching Ma (University of Sheffield)
-
+:::
 ------------------------------------------------------------------------
 
 # About the Organisers
