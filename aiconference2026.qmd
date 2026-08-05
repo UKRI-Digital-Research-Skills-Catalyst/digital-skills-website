@@ -236,6 +236,8 @@ Alexander Marks (University of York)
 #### Neural-stromal crosstalk in tumour microenvironment
 Anthea Hiu Ching Ma (University of Sheffield)
 
+------------------------------------------------------------------------
+
 # About the Organisers
 
 ::: {.column width="30%"}
