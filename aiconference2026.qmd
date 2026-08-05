@@ -68,7 +68,7 @@ The event will be taking place across all three venues within the Guildhall: The
 
 ## Overview
 
-| Time | Room 1 | Room 2 | Room 3 |
+| Time | Main Hall | Riverside Lounge | Committee Room |
 |------------------|------------------|-------------------|------------------|
 | 09:30–10:00 | Registration + networking coffee |  |  |
 | 10:00–10:15 | Introductory Welcome |  |  |
@@ -152,6 +152,89 @@ This session is split between a short talk and a live demonstration. The talk wi
 No prior experience with AI tools is required.
 
 ------------------------------------------------------------------------
+
+### Posters
+
+#### BioCOMPASS: Integrating Biomarkers into Transformer-Based Immunotherapy Response Prediction
+Sayed Hashim (University of York)
+
+#### From Biomass Waste to High Value Chemicals: Building Microbial Terpenoid Production Platform from Lignin
+Arpit Jindal (University of Warwick)
+
+#### Lignin Biomass Valorisation via Novel Styrene Pathways
+Indra Kurniawan Saputra (University of Warwick)
+
+#### Targeting a Noncanonical Site on MraY: Naphthylisoquinoline Alkaloids from *Ancistrocladus tectorius* for Antibacterial Discovery
+Baiq Nila Sari Ningsih (University of Warwick)
+
+#### AIRBDS: Quantifying AI-readiness in bioscience data
+Charlie Harrison (AIBIO-UK)
+
+#### Cartographic imprinting distance predicts influenza neutralisation responses in human serological data
+Aishwarya Bhatta (University of Warwick)
+
+#### Mask-conditioned synthetic prostate MRI volumes using a denoising diffusion probabilistic model
+Hazrat Ali (University of Stirling)
+
+#### Generative AI-Assisted Annotation for the Automated Counting and Sizing of Faba Bean Root Nodules
+Murat Kaya (University of Lincoln)
+
+#### Predicting Biological Nitrogen Fixation in Faba Bean Using Mobile Robot–Derived Multispectral Data
+Murat Kaya (University of Lincoln)
+
+#### Discovery and functional characterisation of novel natural therapeutics
+Taimoor Khan (University of Warwick)
+
+#### Making the invisible visible: Reconstructing the recovery of microbial communities associated with domesticated tree species in the Amazon rainforest
+Lay Dewi (University of Oxford)
+
+#### Comparing ecological trait-based and biological language model approaches for microbiome engineering
+Hester van Schalkwyk (Imperial College London)
+
+#### PHI-base: AI-assisted biocuration and FAIR pathogen-host interaction knowledge for agricultural and human/animal pathogens
+Hsin-Yu Chang (Rothamsted Research)
+
+#### From patients to microphysiological systems: dissecting virulence, host responses and antifungal resistance in vulvovaginal candidiasis
+Emily Jones (Quadram Institute Bioscience)
+
+#### A Neural Field Theory Framework for EEG Inversion: Connecting Dynamics with Data
+Jehan Alswaihli (University of Bath)
+
+#### High throughput isolation of Lewy body affected neurons from human brain using laser capture microscopy
+Grace Thomson (University of Exeter)
+
+#### Machine Learning Prediction of Bulk Density and Saturated Hydraulic Conductivity in Regenerative and Conventional Upland Grassland Catchments
+Adeyemi Olasore (Heriot-Watt University)
+
+#### Using Interpretable Machine Learning to Infer Form, Fate and Function during Organ Morphogenesis
+August Weinbren (UCL)
+
+#### Influence of Surface Morphology on Gas Bubble Nucleation and Evolution in AEM Electrolysers
+VSSL Prasad Talluri (Newcastle University)
+
+#### MetaboViz: A Zero-Install Three-Tier Browser Platform for Interactive AI-assisted Genome-Scale Metabolic Modelling
+Tamoghna Das (Loughborough University)
+
+#### Repurposing Apache Airflow for Test Case Orchestration
+Hui Shi (Adaptix)
+
+#### The impact of Healthy Ageing on the Neurobiological basis of memory
+Suzan Elsheikh (Teesside University)
+
+#### P-3 is a novel, selective DHCR24 inhibitor that kills ccRCC cells by ER-derived ferroptosis
+Priyankush Choudhury (Barts Cancer Institute (QMUL))
+
+#### Cross-recognition and neutralization of eight American snake venoms by camel antibodies produced using new immunization strategies
+Santiago Tabares (Liverpool School of Tropical Medicine)
+
+#### Top-Down Engineering of Self-Organising Systems
+James Stovold (University of York)
+
+#### Uncovering the Transcriptome Basis of Nickel Accumulation and Hyperaccumulation
+Alexander Marks (University of York)
+
+#### Neural-stromal crosstalk in tumour microenvironment
+Anthea Hiu Ching Ma (University of Sheffield)
 
 # About the Organisers
 
