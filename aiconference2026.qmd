@@ -153,90 +153,18 @@ No prior experience with AI tools is required.
 
 ------------------------------------------------------------------------
 
-::: {.callout-note collapse="true"}
-### Posters
+## Poster Details (Click to Expand)
 
-#### BioCOMPASS: Integrating Biomarkers into Transformer-Based Immunotherapy Response Prediction
-Sayed Hashim (University of York)
+| Group A | Group B | Group C | Group D |
+|---|---|---|---|
+| ### A1 BioCOMPASS: Integrating Biomarkers into Transformer-Based Immunotherapy Response Prediction<br>Sayed Hashim (University of York) | ### B1 From Biomass Waste to High Value Chemicals: Building Microbial Terpenoid Production Platform from Lignin<br>Arpit Jindal (University of Warwick) | C1 ### Making the invisible visible: Reconstructing the recovery of microbial communities associated with domesticated tree species in the Amazon rainforest<br>Lay Dewi (University of Oxford) | ### D1 Machine Learning Prediction of Bulk Density and Saturated Hydraulic Conductivity in Regenerative and Conventional Upland Grassland Catchments<br>Adeyemi Olasore (Heriot-Watt University) |
+| ### A2 AIRBDS: Quantifying AI-readiness in bioscience data<br>Charlie Harrison (AIBIO-UK) | ### B2 Targeting a Noncanonical Site on MraY: Naphthylisoquinoline Alkaloids from *Ancistrocladus tectorius* for Antibacterial Discovery<br>Baiq Nila Sari Ningsih (University of Warwick) | ### C2 Cross-recognition and neutralization of eight American snake venoms by camel antibodies produced using new immunization strategies<br>Santiago Tabares (Liverpool School of Tropical Medicine) | ### D2 Influence of Surface Morphology on Gas Bubble Nucleation and Evolution in AEM Electrolysers<br>VSSL Prasad Talluri (Newcastle University) |
+| ### A3 Cartographic imprinting distance predicts influenza neutralisation responses in human serological data<br>Aishwarya Bhatta (University of Warwick) | ### B3 From patients to microphysiological systems: dissecting virulence, host responses and antifungal resistance in vulvovaginal candidiasis<br>Emily Jones (Quadram Institute Bioscience) | ### C3 High throughput isolation of Lewy body affected neurons from human brain using laser capture microscopy<br>Grace Thomson (University of Exeter) | ### D3 MetaboViz: A Zero-Install Three-Tier Browser Platform for Interactive AI-assisted Genome-Scale Metabolic Modelling<br>Tamoghna Das (Loughborough University) |
+| ### A4 Mask-conditioned synthetic prostate MRI volumes using a denoising diffusion probabilistic model<br>Hazrat Ali (University of Stirling) | ### B4 Lignin Biomass Valorisation via Novel Styrene Pathways<br>Indra Kurniawan Saputra (University of Warwick) | ### C4 A Neural Field Theory Framework for EEG Inversion: Connecting Dynamics with Data<br>Jehan Alswaihli (University of Bath) | ### D4 Top-Down Engineering of Self-Organising Systems<br>James Stovold (University of York) |
+| ### A5 Generative AI-Assisted Annotation for the Automated Counting and Sizing of Faba Bean Root Nodules<br>Murat Kaya (University of Lincoln) | ### B5 Discovery and functional characterisation of novel natural therapeutics<br>Taimoor Khan (University of Warwick) | ### C5 Neural-stromal crosstalk in tumour microenvironment<br>Anthea Hiu Ching Ma (University of Sheffield) | ### D5 Repurposing Apache Airflow for Test Case Orchestration<br>Hui Shi (Adaptix) |
+| ### A6 Predicting Biological Nitrogen Fixation in Faba Bean Using Mobile Robot–Derived Multispectral Data<br>Murat Kaya (University of Lincoln) | ### B6 Comparing ecological trait-based and biological language model approaches for microbiome engineering<br>Hester van Schalkwyk (Imperial College London) | ### C6 P-3 is a novel, selective DHCR24 inhibitor that kills ccRCC cells by ER-derived ferroptosis<br>Priyankush Choudhury (Barts Cancer Institute (QMUL)) | ### D6 Uncovering the Transcriptome Basis of Nickel Accumulation and Hyperaccumulation<br>Alexander Marks (University of York) |
+| ### A7 Using Interpretable Machine Learning to Infer Form, Fate and Function during Organ Morphogenesis<br>August Weinbren (UCL) | ### B7 PHI-base: AI-assisted biocuration and FAIR pathogen-host interaction knowledge for agricultural and human/animal pathogens<br>Hsin-Yu Chang (Rothamsted Research) | ### C7 The impact of Healthy Ageing on the Neurobiological basis of memory<br>Suzan Elsheikh (Teesside University) |  |
 
-#### From Biomass Waste to High Value Chemicals: Building Microbial Terpenoid Production Platform from Lignin
-Arpit Jindal (University of Warwick)
-
-#### Lignin Biomass Valorisation via Novel Styrene Pathways
-Indra Kurniawan Saputra (University of Warwick)
-
-#### Targeting a Noncanonical Site on MraY: Naphthylisoquinoline Alkaloids from *Ancistrocladus tectorius* for Antibacterial Discovery
-Baiq Nila Sari Ningsih (University of Warwick)
-
-#### AIRBDS: Quantifying AI-readiness in bioscience data
-Charlie Harrison (AIBIO-UK)
-
-#### Cartographic imprinting distance predicts influenza neutralisation responses in human serological data
-Aishwarya Bhatta (University of Warwick)
-
-#### Mask-conditioned synthetic prostate MRI volumes using a denoising diffusion probabilistic model
-Hazrat Ali (University of Stirling)
-
-#### Generative AI-Assisted Annotation for the Automated Counting and Sizing of Faba Bean Root Nodules
-Murat Kaya (University of Lincoln)
-
-#### Predicting Biological Nitrogen Fixation in Faba Bean Using Mobile Robot–Derived Multispectral Data
-Murat Kaya (University of Lincoln)
-
-#### Discovery and functional characterisation of novel natural therapeutics
-Taimoor Khan (University of Warwick)
-
-#### Making the invisible visible: Reconstructing the recovery of microbial communities associated with domesticated tree species in the Amazon rainforest
-Lay Dewi (University of Oxford)
-
-#### Comparing ecological trait-based and biological language model approaches for microbiome engineering
-Hester van Schalkwyk (Imperial College London)
-
-#### PHI-base: AI-assisted biocuration and FAIR pathogen-host interaction knowledge for agricultural and human/animal pathogens
-Hsin-Yu Chang (Rothamsted Research)
-
-#### From patients to microphysiological systems: dissecting virulence, host responses and antifungal resistance in vulvovaginal candidiasis
-Emily Jones (Quadram Institute Bioscience)
-
-#### A Neural Field Theory Framework for EEG Inversion: Connecting Dynamics with Data
-Jehan Alswaihli (University of Bath)
-
-#### High throughput isolation of Lewy body affected neurons from human brain using laser capture microscopy
-Grace Thomson (University of Exeter)
-
-#### Machine Learning Prediction of Bulk Density and Saturated Hydraulic Conductivity in Regenerative and Conventional Upland Grassland Catchments
-Adeyemi Olasore (Heriot-Watt University)
-
-#### Using Interpretable Machine Learning to Infer Form, Fate and Function during Organ Morphogenesis
-August Weinbren (UCL)
-
-#### Influence of Surface Morphology on Gas Bubble Nucleation and Evolution in AEM Electrolysers
-VSSL Prasad Talluri (Newcastle University)
-
-#### MetaboViz: A Zero-Install Three-Tier Browser Platform for Interactive AI-assisted Genome-Scale Metabolic Modelling
-Tamoghna Das (Loughborough University)
-
-#### Repurposing Apache Airflow for Test Case Orchestration
-Hui Shi (Adaptix)
-
-#### The impact of Healthy Ageing on the Neurobiological basis of memory
-Suzan Elsheikh (Teesside University)
-
-#### P-3 is a novel, selective DHCR24 inhibitor that kills ccRCC cells by ER-derived ferroptosis
-Priyankush Choudhury (Barts Cancer Institute (QMUL))
-
-#### Cross-recognition and neutralization of eight American snake venoms by camel antibodies produced using new immunization strategies
-Santiago Tabares (Liverpool School of Tropical Medicine)
-
-#### Top-Down Engineering of Self-Organising Systems
-James Stovold (University of York)
-
-#### Uncovering the Transcriptome Basis of Nickel Accumulation and Hyperaccumulation
-Alexander Marks (University of York)
-
-#### Neural-stromal crosstalk in tumour microenvironment
-Anthea Hiu Ching Ma (University of Sheffield)
-:::
 ------------------------------------------------------------------------
 
 # About the Organisers
