@@ -66,12 +66,10 @@ Please note that reimbursement cannot be processed without valid receipts.
 - **Train travel** You must travel in standard class (unless you have a disability or accessibility needs). You will need to request approval prior to travel if you wish to travel in a higher class than standard.
 - **Car Travel** You should only travel by car if rail travel or public transport is not practical or cost-effective.  The HMRC mileage rate for expenses claims is 55p per mile.  
 - **Taxis** The University of York expects visitors to use public transport where practicable.  Taxis can only be used in the following circumstances:
-
-
-a)  if you have a disability that makes it difficult to use public transport
-b)  if you have an early start or late return and there is only very limited public transport at that time
-c)  if you are in an area where there is no public transport
-d)  if you need to travel in an unsafe area.
+    - if you have a disability that makes it difficult to use public transport
+    - if you have an early start or late return and there is only very limited public transport at that time
+    - if you are in an area where there is no public transport
+    - if you need to travel in an unsafe area.
 
 ------------------------------------------------------------------------
 
