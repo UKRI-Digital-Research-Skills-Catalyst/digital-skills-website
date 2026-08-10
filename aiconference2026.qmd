@@ -83,14 +83,14 @@ The event will be taking place across all three venues within the Guildhall: The
 |------------------|------------------|-------------------|------------------|
 | 09:30–10:00 | Registration + networking coffee |  |  |
 | 10:00–10:15 | Introductory Welcome |  |  |
-| 10:20–11:20 | [Image visualisation with Napari, a modular based framework with AI capabilities] | [Large Language Models in Bioscience] | [AI for agriculture] |
+| 10:20–11:20  | [Large Language Models in Bioscience] | [Image visualisation with Napari, a modular based framework with AI capabilities] | [AI for agriculture] |
 | 11:20–11:30 | Break |  |  |
-| 11:30–12:30 | [Image visualisation with Napari, a modular based framework with AI capabilities] | [scryptIQ Supervised Learning Taster Session] | [Funding at the Interface: Tips for writing grants for AI and Biosciences research] |
+| 11:30–12:30 | [scryptIQ Supervised Learning Taster Session] | [Image visualisation with Napari, a modular based framework with AI capabilities] | [Funding at the Interface: Tips for writing grants for AI and Biosciences research] |
 | 12:30–13:30 | Lunch + Poster Sessions |  |  |
 |  | [MORF-BIO Demonstration] |  |  |
 | 13:30–14:30 | [Galaxy for AI in Bioscience: Tools, Training, and Reproducible Workflows] | [A whirlwind tour of the FAIR principles] |  |
 | 14:30–14:50 | Coffee Break |  |  |
-| 14:50–15:50 | [Biologically-Literate Feature Selection] | [AI for Multiomics] |  |
+| 14:50–15:50 | [AI for Multiomics] | [Biologically-Literate Feature Selection] |  |
 | 16:00–16:15 | Closing Remarks |  |  |
 | 16:15 onwards | Networking at House of Trembling Madness |  |  |
 
@@ -98,7 +98,7 @@ The event will be taking place across all three venues within the Guildhall: The
 
 ### Image visualisation with Napari, a modular based framework with AI capabilities
 
-#### Prof Dave Cash (University College London); Dr David Pérez-Suárez (University College London)
+#### Prof Dave Cash (University College London); Dr Stella Prins (University College London)
 
 Image analysis, visualisation and processing are a set of skills required in any medical and bioscience researcher who works with imaging instruments. Napari is an extensible modular based open source framework that is easy to learn and to develop to. This session will introduce how to use it in your research workflow and present some of the plugins that provide AI capabilities to analyse and process your data.
 
@@ -174,8 +174,8 @@ No prior experience with AI tools is required.
 | **A4. Mask-conditioned synthetic prostate MRI volumes using a denoising diffusion probabilistic model**<br>Hazrat Ali (University of Stirling) | **B4. Lignin Biomass Valorisation via Novel Styrene Pathways**<br>Indra Kurniawan Saputra (University of Warwick) | **C4. A Neural Field Theory Framework for EEG Inversion: Connecting Dynamics with Data**<br>Jehan Alswaihli (University of Bath) | **D4. Top-Down Engineering of Self-Organising Systems**<br>James Stovold (University of York) |
 | **A5. Generative AI-Assisted Annotation for the Automated Counting and Sizing of Faba Bean Root Nodules**<br>Murat Kaya (University of Lincoln) | **B5. Discovery and functional characterisation of novel natural therapeutics**<br>Taimoor Khan (University of Warwick) | **C5. Neural-stromal crosstalk in tumour microenvironment**<br>Anthea Hiu Ching Ma (University of Sheffield) | **D5. Repurposing Apache Airflow for Test Case Orchestration**<br>Hui Shi (Adaptix) |
 | **A6. Predicting Biological Nitrogen Fixation in Faba Bean Using Mobile Robot–Derived Multispectral Data**<br>Murat Kaya (University of Lincoln) | **B6. Comparing ecological trait-based and biological language model approaches for microbiome engineering**<br>Hester van Schalkwyk (Imperial College London) | **C6. P-3 is a novel, selective DHCR24 inhibitor that kills ccRCC cells by ER-derived ferroptosis**<br>Priyankush Choudhury (Barts Cancer Institute (QMUL)) | **D6. Uncovering the Transcriptome Basis of Nickel Accumulation and Hyperaccumulation**<br>Alexander Marks (University of York) |
-| **A7. Using Interpretable Machine Learning to Infer Form, Fate and Function during Organ Morphogenesis**<br>August Weinbren (UCL) | **B7. PHI-base: AI-assisted biocuration and FAIR pathogen-host interaction knowledge for agricultural and human/animal pathogens**<br>Hsin-Yu Chang (Rothamsted Research) | **C7. The impact of Healthy Ageing on the Neurobiological basis of memory**<br>Suzan Elsheikh (Teesside University) | |
-| **A8. The Hub for Applied Bioinformatics (HAB): Supporting the Bioinformatics Community Through Training, Collaboration, and Community Building**<br>Alessandra Vigilante | **B8. Analysing Volatile Compounds: A Comparison of Plant-Based Meat analogues and Beef**<br>Wardah Almansaf (University of Nottingham) | **C8. Reuniting biology and machine learning: pan-cancer discovery of actionable disease mechanisms**<br>Andrew Mason (University of York) |  |
+| **A7. The Hub for Applied Bioinformatics (HAB): Supporting the Bioinformatics Community Through Training, Collaboration, and Community Building**<br>Alessandra Vigilante | **B7. PHI-base: AI-assisted biocuration and FAIR pathogen-host interaction knowledge for agricultural and human/animal pathogens**<br>Hsin-Yu Chang (Rothamsted Research) | **C7. The impact of Healthy Ageing on the Neurobiological basis of memory**<br>Suzan Elsheikh (Teesside University) | |
+|  | **B8. Analysing Volatile Compounds: A Comparison of Plant-Based Meat analogues and Beef**<br>Wardah Almansaf (University of Nottingham) | **C8. Reuniting biology and machine learning: pan-cancer discovery of actionable disease mechanisms**<br>Andrew Mason (University of York) |  |
 
 ------------------------------------------------------------------------
 
