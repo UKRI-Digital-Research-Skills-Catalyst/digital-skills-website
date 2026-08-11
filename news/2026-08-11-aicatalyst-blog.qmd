@@ -3,7 +3,7 @@
 With less than a month to go until September 4th and the UKRI AICatalyst Training Conference it’s all systems go behind the scenes to get everything together ready for you.
 The event will be full of explorations of careful and critical use of AI in Biosciences, but also an opportunity for you to get to know other researchers using those techniques too!
 
-![The York Guildhall](https://github.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/blob/main/assets/guildhall.png){width=500}
+![The York Guildhall](https://raw.githubusercontent.com/UKRI-Digital-Research-Skills-Catalyst/digital-skills-website/refs/heads/main/assets/guildhall.png){width=500}
 
 # **Here’s 5 things to look forward to at AICatalyst 2026!**
 
