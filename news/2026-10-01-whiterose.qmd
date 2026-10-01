@@ -14,12 +14,9 @@ format:
 
 [{{< fa solid calendar >}}]{style="display: none;"}
 
-# Share experiences and exchange solutions 
+# Share experiences and exchange solutions: Join the White Rose cross-institutional PRISM Coffee & Chat Scheme! 
 
-
-# Join the cross-institutional PRISM Coffee & Chat Scheme
-
-![The White Rose University Consortium](../assets/WRC-Logo.png){fig-align="center" width="15%"}
+![The White Rose University Consortium](../assets/WRC-Logo.png){fig-align="center" width="45%"}
 
 ::::: {.course-page-layout .column-page}
 ::: course-content
@@ -80,7 +77,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Time slots</p>
-    <p>x3 45 min chats</p>
+    <p>Approx 45 min chats x3</p>
   </div>
 </div>
 
@@ -107,7 +104,7 @@ html`
 <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=qO3qvR3IzkWGPlIypTW3y8dKn3hhYZRCvAH0HQcYnoBUQ0NBU0xFQzQ5NVVVOFNJVjM4UzJRWlpaRSQlQCN0PWcu&route=shorturl" class="register-button">Book Now</a>
 
 <div class="questions-section">
-  <p>Questions?</p>
+  <p>**Questions?**</p>
   <a href="mailto:info@whiterose.ac.uk">info@whiterose.ac.uk</a>
 </div>
 `
