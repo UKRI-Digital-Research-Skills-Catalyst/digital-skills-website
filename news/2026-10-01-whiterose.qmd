@@ -17,12 +17,12 @@ format:
 # Share experiences and exchange solutions 
 # Join the cross-institutional PRISM Coffee & Chat Scheme
 
-![The White Rose University Consortium](../assets/WRC-Logo.png){width=100% fig-cap=""}
+![The White Rose University Consortium](../assets/WRC-Logo.png){width=40% fig-cap=""}
 
 ::::: {.course-page-layout .column-page}
 ::: course-content
 
-Are you managing research projects and looking to connect with others in similar roles?
+## Are you managing research projects and looking to connect with others in similar roles?
 
 Managing large, post-award research investments is a high-stakes, highly specialised job, and it can often feel like a lonely one. 
 
@@ -31,7 +31,7 @@ Whether you are a Project Manager, CDT Manager, Network Manager, or Project Coor
 That’s why the White Rose University Consortium is bringing back the PRISMs Coffee & Chat scheme for 2026/27.
 
 ## Who can book sign up to the scheme?
-This scheme has been designed specifically for PRISMs* (Professional Research Investment & Strategy Managers) across the Universities of Leeds, Sheffield, and York. 
+This scheme has been designed specifically for PRISMs (Professional Research Investment & Strategy Managers) across the Universities of Leeds, Sheffield, and York. 
 
 This initiative bridges the gap between and within our institutions to create an open, supportive community where you can share challenges and experiences, compare notes, and grow your network.
 
@@ -44,7 +44,7 @@ We know you’re time-poor, so the scheme is built to offer maximum connection w
 - Over the course of four months, you’ll connect with **three different PRISMs**, gaining insights into a variety of roles, disciplines, and institutions.
 - These one-on-one conversations are a chance to share experiences, exchange ideas, and explore career development opportunities.
 
-### Ready to build your network?
+## Ready to build your network?
 
 Complete the short registration form by **31st October** to take part in the November-February sessions. Any questions? Get in touch with the team at info@whiterose.ac.uk 
 
