@@ -17,7 +17,7 @@ format:
 # Share experiences and exchange solutions 
 # Join the cross-institutional PRISM Coffee & Chat Scheme
 
-![Consult an Expert](../assets/laptop-coding-help.png){width=100% fig-cap=""}
+![The White Rose University Consortium](../assets/WRC-Logo.png){width=100% fig-cap=""}
 
 ::::: {.course-page-layout .column-page}
 ::: course-content
@@ -46,7 +46,11 @@ We know you’re time-poor, so the scheme is built to offer maximum connection w
 
 ### Ready to build your network?
 
-Complete the short registration form by 31st October to take part in the November-February sessions. Any questions? Get in touch with the team at infor@whiterose.ac.uk 
+Complete the short registration form by **31st October** to take part in the November-February sessions. Any questions? Get in touch with the team at info@whiterose.ac.uk 
+
+[Find out more about the White Rose PRISM Network](https://whiterose.ac.uk/network/white-rose-prism-network/)
+
+Not a PRISM member yet? [Join the network today!](https://www.pris-managers.ac.uk/join) 
 
 :::
 
@@ -96,7 +100,7 @@ html`
   </div>
 </div>
 
-<a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=qO3qvR3IzkWGPlIypTW3y8dKn3hhYZRCvAH0HQcYnoBUQ0NBU0xFQzQ5NVVVOFNJVjM4UzJRWlpaRSQlQCN0PWcu&route=shorturl">Book Now</a>
+<a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=qO3qvR3IzkWGPlIypTW3y8dKn3hhYZRCvAH0HQcYnoBUQ0NBU0xFQzQ5NVVVOFNJVjM4UzJRWlpaRSQlQCN0PWcu&route=shorturl" class="register-button">Book Now</a>
 
 <div class="questions-section">
   <p>Questions?</p>
