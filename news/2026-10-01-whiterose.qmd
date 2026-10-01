@@ -1,1 +1,108 @@
+---
+format:
+  html:
+    css:
+      - ../course-page.css
+      - ../style.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
 
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+# Share experiences and exchange solutions 
+# Join the cross-institutional PRISM Coffee & Chat Scheme
+
+![Consult an Expert](../assets/laptop-coding-help.png){width=100% fig-cap=""}
+
+::::: {.course-page-layout .column-page}
+::: course-content
+
+Are you managing research projects and looking to connect with others in similar roles?
+
+Managing large, post-award research investments is a high-stakes, highly specialised job, and it can often feel like a lonely one. 
+
+Whether you are a Project Manager, CDT Manager, Network Manager, or Project Coordinator (or have a different job title!), finding peers who truly understand the day-to-day reality of your role isn’t always easy within a single department.
+
+That’s why the White Rose University Consortium is bringing back the PRISMs Coffee & Chat scheme for 2026/27.
+
+## Who can book sign up to the scheme?
+This scheme has been designed specifically for PRISMs* (Professional Research Investment & Strategy Managers) across the Universities of Leeds, Sheffield, and York. 
+
+This initiative bridges the gap between and within our institutions to create an open, supportive community where you can share challenges and experiences, compare notes, and grow your network.
+
+We know you’re time-poor, so the scheme is built to offer maximum connection with minimal time commitment.
+
+## How it works
+
+- From **November to February**, you’ll be matched with a PRISM at a similar grade, or interest from one of the partner universities.
+- You’ll arrange a short, informal **zoom call or in-person meeting** at a time that suits you both.
+- Over the course of four months, you’ll connect with **three different PRISMs**, gaining insights into a variety of roles, disciplines, and institutions.
+- These one-on-one conversations are a chance to share experiences, exchange ideas, and explore career development opportunities.
+
+### Ready to build your network?
+
+Complete the short registration form by 31st October to take part in the November-February sessions. Any questions? Get in touch with the team at infor@whiterose.ac.uk 
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Scheme runs</p>
+    <p>Nov 26 - Jan 27</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time slots</p>
+    <p>x3 45 min chats</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>Online or in-person</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    <p>Free</p>
+  </div>
+</div>
+
+<a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=qO3qvR3IzkWGPlIypTW3y8dKn3hhYZRCvAH0HQcYnoBUQ0NBU0xFQzQ5NVVVOFNJVjM4UzJRWlpaRSQlQCN0PWcu&route=shorturl">Book Now</a>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:info@whiterose.ac.uk">info@whiterose.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
