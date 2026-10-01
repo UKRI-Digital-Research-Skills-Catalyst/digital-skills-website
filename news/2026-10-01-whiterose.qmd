@@ -16,7 +16,7 @@ format:
 
 # Share experiences and exchange solutions: Join the White Rose cross-institutional PRISM Coffee & Chat Scheme! 
 
-![The White Rose University Consortium](../assets/WRC-Logo.png){fig-align="center" width="45%"}
+![The White Rose University Consortium](../assets/WRC-Logo.png){fig-align="center" width="20%"}
 
 ::::: {.course-page-layout .column-page}
 ::: course-content
