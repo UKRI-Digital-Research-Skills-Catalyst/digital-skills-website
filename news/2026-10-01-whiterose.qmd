@@ -17,10 +17,12 @@ format:
 # Share experiences and exchange solutions 
 # Join the cross-institutional PRISM Coffee & Chat Scheme
 
-![The White Rose University Consortium](../assets/WRC-Logo.png){width=40% fig-cap=""}
+![The White Rose University Consortium](../assets/WRC-Logo.png){width=20% fig-cap=""}
 
 ::::: {.course-page-layout .column-page}
 ::: course-content
+
+
 
 ## Are you managing research projects and looking to connect with others in similar roles?
 
