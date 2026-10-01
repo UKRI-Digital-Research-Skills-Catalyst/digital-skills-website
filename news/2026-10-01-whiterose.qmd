@@ -15,9 +15,10 @@ format:
 [{{< fa solid calendar >}}]{style="display: none;"}
 
 # Share experiences and exchange solutions 
-## Join the cross-institutional PRISM Coffee & Chat Scheme
 
-![The White Rose University Consortium](../assets/WRC-Logo.png){width=50% fig-cap=""}
+# Join the cross-institutional PRISM Coffee & Chat Scheme
+
+![The White Rose University Consortium](../assets/WRC-Logo.png){width=35% fig-align="center"}
 
 ::::: {.course-page-layout .column-page}
 ::: course-content
