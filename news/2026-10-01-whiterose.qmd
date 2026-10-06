@@ -14,29 +14,34 @@ format:
 
 [{{< fa solid calendar >}}]{style="display: none;"}
 
-# Share experiences and exchange solutions: Join the White Rose cross-institutional PRISM Coffee & Chat Scheme! 
+# White Rose PRISM Coffee & Chat Scheme 2026/27: Call for Registrations! 
 
 ![The White Rose University Consortium](../assets/WRC-Logo.png){fig-align="center" width="20%"}
 
 ::::: {.course-page-layout .column-page}
 ::: course-content
 
-
+We are pleased to share details of the White Rose Coffee and Chat Scheme which is back for 2026! This is a fantastic opportunity to connect with PRISM colleagues across the Universities of Leeds, Sheffield and York. 
+Sign up or share with your PRISM colleagues at White Rose Rose institutions.
 
 ## Are you managing research projects and looking to connect with others in similar roles?
 
-Managing large, post-award research investments is a high-stakes, highly specialised job, and it can often feel like a lonely one. 
+Managing large, post-award research investments comes with unique hurdles. That’s why the White Rose University Consortium is bringing back the PRISMs Coffee & Chat scheme for 2026/27.
 
-Whether you are a Project Manager, CDT Manager, Network Manager, or Project Coordinator (or have a different job title!), finding peers who truly understand the day-to-day reality of your role isn’t always easy within a single department.
+The White Rose Consortium invites all PRISMs (Project Managers, Network Managers, CDT Managers, and related roles) to join their cross-institutional networking scheme.  
 
-That’s why the White Rose University Consortium is bringing back the PRISMs Coffee & Chat scheme for 2026/27.
+Designed specifically for busy staff, this scheme pairs you with peer colleagues across York, Leeds, and Sheffield to:   
+- Exchange practical solutions to common project management challenges.  
+- Gain fresh perspectives on institutional workflows and career development. 
+- Build meaningful cross-university relationships with a minimal time commitment.  
 
 ## Who can sign up?
-This scheme has been designed specifically for PRISMs (Professional Research Investment & Strategy Managers) across the Universities of Leeds, Sheffield, and York. 
+This scheme has been designed specifically for PRISMs (Professional Research Investment & Strategy Managers) across the Universities of Leeds, Sheffield, and York.
 
-This initiative bridges the gap between and within our institutions to create an open, supportive community where you can share challenges and experiences, compare notes, and grow your network.
+This initiative bridges the gap between and within the White Rose institutions to create an open, supportive community where you can share challenges and experiences, compare notes, and grow your network.
 
-We know you’re time-poor, so the scheme is built to offer maximum connection with minimal time commitment.
+This scheme is built to offer maximum connection with minimal time commitment.
+
 
 ## How it works
 
@@ -104,7 +109,7 @@ html`
 <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=qO3qvR3IzkWGPlIypTW3y8dKn3hhYZRCvAH0HQcYnoBUQ0NBU0xFQzQ5NVVVOFNJVjM4UzJRWlpaRSQlQCN0PWcu&route=shorturl" class="register-button">Book Now</a>
 
 <div class="questions-section">
-  <p>**Questions?**</p>
+  <p> **Questions?** </p>
   <a href="mailto:info@whiterose.ac.uk">info@whiterose.ac.uk</a>
 </div>
 `
