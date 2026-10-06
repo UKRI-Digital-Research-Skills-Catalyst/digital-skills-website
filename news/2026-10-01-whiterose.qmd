@@ -113,7 +113,7 @@ html`
 <a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=qO3qvR3IzkWGPlIypTW3y8dKn3hhYZRCvAH0HQcYnoBUQ0NBU0xFQzQ5NVVVOFNJVjM4UzJRWlpaRSQlQCN0PWcu&route=shorturl" class="register-button">Book Now</a>
 
 <div class="questions-section">
-  <p> **Questions?** </p>
+  <p>Questions?</p>
   <a href="mailto:info@whiterose.ac.uk">info@whiterose.ac.uk</a>
 </div>
 `
