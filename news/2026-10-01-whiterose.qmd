@@ -21,7 +21,8 @@ format:
 ::::: {.course-page-layout .column-page}
 ::: course-content
 
-We are pleased to share details of the White Rose Coffee and Chat Scheme which is back for 2026! This is a fantastic opportunity to connect with PRISM colleagues across the Universities of Leeds, Sheffield and York. 
+We are pleased to share details of the White Rose Coffee and Chat Scheme which is back for 2026! This is a fantastic opportunity to connect with PRISM* colleagues across the Universities of Leeds, Sheffield and York. 
+
 Sign up or share with your PRISM colleagues at White Rose Rose institutions.
 
 ## Are you managing research projects and looking to connect with others in similar roles?
@@ -31,6 +32,7 @@ Managing large, post-award research investments comes with unique hurdles. Thatâ
 The White Rose Consortium invites all PRISMs (Project Managers, Network Managers, CDT Managers, and related roles) to join their cross-institutional networking scheme.  
 
 Designed specifically for busy staff, this scheme pairs you with peer colleagues across York, Leeds, and Sheffield to:   
+
 - Exchange practical solutions to common project management challenges.  
 - Gain fresh perspectives on institutional workflows and career development. 
 - Build meaningful cross-university relationships with a minimal time commitment.  
@@ -57,6 +59,8 @@ Complete the short registration form by **31st October** to take part in the Nov
 [Find out more about the White Rose PRISM Network](https://whiterose.ac.uk/network/white-rose-prism-network/)
 
 Not a PRISM member yet? [Join the network today!](https://www.pris-managers.ac.uk/join) 
+
+*PRISMs are Professional Research Investment & Strategy Managers. They predominantly work post-award to deliver large, complex research investments. Titles vary but include Project Manager, Network Manager, Project Co-ordinator, CDT Manager.
 
 :::
 
