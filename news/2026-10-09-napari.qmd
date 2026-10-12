@@ -135,7 +135,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Date</p>
-    <p>${event.date || 'TBA'}</p>
+    <p>${event.date || '9-10 November 2026'}</p>
   </div>
 </div>
 
@@ -145,7 +145,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Time</p>
-    <p>${event.time || 'TBA'}</p>
+    <p>${event.time || '9:00-17:00'}</p>
   </div>
 </div>
 
@@ -155,7 +155,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Location</p>
-    <p>${event.location || 'Online'}</p>
+    <p>${event.location || 'University College London'}</p>
   </div>
 </div>
 
@@ -165,7 +165,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Fees</p>
-    ${(event.fees || '').split('\n').map(line => `<p>${line}</p>`).join('')}
+    ${(event.fees || FREE '').split('\n').map(line => `<p>${line}</p>`).join('')}
   </div>
 </div>
 
