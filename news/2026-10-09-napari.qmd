@@ -117,6 +117,10 @@ You will need to reclaim these expenses by completing an expense form and submit
 
 We will contact you by the 21 October to confirm whether you have been awarded a scholarship. 
 
+### Contact
+
+Please email k.meechan@ucl.ac.uk or arc.education@ucl.ac.uk for more information.
+
 :::
 
 ::: event-details-sidebar
@@ -167,7 +171,7 @@ html`
 
 <a href="${event.register_link || '#'}" class="register-button">Register Now</a>
 
-<p class="event-note">60 places available</p>
+<p class="event-note">30 places available</p>
 
 <div class="questions-section">
   <p>Questions?</p>
