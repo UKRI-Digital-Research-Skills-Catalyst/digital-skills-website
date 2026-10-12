@@ -165,7 +165,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Fees</p>
-    ${(event.fees || '').split('\n').map(line => `<p>${line}</p>`).join('')}
+    ${(event.fees || 'FREE').split('\n').map(line => `<p>${line}</p>`).join('')}
   </div>
 </div>
 
