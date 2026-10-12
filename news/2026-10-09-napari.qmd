@@ -55,15 +55,15 @@ The workshop takes place over two days and combines teaching with live coding.
 
 **Monday 9th November** 
 
-| Time | Session | Description |
+| Time | Session |  |
 |--|----|----|
 | 09:30 - 13:00 | Introduction & Imaging Software | 	What is an image? |
-| 13:00 - 14:00 |  | Lunch |
+| 13:00 - 14:00 | Lunch |  |
 | 14:00 - 17:00 | Image display and multi-dimensional images | 	Filetypes and metadata |
 
 **Tuesday 10th November**         
 
-| Time | Session | Description |
+| Time | Sessions |  |
 |--|----|----|
 | 10:00–12:30           | Quality control, manual segmentation, filters and thresholding | Instance segmentation and measurements |
 | 13:00–14:00           | Lunch                                 |    |                                                                                                                                                                                                        
