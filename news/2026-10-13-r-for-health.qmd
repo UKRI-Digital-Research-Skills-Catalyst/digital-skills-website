@@ -1,1 +1,133 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
 
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-10-13-r-for-health.html') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Introduction to R for Health Research
+
+<p class="lead">
+
+Learn to use R to analyse, manipulate and visualise data through practical examples related to health research.
+
+</p>
+
+### About the Workshop
+
+R is one of the most widely used programming languages in data science. It can be used to analyse data, create visualisations, perform statistical analyses and support machine learning.
+
+This beginner-friendly workshop introduces R through practical questions related to health research. Participants will learn how to write code to manipulate and visualise data using R packages designed for working with large datasets.
+
+The workshop is designed to help participants develop practical R skills without getting too deeply into the theory of programming.
+
+### Audience
+
+This workshop is intended for people with little or no previous programming experience who work in a health-related role. This includes clinical, administrative and academic staff, such as nurses, health administrators, consultants and biomedical researchers.
+
+It may be particularly useful if you want to make greater use of data in your current or future role and need to perform basic tasks in R, such as creating plots and sorting through tables of health data.
+
+### What you will learn
+
+- Get started with R, even if you have little or no programming experience.
+- Write code to manipulate health-related data.
+- Create plots and visualise data using R packages.
+- Work with tables and large datasets.
+- Apply practical R skills to questions related to health research.
+
+### Prerequisites
+
+Completion of the associated online module, **Basic R with Data Carpentry**, is mandatory before attending the in-person workshop.
+
+For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-introduction-to-r/).
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '27th October'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || '10am - 1pm'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'Online'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || 'https://estore.kcl.ac.uk/conferences-and-events/academic-faculties/faculty-of-life-sciences-medicine/school-of-basic-and-medical-biosciences/centre-for-gene-therapy-regenerative-medicine/introduction-to-r-october-2026'}" class="register-button">Register Now</a>
+
+<p class="event-note"></p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:hab@kcl.ac.uk">hab@kcl.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
