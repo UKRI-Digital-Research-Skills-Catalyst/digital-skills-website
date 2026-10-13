@@ -1,1 +1,173 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
 
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-10-13-metagenomics.qmd') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Metagenomics
+
+<p class="lead">
+
+Hands-on online workshop designed for HPC beginners. Learn to analyse
+and visualise RNA-seq data using command line tools.
+
+</p>
+
+### About the Workshop
+
+We start by teaching the essential tools used in High Performance
+Computing such as file systems and the command-line to connect to and
+use cloud computing for file navigation and script writing. We then
+explore how to clean and prepare raw RNA-seq data through quality
+control and rRNA removal to enable detailed taxonomic and functional
+profiling of the microbial community. The process culminates in the
+visualisation of these insights using interactive tools like Krona to
+facilitate interpretation.
+
+All the software and data used in the workshop are hosted on an Amazon
+Machine Image (AMI). We will give you details as to how to access these
+instances after registration.
+
+### What you will learn
+
+- navigating file directories and using the command line
+- logging into a remote cloud instance
+- using common commands and running analysis programs in the command line
+- what is metagenomics?
+- following a metagenomics analysis workflow including:
+- performing quality control on reads
+- assembly of reads into a metagenome
+- improving your assembly with polishing
+- binning into species/metagenome-assembled genomes (MAGs)
+- taxonomic assignment and functional annotation using your binned reads
+
+### Programme
+
+DATES TBC
+
+The course takes place over two weeks and combines teaching and live
+coding with time spent out of the zoom room while long analyses
+complete. There are drop-in sessions
+
+| **Week 1** |   |   |
+|----|----|----|
+| Monday | 10:00 - 12:00 | File systems and directories |
+| Tuesday | 10:00 - 12:00 | Using the command line |
+| Wednesday | 10:00 - 13:00 | An introduction to metagenomics, QC and assembly |
+| Thursday | 13:00 - 14:00 | Online troubleshooting drop-in session (optional) |
+| Friday | 10:00 - 11:30 | Polishing your metagenome assembly. |
+
+| **Week 2** |   |   |
+|----|----|----|
+| Monday | 13:00 - 14:00 | Online troubleshooting drop-in session (optional) |
+| Tuesday | 10:00 - 12:00 | Binning a metagenome assembly into individual genomes (MAGs) |
+| Wednesday | 14:00 - 15:00 | Online troubleshooting drop-in session (optional) |
+| Thursday | 10:00 - 13:00 | Taxonomic Assignment and Analysis |
+
+### Audience
+
+This workshop is aimed at researchers with no prior experience of the
+tools covered in the workshop. However, participants will need some
+familiarity with biological concepts such as genomes and microbiomes.
+
+### Prerequisites
+
+To participate in this course, you will need a computer with internet
+access. The software and data used for analysis during the course are
+hosted on an Amazon Web Services (AWS) virtual machine (VM) instance.
+
+To access your AWS instance from your personal computer, you will need a
+shell or terminal. This shell is available by default for Linux and Mac
+users but Windows users will need to install Git for Windows.\
+[Detailed Pre-course
+instructions](https://cloud-span.github.io/nerc-metagenomics-v2q/docs/miscellanea/precourse-instructions.html)
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || 'TBA'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || 'TBA'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'Online'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || '#'}" class="register-button">Register Now</a>
+
+<p class="event-note">Limited to 30 places</p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
