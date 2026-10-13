@@ -45,7 +45,7 @@ This 2 day, in-person course hosted by UCL:ARC will teach introductory image ana
 
 ### About the Workshop
 
-We will focus on the analysis of light microscopy data, including the fundamentals of how to design and optimise a light microscopy experiment. It is aimed at anyone who is / will be working with light microscopy data as part of their research projects - and is open to anyone at UCL.
+We will focus on the analysis of light microscopy data, including the fundamentals of how to design and optimise a light microscopy experiment. It is aimed at anyone who is / will be working with light microscopy data as part of their research projects.
 
 As napari is a Python-based image viewer, we will be covering some introductory concepts in Python as part of this course. Note: no prior experience is necessary, but some introductory knowledge would be useful e.g. [from following the online software carpentry course](https://swcarpentry.github.io/python-novice-inflammation/) or an in-person course at UCL.
 
