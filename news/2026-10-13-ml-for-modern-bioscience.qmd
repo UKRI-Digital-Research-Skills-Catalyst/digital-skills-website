@@ -1,1 +1,141 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+
+event_data_cached = pd.read_csv(
+    "https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv"
+)
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(
+  row => row.link?.trim() === 'news/2026-10-13-ml-for-modern-bioscience.html'
+) ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Machine Learning Tools for Modern Bioscience Workshop
+
+<p class="lead">
+
+Explore how machine learning tools can support modern bioscience research, helping researchers analyse complex biological data, identify patterns and generate new insights.
+
+</p>
+
+### About the Workshop
+
+Machine learning is becoming an increasingly important tool in modern bioscience. By enabling researchers to identify patterns in complex datasets, build predictive models and extract meaningful insights, machine learning can support a wide range of biological and biomedical research applications.
+
+The **Machine Learning Tools for Modern Bioscience Workshop** introduces participants to machine learning approaches and tools relevant to contemporary bioscience research. Through practical examples, participants will explore how these techniques can be applied to biological data and research questions.
+
+The workshop is intended to help participants develop an understanding of the potential applications of machine learning in bioscience and how computational tools can complement existing research methods.
+
+### Audience
+
+This workshop is intended for researchers, students and professionals interested in exploring machine learning applications in bioscience.
+
+It may be particularly useful for biomedical researchers, life scientists, bioinformaticians and other professionals who work with biological datasets and want to learn how machine learning tools can support their research.
+
+Participants interested in expanding their computational skills and exploring data-driven approaches to biological research may also benefit from attending.
+
+### What you will learn
+
+- Understand the role of machine learning in modern bioscience research.
+- Explore machine learning tools and their potential applications to biological data.
+- Learn how machine learning can help identify patterns and relationships in complex datasets.
+- Discover how computational approaches can support biological and biomedical research.
+- Develop an understanding of opportunities and considerations when applying machine learning to bioscience problems.
+
+### Prerequisites
+
+Participants should have an interest in bioscience research and the use of computational tools for data analysis. Any specific programming, statistical or machine learning prerequisites should be confirmed using the official workshop information.
+
+For further information, visit the [ScryptIQ workshops page](https://scryptiq.ai/product-category/workshops/).
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '19th - 20th January 2027'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || 'TBA'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'See official workshop details'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '£875').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || 'https://scryptiq.ai/product-category/workshops/'}" class="register-button">Register Now</a>
+
+<p class="event-note"></p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="https://scryptiq.ai/product-category/workshops/">Visit ScryptIQ</a>
+</div>
+`
+```
+:::
+:::::
 
