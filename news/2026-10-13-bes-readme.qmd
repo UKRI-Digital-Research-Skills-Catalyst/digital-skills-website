@@ -1,1 +1,143 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
 
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-06-18-intro-to-r.html') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## How to Write a Good README
+
+<p class="lead">
+
+Learn how to write clear, effective README files that make research projects easier to understand, reproduce, and reuse. Through practical examples and a hands-on exercise, participants will learn the essential components of good project documentation and leave with a simple checklist and template they can immediately apply to their own work.
+
+</p>
+
+### About the Workshop
+
+Participants will gain practical skills in writing clear, structured README files for both data and code. They will learn what information is essential for reproducibility and how to communicate it effectively to others. The workshop provides hands-on experience, a reusable checklist, and exposure to common pitfalls. Attendees will leave with greater confidence in documenting their work and improving the accessibility and impact of their research outputs.
+
+### Audience
+
+This workshop is aimed at students, early-career researchers, and practitioners in ecology and environmental sciences who produce data or code as part of their work. No advanced technical experience is required. It is suitable for anyone interested in improving research transparency, reproducibility, and collaboration, including those new to coding as well as more experienced researchers seeking better documentation practices.
+
+### Prerequisites
+
+No prior experience in README writing is necessary.
+
+### What you will learn
+
+After this workshop the successful learner will be able to:
+
+- Identify the key components of an effective README file for documenting ecological and environmental data and code.
+
+- Evaluate existing README files to identify good practices, common pitfalls, and opportunities to improve clarity and completeness.
+
+- Draft a clear, structured README using a practical checklist to support research reproducibility, collaboration, and reuse.
+
+- Apply documentation best practices to communicate essential information about research data, code, and workflows to diverse audiences.
+
+- Recognise how effective documentation enhances research transparency, accessibility, and the long-term value of research outputs.
+
+### Venue
+
+The workshop will take place in the [ICC](https://maps.app.goo.gl/NsK1HpxekknSrU1RA) in Birmingham.
+
+### Registration 
+
+To join this workshop you must be attending the BES 2026 Annual Meeting.
+
+### Additional Info and Contact
+
+For FAQs and questions regarding registration please visit [https://www.britishecologicalsociety.org/content/bes-annual-meeting-2026/](https://www.britishecologicalsociety.org/content/bes-annual-meeting-2026/)
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '14-17 December 2026'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || 'Lunchtime'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'ICC Birmingham'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || 'Included in Annual Meeting Fee').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="https://www.britishecologicalsociety.org/content/bes-annual-meeting-2026/registration/" class="register-button">Register Now</a>
+
+<p class="event-note"></p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:research-digital-skills@york.ac.uk">research-digital-skills@york.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
