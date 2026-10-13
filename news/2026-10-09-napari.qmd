@@ -103,16 +103,20 @@ The workshop will take place in Torrington Place Training Centre at University C
 
 Room B08, UCL Torrington Place Training Centre, 1-19 Torrington Place, Fitzrovia, London WC1E 7HB. Get directions with [OpenStreetMap](https://www.openstreetmap.org/?mlat=51.521897&mlon=-0.134133&zoom=16#map=16/51.52190/-0.13413) or [Google Maps](https://www.google.com/maps?q=51.521897,-0.134133).
 
-### Registration fees 
+### Registration 
 
 To signup for this free course, please fill out the registration form. The deadline for registration is 5pm on 19 Oct, and selected participants will be informed by the 21 Oct. 
 
-Note: we won't be providing lunch or refreshments for this course, so please either bring something with you or use the 1-hour lunch breaks to buy something nearby.
+Note: lunch and refreshments are not included for this course, please either bring something with you or use the 1-hour lunch breaks to buy something nearby.
 
+
+### Additional information 
+
+Visit the [UCL pages](https://github-pages.arc.ucl.ac.uk/2026-11-09-UCL-napari/) to find out more about the the course, details on how to access the venue and the UCL:ARC code of conduct. 
 
 ### Contact
 
-Please email k.meechan@ucl.ac.uk or arc.education@ucl.ac.uk for more information.
+For any questions regarding the course content or assistance with registration please contact k.meechan@ucl.ac.uk or arc.education@ucl.ac.uk for more information.
 
 :::
 
