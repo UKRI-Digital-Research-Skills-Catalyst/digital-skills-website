@@ -162,7 +162,7 @@ html`
   </div>
 </div>
 
-<a href="https://github-pages.arc.ucl.ac.uk/2026-11-09-UCL-napari/">Register Now</a>
+<a href="https://github-pages.arc.ucl.ac.uk/2026-11-09-UCL-napari/"> Register Now</a>
 
 <p class="event-note">40 places available</p>
 
