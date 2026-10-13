@@ -162,7 +162,7 @@ html`
   </div>
 </div>
 
-<a href="https://github-pages.arc.ucl.ac.uk/2026-11-09-UCL-napari/"> Register Now</a>
+<a href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=_oivH5ipW0yTySEKEdmlwkgtFALcEfRKnhSRePBd-9dUQldEN01JWVlWOEpCUUFDMjFIVzBVVDJKTiQlQCN0PWcu&route=shorturl" class="register-button">Register Now</a>
 
 <p class="event-note">40 places available</p>
 
