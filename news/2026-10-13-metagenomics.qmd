@@ -111,6 +111,10 @@ users but Windows users will need to install Git for Windows.\
 [Detailed Pre-course
 instructions](https://cloud-span.github.io/nerc-metagenomics-v2q/docs/miscellanea/precourse-instructions.html)
 
+## Registration
+
+Registration is not yet open, but will open soon.
+
 :::
 
 ::: event-details-sidebar
