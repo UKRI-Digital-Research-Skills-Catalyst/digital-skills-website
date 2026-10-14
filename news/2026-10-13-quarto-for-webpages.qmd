@@ -35,12 +35,12 @@ event = all_events.find(row => row.link?.trim() === 'news/2026-10-13-quarto-for-
 ::: course-content
 [Workshop]{.course-badge}
 
-## Introduction to Quarto
+## Build a website with Quarto and GitHub Pages
+
 
 <p class="lead">
 
-Learn to create reproducible reports that weave together text and code
-seamlessly.
+Learn to make your own simple website quickly and easily using Quarto and Github Pages.
 
 </p>
 
