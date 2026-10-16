@@ -42,6 +42,10 @@ and visualise RNA-seq data using command line tools.
 
 </p>
 
+# Registration
+
+Registration is not yet open, but will open soon. Please contact research-digital-skills@york.ac.uk to be notified when the registration open.
+
 ### About the Workshop
 
 We start by teaching the essential tools used in High Performance
@@ -110,10 +114,6 @@ shell or terminal. This shell is available by default for Linux and Mac
 users but Windows users will need to install Git for Windows.\
 [Detailed Pre-course
 instructions](https://cloud-span.github.io/nerc-metagenomics-v2q/docs/miscellanea/precourse-instructions.html)
-
-## Registration
-
-Registration is not yet open, but will open soon. Please contact research-digital-skills@york.ac.uk to be notified when the registration open.
 
 :::
 
