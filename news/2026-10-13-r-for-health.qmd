@@ -109,7 +109,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Location</p>
-    <p>${event.location || 'London, UK'}</p>
+    <p>${event.location || 'Online'}</p>
   </div>
 </div>
 
