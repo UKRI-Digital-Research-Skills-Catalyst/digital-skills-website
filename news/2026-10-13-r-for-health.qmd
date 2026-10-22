@@ -47,7 +47,7 @@ Learn to use R to analyse, manipulate and visualise data through practical examp
 
 R is one of the most widely used programming languages in data science. It can be used to analyse data, create visualisations, perform statistical analyses and support machine learning.
 
-This beginner-friendly workshop introduces R through practical questions related to health research. Participants will learn how to write code to manipulate and visualise data using R packages designed for working with large datasets.
+This beginner-friendly in-person workshop introduces R through practical questions related to health research. Participants will learn how to write code to manipulate and visualise data using R packages designed for working with large datasets.
 
 The workshop is designed to help participants develop practical R skills without getting too deeply into the theory of programming.
 
@@ -70,6 +70,10 @@ It may be particularly useful if you want to make greater use of data in your cu
 Completion of the associated online module, **Basic R with Data Carpentry**, is mandatory before attending the in-person workshop. It will take approximately 10 hours to complete the online materials. 
 
 For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-introduction-to-r/).
+
+### Location 
+
+Hub for Applied Bioinformatics, Venue Details: Hodgkins Building, Guy’s Campus, Room G60, Newcomen St, London, SE1 1UL
 
 :::
 
@@ -105,7 +109,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Location</p>
-    <p>${event.location || 'Online'}</p>
+    <p>${event.location || 'London, UK'}</p>
   </div>
 </div>
 
