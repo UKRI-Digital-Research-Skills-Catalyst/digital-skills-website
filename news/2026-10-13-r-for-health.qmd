@@ -67,7 +67,7 @@ It may be particularly useful if you want to make greater use of data in your cu
 
 ### Prerequisites
 
-Completion of the associated online module, **Basic R with Data Carpentry**, is mandatory before attending the in-person workshop.
+Completion of the associated online module, **Basic R with Data Carpentry**, is mandatory before attending the in-person workshop. It will take approximately 10 hours to complete the online materials. 
 
 For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-introduction-to-r/).
 
