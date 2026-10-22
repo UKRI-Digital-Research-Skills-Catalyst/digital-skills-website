@@ -73,7 +73,9 @@ For further information about the session, visit the [official workshop page](ht
 
 ### Location 
 
-Hub for Applied Bioinformatics, Venue Details: Hodgkins Building, Guy’s Campus, Room G60, Newcomen St, London, SE1 1UL
+The workshop will take place at the Hub for Applied Bioinformatics in the Hodgkins Building, Guy’s Campus, Room G60, Newcomen St, London, SE1 1UL.
+
+The HAB space is located on the ground floor of the Hodgkin building at the Guy’s campus (room G60).
 
 :::
 
