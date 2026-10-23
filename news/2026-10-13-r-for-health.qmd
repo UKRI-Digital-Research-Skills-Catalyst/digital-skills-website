@@ -51,7 +51,7 @@ This beginner-friendly in-person workshop introduces R through practical questio
 
 The workshop is designed to help participants develop practical R skills without getting too deeply into the theory of programming.
 
-# Note: this course is in-person. It was previously listed incorrectly as online.
+## Note: this course is in-person. It was previously listed incorrectly as online.
 
 ### Audience
 
