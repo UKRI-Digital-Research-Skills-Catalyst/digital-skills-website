@@ -51,6 +51,8 @@ This beginner-friendly in-person workshop introduces R through practical questio
 
 The workshop is designed to help participants develop practical R skills without getting too deeply into the theory of programming.
 
+# Note: this course is in-person. It was previously listed incorrectly as online.
+
 ### Audience
 
 This workshop is intended for people with little or no previous programming experience who work in a health-related role. This includes clinical, administrative and academic staff, such as nurses, health administrators, consultants and biomedical researchers.
@@ -69,7 +71,7 @@ It may be particularly useful if you want to make greater use of data in your cu
 
 Completion of the associated online module, **Basic R with Data Carpentry**, is mandatory before attending the in-person workshop. It will take approximately 10 hours to complete the online materials. 
 
-For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-introduction-to-r/).
+For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-introduction-to-r/) or email hab@kcl.ac.uk
 
 ### Location 
 
