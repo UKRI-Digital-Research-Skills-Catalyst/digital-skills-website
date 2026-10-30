@@ -1,0 +1,156 @@
+
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+
+// Static event details are used until the corresponding
+// event entry is added to the spreadsheet.
+event = {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Systems Thinking for RSE/dRTP
+
+<p class="lead">
+
+Explore how people, processes and technology interact, and learn how systems thinking can help improve research software adoption, collaboration and working practices.
+
+</p>
+
+### About the Workshop
+
+Why does some (research) software not gain traction, even when it's technically excellent? Often, the answer lies beyond the software itself. Factors such as users' existing workflows, available training, incentives, organisational culture, and competing priorities can all influence whether a tool is adopted. The same is true for many other challenges: Why are good data management practices not consistently followed, or why do researchers continue to rely on inefficient processes despite the availability of better alternatives? Looking beyond the technical aspects can reveal the broader factors shaping behaviour.
+
+This interactive workshop introduces systems thinking through practical exercises, real-world examples, and group discussion. Together, we'll explore how people, processes, and technology interact, and how small changes can help create better outcomes for projects, teams, and stakeholders.
+
+Throughout the workshop, you'll have the opportunity to map systems relevant to your own work and learn approaches for finding effective interventions that go beyond quick fixes. Whether you're trying to improve software adoption, strengthen collaboration, or increase the impact of your work, systems thinking can help you identify both the wider factors shaping projects outcomes and opportunities for meaningful change.
+
+## Audience
+
+We are tailoring the workshop to research technical professionals, but anyone with an interest in systems thinking and understanding of research workflows and research culture is welcome to attend. No prior knowledge of systems thinking is required.
+
+### What you will learn
+
+- Understand the principles of systems thinking and how they can be applied to research environments.
+- Explore how people, processes and technology interact within complex systems.
+- Understand the wider factors that influence research software adoption and working practices.
+- Map systems relevant to your own work and identify relationships between different elements.
+- Identify opportunities for meaningful interventions that can improve outcomes for projects, teams and stakeholders.
+
+### Prerequisites
+
+No prior knowledge of systems thinking is required.
+
+Participants are encouraged to bring an interest in research workflows, research software, technical working environments or organisational practices.
+
+### Schedule
+
+The workshop will run from 12:30 to 17:00, with lunch and a coffee break included.
+
+| Time | Session |
+|---|---|
+| 12:30–13:30 | Lunch |
+| 13:30–15:00 | Workshop part I: Introduction to systems thinking |
+| 15:00–15:30 | Coffee break |
+| 15:30–17:00 | Workshop part II: Hands-on activities |
+
+### Location
+
+The workshop will take place in person at:
+
+Room W3.08  
+Institute of Education (IOE)  
+20 Bedford Way  
+London  
+WC1H 0AL
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '9th November 2026'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || '12:30pm - 5pm'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'Room W3.08, Institute of Education, UCL, London'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || 'Free').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || 'https://pretix.eu/ARC/202611-systems-thinking/'}" class="register-button">Register Now</a>
+
+<p class="event-note">Pre-booking essential.</p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:arc.education@ucl.ac.uk">arc.education@ucl.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
