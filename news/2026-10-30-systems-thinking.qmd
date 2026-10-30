@@ -29,10 +29,7 @@ ojs_define(event_data_cached = event_data_cached)
 ```{ojs}
 //| eval: true
 all_events = transpose(event_data_cached)
-
-// Static event details are used until the corresponding
-// event entry is added to the spreadsheet.
-event = {}
+event = all_events.find(row => row.link?.trim() === 'news/2026-10-30-systems-thinking.html') ?? {}
 ```
 
 ::::: {.course-page-layout .column-page}
