@@ -5,6 +5,11 @@ format:
     toc: false
 ---
 
+::: consultation-button-container
+[Join the Mailing List](https://forms.gle/7Q3ESufDYbgYmgeA8){.consultation-button
+.external target="_self"}
+:::
+
 [{{< fa solid envelope >}}]{style="display: none;"}
 
 ```{=html}
