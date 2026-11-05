@@ -3,6 +3,8 @@ title: "Contact"
 format:
   html:
     toc: false
+    css:
+      - index-header.css
 ---
 
 ::: consultation-button-container
