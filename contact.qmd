@@ -1,5 +1,6 @@
 ---
 title: "Contact"
+subtitle: "Sign up to our Mailing List for updates on events and training opportunities"
 format:
   html:
     toc: false
