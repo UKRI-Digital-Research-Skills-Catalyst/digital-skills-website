@@ -1,0 +1,133 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-10-13-r-for-health.html') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Follow-Up: Statistics with R
+
+<p class="lead">
+
+This in-person course will provide practical examples of how to perform statistical tests using the R software environment. 
+
+</p>
+
+### About the Workshop
+
+During the workshop you will explore the most widely used statistical tests and will explain the basic concept behind applying a stats test in R so that participants will be able to apply their knowledge to other tests not covered in this course. A basic knowledge of the statistical tests and a basic knowledge of R and Rstudio are essential. 
+
+### Audience
+
+This course is for you if: 
+
+- You need to apply statistical tests on large datasets in your current or future role You have a basic or higher level of programming using R and Rstudio 
+- You have a basic or higher understanding of statistics 
+- You work in health-related sector as either clinical, administrative or academic staff – for example as a nurse, health administrator, consultant, biomedical researcher, etc. 
+- You require flexible learning format 
+
+
+### Prerequisites
+
+Completion of the associated online module, **Statistics with R**, is mandatory before attending the in-person workshop. It will take approximately 3.5 hours to complete the online materials. 
+
+For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-statistics-with-r/) or email hab@kcl.ac.uk
+
+ A basic knowledge of the statistical tests and a basic knowledge of R and Rstudio are essential. 
+
+### Location 
+
+The workshop will take place at the Hub for Applied Bioinformatics in the Hodgkins Building, Guy’s Campus.
+
+The HAB space is located on the ground floor of the Hodgkin building at the Guy’s campus (room G60).
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '27th October'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || '10am - 1pm'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'Online'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || 'https://hab.sites.er.kcl.ac.uk/event/follow-up-statistics-with-r/'}" class="register-button">Register Now</a>
+
+<p class="event-note"></p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:hab@kcl.ac.uk">hab@kcl.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
