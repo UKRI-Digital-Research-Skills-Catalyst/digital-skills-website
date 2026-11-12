@@ -51,7 +51,8 @@ During the workshop you will explore the most widely used statistical tests and 
 
 This course is for you if: 
 
-- You need to apply statistical tests on large datasets in your current or future role You have a basic or higher level of programming using R and Rstudio 
+- You need to apply statistical tests on large datasets in your current or future role 
+- You have a basic or higher level of programming using R and Rstudio 
 - You have a basic or higher understanding of statistics 
 - You work in health-related sector as either clinical, administrative or academic staff – for example as a nurse, health administrator, consultant, biomedical researcher, etc. 
 - You require flexible learning format 
@@ -105,7 +106,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Location</p>
-    <p>${event.location || 'Online'}</p>
+    <p>${event.location || 'London'}</p>
   </div>
 </div>
 
