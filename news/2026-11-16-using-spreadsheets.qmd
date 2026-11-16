@@ -1,0 +1,147 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-10-13-r-for-health.html') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Follow-Up: Statistics with R
+
+<p class="lead">
+
+Join this in-person workshop hosted at the Hub for Applied Bioinformatics @KCL and learn how to structure, format, and organise spreadsheets and metadata effectively to ensure your research data is clean, reproducible, and ready for downstream bioinformatics and statistical analysis.
+
+</p>
+
+### About the Workshop
+
+While good experimental design is the first step toward successful bioinformatics analysis, knowing how to properly record and organise your data is just as critical. Because most life scientists and health professionals store data in spreadsheets at some point in their projects, spreadsheets are often where research begins—and how data is handed over to bioinformaticians and analysts.
+
+In this practical follow-up workshop, you will build on [foundational concepts](https://learninghub.kingshealthpartners.org/course/using-spreadsheets) to improve your data organisation habits, avoid common formatting pitfalls, and prepare structured, analysis-ready datasets. Completion of the associated online module, Using Spreadsheets for Recording Data and Metadata, is mandatory prior to attending this in-person workshop
+
+### What you will learn
+
+By the end of this workshop, you will be able to:
+
+- Organise and structure spreadsheets effectively to support seamless downstream bioinformatics and data analysis.
+- Record clear, consistent metadata alongside raw data to improve reproducibility and collaboration.
+- Apply best-practice data formatting techniques in Excel to prevent data loss or corruption.
+- Prepare and clean recorded datasets for effective handover to bioinformaticians or analytical workflows.
+
+
+### Audience
+
+This course is for you if: 
+
+- You are a beginner to Excel, or already have experience and want to use it more effectively for research and data management.
+- You work in the health-related sector as clinical, administrative, or academic staff (for example, as a nurse, health administrator, consultant, or biomedical researcher).
+- You have some knowledge of basic statistical terms and would like to apply them in Excel.
+- You need to start recording new data or working with existing datasets in your current or future role.
+
+### Prerequisites
+
+Completion of the associated online module, [**Using Spreadsheets to Record Data and Metadata**](https://learninghub.kingshealthpartners.org/course/using-spreadsheets), is mandatory before attending the in-person workshop. It will take approximately 10 hours to complete the online materials. 
+
+For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-using-spreadsheets-to-record-data-and-metadata/) or email hab@kcl.ac.uk
+
+ A basic knowledge of the statistical tests and a basic knowledge of R and Rstudio are essential. 
+
+### Location 
+
+The workshop will take place at the Hub for Applied Bioinformatics in the Hodgkins Building, Guy’s Campus.
+
+The HAB space is located on the ground floor of the Hodgkin building at the Guy’s campus (room G60).
+
+Venue Details
+Hodgkins Building, Guy’s Campus, Room G60, Newcomen St, London, SE1 1UL
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '4th February 2027'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || '10am - 1pm'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'London'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || 'https://estore.kcl.ac.uk/conferences-and-events/academic-faculties/faculty-of-life-sciences-medicine/school-of-basic-and-medical-biosciences/centre-for-gene-therapy-regenerative-medicine/using-spreadsheets-to-record-data-and-metadata'}" class="register-button">Register Now</a>
+
+<p class="event-note"></p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:hab@kcl.ac.uk">hab@kcl.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
