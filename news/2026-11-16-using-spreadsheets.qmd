@@ -74,8 +74,6 @@ Completion of the associated online module, [**Using Spreadsheets to Record Data
 
 For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-using-spreadsheets-to-record-data-and-metadata/) or email hab@kcl.ac.uk
 
- A basic knowledge of the statistical tests and a basic knowledge of R and Rstudio are essential. 
-
 ### Location 
 
 The workshop will take place at the Hub for Applied Bioinformatics in the Hodgkins Building, Guy’s Campus.
