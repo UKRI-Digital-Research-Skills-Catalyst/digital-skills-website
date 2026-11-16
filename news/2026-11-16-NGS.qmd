@@ -1,0 +1,140 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-10-13-r-for-health.html') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Follow-Up Workshop: NGS: Bulk RNA-Seq
+
+<p class="lead">
+
+Join the team at the Hub for Applied Bioinformatics @ King's College London and bridge the gap between sequencing theory and independent data analysis in this 3-hour, hands-on workshop covering end-to-end bulk RNA-seq workflows and publication-ready data visualisation.
+
+</p>
+
+### About the Workshop
+
+Designed as the practical Part 2 companion to the King’s Health Partners Next-Generation Sequencing: [RNA-Seq online module](https://learninghub.kingshealthpartners.org/course/next-generation-sequencing-rna-seq), this in-person session helps biomedical researchers apply transcriptomic concepts to real-world datasets. 
+
+Through guided, hands-on exercises and live expert support you will work through complete bulk RNA-seq bioinformatics workflows — building the confidence and technical skills needed to independently process, interpret, and visualise your own sequencing data without relying on black-box tools.
+
+### What you will learn
+
+By the end of this workshop, you will be able to:
+
+- Run end-to-end RNA-seq workflows
+- Perform differential expression analysis
+- Create clear data visualisations
+- Troubleshoot with confidence
+
+### Audience
+
+This workshop is for researchers who generate or work with bulk RNA-seq data and would like to analyse it independently.
+
+
+### Prerequisites
+
+Completion of the associated online module, [**NGS: RNA-seq**](https://learninghub.kingshealthpartners.org/course/next-generation-sequencing-rna-seq), is mandatory before attending the in-person workshop. It will take approximately 2 hours to complete the online materials. 
+
+For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-using-spreadsheets-to-record-data-and-metadata/) or email hab@kcl.ac.uk
+
+ 
+### Location 
+
+The workshop will take place at the Hub for Applied Bioinformatics in the Hodgkins Building, Guy’s Campus.
+
+The HAB space is located on the ground floor of the Hodgkin building at the Guy’s campus (room G60).
+
+**Venue Details** Hodgkins Building, Guy’s Campus, Room G60, Newcomen St, London, SE1 1UL
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '26th February 2027'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || '10am - 1pm'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'London'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '£50').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || 'https://estore.kcl.ac.uk/conferences-and-events/academic-faculties/faculty-of-life-sciences-medicine/school-of-basic-and-medical-biosciences/centre-for-gene-therapy-regenerative-medicine/using-spreadsheets-to-record-data-and-metadata'}" class="register-button">Register Now</a>
+
+<p class="event-note"></p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:hab@kcl.ac.uk">hab@kcl.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
