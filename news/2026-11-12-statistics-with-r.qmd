@@ -116,7 +116,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Fees</p>
-    ${(event.fees || '').split('\n').map(line => `<p>${line}</p>`).join('')}
+    ${(event.fees || '£50').split('\n').map(line => `<p>${line}</p>`).join('')}
   </div>
 </div>
 
