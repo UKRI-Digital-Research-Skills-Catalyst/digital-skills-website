@@ -35,7 +35,7 @@ event = all_events.find(row => row.link?.trim() === 'news/2026-10-13-r-for-healt
 ::: course-content
 [Workshop]{.course-badge}
 
-## Follow-Up: Statistics with R
+## Follow-Up Workshop: Using Spreadsheets to Record Data and Metadata
 
 <p class="lead">
 
