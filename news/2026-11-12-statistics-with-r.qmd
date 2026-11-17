@@ -60,7 +60,7 @@ This course is for you if:
 
 ### Prerequisites
 
-Completion of the associated online module, **Statistics with R**, is mandatory before attending the in-person workshop. It will take approximately 3.5 hours to complete the online materials. 
+Completion of the associated online module, [**Statistics with R**](https://learninghub.kingshealthpartners.org/course/statistics-with-r), is mandatory before attending the in-person workshop. It will take approximately 3.5 hours to complete the online materials. 
 
 For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-statistics-with-r/) or email hab@kcl.ac.uk
 
