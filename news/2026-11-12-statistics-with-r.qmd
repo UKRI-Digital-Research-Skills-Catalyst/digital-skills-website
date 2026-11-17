@@ -35,7 +35,7 @@ event = all_events.find(row => row.link?.trim() === 'news/2026-10-13-r-for-healt
 ::: course-content
 [Workshop]{.course-badge}
 
-## Follow-Up: Statistics with R
+## Follow-Up Workshop: Statistics with R
 
 <p class="lead">
 
@@ -86,7 +86,7 @@ html`
   </div>
   <div class="event-detail-content">
     <p>Date</p>
-    <p>${event.date || '27th October'}</p>
+    <p>${event.date || '8th December'}</p>
   </div>
 </div>
 
