@@ -32,7 +32,7 @@ ojs_define(course_data_cached = course_data_cached)
 // We loaded the data from Google sheets via Python Pandas to allow for caching.
 // This cell transposes the data presented from Python, as numpy & OJS expect data in opposite order.
 // We do this in OJS to make conversion easier.
-// We also convert the "XX hours" / "XX days" `TimeReadable` field to a more useful `XX` hours `time_hours` field.
+// We also convert the "XX hours" / "XX days" `timeReadable` field to a more useful `XX` hours `time_hours` field.
 course_data = transpose(course_data_cached).map(row => {
   const time_match = String(row.timeReadable).match(/([\d\.]+)\s*([a-z]+)/i)
   let time_hours = null;
@@ -277,7 +277,7 @@ viewof reset_filters = Inputs.button("reset filters")
               </tr>
               <tr>
                 <th scope="row">Time required</th>
-                <td class="required">${row.TimeReadable}</td>
+                <td class="required">${row.timeReadable}</td>
               </tr>
               <tr>
                 <th scope="row">Credit</th>
