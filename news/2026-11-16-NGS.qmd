@@ -45,7 +45,7 @@ Join the team at the Hub for Applied Bioinformatics @ King's College London and 
 
 ### About the Workshop
 
-Designed as the practical Part 2 companion to the King’s Health Partners Next-Generation Sequencing: [RNA-Seq online module](https://learninghub.kingshealthpartners.org/course/next-generation-sequencing-rna-seq), this in-person session helps biomedical researchers apply transcriptomic concepts to real-world datasets. 
+Designed as the practical Part 2 companion to the King’s Health Partners [Next-Generation Sequencing: RNA-Seq online module](https://learninghub.kingshealthpartners.org/course/next-generation-sequencing-rna-seq), this in-person session helps biomedical researchers apply transcriptomic concepts to real-world datasets. 
 
 Through guided, hands-on exercises and live expert support you will work through complete bulk RNA-seq bioinformatics workflows — building the confidence and technical skills needed to independently process, interpret, and visualise your own sequencing data without relying on black-box tools.
 
