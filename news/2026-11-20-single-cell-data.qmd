@@ -49,9 +49,10 @@ Single-cell transcriptomics is a powerful tool to study the heterogeneity of the
 
 Designed as the practical Part 2 companion to the King’s Health Partners [Next-Generation Sequencing online module](https://learninghub.kingshealthpartners.org/course/ngs-single-cell-rna-sequencing-analysis), this in-person course aims to equip participants with essential skills to process RNA-sequencing reads from single-cell transcriptomics experiment and to perform downstream analyses of the single-cell gene expression data. 
 
-This course is designed for participants with some experience in R programming and running command-line programs. We will be using published single-cell RNA-sequencing datasets to perform quality control, data normalisation, cell clustering, differential expression and trajectory analyses. 
+This course is designed for participants with some experience in R programming and running command-line programs. Published single-cell RNA-sequencing datasets will be used to perform quality control, data normalisation, cell clustering, differential expression and trajectory analyses. 
 
-We will use the objects produced from the online workshop and other single-cell datasets to expand on the important aspects of single-cell analysis, discuss decision-making steps along the analysis pipeline, visualise the data differently, and perform additional analysis. Due to time constraints, we are limited to tools that are implemented in R and that run reasonably fast. But where relevant, case studies could be shown and discussed. 
+We will use the 
+Objects produced from the online workshop will be used, along with other single-cell datasets, to expand on the important aspects of single-cell analysis, discuss decision-making steps along the analysis pipeline, visualise the data differently, and perform additional analysis. Due to the focused three-hour timeframe, practical exercises will utilise fast, R-based tools, supplemented by case study discussions where relevant.
 
 ### What you will learn
 
@@ -64,14 +65,15 @@ By the end of this session, you will be able to independently conduct and critic
 
 ### Audience
 
-This workshop is for researchers who generate or work with bulk RNA-seq data and would like to analyse it independently.
-
+This course is designed for researchers and practitioners looking to advance their practical capabilities in single-cell transcriptomics who have already completed the prerequisite online Innovations Scholar Workshop.
 
 ### Prerequisites
 
-Completion of the associated online module, [**NGS: Single-cell RNA-sequencing Analysis**](https://learninghub.kingshealthpartners.org/course/ngs-single-cell-rna-sequencing-analysis), is mandatory before attending the in-person workshop. It will take approximately 7 hours to complete the online materials. 
+To attend this in-person session, participants must have prior experience in R programming and running command-line programs. In addition, you must complete the following requirements prior to arrival:
 
-This course is designed for participants with some experience in R programming and running command-line programs.
+- Completion of the associated online module: [**NGS: Single-cell RNA-sequencing Analysis**](https://learninghub.kingshealthpartners.org/course/ngs-single-cell-rna-sequencing-analysis). It will take approximately 7 hours to complete the online materials. 
+- Software Setup: Have RStudio installed along with all R libraries used during the online session.
+- Data Files: Bring the .RDS object obtained from the online workshop.
 
 For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/single-cell-data-analysis/) or email hab@kcl.ac.uk
 
