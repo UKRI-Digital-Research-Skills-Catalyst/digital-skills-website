@@ -1,0 +1,146 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-11-20-single-cell-data.html') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Follow-Up Workshop: Single Cell Data Analysis
+
+<p class="lead">
+
+Join the team at the Hub for Applied Bioinformatics @ King's College London for this workshop which will equip researchers with the practical R skills needed to independently process, visualise, and critically analyse single-cell RNA-sequencing (scRNA-seq) datasets.
+
+</p>
+
+### About the Workshop
+
+Single-cell transcriptomics is a powerful tool to study the heterogeneity of the cellular transcriptome at single-cell levels.
+
+Designed as the practical Part 2 companion to the King’s Health Partners [Next-Generation Sequencing online module](https://learninghub.kingshealthpartners.org/course/ngs-single-cell-rna-sequencing-analysis), this in-person course aims to equip participants with essential skills to process RNA-sequencing reads from single-cell transcriptomics experiment and to perform downstream analyses of the single-cell gene expression data. 
+
+This course is designed for participants with some experience in R programming and running command-line programs. We will be using published single-cell RNA-sequencing datasets to perform quality control, data normalisation, cell clustering, differential expression and trajectory analyses. 
+
+We will use the objects produced from the online workshop and other single-cell datasets to expand on the important aspects of single-cell analysis, discuss decision-making steps along the analysis pipeline, visualise the data differently, and perform additional analysis. Due to time constraints, we are limited to tools that are implemented in R and that run reasonably fast. But where relevant, case studies could be shown and discussed. 
+
+### What you will learn
+
+By the end of this session, you will be able to independently conduct and critically evaluate scRNA-seq data analyses, including:
+
+- Performing quality control and data normalisation on single-cell gene expression data.
+- Executing cell clustering and exploring alternative ways to visualise single-cell datasets.
+- Conducting differential expression and trajectory analyses.
+- Navigating critical decision-making steps throughout an R-based single-cell analysis pipeline.
+
+### Audience
+
+This workshop is for researchers who generate or work with bulk RNA-seq data and would like to analyse it independently.
+
+
+### Prerequisites
+
+Completion of the associated online module, [**NGS: Single-cell RNA-sequencing Analysis**](https://learninghub.kingshealthpartners.org/course/ngs-single-cell-rna-sequencing-analysis), is mandatory before attending the in-person workshop. It will take approximately 7 hours to complete the online materials. 
+
+This course is designed for participants with some experience in R programming and running command-line programs.
+
+For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/single-cell-data-analysis/) or email hab@kcl.ac.uk
+
+ 
+### Location 
+
+The workshop will take place at the Hub for Applied Bioinformatics in the Hodgkins Building, Guy’s Campus.
+
+The HAB space is located on the ground floor of the Hodgkin building at the Guy’s campus (room G60).
+
+**Venue Details** Hodgkins Building, Guy’s Campus, Room G60, Newcomen St, London, SE1 1UL
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '12th May 2027'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || '10am - 1pm'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'London'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '£50').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || 'https://hab.sites.er.kcl.ac.uk/event/single-cell-data-analysis/'}" class="register-button">Register Now</a>
+
+<p class="event-note"></p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:hab@kcl.ac.uk">hab@kcl.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
