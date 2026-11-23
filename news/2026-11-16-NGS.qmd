@@ -67,7 +67,7 @@ This workshop is for researchers who generate or work with bulk RNA-seq data and
 
 Completion of the associated online module, [**NGS: RNA-seq**](https://learninghub.kingshealthpartners.org/course/next-generation-sequencing-rna-seq), is mandatory before attending the in-person workshop. It will take approximately 2 hours to complete the online materials. 
 
-For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-using-spreadsheets-to-record-data-and-metadata/) or email hab@kcl.ac.uk
+For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-ngs-bulk-rna-seq/) or email hab@kcl.ac.uk
 
  
 ### Location 
@@ -126,7 +126,7 @@ html`
   </div>
 </div>
 
-<a href="${event.register_link || 'https://estore.kcl.ac.uk/conferences-and-events/academic-faculties/faculty-of-life-sciences-medicine/school-of-basic-and-medical-biosciences/centre-for-gene-therapy-regenerative-medicine/using-spreadsheets-to-record-data-and-metadata'}" class="register-button">Register Now</a>
+<a href="${event.register_link || 'https://hab.sites.er.kcl.ac.uk/event/follow-up-ngs-bulk-rna-seq/'}" class="register-button">Register Now</a>
 
 <p class="event-note"></p>
 
