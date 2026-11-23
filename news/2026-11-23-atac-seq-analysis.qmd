@@ -47,7 +47,7 @@ Join this in-person workshop hosted at the Hub for Applied Bioinformatics @KCL c
 
 This three-hour in-person session serves as a practical follow-up to the [Innovation Scholars online workshop](https://learninghub.kingshealthpartners.org/course/ngs-atac-seq). 
 
-Building directly on the data and R objects you generated during the online module, the critical decision-making steps along the ATAC-seq analysis pipeline will be examined. 
+Building directly on the data and R objects generated during the online module, the critical decision-making steps along the ATAC-seq analysis pipeline will be examined. 
 
 You will also learn how to integrate ATAC-seq results with other ‘omic’ datasets and leverage external genomic resources to uncover potential regulatory networks—using fast, accessible R-based tools alongside real-world case studies.
 
