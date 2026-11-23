@@ -1,0 +1,142 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'new/2026-11-23-python-programming.html') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Follow-Up Workshop: Python Programming
+
+<p class="lead">
+
+Join the team at the Hub for Applied Bioinformatics @ King's College London for this workshop which will advance your foundational coding skills through a practical, hands-on workshop tailored to data management, analysis, and reproducible workflows in health and biomedical research.
+
+</p>
+
+### About the Workshop
+
+Hosted by the team at the Hub for Applied Bioinformatics (HAB) at King’s College London, this interactive three-hour session builds directly on the concepts introduced in the [introductory online course](https://learninghub.kingshealthpartners.org/course/introduction-to-python-for-health-research). 
+
+Python has become an indispensable tool in modern health research thanks to its readable syntax, extensive libraries, and strong community support. Moving beyond basic theory, this follow-up workshop focuses on applying Python to real-world biomedical scenarios—helping you automate repetitive tasks, handle complex datasets, and streamline your research workflows with confidence.
+
+
+### What you will learn
+
+By the end of this session, you will learn:
+
+- **Biomedical Data Management:** Efficiently clean, structure, and integrate large-scale health and biomedical datasets.
+- **Workflow Automation:** Write clean scripts to automate repetitive analytical tasks and save time in your day-to-day research.
+- **Reproducible Research:** Apply best practices in Python to ensure your data analysis pipelines are transparent, shareable, and reproducible.
+- **Foundations for Machine Learning:** Understand how Python ecosystems support data-driven discovery and predictive modelling in healthcare.
+
+### Audience
+
+This workshop is designed for health and biomedical researchers, clinicians, PhD students, and research staff who want to bridge the gap between basic Python syntax and practical, everyday data analysis in a health research setting. 
+
+### Prerequisites
+
+To attend this in-person session, participants should have:
+
+- A foundational understanding of Python programming
+- Completed the associated online module: [**Introduction to Python for Health Research**](https://learninghub.kingshealthpartners.org/course/introduction-to-python-for-health-research). It will take approximately 20 hours to complete the online materials. 
+
+For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/follow-up-python-programming/) or email hab@kcl.ac.uk
+ 
+### Location 
+
+The workshop will take place at the Hub for Applied Bioinformatics in the Hodgkins Building, Guy’s Campus.
+
+The HAB space is located on the ground floor of the Hodgkin building at the Guy’s campus (room G60).
+
+**Venue Details** Hodgkins Building, Guy’s Campus, Room G60, Newcomen St, London, SE1 1UL
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '8th April 2027'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || '10am - 1pm'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'London'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '£50').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || 'https://hab.sites.er.kcl.ac.uk/event/follow-up-python-programming/'}" class="register-button">Register Now</a>
+
+<p class="event-note"></p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:hab@kcl.ac.uk">hab@kcl.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
