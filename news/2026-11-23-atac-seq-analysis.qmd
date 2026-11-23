@@ -1,0 +1,138 @@
+---
+format:
+  html:
+    css:
+      - ../style.css
+      - ../course-page.css
+    toc: false
+    echo: false
+    keep-hidden: true
+    code-tools: false
+    page-layout: full
+---
+
+```{=html}
+<!-- This hidden span ensures Quarto loads the fontawesome package -->
+```
+
+[{{< fa solid calendar >}}]{style="display: none;"}
+
+```{python}
+#| eval: true
+#| cache: false
+import pandas as pd
+event_data_cached = pd.read_csv("https://docs.google.com/spreadsheets/d/e/2PACX-1vRqatWozaX_-OaBG_9Peoj4RknvI1OMUOpHUbb8TvzzN8aB5VFGLpLTlqrkY9iavuKZPl9eH0I3Aozm/pub?gid=0&single=true&output=csv")
+ojs_define(event_data_cached = event_data_cached)
+```
+
+```{ojs}
+//| eval: true
+all_events = transpose(event_data_cached)
+event = all_events.find(row => row.link?.trim() === 'news/2026-11-23-atac-seq-analysis.html') ?? {}
+```
+
+::::: {.course-page-layout .column-page}
+::: course-content
+[Workshop]{.course-badge}
+
+## Follow-Up Workshop: ATAC-Seq Analysis
+
+<p class="lead">
+
+Join this in-person workshop hosted at the Hub for Applied Bioinformatics @KCL covering R-based ATAC-seq pipelines and multi-omic data integration. 
+
+</p>
+
+### About the Workshop
+
+This three-hour in-person session serves as a practical follow-up to the [Innovation Scholars online workshop](https://learninghub.kingshealthpartners.org/course/ngs-atac-seq). 
+
+Building directly on the data and R objects you generated during the online module, the critical decision-making steps along the ATAC-seq analysis pipeline will be examined. 
+
+You will also learn how to integrate ATAC-seq results with other ‘omic’ datasets and leverage external genomic resources to uncover potential regulatory networks—using fast, accessible R-based tools alongside real-world case studies.
+
+### What you will learn
+
+By the end of this workshop, you will be able to independently conduct and critically analyse data from ATAC-seq experiments. 
+
+
+### Audience
+
+This workshop is designed for researchers, bioinformaticians, PhD students, and research staff who have completed the Innovation Scholars online ATAC-seq workshop and want to deepen their practical R skills for multi-omic integration and independent data analysis.
+
+### Prerequisites
+
+- Completion of the associated free online module, [**NGS: ATAC-seq**](https://learninghub.kingshealthpartners.org/course/ngs-atac-seq), is mandatory before attending the in-person workshop. It will take approximately 10 hours to complete the online materials. 
+- Software Setup: RStudio installed on your laptop with all libraries from the online workshop pre-installed.
+- Workshop Data: The .RDS data object generated during the online workshop.
+
+For further information about the session, visit the [official workshop page](https://hab.sites.er.kcl.ac.uk/event/atac-seq-analysis/) or email hab@kcl.ac.uk
+
+### Location 
+
+The workshop will take place at the Hub for Applied Bioinformatics in the Hodgkins Building, Guy’s Campus.
+
+The HAB space is located on the ground floor of the Hodgkin building at the Guy’s campus (room G60).
+
+**Venue Details** Hodgkins Building, Guy’s Campus, Room G60, Newcomen St, London, SE1 1UL
+
+:::
+
+::: event-details-sidebar
+```{ojs}
+//| eval: true
+html`
+<h3>Event Details</h3>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-calendar-days"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Date</p>
+    <p>${event.date || '2nd June 2027'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-regular fa-clock"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Time</p>
+    <p>${event.time || '10am - 1pm'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-location-dot"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Location</p>
+    <p>${event.location || 'London'}</p>
+  </div>
+</div>
+
+<div class="event-detail-item">
+  <div class="event-detail-icon">
+    <i class="fa-solid fa-sterling-sign"></i>
+  </div>
+  <div class="event-detail-content">
+    <p>Fees</p>
+    ${(event.fees || '£50').split('\n').map(line => `<p>${line}</p>`).join('')}
+  </div>
+</div>
+
+<a href="${event.register_link || 'https://hab.sites.er.kcl.ac.uk/event/atac-seq-analysis/'}" class="register-button">Register Now</a>
+
+<p class="event-note"></p>
+
+<div class="questions-section">
+  <p>Questions?</p>
+  <a href="mailto:hab@kcl.ac.uk">hab@kcl.ac.uk</a>
+</div>
+`
+```
+:::
+:::::
