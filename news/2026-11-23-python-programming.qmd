@@ -39,7 +39,7 @@ event = all_events.find(row => row.link?.trim() === 'new/2026-11-23-python-progr
 
 <p class="lead">
 
-Join the team at the Hub for Applied Bioinformatics @ King's College London for this workshop which will advance your foundational coding skills through a practical, hands-on workshop tailored to data management, analysis, and reproducible workflows in health and biomedical research.
+Join the team at the Hub for Applied Bioinformatics @King's College London to advance your foundational coding skills through a practical, hands-on workshop tailored to data management, analysis, and reproducible workflows in health and biomedical research.
 
 </p>
 
