@@ -51,7 +51,6 @@ Designed as the practical Part 2 companion to the King’s Health Partners [Next
 
 This course is designed for participants with some experience in R programming and running command-line programs. Published single-cell RNA-sequencing datasets will be used to perform quality control, data normalisation, cell clustering, differential expression and trajectory analyses. 
 
-We will use the 
 Objects produced from the online workshop will be used, along with other single-cell datasets, to expand on the important aspects of single-cell analysis, discuss decision-making steps along the analysis pipeline, visualise the data differently, and perform additional analysis. Due to the focused three-hour timeframe, practical exercises will utilise fast, R-based tools, supplemented by case study discussions where relevant.
 
 ### What you will learn
